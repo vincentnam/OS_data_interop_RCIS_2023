@@ -1,0 +1,1682 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "9930f3e9-beec-44fe-8adf-6415e24b57e3",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "date": "2014-04-16T11:55:16+02:00",
+      "author": [ {
+        "reference": "Practitioner/0e31acd7-c149-4cd3-8147-cfe81fd3927f",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/134c8108-fb8a-4109-9380-39f57ba4e9ec",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:16+02:00",
+        "party": {
+          "reference": "Practitioner/134c8108-fb8a-4109-9380-39f57ba4e9ec",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/74f54f0a-5d62-4694-a352-38e99503089a",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-03-31T10:00:00+02:00",
+          "end": "2010-11-06T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/2570a21f-be32-4cff-b305-6b23e086468e",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr><tr><td>ischemic vascular disease</td><td>SNOMED-CT</td><td>52674009</td><td><span/>Ischemia</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I24</td><td>Other acute ischemic heart diseases</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>411.89</td><td>Other acute and subacute forms of ischemic heart disease, other</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/997453f3-a171-4ac1-a55a-7e43ca0e9261",
+          "display": "Ischemia"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Codeine</td><td>NDF-RT</td><td>N0000006691</td><td><span/>Codeine</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Fosfomycin</td><td>RxNorm</td><td>808917</td><td><span/>Fosfomycin 33.3 MG/ML Oral Suspension</td><td><span/>Severe</td><td>Very susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/4c6f7375-15da-4325-bfd7-fe19ad5927eb",
+          "display": "Fosfomycin + Fosfomycin 33.3 MG/ML Oral Suspension"
+        }, {
+          "reference": "AllergyIntolerance/018fa2b7-e481-4eab-952a-8eb09268c84f",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/3f637176-0cd4-4663-8dfa-22377a8eec84",
+          "display": "Codeine + Codeine"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>04-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>04-12-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>06-14-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>08-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>11-06-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/8f31033e-fb63-46f1-b3bc-0321b25ac88e",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/1f54f004-d101-4878-a33f-26dd0aa15c97",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/045f6c5d-bed6-4dc0-becf-70d543447b16",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/7968222f-2957-4503-8df5-445c349e3276",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/92d995af-bb8a-41cd-864d-818528305dc3",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/739120ae-76f7-4f90-a55d-68562462d1c9",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>ACE inhibitors</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Oral anti-platelet therapy</td><td>RxNorm</td><td>243670</td><td><span/>Aspirin 81 MG Oral Tablet</td><td>04-12-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/1f8e50a9-5d38-49fb-b7f0-2c396a9a7df8",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/aa50587f-01e4-4bf1-9c65-e21e61d95688",
+          "display": "Aspirin 81 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>31.8</td><td>kg/m2</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>82</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>06-14-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>128</td><td>mm[Hg]</td><td>06-14-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>08-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>08-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>30</td><td>kg/m2</td><td>11-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>11-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>11-06-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/f1f42013-0172-4257-b2dc-d9cd2af4eb66",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/2f5eea0d-64d9-4ae3-8013-0ededbd64d5a",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/e22237e2-bf02-47cc-9a0b-ecdc556c37ed",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/aeceab5d-0888-4835-b808-77eadd268c79",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/9393774d-903f-4a5d-8973-104287538eb9",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/871ab19f-1ab8-4bcc-8694-9adb3eba22dc",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/d47ba599-f0fb-472e-9b1b-729995b1ebcd",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/30aa3625-2d9c-4697-b19c-a50fddc33b2b",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/cc203dbf-dd4d-451b-a825-56abb343a1a2",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/b526b21b-b09c-4010-ae6f-9d88469031a8",
+          "display": "BP Diastolic"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>48</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>11-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>107.6</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>11-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>178</td><td>mg/dL</td><td>125-200 mg/dL</td><td>11-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>112</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>11-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/ee0ee6bd-8647-46fa-be09-df81d00b1d13",
+          "display": "Lipid Panel"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/0ea73d0e-f28d-4a90-a481-a965a3f67ab7"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>dietary consultation order</td><td>SNOMED-CT</td><td>103699006</td><td><span/>Patient referral to dietitian</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1007",
+            "display": "Atheism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Other Race"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2131-1",
+            "display": "Other Race"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Council Bluffs",
+          "state": "IA",
+          "postalCode": "51501",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Silva",
+        "given": [ "Terri" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(408)944-9011",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1936-02-08",
+      "address": [ {
+        "use": "home",
+        "line": [ "2893 Sycamore Street" ],
+        "city": "San Jose",
+        "state": "CA",
+        "postalCode": "95131",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Wyant",
+          "given": [ "Doris" ],
+          "prefix": [ "Mrs." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(818)201-9981",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "DorisJWyant@jourrapide.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "1362 New York Avenue" ],
+          "city": "Pomona",
+          "state": "CA",
+          "postalCode": "91766",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/d815c88d-d510-45bc-a14a-5ca274c52af2",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "d815c88d-d510-45bc-a14a-5ca274c52af2",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0e31acd7-c149-4cd3-8147-cfe81fd3927f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "134c8108-fb8a-4109-9380-39f57ba4e9ec",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "2570a21f-be32-4cff-b305-6b23e086468e",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "74f54f0a-5d62-4694-a352-38e99503089a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "997453f3-a171-4ac1-a55a-7e43ca0e9261",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "Ischemia"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I24",
+          "display": "Other acute ischemic heart diseases"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "411.89",
+          "display": "Other acute and subacute forms of ischemic heart disease, other"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "4c6f7375-15da-4325-bfd7-fe19ad5927eb",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "808917",
+          "display": "Fosfomycin 33.3 MG/ML Oral Suspension"
+        } ],
+        "text": "Fosfomycin + Fosfomycin 33.3 MG/ML Oral Suspension"
+      },
+      "patient": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "018fa2b7-e481-4eab-952a-8eb09268c84f",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "3f637176-0cd4-4663-8dfa-22377a8eec84",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006691",
+          "display": "Codeine"
+        } ],
+        "text": "Codeine + Codeine"
+      },
+      "patient": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8f31033e-fb63-46f1-b3bc-0321b25ac88e",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "period": {
+        "start": "2010-04-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "1f54f004-d101-4878-a33f-26dd0aa15c97",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "period": {
+        "start": "2010-04-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "045f6c5d-bed6-4dc0-becf-70d543447b16",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "period": {
+        "start": "2010-11-06T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7968222f-2957-4503-8df5-445c349e3276",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "period": {
+        "start": "2010-06-14T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "92d995af-bb8a-41cd-864d-818528305dc3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "period": {
+        "start": "2010-08-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "739120ae-76f7-4f90-a55d-68562462d1c9",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "ischemic vascular disease"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/23c631dd-4db4-4a37-9673-67ca1b0ac12d",
+        "display": "ischemic vascular disease"
+      }, {
+        "reference": "Condition/ef6f1154-7c4b-40cd-9aeb-34a9015d26d5",
+        "display": "Hypertension"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "23c631dd-4db4-4a37-9673-67ca1b0ac12d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "ischemic vascular disease"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I24",
+          "display": "Other acute ischemic heart diseases"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "411.89",
+          "display": "Other acute and subacute forms of ischemic heart disease, other"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ef6f1154-7c4b-40cd-9aeb-34a9015d26d5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "1f8e50a9-5d38-49fb-b7f0-2c396a9a7df8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/ced6e6df-8857-4578-ac7d-9cece8c31374",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "ced6e6df-8857-4578-ac7d-9cece8c31374",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "aa50587f-01e4-4bf1-9c65-e21e61d95688",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/e1d21c50-c520-47da-be1e-4a7f1287795d",
+        "display": "Aspirin 81 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "e1d21c50-c520-47da-be1e-4a7f1287795d",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "243670",
+          "display": "Aspirin 81 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f1f42013-0172-4257-b2dc-d9cd2af4eb66",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 30,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2f5eea0d-64d9-4ae3-8013-0ededbd64d5a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e22237e2-bf02-47cc-9a0b-ecdc556c37ed",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aeceab5d-0888-4835-b808-77eadd268c79",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-14T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9393774d-903f-4a5d-8973-104287538eb9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-14T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 128,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "871ab19f-1ab8-4bcc-8694-9adb3eba22dc",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d47ba599-f0fb-472e-9b1b-729995b1ebcd",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "30aa3625-2d9c-4697-b19c-a50fddc33b2b",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 31.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "cc203dbf-dd4d-451b-a825-56abb343a1a2",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b526b21b-b09c-4010-ae6f-9d88469031a8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "ee0ee6bd-8647-46fa-be09-df81d00b1d13",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "result": [ {
+        "reference": "Observation/59d9842e-2d88-4ed3-8c98-bf37f91e52c7",
+        "display": "HDLc SerPl-sCnc"
+      }, {
+        "reference": "Observation/36602b00-0760-4787-84ed-a146a070ec9a",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/b8247aa8-0543-429f-9e1e-6ed7f4a7283e",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/e91589d4-6151-4f87-a9f8-591fd650722c",
+        "display": "Cholest SerPl-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "59d9842e-2d88-4ed3-8c98-bf37f91e52c7",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 48,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "36602b00-0760-4787-84ed-a146a070ec9a",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 112,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b8247aa8-0543-429f-9e1e-6ed7f4a7283e",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 107.6,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e91589d4-6151-4f87-a9f8-591fd650722c",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 178,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0ea73d0e-f28d-4a90-a481-a965a3f67ab7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4c0e8440-74b8-4d8c-8b75-e1ec418324d3",
+        "display": "Terri Silva"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  } ]
+}

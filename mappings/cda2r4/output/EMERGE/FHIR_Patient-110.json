@@ -1,0 +1,1682 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "bd299911-9063-4f94-b0ab-bb7af1e6f9bb",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "date": "2014-04-16T11:54:50+02:00",
+      "author": [ {
+        "reference": "Practitioner/5ac392e7-7887-4ee8-a606-501a5513f813",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/8ba83573-4c0e-4099-a55d-df80f9700619",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:50+02:00",
+        "party": {
+          "reference": "Practitioner/8ba83573-4c0e-4099-a55d-df80f9700619",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/cd91cce4-6d37-4b42-96e5-f443d224f7e9",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-03-31T10:00:00+02:00",
+          "end": "2010-11-06T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/e4aee04c-857a-4819-9208-a2f35ebb79e0",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Very susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Mild</td><td>Very susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/e3c07652-ee5c-45ba-9455-b6e028e0db13",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/c2656fbf-f6ee-4b1f-ba8e-da4171293b2a",
+          "display": "Penicillin V + Penicillin V"
+        }, {
+          "reference": "AllergyIntolerance/ebd2b0b9-5a42-48ef-8666-e6478fd6c0f8",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/2d77aac5-1bb1-4734-b318-d5e6cef82781"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>dietary consultation order</td><td>SNOMED-CT</td><td>103699006</td><td><span/>Patient referral to dietitian</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>ACE inhibitors</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Oral anti-platelet therapy</td><td>RxNorm</td><td>243670</td><td><span/>Aspirin 81 MG Oral Tablet</td><td>04-12-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/2e542247-2ad2-4f01-9689-672521b972a9",
+          "display": "Aspirin 81 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/af7c0d11-2fc3-4bd5-8eb2-78d51fac021e",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>31.8</td><td>kg/m2</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>82</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>06-14-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>128</td><td>mm[Hg]</td><td>06-14-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>08-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>08-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>30</td><td>kg/m2</td><td>11-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>11-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>11-06-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/e83d0c5c-84cd-4072-85b6-3e6dc1a3c382",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/d5df9861-aa01-4339-8494-ef76d4acf771",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/ee8c4c06-d508-40ca-a5ef-27ca8157f981",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/f1ec385d-d351-4230-9ed5-8a6834ca2741",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/f04e7c74-04fc-4b5d-9997-aa1ede48cd5f",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/e271c558-2d9c-4e16-b236-feead002bf50",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/a8f709b7-ca1c-4239-b74c-e2e0de299c7f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/10c3b35b-7bc7-44da-b6d8-2e0a484f9066",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/84af4be2-a72a-43da-9737-21e8ee3fee09",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/48185928-d69c-4240-9c47-243b7ad444bd",
+          "display": "BP Diastolic"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr><tr><td>ischemic vascular disease</td><td>SNOMED-CT</td><td>52674009</td><td><span/>Ischemia</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I24</td><td>Other acute ischemic heart diseases</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>411.89</td><td>Other acute and subacute forms of ischemic heart disease, other</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/b39d4999-c789-4e43-9f8c-fe53fa2818c5",
+          "display": "Ischemia"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>04-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>04-12-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>06-14-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>08-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>11-06-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/7bd9e55f-2ce8-496e-a4f7-9a6880226e7c",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/3ca91b25-a5ba-4d64-9bc4-a663ebde403c",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/3af411d9-5098-4030-a601-313659a9b6f4",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/bdcb364d-b5d3-43a3-bec5-f32c988adc67",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/b0f6b921-c9a8-48f4-b25a-b2e2361a9b19",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/9987d9d9-ca2e-45ff-8e49-04e40a6d1756",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>48</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>11-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>83.4</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>11-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>147</td><td>mg/dL</td><td>125-200 mg/dL</td><td>11-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>78</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>11-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/85dd318a-baea-4bca-9efa-710767a3bfee",
+          "display": "Lipid Panel"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "9ad9c0f7-2af6-41f5-8b91-e88285474805",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1059",
+            "display": "Zen Buddhism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Other Race"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2131-1",
+            "display": "Other Race"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Denver",
+          "state": "CO",
+          "postalCode": "80202",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Patrick",
+        "given": [ "Lucy" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(302)721-4238",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1936-02-08",
+      "address": [ {
+        "use": "home",
+        "line": [ "3696 Maud Street" ],
+        "city": "Newark",
+        "state": "DE",
+        "postalCode": "19714",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Baggett",
+          "given": [ "Johnny" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(856)705-0481",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "JohnnyDBaggett@dayrep.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "4195 Prospect Street" ],
+          "city": "Camden",
+          "state": "NJ",
+          "postalCode": "8102",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/f052f579-1b75-409a-9b8a-28546d767607",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f052f579-1b75-409a-9b8a-28546d767607",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5ac392e7-7887-4ee8-a606-501a5513f813",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "8ba83573-4c0e-4099-a55d-df80f9700619",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e4aee04c-857a-4819-9208-a2f35ebb79e0",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "cd91cce4-6d37-4b42-96e5-f443d224f7e9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "e3c07652-ee5c-45ba-9455-b6e028e0db13",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "c2656fbf-f6ee-4b1f-ba8e-da4171293b2a",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "ebd2b0b9-5a42-48ef-8666-e6478fd6c0f8",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2d77aac5-1bb1-4734-b318-d5e6cef82781",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "2e542247-2ad2-4f01-9689-672521b972a9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/9e6e4913-27ea-4fd9-8f69-48a758398d90",
+        "display": "Aspirin 81 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "9e6e4913-27ea-4fd9-8f69-48a758398d90",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "243670",
+          "display": "Aspirin 81 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "af7c0d11-2fc3-4bd5-8eb2-78d51fac021e",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/b18abbba-014b-40d1-84d0-e092464fd488",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "b18abbba-014b-40d1-84d0-e092464fd488",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e83d0c5c-84cd-4072-85b6-3e6dc1a3c382",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-14T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d5df9861-aa01-4339-8494-ef76d4acf771",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-14T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 128,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ee8c4c06-d508-40ca-a5ef-27ca8157f981",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f1ec385d-d351-4230-9ed5-8a6834ca2741",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 31.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f04e7c74-04fc-4b5d-9997-aa1ede48cd5f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e271c558-2d9c-4e16-b236-feead002bf50",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a8f709b7-ca1c-4239-b74c-e2e0de299c7f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "10c3b35b-7bc7-44da-b6d8-2e0a484f9066",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 30,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "84af4be2-a72a-43da-9737-21e8ee3fee09",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "48185928-d69c-4240-9c47-243b7ad444bd",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "b39d4999-c789-4e43-9f8c-fe53fa2818c5",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "Ischemia"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I24",
+          "display": "Other acute ischemic heart diseases"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "411.89",
+          "display": "Other acute and subacute forms of ischemic heart disease, other"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7bd9e55f-2ce8-496e-a4f7-9a6880226e7c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "period": {
+        "start": "2010-11-06T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "3ca91b25-a5ba-4d64-9bc4-a663ebde403c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "period": {
+        "start": "2010-04-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "3af411d9-5098-4030-a601-313659a9b6f4",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "period": {
+        "start": "2010-04-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "bdcb364d-b5d3-43a3-bec5-f32c988adc67",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "ischemic vascular disease"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/8f8f7fd7-2186-440e-9002-4935313e4a78",
+        "display": "Hypertension"
+      }, {
+        "reference": "Condition/9b1df96a-375f-48d9-b598-9fa773926dd0",
+        "display": "ischemic vascular disease"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "8f8f7fd7-2186-440e-9002-4935313e4a78",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "9b1df96a-375f-48d9-b598-9fa773926dd0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "ischemic vascular disease"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I24",
+          "display": "Other acute ischemic heart diseases"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "411.89",
+          "display": "Other acute and subacute forms of ischemic heart disease, other"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "b0f6b921-c9a8-48f4-b25a-b2e2361a9b19",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "period": {
+        "start": "2010-08-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "9987d9d9-ca2e-45ff-8e49-04e40a6d1756",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "period": {
+        "start": "2010-06-14T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "85dd318a-baea-4bca-9efa-710767a3bfee",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "result": [ {
+        "reference": "Observation/e4e6fc09-aa1b-4241-9ddf-794246791dd8",
+        "display": "Cholest SerPl-mCnc"
+      }, {
+        "reference": "Observation/e1fd9d73-e812-44cd-a2f9-61f8439c078c",
+        "display": "HDLc SerPl-sCnc"
+      }, {
+        "reference": "Observation/4363f8b0-3e17-48ea-a1d8-7f7031fbff16",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/8f1c736e-8972-415d-b185-871627ffe59b",
+        "display": "Trigl SerPl Calc-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e4e6fc09-aa1b-4241-9ddf-794246791dd8",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 147,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e1fd9d73-e812-44cd-a2f9-61f8439c078c",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 48,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4363f8b0-3e17-48ea-a1d8-7f7031fbff16",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 83.4,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8f1c736e-8972-415d-b185-871627ffe59b",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/9ad9c0f7-2af6-41f5-8b91-e88285474805",
+        "display": "Lucy Patrick"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-06T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  } ]
+}

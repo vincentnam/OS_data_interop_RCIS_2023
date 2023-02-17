@@ -1,0 +1,1888 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "27b7b402-e56f-45e7-8f29-566db3869e1b",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441",
+        "value": "2ff573b6ddd84d8ab49fe9b4b3d600da"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of episode note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "date": "2013-07-01T10:34:49-04:00",
+      "author": [ {
+        "reference": "Practitioner/bc688032-b547-41ca-866a-288b838f2289"
+      } ],
+      "title": "MU2 Export Summary",
+      "confidentiality": "N",
+      "custodian": {
+        "reference": "Organization/9ab07426-f257-4538-b6f8-a5793d17a7e3",
+        "display": "Get Well Clinic"
+      },
+      "event": [ {
+        "detail": [ {
+          "reference": "Practitioner/269bf4dc-f97b-4496-8b58-36879fc63b4b"
+        }, {
+          "reference": "Practitioner/030e97fc-c070-4c60-b1f3-cb80a25fc9d3",
+          "display": "James Getwell M.D."
+        }, {
+          "reference": "Practitioner/1b461281-6683-425e-b5ff-1cf97063cad8",
+          "display": "Patricia Primary"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies and Adverse Reactions",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Name</th>                  <th>Reaction</th>                  <th>Notes</th>                </tr>              </thead>              <tbody>                <tr>                  <td>penicillin G benzathine</td>                  <td>Hives</td>                  <td>Active</td>                </tr>                <tr>                  <td>codeine sulfate</td>                  <td>Swelling</td>                  <td>Active</td>                </tr>                <tr>                  <td>aspirin</td>                  <td>Anaphaylaxis</td>                  <td>active</td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/f3063c69-4582-4391-a7be-22113c6b648c",
+          "display": "codeine sulfate"
+        }, {
+          "reference": "AllergyIntolerance/6c8aaeee-991c-4f90-adeb-d3104b9c04dd",
+          "display": "aspirin"
+        }, {
+          "reference": "AllergyIntolerance/16a12dfc-cbfa-42f5-ba2f-9b78f92bb125",
+          "display": "penicillin G benzathine"
+        } ]
+      }, {
+        "title": "Plan of Treatment",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Treatment Plan"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Planned Activity</th>                  <th>Comments</th>                  <th>Planned Date</th>                  <th>Planned Time</th>                  <th>Plan/Goal</th>                </tr>              </thead>              <tbody>                <tr>                  <td>Pulmonary Functional test</td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                </tr>                <tr>                  <td>Smoking Cessation Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Resources and instructions provided during visit</td>                </tr>                <tr>                  <td>Smoking Cessation: Goal</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Quit smoking</td>                </tr>                <tr>                  <td>Weight Loss Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Resources and instructions provided during visit.</td>                </tr>                <tr>                  <td>Weight Loss: Goal</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>BMI &amp;lt; 25</td>                </tr>                <tr>                  <td>Preventative Health Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Annual pap smear, mammogram, annual breast exam.</td>                </tr>                <tr>                  <td>Chest X-Ray, PA and Lateral Views</td>                  <td>                  </td>                  <td>1/24/2013</td>                  <td>12:00 AM</td>                  <td>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/8de65907-295e-4083-95ee-ddcbdc7cf8b7"
+        } ]
+      }, {
+        "title": "History of Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "History of procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Date Ordered</th>                  <th>Description</th>                  <th>Order Status</th>                  <th>Result Status</th>                </tr>              </thead>              <tbody>                <tr>                  <td>9/25/2012 12:00 AM</td>                  <td>Influenza virus vaccine</td>                  <td>Reviewed</td>                  <td>                  </td>                </tr>                <tr>                  <td>1/24/2013 12:00 AM</td>                  <td>Chest X-Ray, PA and Lateral Views</td>                  <td>Ordered</td>                  <td>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/03998136-2df1-4991-8a0a-f409cbc98210",
+          "display": "Influenza virus vaccine"
+        }, {
+          "reference": "Observation/0bbb53ea-1adf-483e-9b13-33f29990ff94",
+          "display": "Chest X-Ray, PA and Lateral Views"
+        } ]
+      }, {
+        "title": "History Of Immunizations",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Name</th>                  <th>Date Admin</th>                  <th>Mfg Name</th>                  <th>Mfg Code</th>                  <th>Trade Name</th>                  <th>Lot#</th>                  <th>Route</th>                  <th>Inj</th>                  <th>Vis Given</th>                  <th>Vis Pub</th>                  <th>CVX</th>                </tr>              </thead>              <tbody>                <tr>                  <td>Influenza Adult</td>                  <td>9/25/2012</td>                  <td>Abbott Laboratories</td>                  <td>AB</td>                  <td>Fluzone</td>                  <td>v45353534</td>                  <td>Intramuscular</td>                  <td>Left Arm</td>                  <td>1/14/2013</td>                  <td>9/3/1980</td>                  <td>88</td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/f51f67ff-0d7f-41ad-9926-dbb4b5837f42",
+          "display": "Influenza Adult"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social history"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Name</th>                  <th>Status</th>                  <th>Comments</th>                </tr>              </thead>              <tbody>                <tr>                  <td>Tobacco</td>                  <td>Current</td>                  <td>start 2012</td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/f55b36c7-e49e-4427-ad85-3bb00eb0c2ea"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Date</th>                  <th>Time</th>                  <th>BP-Sys(mm[Hg]</th>                  <th>BP-Dia(mm[Hg])</th>                  <th>HR(bpm)</th>                  <th>RR(rpm)</th>                  <th>Temp</th>                  <th>WT</th>                  <th>HT</th>                  <th>BMI</th>                  <th>BSA</th>                  <th>BMI Percentile</th>                  <th>O2 Sat(%)</th>                </tr>              </thead>              <tbody>                <tr>                  <td>10/28/2011</td>                  <td>5:11:00 PM</td>                  <td>114 mmHg</td>                  <td>76 mmHg</td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                  <td>150 lbs</td>                  <td>64 in</td>                  <td>25.7472 kg/m²</td>                  <td>1.7528 m²</td>                  <td>                  </td>                  <td>                  </td>                </tr>                <tr>                  <td>9/25/2012</td>                  <td>5:18:00 PM</td>                  <td>155 mmHg</td>                  <td>94 mmHg</td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                  <td>155 lbs</td>                  <td>64 in</td>                  <td>26.6054 kg/m²</td>                  <td>1.7818 m²</td>                  <td>                  </td>                  <td>                  </td>                </tr>                <tr>                  <td>1/24/2013</td>                  <td>12:36:00 PM</td>                  <td>120 mmHg</td>                  <td>80 mmHg</td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                  <td>162 lbs</td>                  <td>64 in</td>                  <td>27.807 kg/m²</td>                  <td>1.8216 m²</td>                  <td>                  </td>                  <td>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/ed0c3b24-acea-4670-98b5-d597090b5db1",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/9050d677-ad5d-461b-8d84-06a8a4a0a2ce",
+          "display": "Body Height (Measured)"
+        }, {
+          "reference": "Observation/07ef7bb1-980d-4c89-88fd-0bdfc10c8ddf",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/0d084116-22a1-460e-8738-3718b054b8c7",
+          "display": "Body Mass Index"
+        }, {
+          "reference": "Observation/260de667-5d96-424e-8821-3c247257dbf2",
+          "display": "Body Weight (Measured)"
+        }, {
+          "reference": "Observation/e8da8f4d-6bea-466c-9de7-b6a44b732ef2",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/cc4d6c87-b56e-4f43-806c-4c9e8c2d162f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/1f8ff1bc-0744-4486-b6ec-6d2aefef1005",
+          "display": "Body Mass Index"
+        }, {
+          "reference": "Observation/b1eead49-028e-4274-917c-f8bb52a46269",
+          "display": "Body Weight (Measured)"
+        }, {
+          "reference": "Observation/244bcf93-345e-4017-b03a-66be3322fc9a",
+          "display": "Body Height (Measured)"
+        }, {
+          "reference": "Observation/5e7b97b2-23b7-4313-a39b-f7fa46801dde",
+          "display": "Body Weight (Measured)"
+        }, {
+          "reference": "Observation/e47a81f9-3c75-42c9-a4e1-917b18dfc1b5",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/bf25a3c9-feca-4c50-b44d-0a69409e42e0",
+          "display": "Body Height (Measured)"
+        }, {
+          "reference": "Observation/6a60ba58-f742-4a16-98a0-e767a54a3ef5",
+          "display": "Body Mass Index"
+        }, {
+          "reference": "Observation/c4161e71-f4a8-4bcd-86b7-0b87116c19aa",
+          "display": "BP Diastolic"
+        } ]
+      }, {
+        "title": "Results Summary",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests and/or laboratory data"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Data and Description</th>                  <th>Results</th>                </tr>              </thead>              <tbody>                <tr>                  <td>1/24/2013 12:35 PM</td>                  <td>                    <ul>                      <li>Hgb Bld-mCnc 13.50 g/dL</li>                      <li>Hct Fr Bld Auto 42.0 %</li>                      <li>WBC # Bld Auto 6.0 x10E3/uL</li>                      <li>Platelet # Bld Auto 265.0 x10E3/uL</li>                    </ul>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/b7385a45-84fb-44a0-8d95-8e2484dd3a27"
+        }, {
+          "reference": "DiagnosticReport/542c9aed-9248-4b34-89a3-a261e8632b3e"
+        }, {
+          "reference": "DiagnosticReport/b175dd1e-f484-4826-8353-02fd6549b9f2"
+        }, {
+          "reference": "DiagnosticReport/f4ba1010-7973-4933-a759-dec4bd68ce8f"
+        } ]
+      }, {
+        "title": "Problem List",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem list"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Description</th>                  <th>Status</th>                  <th>Onset</th>                </tr>              </thead>              <tbody>                <tr>                  <td>Acute Pharyngitis</td>                  <td>Resolved</td>                  <td>10/28/2011</td>                </tr>                <tr>                  <td>Essential Hypertension</td>                  <td>Active</td>                  <td>09/25/2012</td>                </tr>                <tr>                  <td>Pneumonia</td>                  <td>Active</td>                  <td>01/24/2013</td>                </tr>                <tr>                  <td>Asthma</td>                  <td>Active</td>                  <td>1/1/2013</td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/0a99ad59-3b8d-49d3-9e8a-ff6b763ec1de"
+        }, {
+          "reference": "Condition/939524ec-8e9b-4cf7-a10b-b9fbffd736e9"
+        }, {
+          "reference": "Condition/332dfea9-cfa1-45e4-a478-d14b45d5d528"
+        }, {
+          "reference": "Condition/2f3270d2-596d-4804-b051-814a34219ea9"
+        } ]
+      }, {
+        "title": "Functional Status Assessment",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5",
+            "display": "Functional status assessment"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Functional Condition</th>                  <th>Type</th>                </tr>              </thead>              <tbody>                <tr>                  <td>No Impairment</td>                  <td>Cognitive</td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of medication use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th colspan=\"5\">Expired</th>                </tr>                <tr>                  <th>Name</th>                  <th>Start Date</th>                  <th>Expiration Date</th>                  <th>SIG</th>                  <th>Comments</th>                </tr>              </thead>              <tbody>                <tr>                  <td>metoprolol tartrate Oral Tablet 25 mg</td>                  <td>1/1/2013</td>                  <td>1/31/2013</td>                  <td>take 1 tablet (25 mg) by oral route once daily for 30 days</td>                  <td>                  </td>                </tr>                <tr>                  <td>Proventil HFA Inhalation HFA Aerosol Inhaler 90 mcg/actuation</td>                  <td>1/1/2013</td>                  <td>1/31/2013</td>                  <td>inhale 2 puffs by inhalation route every 4 hours as needed for 30 days</td>                  <td>                  </td>                </tr>                <tr>                  <td>azithromycin Oral Tablet 500 mg</td>                  <td>1/24/2013</td>                  <td>2/23/2013</td>                  <td>take 1 tablet by oral route daily for 30 days , then 250 mg once daily for the next 4 days</td>                  <td>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/91d5c4fe-f9b0-4167-b84e-eb94c45376e4",
+          "display": "Proventil HFA Inhalation HFA Aerosol Inhaler 90 mcg/actuation"
+        }, {
+          "reference": "MedicationStatement/f607a091-c180-450a-aad2-10b3816a1331",
+          "display": "metoprolol tartrate Oral Tablet 25 mg"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51",
+        "value": "26562"
+      } ],
+      "name": [ {
+        "family": "Hernandez",
+        "given": [ "Maria" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1966-02-18",
+      "address": [ {
+        "state": "GA",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "Never Married"
+        } ]
+      },
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        }
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/9ab07426-f257-4538-b6f8-a5793d17a7e3",
+        "display": "Get Well Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "9ab07426-f257-4538-b6f8-a5793d17a7e3",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50",
+        "value": "300011"
+      } ],
+      "name": "Get Well Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1004",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1004 Healthcare Dr. practice" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "bc688032-b547-41ca-866a-288b838f2289",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "c0e07db8b52f4f12943a91d2403d26d5"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1004",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1004 Healthcare Dr. practice" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "b88f5d72-0c25-407f-9322-2b7beb6c8418",
+      "practitioner": {
+        "reference": "Practitioner/bc688032-b547-41ca-866a-288b838f2289"
+      },
+      "organization": {
+        "reference": "Organization/9ab07426-f257-4538-b6f8-a5793d17a7e3",
+        "display": "Get Well Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "269bf4dc-f97b-4496-8b58-36879fc63b4b",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "UNK"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "030e97fc-c070-4c60-b1f3-cb80a25fc9d3",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "UNK"
+      } ],
+      "name": [ {
+        "family": "Getwell M.D.",
+        "given": [ "James" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "1b461281-6683-425e-b5ff-1cf97063cad8",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": [ {
+        "family": "Primary",
+        "given": [ "Patricia" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "f3063c69-4582-4391-a7be-22113c6b648c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.57",
+        "value": "1308"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "environment" ],
+      "code": {
+        "text": "codeine sulfate"
+      },
+      "patient": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "6c8aaeee-991c-4f90-adeb-d3104b9c04dd",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.57",
+        "value": "1309"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "environment" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1001473",
+          "display": "Ecpirin"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.64",
+          "code": "1076",
+          "display": "aspirin"
+        } ],
+        "text": "aspirin"
+      },
+      "patient": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "16a12dfc-cbfa-42f5-ba2f-9b78f92bb125",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.57",
+        "value": "1307"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "environment" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "215674",
+          "display": "Bicillin L-A"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.64",
+          "code": "3727",
+          "display": "penicillin G benzathine"
+        } ],
+        "text": "penicillin G benzathine"
+      },
+      "patient": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "8de65907-295e-4083-95ee-ddcbdc7cf8b7",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table border=\"1\">              <thead>                <tr>                  <th>Planned Activity</th>                  <th>Comments</th>                  <th>Planned Date</th>                  <th>Planned Time</th>                  <th>Plan/Goal</th>                </tr>              </thead>              <tbody>                <tr>                  <td>Pulmonary Functional test</td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                </tr>                <tr>                  <td>Smoking Cessation Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Resources and instructions provided during visit</td>                </tr>                <tr>                  <td>Smoking Cessation: Goal</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Quit smoking</td>                </tr>                <tr>                  <td>Weight Loss Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Resources and instructions provided during visit.</td>                </tr>                <tr>                  <td>Weight Loss: Goal</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>BMI &amp;lt; 25</td>                </tr>                <tr>                  <td>Preventative Health Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Annual pap smear, mammogram, annual breast exam.</td>                </tr>                <tr>                  <td>Chest X-Ray, PA and Lateral Views</td>                  <td>                  </td>                  <td>1/24/2013</td>                  <td>12:00 AM</td>                  <td>                  </td>                </tr>              </tbody>            </table>          </div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "Plan of Treatment",
+      "description": "<div>            <table border=\"1\">              <thead>                <tr>                  <th>Planned Activity</th>                  <th>Comments</th>                  <th>Planned Date</th>                  <th>Planned Time</th>                  <th>Plan/Goal</th>                </tr>              </thead>              <tbody>                <tr>                  <td>Pulmonary Functional test</td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                  <td>                  </td>                </tr>                <tr>                  <td>Smoking Cessation Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Resources and instructions provided during visit</td>                </tr>                <tr>                  <td>Smoking Cessation: Goal</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Quit smoking</td>                </tr>                <tr>                  <td>Weight Loss Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Resources and instructions provided during visit.</td>                </tr>                <tr>                  <td>Weight Loss: Goal</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>BMI &amp;lt; 25</td>                </tr>                <tr>                  <td>Preventative Health Plan</td>                  <td>                  </td>                  <td>9/25/2012</td>                  <td>12:00 AM</td>                  <td>Annual pap smear, mammogram, annual breast exam.</td>                </tr>                <tr>                  <td>Chest X-Ray, PA and Lateral Views</td>                  <td>                  </td>                  <td>1/24/2013</td>                  <td>12:00 AM</td>                  <td>                  </td>                </tr>              </tbody>            </table>          </div>",
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "03998136-2df1-4991-8a0a-f409cbc98210",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.53",
+        "value": "61235"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "90656",
+          "display": "INFLUENZA VIRUS VACC SPLIT PRSRV FREE 3 YRS/> IM"
+        } ],
+        "text": "Influenza virus vaccine"
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2012-09-25T00:00:00+02:00"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0bbb53ea-1adf-483e-9b13-33f29990ff94",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.53",
+        "value": "61404"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "71020",
+          "display": "RADIOLOGIC EXAM CHEST 2 VIEWS FRONTAL&LATERAL"
+        } ],
+        "text": "Chest X-Ray, PA and Lateral Views"
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T00:00:00+01:00"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "f51f67ff-0d7f-41ad-9926-dbb4b5837f42",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.60",
+        "value": "1151"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "88",
+          "display": "influenza, NOS"
+        } ],
+        "text": "Influenza Adult"
+      },
+      "patient": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "occurrenceDateTime": "2012-09-25T00:00:00+02:00",
+      "primarySource": true,
+      "lotNumber": "v45353534",
+      "doseQuantity": {
+        "value": 0.5,
+        "unit": "1",
+        "system": "http://unitsofmeasure.org/ucum.html"
+      },
+      "performer": [ {
+        "function": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/v2/0443",
+            "code": "AP",
+            "display": "Administering Provider"
+          } ]
+        },
+        "actor": {
+          "reference": "Practitioner/8b01ac2d-c5aa-493b-9d4d-fc17cdeb7ead",
+          "display": "Mike Hardy"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "8b01ac2d-c5aa-493b-9d4d-fc17cdeb7ead",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441",
+        "value": "e8c58daf600046b695d349e5fba15ed9"
+      } ],
+      "name": [ {
+        "family": "Hardy",
+        "given": [ "Mike" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "770-888-3333"
+      } ],
+      "address": [ {
+        "line": [ "1234 test" ],
+        "city": "Norcross",
+        "state": "GA",
+        "postalCode": "30091",
+        "country": "United States"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "36a5c5ea-9cb2-47d2-a98b-650c1abd9b37",
+      "practitioner": {
+        "reference": "Practitioner/8b01ac2d-c5aa-493b-9d4d-fc17cdeb7ead",
+        "display": "Mike Hardy"
+      },
+      "organization": {
+        "reference": "Organization/f0fe1560-b3ee-44ea-9a88-b2a11b6d2b11"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f0fe1560-b3ee-44ea-9a88-b2a11b6d2b11",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441",
+        "value": "bdf27f1c4ef04f3ebb6a239cc25e7787"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "770-888-3333",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1234 test" ],
+        "city": "Norcross",
+        "state": "GA",
+        "postalCode": "30091",
+        "country": "United States"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f55b36c7-e49e-4427-ad85-3bb00eb0c2ea",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.68",
+        "value": "1251"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "1900-01-01T00:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "428041000124106",
+          "display": "Current some day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ed0c3b24-acea-4670-98b5-d597090b5db1",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2222"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2012-09-25T17:18:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 94,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9050d677-ad5d-461b-8d84-06a8a4a0a2ce",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2226"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height (Measured)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2012-09-25T17:18:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 64,
+        "unit": "[in_us]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[in_us]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "07ef7bb1-980d-4c89-88fd-0bdfc10c8ddf",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2223"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2012-09-25T17:18:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 155,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0d084116-22a1-460e-8738-3718b054b8c7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2224"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "41909-3",
+          "display": "Body Mass Index"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2012-09-25T17:18:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 26.6054,
+        "unit": "kg/m²",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m²"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "260de667-5d96-424e-8821-3c247257dbf2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2227"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3141-9",
+          "display": "Body Weight (Measured)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2012-09-25T17:18:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 155,
+        "unit": "[lb_av]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[lb_av]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e8da8f4d-6bea-466c-9de7-b6a44b732ef2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2903"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:36:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "cc4d6c87-b56e-4f43-806c-4c9e8c2d162f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2904"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:36:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 120,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1f8ff1bc-0744-4486-b6ec-6d2aefef1005",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2905"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "41909-3",
+          "display": "Body Mass Index"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:36:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 27.807,
+        "unit": "kg/m²",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m²"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b1eead49-028e-4274-917c-f8bb52a46269",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2908"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3141-9",
+          "display": "Body Weight (Measured)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:36:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 162,
+        "unit": "[lb_av]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[lb_av]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "244bcf93-345e-4017-b03a-66be3322fc9a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2907"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height (Measured)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:36:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 64,
+        "unit": "[in_us]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[in_us]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "5e7b97b2-23b7-4313-a39b-f7fa46801dde",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2221"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3141-9",
+          "display": "Body Weight (Measured)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2011-10-28T17:11:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 150,
+        "unit": "[lb_av]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[lb_av]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e47a81f9-3c75-42c9-a4e1-917b18dfc1b5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2217"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2011-10-28T17:11:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 114,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bf25a3c9-feca-4c50-b44d-0a69409e42e0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2220"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height (Measured)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2011-10-28T17:11:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 64,
+        "unit": "[in_us]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[in_us]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6a60ba58-f742-4a16-98a0-e767a54a3ef5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2218"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "41909-3",
+          "display": "Body Mass Index"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2011-10-28T17:11:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 25.7472,
+        "unit": "kg/m²",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m²"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c4161e71-f4a8-4bcd-86b7-0b87116c19aa",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.55",
+        "value": "2216"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2011-10-28T17:11:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "b7385a45-84fb-44a0-8d95-8e2484dd3a27",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.54",
+        "value": "2901"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:35:21+01:00"
+      },
+      "issued": "2013-01-24T12:35:21.000+01:00",
+      "result": [ {
+        "reference": "Observation/829250ae-234d-4906-b272-6844b7d01f67",
+        "display": "WBC # Bld Auto"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "829250ae-234d-4906-b272-6844b7d01f67",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.54",
+        "value": "2901"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "WBC # Bld Auto"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:35:21+01:00"
+      },
+      "valueQuantity": {
+        "value": 6.0,
+        "unit": "x10E3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "x10E3/uL"
+      },
+      "referenceRange": [ {
+        "text": "4.3 - 10.8"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "542c9aed-9248-4b34-89a3-a261e8632b3e",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.54",
+        "value": "2902"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:35:21+01:00"
+      },
+      "issued": "2013-01-24T12:35:21.000+01:00",
+      "result": [ {
+        "reference": "Observation/304cd7ec-638e-4a79-9d0e-ec786ccb5c89",
+        "display": "Platelet # Bld Auto"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "304cd7ec-638e-4a79-9d0e-ec786ccb5c89",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.54",
+        "value": "2902"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelet # Bld Auto"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:35:21+01:00"
+      },
+      "valueQuantity": {
+        "value": 265.0,
+        "unit": "x10E3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "x10E3/uL"
+      },
+      "referenceRange": [ {
+        "text": "150 - 400"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "b175dd1e-f484-4826-8353-02fd6549b9f2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.54",
+        "value": "2899"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:35:21+01:00"
+      },
+      "issued": "2013-01-24T12:35:21.000+01:00",
+      "result": [ {
+        "reference": "Observation/bae21336-0b9f-4772-85f5-9da5ac210080",
+        "display": "Hgb Bld-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bae21336-0b9f-4772-85f5-9da5ac210080",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.54",
+        "value": "2899"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hgb Bld-mCnc"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:35:21+01:00"
+      },
+      "valueQuantity": {
+        "value": 13.50,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      },
+      "referenceRange": [ {
+        "text": "13.5 - 18"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "f4ba1010-7973-4933-a759-dec4bd68ce8f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.54",
+        "value": "2900"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:35:21+01:00"
+      },
+      "issued": "2013-01-24T12:35:21.000+01:00",
+      "result": [ {
+        "reference": "Observation/3e808a78-f2de-449e-8b7f-2643ec7eca15",
+        "display": "Hct Fr Bld Auto"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3e808a78-f2de-449e-8b7f-2643ec7eca15",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.54",
+        "value": "2900"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hct Fr Bld Auto"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-24T12:35:21+01:00"
+      },
+      "valueQuantity": {
+        "value": 42.0,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "referenceRange": [ {
+        "text": "41 - 53"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "0a99ad59-3b8d-49d3-9e8a-ff6b763ec1de",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.61",
+        "value": "1346"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "939524ec-8e9b-4cf7-a10b-b9fbffd736e9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.61",
+        "value": "1424"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "332dfea9-cfa1-45e4-a478-d14b45d5d528",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.61",
+        "value": "1347"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "2f3270d2-596d-4804-b051-814a34219ea9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.61",
+        "value": "1423"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "91d5c4fe-f9b0-4167-b84e-eb94c45376e4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.58",
+        "value": "2053"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/33718145-1241-4caf-ac1f-92c3499f5154",
+        "display": "Proventil HFA Inhalation HFA Aerosol Inhaler 90 mcg/actuation"
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-01T00:00:00+01:00",
+        "end": "2013-01-31T00:00:00+01:00"
+      },
+      "dosage": [ {
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 2,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "33718145-1241-4caf-ac1f-92c3499f5154",
+      "code": {
+        "coding": [ {
+          "code": "267456",
+          "display": "Proventil HFA Inhalation HFA Aerosol Inhaler 90 mcg/actuation"
+        }, {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "745679",
+          "display": "200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler"
+        } ],
+        "text": "Proventil HFA Inhalation HFA Aerosol Inhaler 90 mcg/actuation"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "f607a091-c180-450a-aad2-10b3816a1331",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26562.58",
+        "value": "2052"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/df81057e-9920-40d0-830c-7f66e16cb7dc",
+        "display": "metoprolol tartrate Oral Tablet 25 mg"
+      },
+      "subject": {
+        "reference": "Patient/b5e4c227-8428-486e-a7a2-8bce70ea9c05",
+        "display": "Maria Hernandez"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-01T00:00:00+01:00",
+        "end": "2013-01-31T00:00:00+01:00"
+      },
+      "dosage": [ {
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "tablet",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "df81057e-9920-40d0-830c-7f66e16cb7dc",
+      "code": {
+        "coding": [ {
+          "code": "453953",
+          "display": "metoprolol tartrate Oral Tablet 25 mg"
+        }, {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866924",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ],
+        "text": "metoprolol tartrate Oral Tablet 25 mg"
+      }
+    }
+  } ]
+}

@@ -1,0 +1,1414 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "27f12cef-350e-4615-9609-ef3b66df0717",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "date": "2014-04-16T11:55:07+02:00",
+      "author": [ {
+        "reference": "Practitioner/c2afea5d-28ac-4e15-8ae9-7f4be8b20178",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/758f7471-8b2d-4fd0-a18c-4133e52360a8",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:07+02:00",
+        "party": {
+          "reference": "Practitioner/758f7471-8b2d-4fd0-a18c-4133e52360a8",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/a8f7b5e8-f4d2-471c-b8d6-206615294ef6",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2009-10-25T10:00:00+01:00",
+          "end": "2010-11-30T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/c213731a-0d76-4dd4-bab5-f628fbde0c1c",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antiasthmatic steroids</td><td>RxNorm</td><td>351136</td><td><span/>Albuterol 0.417 MG/ML Inhalant Solution</td><td>05-09-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>RxNorm</td><td>828930</td><td>50 ACTUAT flunisolide 0.25 MG/ACTUAT Metered Dose Inhaler</td><td/><td/></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>05-09-2010 10:00:00</td><td>Active</td></tr><tr><td>SSRI antidepressants</td><td>RxNorm</td><td>903884</td><td><span/>Fluvoxamine Maleate 100 MG Oral Tablet</td><td>09-25-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/94357a17-850d-4b7e-b053-3013d70927f4",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        }, {
+          "reference": "MedicationStatement/e25f3021-56a9-4c83-9f23-560eece533e1",
+          "display": "Fluvoxamine Maleate 100 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/763c33cf-32b2-4199-ad15-71c538a22eb2",
+          "display": "Albuterol 0.417 MG/ML Inhalant Solution"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Hepatitis B Diagnosis</td><td>SNOMED-CT</td><td>66071002</td><td><span/>Type B viral hepatitis</td><td>10-25-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>B16.9</td><td>Acute hepatitis B without delta-agent and without hepatic coma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>070.30</td><td>Viral hepatitis B without mention of hepatic coma, acute or unspecified, without mention of hepatitis delta</td><td/><td/></tr><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>05-09-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Breast Cancer</td><td>SNOMED-CT</td><td>188161004</td><td><span/>Malignant neoplasm of female breast NOS</td><td>09-14-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>C50</td><td>Malignant neoplasm of breast</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>174.9</td><td>Malignant neoplasm of breast (female), unspecified</td><td/><td/></tr><tr><td>Breast Cancer ER or PR Positive</td><td>SNOMED-CT</td><td>417742002</td><td><span/>Hormone receptor positive tumor</td><td>09-14-2010 10:00:00</td><td>Active</td></tr><tr><td>Breast Cancer Stage IC-IIIC</td><td>SNOMED-CT</td><td>261653007</td><td><span/>Tumor stage T2c</td><td>09-14-2010 10:00:00</td><td>Active</td></tr><tr><td>Depression</td><td>SNOMED-CT</td><td>191615005</td><td><span/>Recurrent major depressive episodes, in full remission</td><td>09-25-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>F33.3</td><td>Major depressive disorder, recurrent, severe with psychotic symptoms</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>296.36</td><td>Major depressive affective disorder, recurrent episode, in full remission</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/7a20d34d-e2c7-4acc-8dca-ddd2a6c61c1a",
+          "display": "Recurrent major depressive episodes, in full remission"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>05-09-2010 10:00:00</td><td>Performed</td></tr><tr><td>Breast Cancer Screening</td><td>CPT</td><td>77057</td><td><span/>Mammogram, screening</td><td>09-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0202</td><td>Screeningmammographydigital</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.31</td><td>Encounter for screening mammogram for malignant neoplasm of breast</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V76.12</td><td>Other screening mammogram</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>24623002</td><td>Screening mammography</td><td/><td/></tr><tr><td>Colonoscopy</td><td>CPT</td><td>45378</td><td><span/>Diagnostic colonoscopy</td><td>09-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0121</td><td>Colon ca scrn not hi rsk ind</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.11</td><td>Encounter for screening for malignant neoplasm of colon</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>45.23</td><td>Colonoscopy</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>174184006</td><td>Diagnostic endoscopic examination on colon</td><td/><td/></tr><tr><td>X-ray Study</td><td>CPT</td><td>76499</td><td><span/>Radiographic procedure</td><td>09-11-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>363680008</td><td>Radiographic imaging procedure (procedure)</td><td/><td/></tr><tr><td>Radiation Therapy</td><td>CPT</td><td>77470</td><td><span/>Special radiation treatment</td><td>09-16-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>108290001</td><td>Radiation oncology AND/OR radiotherapy</td><td/><td/></tr><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>11-30-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>11-30-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/faa9f3d7-1c7a-4c09-a2ba-aa10e8e967f2",
+          "display": "Special radiation treatment"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>05-09-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/4a16436c-40a1-46c6-a484-7924d4fdc48a"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>64</td><td>mm[Hg]</td><td>05-09-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>72</td><td>/min</td><td>05-09-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>120</td><td>mm[Hg]</td><td>05-09-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>21</td><td>kg/m2</td><td>11-30-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>62</td><td>mm[Hg]</td><td>11-30-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>68</td><td>/min</td><td>11-30-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>116</td><td>mm[Hg]</td><td>11-30-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/5bab9d30-7503-4fae-b3c1-3c54f70cb485",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/90199be7-34ff-4095-81a5-9d19c87f3308",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/6f7be25c-8669-4a2b-a8b1-0e61744082f6",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/abda56ec-d519-42d3-9529-fa274a655156",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/c84e07ba-497d-40ab-837e-dec6ce523c9f",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/3b21358b-d05b-47c1-8b3f-a1fe68ed85eb",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/2a287ac0-bdcc-404a-b2c0-b5b2ed43360f",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>05-09-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>09-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>09-11-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>09-14-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>09-17-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Health and Behavior Assessment</td><td>CPT</td><td>96150</td><td><span/>Assess hlth/behave, init</td><td>09-25-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>10-25-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>11-30-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/3a343877-9202-4ff2-93ff-bbdbc8749516",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/a1ffa95e-9c83-4b2b-ab47-031f9ac15ec6",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/46f6cb32-3d22-45f3-adad-297d64fccf69",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/c17075fa-6205-461b-9c5d-43075ef12ca8",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/08effb22-d064-4058-a182-ce8152300e48",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/70eb3d28-d426-40c0-859f-c437a8b00e5d",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/b417aba4-6812-4461-b886-720408206dc5",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/10c73d38-d438-4d7b-9186-3112f304724b",
+          "display": "Assess hlth/behave, init"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Moderate</td><td>Very susceptible</td><td>05-09-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Neomycin</td><td>RxNorm</td><td>866041</td><td><span/>Neomycin Sulfate 500 MG</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>05-09-2010 10:00:00</td><td>Active</td></tr><tr><td>Tetracyclines</td><td>RxNorm</td><td>406524</td><td><span/>Doxycycline 75 MG Enteric Coated Tablet</td><td><span/>Fatal</td><td>Moderately Susceptible</td><td>05-09-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>NDF-RT</td><td>N0000006275</td><td>Tetracycline</td><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/80262c35-c239-473f-8c8e-6cc4ec15e850",
+          "display": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+        }, {
+          "reference": "AllergyIntolerance/92ddde42-0697-4f01-81a2-80ad9ee1a987",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/64c6c4a1-54fb-45df-9651-67055f6c4dd4",
+          "display": "Neomycin + Neomycin Sulfate 500 MG"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1074",
+            "display": "Native American"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Alhambra",
+          "state": "CA",
+          "postalCode": "91801",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Lee",
+        "given": [ "Lori" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(843)558-6567",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1944-05-08",
+      "address": [ {
+        "use": "home",
+        "line": [ "3612 Khale Street" ],
+        "city": "Hemingway",
+        "state": "SC",
+        "postalCode": "29554",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Anaya",
+          "given": [ "Aaron" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(773)254-9019",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "AaronMAnaya@rhyta.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "3527 Oakmound Road" ],
+          "city": "Chicago",
+          "state": "IL",
+          "postalCode": "60609",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/e1ec5a5e-7740-4e21-9753-08a0f2ba9016",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "e1ec5a5e-7740-4e21-9753-08a0f2ba9016",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c2afea5d-28ac-4e15-8ae9-7f4be8b20178",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "758f7471-8b2d-4fd0-a18c-4133e52360a8",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c213731a-0d76-4dd4-bab5-f628fbde0c1c",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "a8f7b5e8-f4d2-471c-b8d6-206615294ef6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "94357a17-850d-4b7e-b053-3013d70927f4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/f593efc1-bd71-476b-915a-02353e12c0aa",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-09T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "f593efc1-bd71-476b-915a-02353e12c0aa",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "e25f3021-56a9-4c83-9f23-560eece533e1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/6fcbc819-3195-4285-b529-550831b06d96",
+        "display": "Fluvoxamine Maleate 100 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-25T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "6fcbc819-3195-4285-b529-550831b06d96",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "903884",
+          "display": "Fluvoxamine Maleate 100 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "763c33cf-32b2-4199-ad15-71c538a22eb2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/94ec06a5-cc3a-4ca1-a9ab-a1c40bb43404",
+        "display": "Albuterol 0.417 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-09T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "94ec06a5-cc3a-4ca1-a9ab-a1c40bb43404",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "351136",
+          "display": "Albuterol 0.417 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "7a20d34d-e2c7-4acc-8dca-ddd2a6c61c1a",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "191615005",
+          "display": "Recurrent major depressive episodes, in full remission"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "F33.3",
+          "display": "Major depressive disorder, recurrent, severe with psychotic symptoms"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "296.36",
+          "display": "Major depressive affective disorder, recurrent episode, in full remission"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "onsetDateTime": "2010-09-25T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "faa9f3d7-1c7a-4c09-a2ba-aa10e8e967f2",
+      "identifier": [ {
+        "use": "official",
+        "value": "e401f340-7be2-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "77470",
+          "display": "Special radiation treatment"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "108290001",
+          "display": "Radiation oncology AND/OR radiotherapy"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "performedPeriod": {
+        "start": "2010-09-16T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4a16436c-40a1-46c6-a484-7924d4fdc48a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-09T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "5bab9d30-7503-4fae-b3c1-3c54f70cb485",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-09T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 120,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "90199be7-34ff-4095-81a5-9d19c87f3308",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-09T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6f7be25c-8669-4a2b-a8b1-0e61744082f6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-09T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 64,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "abda56ec-d519-42d3-9529-fa274a655156",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 68,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c84e07ba-497d-40ab-837e-dec6ce523c9f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 62,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3b21358b-d05b-47c1-8b3f-a1fe68ed85eb",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 116,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2a287ac0-bdcc-404a-b2c0-b5b2ed43360f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 21,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "3a343877-9202-4ff2-93ff-bbdbc8749516",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "period": {
+        "start": "2010-11-30T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "a1ffa95e-9c83-4b2b-ab47-031f9ac15ec6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "period": {
+        "start": "2010-05-09T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/95b60bfe-abc0-4518-9d73-af8ebd1a5c1b",
+        "display": "Asthma"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "95b60bfe-abc0-4518-9d73-af8ebd1a5c1b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "onsetDateTime": "2010-05-09T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "46f6cb32-3d22-45f3-adad-297d64fccf69",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "period": {
+        "start": "2010-09-11T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "c17075fa-6205-461b-9c5d-43075ef12ca8",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "period": {
+        "start": "2010-10-25T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "08effb22-d064-4058-a182-ce8152300e48",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "period": {
+        "start": "2010-09-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "70eb3d28-d426-40c0-859f-c437a8b00e5d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "period": {
+        "start": "2010-09-14T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "188161004",
+          "display": "Breast Cancer"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "417742002",
+          "display": "Breast Cancer ER or PR Positive"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "261653007",
+          "display": "Breast Cancer Stage IC-IIIC"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/95b60bfe-abc0-4518-9d73-af8ebd1a5c1b",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/95b60bfe-abc0-4518-9d73-af8ebd1a5c1b",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/95b60bfe-abc0-4518-9d73-af8ebd1a5c1b",
+        "display": "Asthma"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "b417aba4-6812-4461-b886-720408206dc5",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "period": {
+        "start": "2010-09-17T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "10c73d38-d438-4d7b-9186-3112f304724b",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "96150",
+          "display": "Assess hlth/behave, init"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "period": {
+        "start": "2010-09-25T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "191615005",
+          "display": "Depression"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/95b60bfe-abc0-4518-9d73-af8ebd1a5c1b",
+        "display": "Asthma"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "80262c35-c239-473f-8c8e-6cc4ec15e850",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "406524",
+          "display": "Doxycycline 75 MG Enteric Coated Tablet"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006275",
+          "display": "Tetracycline"
+        } ],
+        "text": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+      },
+      "patient": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "recordedDate": "2010-05-09T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "92ddde42-0697-4f01-81a2-80ad9ee1a987",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "recordedDate": "2010-05-09T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "64c6c4a1-54fb-45df-9651-67055f6c4dd4",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866041",
+          "display": "Neomycin Sulfate 500 MG"
+        } ],
+        "text": "Neomycin + Neomycin Sulfate 500 MG"
+      },
+      "patient": {
+        "reference": "Patient/fda4e7fb-621e-4a48-9d4f-fba5dd83d9e8",
+        "display": "Lori Lee"
+      },
+      "recordedDate": "2010-05-09T10:00:00+02:00"
+    }
+  } ]
+}

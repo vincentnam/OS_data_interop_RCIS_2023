@@ -1,0 +1,1686 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "bd875d34-e6ba-460f-93e2-04b44e7ae0f9",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "date": "2014-04-16T11:55:06+02:00",
+      "author": [ {
+        "reference": "Practitioner/e8ef313e-45dd-441d-b1a4-30e28cb147ec",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/cb54e040-fdb9-449d-bcda-21a982c380f4",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:06+02:00",
+        "party": {
+          "reference": "Practitioner/cb54e040-fdb9-449d-bcda-21a982c380f4",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/ab2278c9-605e-4e9a-afa3-c231e7cc42b0",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-04-01T10:00:00+02:00",
+          "end": "2010-11-20T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/aee5adec-667e-42d6-a309-0fa52cb08a93",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Fatal</td><td>Very susceptible</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td>Codeine</td><td>NDF-RT</td><td>N0000006691</td><td><span/>Codeine</td><td><span/>Mild</td><td>Susceptible</td><td>04-01-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/ce1d8b43-77e7-4c3b-b171-c3dec3cc2b40",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/800f0ffe-f71b-41fa-92d7-55b70be9da7a",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/54cbd6d6-3412-464e-bf04-6ab6e413465e",
+          "display": "Codeine + Codeine"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Heart Failure</td><td>SNOMED-CT</td><td>84114007</td><td><span/>Heart failure</td><td>08-30-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I50.9</td><td>Heart failure, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>428.9</td><td>Heart failure, unspecified</td><td/><td/></tr><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>08-30-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/b9120c37-977f-4f33-871d-26817bc5f2b6",
+          "display": "Heart failure"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td>ACE inhibitor or ARB</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>08-12-2010 10:00:00</td><td>Active</td></tr><tr><td>Beta Blocker Therapy</td><td>RxNorm</td><td>866924</td><td><span/>Metoprolol Tartrate 25 MG Oral Tablet</td><td>08-12-2010 10:00:00</td><td>Active</td></tr><tr><td>ACE inhibitor or ARB</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>11-20-2010 10:00:00</td><td>Active</td></tr><tr><td>Beta Blocker Therapy</td><td>RxNorm</td><td>866924</td><td><span/>Metoprolol Tartrate 25 MG Oral Tablet</td><td>11-20-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/df7f3d9a-d6fc-4d67-a185-c08e8640d609",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/cc769cb8-f37b-4454-983b-7307ab06d993",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/d8a7330e-bddd-49c0-932b-a8539931bb41",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/3fd75d60-7505-4a53-90e4-1e6195770606",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/71179602-4f6a-40f8-837f-d6ca1d5647e9",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        }, {
+          "reference": "MedicationStatement/80b92ddb-a10c-45e8-8be9-bee8e5449593",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>LVF Assessment</td><td>CPT</td><td>93543</td><td><span/>Injection for heart x-rays</td><td>08-12-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>04-01-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>08-12-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>09-27-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>11-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/f570cdc4-af73-4705-8b59-51388c349bf8",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/8cbaaacd-72d3-4839-bb83-ce0356c03657",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/296c02e1-3bc9-49e3-b296-3917d41e640b",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/63ded5bb-8fe1-4d36-9cbd-37a1a9004daf",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/ccc3bb4c-481b-4e08-9dc3-e033d54f8852"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>23.4</td><td>kg/m2</td><td>04-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>74</td><td>mm[Hg]</td><td>04-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>76</td><td>/min</td><td>04-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>128</td><td>mm[Hg]</td><td>04-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>24.1</td><td>kg/m2</td><td>08-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>92</td><td>mm[Hg]</td><td>08-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>78</td><td>/min</td><td>08-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>142</td><td>mm[Hg]</td><td>08-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>24</td><td>kg/m2</td><td>09-27-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>72</td><td>mm[Hg]</td><td>09-27-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>76</td><td>/min</td><td>09-27-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>124</td><td>mm[Hg]</td><td>09-27-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>24.2</td><td>kg/m2</td><td>11-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>74</td><td>mm[Hg]</td><td>11-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>74</td><td>/min</td><td>11-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>11-20-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/efd6db26-f373-41c9-b9c0-6d5133e47744",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/0fe5e9a4-c011-4cb4-b53a-55520bde2fde",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/e67840c7-b24e-4d09-8976-69787f905a31",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/7f882626-40eb-46e5-93e8-4bac6a2eb593",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/0aa1f2e2-8a2b-44e2-8236-f2018cfab71a",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/a3f4601f-fdc9-4bc3-baf9-2b18554027de",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/e43a19fd-6272-47a6-9869-fc8fe4b4a346",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/2aabeaf7-0f16-4b57-adab-0ea3c889839d",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/70a80e30-13d6-45bc-a088-46d702415768",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/bafa10cc-62f0-42df-9d77-1307e69280f9",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/ca5416de-6d6d-4762-93ac-4b82b9ff7213",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/5ac48e19-7c3a-4e39-a384-a0d4803fd2fa",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/70e39c6b-ec5f-4639-948b-8fcd59cb1cf2",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/dac7b909-65ad-457f-b6c5-6d4d948f3a0f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/0c5a46ca-fbd3-4098-8744-00dc58a5fcd7",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/a3b46d32-567c-47fc-8d3e-fee699451552",
+          "display": "BMI"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "191103cb-4d35-4114-bf93-1cca604e649e",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1005",
+            "display": "Anglican"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Huntsville",
+          "state": "AL",
+          "postalCode": "35816",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Owens",
+        "given": [ "Lance" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(816)737-2317",
+        "use": "mobile"
+      } ],
+      "gender": "male",
+      "birthDate": "1971-06-30",
+      "address": [ {
+        "use": "home",
+        "line": [ "395 White Oak Drive" ],
+        "city": "Raytown",
+        "state": "MO",
+        "postalCode": "64133",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Eldridge",
+          "given": [ "Gregory" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(614)355-5150",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "GregoryREldridge@superrito.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "2462 James Martin Circle" ],
+          "city": "Columbus",
+          "state": "OH",
+          "postalCode": "43215",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/24381332-88f4-4128-bb1d-d7828319153a",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "24381332-88f4-4128-bb1d-d7828319153a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e8ef313e-45dd-441d-b1a4-30e28cb147ec",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "cb54e040-fdb9-449d-bcda-21a982c380f4",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "aee5adec-667e-42d6-a309-0fa52cb08a93",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ab2278c9-605e-4e9a-afa3-c231e7cc42b0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "ce1d8b43-77e7-4c3b-b171-c3dec3cc2b40",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "recordedDate": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "800f0ffe-f71b-41fa-92d7-55b70be9da7a",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "recordedDate": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "54cbd6d6-3412-464e-bf04-6ab6e413465e",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006691",
+          "display": "Codeine"
+        } ],
+        "text": "Codeine + Codeine"
+      },
+      "patient": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "recordedDate": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "b9120c37-977f-4f33-871d-26817bc5f2b6",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "84114007",
+          "display": "Heart failure"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I50.9",
+          "display": "Heart failure, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "428.9",
+          "display": "Heart failure, unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "onsetDateTime": "2010-08-30T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "df7f3d9a-d6fc-4d67-a185-c08e8640d609",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/de80c474-0f8f-46f8-9f8d-77b5f7d40138",
+        "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-20T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "de80c474-0f8f-46f8-9f8d-77b5f7d40138",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866924",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "cc769cb8-f37b-4454-983b-7307ab06d993",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/69475e60-c751-49e7-b703-7a3e91109a6a",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "69475e60-c751-49e7-b703-7a3e91109a6a",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "d8a7330e-bddd-49c0-932b-a8539931bb41",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/69475e60-c751-49e7-b703-7a3e91109a6a",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-20T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "3fd75d60-7505-4a53-90e4-1e6195770606",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/de80c474-0f8f-46f8-9f8d-77b5f7d40138",
+        "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "71179602-4f6a-40f8-837f-d6ca1d5647e9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/23d6fb2d-4cb3-42f0-817c-bfe20e481288",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "23d6fb2d-4cb3-42f0-817c-bfe20e481288",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "318142",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "80b92ddb-a10c-45e8-8be9-bee8e5449593",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/e790bef4-583e-4474-8341-4d3bd7512c42",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "e790bef4-583e-4474-8341-4d3bd7512c42",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f570cdc4-af73-4705-8b59-51388c349bf8",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "period": {
+        "start": "2010-08-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8cbaaacd-72d3-4839-bb83-ce0356c03657",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "period": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/f44c4f3e-e062-46f2-b44d-f1a3671092b2",
+        "display": "Asthma"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f44c4f3e-e062-46f2-b44d-f1a3671092b2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "onsetDateTime": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "296c02e1-3bc9-49e3-b296-3917d41e640b",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "period": {
+        "start": "2010-09-27T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "63ded5bb-8fe1-4d36-9cbd-37a1a9004daf",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "period": {
+        "start": "2010-11-20T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ccc3bb4c-481b-4e08-9dc3-e033d54f8852",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "efd6db26-f373-41c9-b9c0-6d5133e47744",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 142,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0fe5e9a4-c011-4cb4-b53a-55520bde2fde",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 24.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e67840c7-b24e-4d09-8976-69787f905a31",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7f882626-40eb-46e5-93e8-4bac6a2eb593",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 92,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0aa1f2e2-8a2b-44e2-8236-f2018cfab71a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-27T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a3f4601f-fdc9-4bc3-baf9-2b18554027de",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-27T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e43a19fd-6272-47a6-9869-fc8fe4b4a346",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-27T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 24,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2aabeaf7-0f16-4b57-adab-0ea3c889839d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-27T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 124,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "70a80e30-13d6-45bc-a088-46d702415768",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-20T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bafa10cc-62f0-42df-9d77-1307e69280f9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-20T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ca5416de-6d6d-4762-93ac-4b82b9ff7213",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-20T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 24.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "5ac48e19-7c3a-4e39-a384-a0d4803fd2fa",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-20T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "70e39c6b-ec5f-4639-948b-8fcd59cb1cf2",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dac7b909-65ad-457f-b6c5-6d4d948f3a0f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 128,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0c5a46ca-fbd3-4098-8744-00dc58a5fcd7",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a3b46d32-567c-47fc-8d3e-fee699451552",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/191103cb-4d35-4114-bf93-1cca604e649e",
+        "display": "Lance Owens"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 23.4,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  } ]
+}

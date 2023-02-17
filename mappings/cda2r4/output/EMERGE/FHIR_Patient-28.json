@@ -1,0 +1,2103 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "f1ae2b41-a7ef-44e6-9669-21720c96a303",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "date": "2014-04-16T11:54:42+02:00",
+      "author": [ {
+        "reference": "Practitioner/2da12778-e1a9-4ab3-bbf1-d8c85a335874",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/a2425731-8460-4911-ae0f-6b5332e55fa9",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:42+02:00",
+        "party": {
+          "reference": "Practitioner/a2425731-8460-4911-ae0f-6b5332e55fa9",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/d29e1ef4-9022-4502-83b9-5d76d4e67f5f",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-02-10T10:00:00+01:00",
+          "end": "2010-12-10T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/a5fed0c2-0f80-4cb0-8948-f49fa74e8f17",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>02-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter ED</td><td>CPT</td><td>99281</td><td><span/>Emergency dept visit</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Nursing Facility</td><td>CPT</td><td>99307</td><td><span/>Nursing fac care, subseq</td><td>04-25-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Nursing Facility</td><td>CPT</td><td>99307</td><td><span/>Nursing fac care, subseq</td><td>08-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>10-16-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>12-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/dc8217cc-7c20-4eb7-90de-9b87f245f4ff",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/1ac13d8d-09c6-4aae-80c5-8b36fa3c97d2",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/eeb2fc0f-379b-4594-bda5-577a5732ff2e",
+          "display": "Nursing fac care, subseq"
+        }, {
+          "reference": "Encounter/a5255660-e723-43b3-b02a-e492e7fe0cb3",
+          "display": "Emergency dept visit"
+        }, {
+          "reference": "Encounter/7782c8b3-f7d9-49cc-9a57-7eafdb8231f5",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/0d745fe2-13ab-4b84-aaff-df5d607b6a8f",
+          "display": "Nursing fac care, subseq"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antihypertensive combinations</td><td>RxNorm</td><td>858828</td><td><span/>Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Antihypertensive combinations</td><td>RxNorm</td><td>858828</td><td><span/>Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet</td><td>04-25-2010 10:00:00</td><td>Active</td></tr><tr><td>Insulin</td><td>RxNorm</td><td>847207</td><td><span/>3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe</td><td>04-25-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/d6c63159-7f6b-4aa4-9792-98eeb506dfe9",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/3c9f36bd-94dc-44a9-961a-485c12231b0a",
+          "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+        }, {
+          "reference": "MedicationStatement/be664ec0-7371-4dba-989a-d69288da3605",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Eye Exam</td><td>CPT</td><td>92012</td><td><span/>Eye exam established pat</td><td>04-25-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S0621</td><td>Routine ophthalmological exa</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>95.03</td><td>Extended ophthalmologic work-up</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>36228007</td><td>Ophthalmic examination and evaluation</td><td/><td/></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>04-25-2010 10:00:00</td><td>Performed</td></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>08-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>Colonoscopy</td><td>CPT</td><td>45378</td><td><span/>Diagnostic colonoscopy</td><td>09-23-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0121</td><td>Colon ca scrn not hi rsk ind</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.11</td><td>Encounter for screening for malignant neoplasm of colon</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>45.23</td><td>Colonoscopy</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>174184006</td><td>Diagnostic endoscopic examination on colon</td><td/><td/></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>10-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>12-10-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>02-10-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/9c07d26a-7cd1-4265-8272-95dd2234e347"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>7.2</td><td>%</td><td>4-5.6%</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>6.5</td><td>%</td><td>4-5.6%</td><td>08-16-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>6.3</td><td>%</td><td>4-5.6%</td><td>12-10-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>51</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>12-10-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>81.4</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>12-10-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>156</td><td>mg/dL</td><td>125-200 mg/dL</td><td>12-10-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>118</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>12-10-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/bd0fc472-ff84-4800-945f-585899857744",
+          "display": "Blood Chemistry"
+        }, {
+          "reference": "DiagnosticReport/4ded462c-9260-47eb-91f6-4c2f4ea3892b",
+          "display": "Lipid Panel"
+        }, {
+          "reference": "DiagnosticReport/c99fbab2-61e7-4dec-b7df-76984cc8f1de",
+          "display": "Blood Chemistry"
+        }, {
+          "reference": "DiagnosticReport/3c8ae559-96a1-42cd-9357-9665cc1e4340",
+          "display": "Blood Chemistry"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>96</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>150</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>30.4</td><td>kg/m2</td><td>04-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>90</td><td>mm[Hg]</td><td>04-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>140</td><td>mm[Hg]</td><td>04-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>88</td><td>mm[Hg]</td><td>08-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>138</td><td>mm[Hg]</td><td>08-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>86</td><td>mm[Hg]</td><td>10-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>136</td><td>mm[Hg]</td><td>10-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>30.1</td><td>kg/m2</td><td>12-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>88</td><td>mm[Hg]</td><td>12-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>138</td><td>mm[Hg]</td><td>12-10-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/b4672706-bf5b-4228-bf17-9024790e2b31",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/e3ebede6-69a9-47a5-81e6-bcb0b3108b1d",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/1481da88-83d1-4496-ba4a-8011092722eb",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/a235af57-9a58-4b02-b1e0-09a97f225756",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/7b348875-f513-4b8d-a640-90df80db59ab",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/ed310cfd-a685-448e-a9d6-7db4e283f4cc",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/502a8620-2795-4482-99d5-6a2a321e6950",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/f5050dc3-b805-434c-a590-f69f7023810d",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/44152534-6937-4fff-ac31-7fa56e31cf62",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/15b65d71-5b8f-402c-9689-fe598348274d",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/461cd656-4877-4f4c-8d12-0be87ecef11b",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/0c92826d-dc32-42ad-a1dd-6d0d45f8f085",
+          "display": "BP Systolic"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Severe</td><td>Very susceptible</td><td>02-10-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Fatal</td><td>Moderately Susceptible</td><td>02-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>02-10-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/12b63d1a-36a0-4eb1-9d15-7a4a595e8d3d",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/7a2d885e-a8a4-4bfd-95ab-9e63d84b561f",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/a43513be-79a7-4195-9380-e51b7f0a1a0c",
+          "display": "Penicillin V + Penicillin V"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diabetes</td><td>SNOMED-CT</td><td>44054006</td><td><span/>Diabetes mellitus type 2</td><td>04-25-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>E11.9</td><td>Type 2 diabetes mellitus without complications</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>250.00</td><td>Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled</td><td/><td/></tr><tr><td>Diabetic Retinopathy</td><td>SNOMED-CT</td><td>312904009</td><td><span/>Moderate nonproliferative diabetic retinopathy</td><td>04-25-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>E13.33</td><td>Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>362.05</td><td>Moderate nonproliferative diabetic retinopathy</td><td/><td/></tr><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>04-25-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/e86a563f-1cde-4f30-a823-75a104f2a924",
+          "display": "Essential hypertension"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1059",
+            "display": "Zen Buddhism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Norfolk",
+          "state": "VA",
+          "postalCode": "23508",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Rivera",
+        "given": [ "Lucille" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(206)227-6571",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1954-09-15",
+      "address": [ {
+        "use": "home",
+        "line": [ "1863 Wright Court" ],
+        "city": "Seattle",
+        "state": "WA",
+        "postalCode": "98101",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Lemmons",
+          "given": [ "Andrew" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(503)692-3293",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "AndrewMLemmons@jourrapide.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "3766 Illinois Avenue" ],
+          "city": "Tualatin",
+          "state": "OR",
+          "postalCode": "97062",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/f0fba435-e003-4dfc-bf37-4790c4e0e02b",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f0fba435-e003-4dfc-bf37-4790c4e0e02b",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "2da12778-e1a9-4ab3-bbf1-d8c85a335874",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a2425731-8460-4911-ae0f-6b5332e55fa9",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a5fed0c2-0f80-4cb0-8948-f49fa74e8f17",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "d29e1ef4-9022-4502-83b9-5d76d4e67f5f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "dc8217cc-7c20-4eb7-90de-9b87f245f4ff",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "period": {
+        "start": "2010-10-16T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "1ac13d8d-09c6-4aae-80c5-8b36fa3c97d2",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "period": {
+        "start": "2010-12-10T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "eeb2fc0f-379b-4594-bda5-577a5732ff2e",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99307",
+          "display": "Nursing fac care, subseq"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "period": {
+        "start": "2010-04-25T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "312904009",
+          "display": "Diabetic Retinopathy"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/9da79146-2424-4880-836d-2e2f1a7ad9c7",
+        "display": "Diabetes"
+      }, {
+        "reference": "Condition/82520a99-77fc-40a5-a8b2-7de2ef3fc789",
+        "display": "Diabetic Retinopathy"
+      }, {
+        "reference": "Condition/68015f15-1f4d-4d03-8114-4097b068ad28",
+        "display": "Hypertension"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "9da79146-2424-4880-836d-2e2f1a7ad9c7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "E11.9",
+          "display": "Type 2 diabetes mellitus without complications"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "250.00",
+          "display": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "onsetDateTime": "2010-04-25T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "82520a99-77fc-40a5-a8b2-7de2ef3fc789",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "312904009",
+          "display": "Diabetic Retinopathy"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "E13.33",
+          "display": "Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "362.05",
+          "display": "Moderate nonproliferative diabetic retinopathy"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "onsetDateTime": "2010-04-25T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "68015f15-1f4d-4d03-8114-4097b068ad28",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "onsetDateTime": "2010-04-25T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "a5255660-e723-43b3-b02a-e492e7fe0cb3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99281",
+          "display": "Emergency dept visit"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7782c8b3-f7d9-49cc-9a57-7eafdb8231f5",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "period": {
+        "start": "2010-02-10T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "0d745fe2-13ab-4b84-aaff-df5d607b6a8f",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99307",
+          "display": "Nursing fac care, subseq"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "period": {
+        "start": "2010-08-16T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "d6c63159-7f6b-4aa4-9792-98eeb506dfe9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/9886e35a-6dc9-4902-bdbb-064ec7ccf0ec",
+        "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "9886e35a-6dc9-4902-bdbb-064ec7ccf0ec",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "858828",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "3c9f36bd-94dc-44a9-961a-485c12231b0a",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/0736bfb2-d8fa-431b-96e5-7ce4bcd8dafa",
+        "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-25T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "0736bfb2-d8fa-431b-96e5-7ce4bcd8dafa",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "847207",
+          "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "be664ec0-7371-4dba-989a-d69288da3605",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/9886e35a-6dc9-4902-bdbb-064ec7ccf0ec",
+        "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-25T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9c07d26a-7cd1-4265-8272-95dd2234e347",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-02-10T10:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "bd0fc472-ff84-4800-945f-585899857744",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "result": [ {
+        "reference": "Observation/b80b2941-22bb-443e-b410-615cd892b1fd",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b80b2941-22bb-443e-b410-615cd892b1fd",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 6.5,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "4ded462c-9260-47eb-91f6-4c2f4ea3892b",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "result": [ {
+        "reference": "Observation/cdb44ce9-13d0-4d5a-a242-3ba73ad6eedf",
+        "display": "HDLc SerPl-sCnc"
+      }, {
+        "reference": "Observation/567007bc-f3a2-4ce7-99a1-027d222d445c",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/f00d29a6-9738-4e2d-be76-ea85173d5c52",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/e61c3943-cf22-4116-9060-413d1a4992bc",
+        "display": "Cholest SerPl-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "cdb44ce9-13d0-4d5a-a242-3ba73ad6eedf",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-10T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 51,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "567007bc-f3a2-4ce7-99a1-027d222d445c",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-10T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 81.4,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f00d29a6-9738-4e2d-be76-ea85173d5c52",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-10T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 118,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e61c3943-cf22-4116-9060-413d1a4992bc",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-10T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 156,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "c99fbab2-61e7-4dec-b7df-76984cc8f1de",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "result": [ {
+        "reference": "Observation/948d39e7-8c5f-4036-a5e7-fcca45caf8ba",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "948d39e7-8c5f-4036-a5e7-fcca45caf8ba",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-10T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 6.3,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "3c8ae559-96a1-42cd-9357-9665cc1e4340",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "result": [ {
+        "reference": "Observation/6783217f-3804-466e-988b-c7c8a18c9038",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6783217f-3804-466e-988b-c7c8a18c9038",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 7.2,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b4672706-bf5b-4228-bf17-9024790e2b31",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 150,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3ebede6-69a9-47a5-81e6-bcb0b3108b1d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 96,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1481da88-83d1-4496-ba4a-8011092722eb",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 136,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a235af57-9a58-4b02-b1e0-09a97f225756",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 86,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7b348875-f513-4b8d-a640-90df80db59ab",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 138,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ed310cfd-a685-448e-a9d6-7db4e283f4cc",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 88,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "502a8620-2795-4482-99d5-6a2a321e6950",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 30.4,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f5050dc3-b805-434c-a590-f69f7023810d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "44152534-6937-4fff-ac31-7fa56e31cf62",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 140,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "15b65d71-5b8f-402c-9689-fe598348274d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-10T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 88,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "461cd656-4877-4f4c-8d12-0be87ecef11b",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-10T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 30.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0c92826d-dc32-42ad-a1dd-6d0d45f8f085",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-10T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 138,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "12b63d1a-36a0-4eb1-9d15-7a4a595e8d3d",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "recordedDate": "2010-02-10T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "7a2d885e-a8a4-4bfd-95ab-9e63d84b561f",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "recordedDate": "2010-02-10T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "a43513be-79a7-4195-9380-e51b7f0a1a0c",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "recordedDate": "2010-02-10T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "e86a563f-1cde-4f30-a823-75a104f2a924",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Essential hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0b1e6bfb-2db9-4b28-9125-23d7bfc06478",
+        "display": "Lucille Rivera"
+      },
+      "onsetDateTime": "2010-04-25T10:00:00+02:00"
+    }
+  } ]
+}

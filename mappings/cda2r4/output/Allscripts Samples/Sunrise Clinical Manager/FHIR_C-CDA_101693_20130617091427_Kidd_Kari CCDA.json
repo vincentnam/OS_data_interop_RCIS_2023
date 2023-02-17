@@ -1,0 +1,1878 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "4af541f7-cebb-47a7-a4b8-25d5b0ad355c",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.1",
+        "value": "0"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18842-5",
+          "display": "DISCHARGE SUMMARIZATION NOTE"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "date": "2013-06-17T09:14:04-04:00",
+      "author": [ {
+        "reference": "Practitioner/985b6907-d5e9-4692-9285-73f8ceea9bc4",
+        "display": "George Dixon"
+      }, {
+        "reference": "Device/4b0ce769-a17e-4f25-87ce-7205d18f244c"
+      } ],
+      "title": "Discharge Summary",
+      "confidentiality": "N",
+      "custodian": {
+        "reference": "Organization/471fbb16-c395-48ae-9eb9-d222c3d76217",
+        "display": "Family Practice Clinic S2V"
+      },
+      "event": [ {
+        "period": {
+          "start": "2011-03-12T10:32:00+01:00",
+          "end": "2011-03-12T13:32:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/b6bee4c0-516f-4f69-a761-2f11da86af47",
+          "display": "Karen Kidder"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Plan of Care",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of Care"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <ul>              <caption>Instructions</caption>              <li>                <span>                  <span>resources and instructions provided during visit</span>                </span>              </li>            </ul>            <ul>              <caption>Planned Acts</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Asthma Management</span>                          </span>                        </span>                      </td>                      <td/>                      <td>                        <span>                          <span>Intent</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Observations</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Plan Of Care Entry excluded/not available</span>                          </span>                        </span>                      </td>                      <td/>                      <td>                        <span>                          <span>Goal</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/cd20d4a4-b22c-40f1-91ea-2df63cbb8f6a"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <ul>              <caption>Smoking Status</caption>              <li>                <span>Former smoker</span>              </li>              <li>                <span>Unknown if ever smoked</span>              </li>              <li>                <span>Never smoker</span>              </li>            </ul>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/aaca99f1-2597-42d4-b0a3-d36d5f1d93ea",
+          "display": "Assertion"
+        }, {
+          "reference": "Observation/c10e2695-65ff-430e-ae6e-1dee871e1d22",
+          "display": "Assertion"
+        }, {
+          "reference": "Observation/a826d551-a58f-47a5-acb2-5ac7b7ab9de2",
+          "display": "Assertion"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of medication use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Name</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>oseltamivir 30 mg oral capsule</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>1 cap(s) orally every 12 hours until all consumed</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Quantity: </span>                                <span>                                  <span>0</span>                                </span>                              </td>                              <td>                                <span> Refills: </span>                                <span>                                  <span>0</span>                                </span>                              </td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>                        </span>                      </span>                    </span>                  </td>                  <td/>                  <td>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Started </span>13-May-2013</td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <span/>                      <span>Active</span>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Proventil HFA CFC free 90 mcg/inh inhalation aerosol</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>2 puff(s) inhaled 4 times a day, As Needed for wheezing</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Quantity: </span>                                <span>                                  <span>0</span>                                </span>                              </td>                              <td>                                <span> Refills: </span>                                <span>                                  <span>0</span>                                </span>                              </td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>                        </span>                      </span>                    </span>                  </td>                  <td/>                  <td>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Started </span>13-Apr-2011</td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <span/>                      <span>Active</span>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem List"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Name</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>Bacteriuria</span>                    </span>                    <span> (791.9) </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td/>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Asthma</span>                    </span>                    <span> (493.90, J45.909) </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td>                    <span>                      <span>Onset<span>:</span></span>                      <span>12-Mar-2011</span>                    </span>                  </td>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Staggering gait</span>                    </span>                    <span> (781.2, R26.0) </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td/>                  <td>                    <span>                      <span> Comments: </span>                      <span>Staggering gait</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Asthma</span>                    </span>                    <span> (493.90, J45.909) </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td/>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Flu-like symptoms</span>                    </span>                    <span> (487.1, J11.1) </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td/>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Flu-like symptoms</span>                    </span>                    <span> (487.1, J11.1) </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td>                    <span>                      <span>Onset<span>:</span></span>                      <span>13-May-2013</span>                    </span>                  </td>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/b6507214-bb46-437a-a7e4-8a52c083c69f",
+          "display": "Flu-like symptoms"
+        }, {
+          "reference": "Condition/7400c579-fffa-4997-ab69-c3659e6c38a5",
+          "display": "Flu-like symptoms"
+        }, {
+          "reference": "Condition/394cce31-c76d-4142-ad9d-c85c8ffb85de",
+          "display": "Staggering gait"
+        }, {
+          "reference": "Condition/98a5e6d7-ed41-42ba-a017-f05a82de2908",
+          "display": "Asthma"
+        }, {
+          "reference": "Condition/95f7f970-cd14-48ad-bf71-e8949208d6c2",
+          "display": "Asthma"
+        }, {
+          "reference": "Condition/60801287-817e-41fe-968c-7e96db637a99",
+          "display": "Bacteriuria"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "Encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <tbody>                <tr>                  <td>                    <span>                      <span>Outpatient</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>Encounter Diagnosis: </span>                      <span>Flu-like symptoms</span>                      <span>, </span>                      <span>Asthma</span>                      <span>, </span>                      <span>Flu-like symptoms</span>                    </span>                    <span>                      <span>                      </span>                      <span>                      </span>                      <span>                      </span>                      <span>                        <span>Active</span>                      </span>                      <span>                        <span>Active</span>                      </span>                      <span>                        <span>Active</span>                      </span>                    </span>                    <span>                      <span>Family Practice Clinic S2V</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span> Kidder</span>, Karen </span>                  </td>                  <td>                    <span>                      <span>13-May-2013</span>                      <span> to </span>                      <span>1-Jan-0001</span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Outpatient</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>Encounter Reason: </span>                      <span>Admitting Dx added manually</span>                    </span>                    <span>                      <span>Encounter Diagnosis: </span>                      <span>Asthma</span>                      <span>, </span>                      <span>Staggering gait</span>                      <span>, </span>                      <span>Prickly heat</span>                      <span>, </span>                      <span>Schizophreniform disorder in remission</span>                    </span>                    <span>                      <span>                      </span>                      <span>Staggering gait</span>                      <span>Copy From Visit ID: 1000002159 Health Issue Type: Principal Dx</span>                      <span>                      </span>                      <span>                        <span>Active</span>                      </span>                      <span>                        <span>Active</span>                      </span>                      <span>                        <span>Active</span>                      </span>                      <span>                        <span>Inactive</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span> Kidder</span>, Karen </span>                  </td>                  <td>                    <span>                      <span>On </span>                      <span>12-Mar-2011</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>10:32</span>                      <span> to </span>                      <span>13:32</span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Outpatient</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>Encounter Diagnosis: </span>                      <span>Asthma</span>                      <span>, </span>                      <span>App adhesion barrier sub</span>                    </span>                    <span>                      <span>                      </span>                      <span>                      </span>                      <span>                        <span>Active</span>                      </span>                      <span>                        <span>Active</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span> Kidder</span>, Karen </span>                  </td>                  <td>                    <span>                      <span>On </span>                      <span>15-Apr-2010</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>10:13</span>                      <span> to </span>                      <span>13:14</span>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/b90c85ca-3f9a-4dd8-bff5-c161d4fbca37",
+          "display": "Outpatient"
+        }, {
+          "reference": "Encounter/6379aea2-34c5-48d5-9972-e7eb2e48d935",
+          "display": "Outpatient"
+        }, {
+          "reference": "Encounter/16ab5a4e-5a33-47a2-9c58-7f5098323d68",
+          "display": "Outpatient"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests and/or laboratory data"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Date</th>                  <th>Description</th>                  <th>Value</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>Resulted on:</span>                    </span>                    <span>                      <br/>                    </span>                    <span>13-May-2013 15:43</span>                  </td>                  <td>                    <span>Hemoglobin A, Serum</span>                  </td>                  <td>                    <span>16  g/dl</span>                  </td>                  <td>                    <span>Range: 13.5 - 18.0 g/dl</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td/>                  <td/>                  <td/>                </tr>              </tbody>              <tbody>                <tr>                  <td>                    <span>                      <br/>                    </span>                    <span>15:34</span>                  </td>                  <td>                    <span>Hematocrit, Whole Blood</span>                  </td>                  <td>                    <span>44  %</span>                  </td>                  <td>                    <span>Range: 41 - 53 %</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td/>                  <td/>                  <td/>                </tr>              </tbody>              <tbody>                <tr>                  <td>                    <span>                      <br/>                    </span>                    <span>15:33</span>                  </td>                  <td>                    <span>WBC Count</span>                  </td>                  <td>                    <span>6  ul</span>                  </td>                  <td>                    <span>Range: 4.3 - 10.8 ul</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td/>                  <td/>                  <td/>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/d549ee14-9b40-418c-bb52-2bb2fd492269",
+          "display": "Hemoglobin A, Serum"
+        }, {
+          "reference": "DiagnosticReport/f77eb11a-c682-47c2-aa7b-71b1429d0c72",
+          "display": "Hematocrit, Whole Blood"
+        }, {
+          "reference": "DiagnosticReport/6bac4fb2-ef1e-494a-bf7b-101595d01e1e",
+          "display": "WBC Count"
+        } ]
+      }, {
+        "title": "Allergies and Adverse Reactions",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Name</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>penicillin G benzathine</span>                    </span>                  </td>                  <td>                    <span/>                  </td>                  <td>                    <span>                      <span>                        <span>Reaction: </span>                        <span>Hives</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>Status: </span>                      <span>Active</span>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/21e844cb-7ad4-4985-acc8-6e4f89ed879b",
+          "display": "penicillin G benzathine"
+        } ]
+      }, {
+        "title": "Immunization",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "Immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Name</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>MMR</span>                    </span>                    <span>                      <br/>                    </span>                    <span>Lot #: </span>                    <span>ZT74378B</span>                  </td>                  <td>                    <span>                      <span>Administered on<span>:</span></span>                      <span>12-Mar-2011</span>                    </span>                  </td>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/1f3396b9-1ec5-4ac3-b9aa-62230a4e7132",
+          "display": "MMR"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "History of Procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Procedure</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>Procedure excluded/not available</span>                  </td>                  <td/>                  <td/>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/8778b9c8-3de0-4a47-8c85-437ca2e79c38"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a6584520-f700-4050-a16e-094c3e97852a",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610",
+        "value": "101693"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Kidd",
+        "given": [ "Kari", "CCDA" ]
+      } ],
+      "gender": "female",
+      "birthDate": "2000-10-22",
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/471fbb16-c395-48ae-9eb9-d222c3d76217",
+        "display": "Family Practice Clinic S2V"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "471fbb16-c395-48ae-9eb9-d222c3d76217",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610",
+        "value": "100610"
+      } ],
+      "name": "Family Practice Clinic S2V",
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)777-0"
+      } ],
+      "address": [ {
+        "line": [ "1230 West Boulevard", "Building 1" ],
+        "city": "Harrisburg",
+        "postalCode": "17102",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "985b6907-d5e9-4692-9285-73f8ceea9bc4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "1177234592"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610",
+        "value": "90501190"
+      } ],
+      "name": [ {
+        "family": "Dixon",
+        "given": [ "George" ]
+      } ],
+      "telecom": [ {
+        "system": "email",
+        "value": "gddd@gmail.com"
+      } ],
+      "address": [ {
+        "line": [ "545 CapeMay" ],
+        "city": "Philadelphia"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Device",
+      "id": "4b0ce769-a17e-4f25-87ce-7205d18f244c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.3.3",
+        "value": "100610"
+      } ],
+      "manufacturer": "Sunrise Clinical Manager ",
+      "type": {
+        "coding": [ {
+          "display": "Sunrise Clinical Manager "
+        } ]
+      },
+      "version": [ {
+        "value": "Sunrise Clinical Manager ; Transform 4.1.1.17"
+      } ],
+      "owner": {
+        "reference": "Organization/471fbb16-c395-48ae-9eb9-d222c3d76217"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "b6bee4c0-516f-4f69-a761-2f11da86af47",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "2097459947"
+      } ],
+      "name": [ {
+        "family": "Kidder",
+        "given": [ "Karen" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-1046",
+        "use": "work"
+      }, {
+        "system": "email",
+        "value": "Karen.Kidder@direct.medalliesdirect.com"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1044 Healthcare Dr" ],
+        "city": "Portland",
+        "postalCode": "97005-1298",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "cd20d4a4-b22c-40f1-91ea-2df63cbb8f6a",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <ul>              <caption>Instructions</caption>              <li>                <span>                  <span>resources and instructions provided during visit</span>                </span>              </li>            </ul>            <ul>              <caption>Planned Acts</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Asthma Management</span>                          </span>                        </span>                      </td>                      <td/>                      <td>                        <span>                          <span>Intent</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Observations</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Plan Of Care Entry excluded/not available</span>                          </span>                        </span>                      </td>                      <td/>                      <td>                        <span>                          <span>Goal</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>          </div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "Plan of Care",
+      "description": "<div>            <ul>              <caption>Instructions</caption>              <li>                <span>                  <span>resources and instructions provided during visit</span>                </span>              </li>            </ul>            <ul>              <caption>Planned Acts</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Asthma Management</span>                          </span>                        </span>                      </td>                      <td></td>                      <td>                        <span>                          <span>Intent</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Observations</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Plan Of Care Entry excluded/not available</span>                          </span>                        </span>                      </td>                      <td></td>                      <td>                        <span>                          <span>Goal</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>          </div>",
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "activity": [ {
+        "reference": {
+          "reference": "ServiceRequest/4971c449-a9a5-4359-a37d-3efa1e5621fc",
+          "display": "Asthma Management"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "id": "4971c449-a9a5-4359-a37d-3efa1e5621fc",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Asthma Management</div>"
+      },
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.13.1",
+        "value": "INT"
+      } ],
+      "status": "active",
+      "intent": "plan",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "406162001",
+          "display": "Asthma Management"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aaca99f1-2597-42d4-b0a3-d36d5f1d93ea",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION",
+          "display": "Assertion"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c10e2695-65ff-430e-ae6e-1dee871e1d22",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION",
+          "display": "Assertion"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "8517006",
+          "display": "Former smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a826d551-a58f-47a5-acb2-5ac7b7ab9de2",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION",
+          "display": "Assertion"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266927001",
+          "display": "Unknown if ever smoked"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "b6507214-bb46-437a-a7e4-8a52c083c69f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "830000500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "95891005",
+          "display": "Flu-like symptoms"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "487.1",
+          "display": "Flu-like symptoms"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J11.1",
+          "display": "Flu-like symptoms"
+        } ],
+        "text": "Flu-like symptoms"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "onsetDateTime": "2013-05-13",
+      "recordedDate": "2013-05-21T13:01:13+02:00",
+      "asserter": {
+        "reference": "Practitioner/e3661ba6-5def-4736-8a6e-c3177b1165bf"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e3661ba6-5def-4736-8a6e-c3177b1165bf"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "7400c579-fffa-4997-ab69-c3659e6c38a5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "829900500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "95891005",
+          "display": "Flu-like symptoms"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "487.1",
+          "display": "Flu-like symptoms"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J11.1",
+          "display": "Flu-like symptoms"
+        } ],
+        "text": "Flu-like symptoms"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-05-21T13:01:09+02:00",
+      "asserter": {
+        "reference": "Practitioner/50f67a4e-4b70-4d6f-bf5c-c856786c4560"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "50f67a4e-4b70-4d6f-bf5c-c856786c4560"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "394cce31-c76d-4142-ad9d-c85c8ffb85de",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "962200500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "78691002",
+          "display": "Staggering gait"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "781.2",
+          "display": "Staggering gait"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "R26.0",
+          "display": "Staggering gait"
+        } ],
+        "text": "Staggering gait"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-06-10T17:53:00+02:00",
+      "asserter": {
+        "reference": "Practitioner/714f9913-74bc-4738-a9bf-9cb61e11bbff"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "714f9913-74bc-4738-a9bf-9cb61e11bbff"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "98a5e6d7-ed41-42ba-a017-f05a82de2908",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "829800500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.90",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45.909",
+          "display": "Asthma"
+        } ],
+        "text": "Asthma"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-05-21T13:01:03+02:00",
+      "asserter": {
+        "reference": "Practitioner/9671bca0-b94d-4e5e-8850-9bd7f4334cf7"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "9671bca0-b94d-4e5e-8850-9bd7f4334cf7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "95f7f970-cd14-48ad-bf71-e8949208d6c2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "735700500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.90",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45.909",
+          "display": "Asthma"
+        } ],
+        "text": "Asthma"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "onsetDateTime": "2011-03-12",
+      "recordedDate": "2013-05-13T10:35:03+02:00",
+      "asserter": {
+        "reference": "Practitioner/b0644537-4c95-47da-a663-8a212c355588"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "b0644537-4c95-47da-a663-8a212c355588"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "60801287-817e-41fe-968c-7e96db637a99",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "871400500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "61373006",
+          "display": "Urinary tract infection, site not specified"
+        }, {
+          "system": "urn:oid:1.3.6.1.4.1.22812.18.9.2",
+          "code": "N39.0",
+          "display": "Urinary tract infection, site not specified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "791.9",
+          "display": "Urinary tract infection, site not specified"
+        } ],
+        "text": "Bacteriuria"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-05-28T14:29:30+02:00",
+      "asserter": {
+        "reference": "Practitioner/92858614-6e48-477a-bb4d-403016f1ddf0"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "92858614-6e48-477a-bb4d-403016f1ddf0"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "b90c85ca-3f9a-4dd8-bff5-c161d4fbca37",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.3.4",
+        "value": "209600270"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4"
+        } ],
+        "text": "Outpatient"
+      } ],
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2011-03-12T10:32:00+01:00",
+          "end": "2011-03-12T13:32:00+01:00"
+        },
+        "individual": {
+          "reference": "Practitioner/b6bee4c0-516f-4f69-a761-2f11da86af47",
+          "display": "Karen Kidder"
+        }
+      } ],
+      "period": {
+        "start": "2011-03-12T10:32:00+01:00",
+        "end": "2011-03-12T13:32:00+01:00"
+      },
+      "reasonReference": [ {
+        "reference": "Condition/8da8aeb9-4aa8-4b0d-9baa-88a023edb496"
+      } ],
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/4302e784-e448-4093-bfe5-7fe43c2d6fd3",
+          "display": "Schizophreniform disorder in remission"
+        }
+      }, {
+        "condition": {
+          "reference": "Condition/394cce31-c76d-4142-ad9d-c85c8ffb85de",
+          "display": "Staggering gait"
+        }
+      }, {
+        "condition": {
+          "reference": "Condition/95f7f970-cd14-48ad-bf71-e8949208d6c2",
+          "display": "Asthma"
+        }
+      }, {
+        "condition": {
+          "reference": "Condition/f1801b81-1cb8-4174-b4b6-5ee142ba0551",
+          "display": "Prickly heat"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/a6738466-a98c-452a-953e-35c6278a7c82"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "8da8aeb9-4aa8-4b0d-9baa-88a023edb496",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.3",
+        "value": "963100500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "onsetDateTime": "2011-03-12T10:32:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "4302e784-e448-4093-bfe5-7fe43c2d6fd3",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "964200500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "text": "Schizophreniform disorder in remission"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-06-11T02:42:56+02:00",
+      "asserter": {
+        "reference": "Practitioner/20bf5f6a-279a-4b39-878d-55060b2a3ed0"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "20bf5f6a-279a-4b39-878d-55060b2a3ed0"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f1801b81-1cb8-4174-b4b6-5ee142ba0551",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "968400500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "text": "Prickly heat"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-06-11T02:53:13+02:00",
+      "asserter": {
+        "reference": "Practitioner/d1880f7f-c6da-476b-a9d7-e3bc519ca338"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "d1880f7f-c6da-476b-a9d7-e3bc519ca338"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "a6738466-a98c-452a-953e-35c6278a7c82"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "6379aea2-34c5-48d5-9972-e7eb2e48d935",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.3.4",
+        "value": "209500270"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4"
+        } ],
+        "text": "Outpatient"
+      } ],
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2010-04-15T10:13:00+02:00",
+          "end": "2010-04-15T13:14:00+02:00"
+        },
+        "individual": {
+          "reference": "Practitioner/b6bee4c0-516f-4f69-a761-2f11da86af47",
+          "display": "Karen Kidder"
+        }
+      } ],
+      "period": {
+        "start": "2010-04-15T10:13:00+02:00",
+        "end": "2010-04-15T13:14:00+02:00"
+      },
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/0790778c-4c25-46b9-9211-b70b71f6d23d",
+          "display": "Asthma"
+        }
+      }, {
+        "condition": {
+          "reference": "Condition/bea9e314-9fed-4500-b8cf-aa07501ed617",
+          "display": "App adhesion barrier sub"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/c845b82d-cda3-4c67-b7d6-6cd29f3b643c"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "0790778c-4c25-46b9-9211-b70b71f6d23d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "735600500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "text": "Asthma"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-05-13T10:25:19+02:00",
+      "asserter": {
+        "reference": "Practitioner/b117cb37-e838-4bd3-84ad-919cef4fc7fe"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "b117cb37-e838-4bd3-84ad-919cef4fc7fe"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "bea9e314-9fed-4500-b8cf-aa07501ed617",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "870300500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "text": "App adhesion barrier sub"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-05-28T14:19:59+02:00",
+      "asserter": {
+        "reference": "Practitioner/e0d1f386-941f-4e47-b03c-44d433706dae"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e0d1f386-941f-4e47-b03c-44d433706dae"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "c845b82d-cda3-4c67-b7d6-6cd29f3b643c"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "16ab5a4e-5a33-47a2-9c58-7f5098323d68",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.3.4",
+        "value": "210300270"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4"
+        } ],
+        "text": "Outpatient"
+      } ],
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2013-05-13T15:01:00+02:00",
+          "end": "0001-01-01T00:00:00+01:00"
+        },
+        "individual": {
+          "reference": "Practitioner/b6bee4c0-516f-4f69-a761-2f11da86af47",
+          "display": "Karen Kidder"
+        }
+      } ],
+      "period": {
+        "start": "2013-05-13T15:01:00+02:00",
+        "end": "0001-01-01T00:00:00+01:00"
+      },
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/014cf0ee-fc57-4afa-a16d-42e8a75e95cd",
+          "display": "Asthma"
+        }
+      }, {
+        "condition": {
+          "reference": "Condition/40fed9bc-c70d-4768-83e5-f4eb7b7b7299",
+          "display": "Flu-like symptoms"
+        }
+      }, {
+        "condition": {
+          "reference": "Condition/2b99aa2e-090a-4ab7-a1d2-fa5405307c61",
+          "display": "Flu-like symptoms"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/58158b81-6ffc-43a8-a8f8-37fc1a943253",
+          "display": "Family Practice Clinic S2V"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "014cf0ee-fc57-4afa-a16d-42e8a75e95cd",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "739700500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "text": "Asthma"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-05-13T15:05:16+02:00",
+      "asserter": {
+        "reference": "Practitioner/14079a84-3943-499a-aaf2-e3d7f18ecb75"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "14079a84-3943-499a-aaf2-e3d7f18ecb75"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "40fed9bc-c70d-4768-83e5-f4eb7b7b7299",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "739600500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "text": "Flu-like symptoms"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-05-13T15:04:11+02:00",
+      "asserter": {
+        "reference": "Practitioner/e267de24-224f-4905-80fa-890d6e505647"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e267de24-224f-4905-80fa-890d6e505647"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "2b99aa2e-090a-4ab7-a1d2-fa5405307c61",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "739800500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "text": "Flu-like symptoms"
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recordedDate": "2013-05-13T15:06:13+02:00",
+      "asserter": {
+        "reference": "Practitioner/702404ec-09bf-4c9c-90ac-e3bbc573c36d"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "702404ec-09bf-4c9c-90ac-e3bbc573c36d"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "58158b81-6ffc-43a8-a8f8-37fc1a943253",
+      "name": "Family Practice Clinic S2V"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "d549ee14-9b40-418c-bb52-2bb2fd492269",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "12903100680"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "30313-1",
+          "display": "Hemoglobin A, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-13T15:43:02+02:00"
+      },
+      "issued": "2013-05-13T15:43:02.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/5bf40341-aa76-4be0-b17a-942d2a32cb65"
+      } ],
+      "result": [ {
+        "reference": "Observation/36e1e4dd-94df-4686-9591-b3c27e905026",
+        "display": "Hemoglobin A, Serum"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5bf40341-aa76-4be0-b17a-942d2a32cb65"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "36e1e4dd-94df-4686-9591-b3c27e905026",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "287300070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "30313-1",
+          "display": "Hemoglobin A, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-13T15:43:02+02:00"
+      },
+      "valueQuantity": {
+        "value": 16,
+        "unit": "g/dl",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dl"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "13.5 - 18.0 g/dl"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "f77eb11a-c682-47c2-aa7b-71b1429d0c72",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "12903300680"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "20570-8",
+          "display": "Hematocrit, Whole Blood"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-13T15:34:13+02:00"
+      },
+      "issued": "2013-05-13T15:34:13.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/30fd05fb-26fd-49a8-86d8-0129c45c6f22"
+      } ],
+      "result": [ {
+        "reference": "Observation/9907f77b-e5e9-407d-9ff5-f0b56cdb304b",
+        "display": "Hematocrit, Whole Blood"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "30fd05fb-26fd-49a8-86d8-0129c45c6f22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9907f77b-e5e9-407d-9ff5-f0b56cdb304b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "287200070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "20570-8",
+          "display": "Hematocrit, Whole Blood"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-13T15:34:13+02:00"
+      },
+      "valueQuantity": {
+        "value": 44,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "41 - 53 %"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "6bac4fb2-ef1e-494a-bf7b-101595d01e1e",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "12905100680"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "26464-8",
+          "display": "WBC Count"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-13T15:33:31+02:00"
+      },
+      "issued": "2013-05-13T15:33:31.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/e6d77eee-bbcc-45f3-a03f-8fb888382c11"
+      } ],
+      "result": [ {
+        "reference": "Observation/7aed5b69-24e2-41a6-859c-e6b566ed8e81",
+        "display": "WBC Count"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e6d77eee-bbcc-45f3-a03f-8fb888382c11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7aed5b69-24e2-41a6-859c-e6b566ed8e81",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "287100070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "26464-8",
+          "display": "WBC Count"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-13T15:33:31+02:00"
+      },
+      "valueQuantity": {
+        "value": 6,
+        "unit": "ul",
+        "system": "http://unitsofmeasure.org",
+        "code": "ul"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4.3 - 10.8 ul"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "21e844cb-7ad4-4985-acc8-6e4f89ed879b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.10",
+        "value": "37900060"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7982",
+          "display": "penicillin G benzathine"
+        } ],
+        "text": "penicillin G benzathine"
+      },
+      "patient": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "recorder": {
+        "reference": "Practitioner/6ae57518-3acf-412b-b69f-bcf8d52691dc"
+      },
+      "reaction": [ {
+        "manifestation": [ {
+          "text": "Hives"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "6ae57518-3acf-412b-b69f-bcf8d52691dc"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "1f3396b9-1ec5-4ac3-b9aa-62230a4e7132",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.4",
+        "value": "9856"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "03",
+          "display": "MMR"
+        } ],
+        "text": "MMR"
+      },
+      "patient": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      },
+      "occurrenceDateTime": "2011-03-12",
+      "primarySource": true,
+      "manufacturer": {
+        "reference": "Organization/ca0cdbd7-0cd2-4ddf-8d2f-b2ef67c376f3",
+        "display": "Merck &Co., Inc."
+      },
+      "lotNumber": "ZT74378B",
+      "route": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/nci",
+          "code": "C28161",
+          "display": "INTRAMUSCULAR"
+        } ]
+      },
+      "doseQuantity": {
+        "value": 0.2500,
+        "unit": "milliLiter(s)",
+        "system": "http://unitsofmeasure.org/ucum.html"
+      },
+      "performer": [ {
+        "function": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/v2/0443",
+            "code": "AP",
+            "display": "Administering Provider"
+          } ]
+        },
+        "actor": {
+          "reference": "Practitioner/0f9fc177-30e0-4ae3-ae59-476f011b04cd",
+          "display": "Nancy Nightingale"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ca0cdbd7-0cd2-4ddf-8d2f-b2ef67c376f3",
+      "name": "Merck &Co., Inc."
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0f9fc177-30e0-4ae3-ae59-476f011b04cd",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "1276903451"
+      } ],
+      "name": [ {
+        "family": "Nightingale",
+        "given": [ "Nancy" ]
+      } ],
+      "telecom": [ {
+        "system": "email",
+        "value": "Nancy.Nightingale@direct.medalliesdirect.com"
+      } ],
+      "address": [ {
+        "line": [ "1004 Healthcare Dr" ],
+        "city": "Portland",
+        "postalCode": "97005-0000"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "8778b9c8-3de0-4a47-8c85-437ca2e79c38",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.7",
+        "value": "1898101"
+      } ],
+      "status": "in-progress",
+      "subject": {
+        "reference": "Patient/a6584520-f700-4050-a16e-094c3e97852a",
+        "display": "Kari CCDA Kidd"
+      }
+    }
+  } ]
+}

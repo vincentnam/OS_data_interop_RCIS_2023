@@ -1,0 +1,1522 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "67437b94-e3b1-4598-bfe9-e84f56d2e3cd",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "date": "2014-04-16T11:55:23+02:00",
+      "author": [ {
+        "reference": "Practitioner/67966aeb-5954-4e9a-9218-5bd620d80d56",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/c09b20fd-4b5b-4b4a-8cbf-502da66be560",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:23+02:00",
+        "party": {
+          "reference": "Practitioner/c09b20fd-4b5b-4b4a-8cbf-502da66be560",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/b6658af5-7994-41cd-9e44-dc5c1d8de99a",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2009-12-02T10:00:00+01:00",
+          "end": "2010-11-22T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/258bacc0-56b4-4ea1-8ef3-494454cf8d93",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tamoxifen or Aromatase Inhibitor Therapy</td><td>RxNorm</td><td>313195</td><td><span/>Tamoxifen 20 MG Oral Tablet</td><td>07-15-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/ef08ccf9-de75-4f59-8c5d-56876052107d",
+          "display": "Tamoxifen 20 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Fatal</td><td>Moderately Susceptible</td><td>12-02-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Mild</td><td>Very susceptible</td><td>12-02-2009 10:00:00</td><td>Active</td></tr><tr><td>Tetracyclines</td><td>RxNorm</td><td>406524</td><td><span/>Doxycycline 75 MG Enteric Coated Tablet</td><td><span/>Fatal</td><td>Moderately Susceptible</td><td>12-02-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>NDF-RT</td><td>N0000006275</td><td>Tetracycline</td><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/da35b0af-9e04-488c-8e11-1db4df870d6c",
+          "display": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+        }, {
+          "reference": "AllergyIntolerance/aa5d8fd2-7e91-4c76-a686-15a29ea14bbc",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/c2cd2d01-75a4-46e5-8f2a-9ce9ba1fcd21",
+          "display": "Allergy to Eggs + Eggs"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>FOBT</td><td>LOINC</td><td>2335-8</td><td><span/>Hemoccult Stl Ql</td><td>negative</td><td/><td>NA</td><td>05-22-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82274</td><td>Assay test for blood, fecal</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0328</td><td>Fecal blood scrn immunoassay</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V76.51</td><td>Special screening for malignant neoplasms of colon</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>252156002</td><td>Occult blood screening</td><td/><td/><td/><td/><td/></tr><tr><td>Pap Test</td><td>LOINC</td><td>10524-7</td><td><span/>Cyto Cervix</td><td>normal</td><td/><td>NA</td><td>05-22-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>88174</td><td>Cytopath, c/v auto, in fluid</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0147</td><td>Scr c/v cyto, automated sys</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.4</td><td>Encounter for screening for malignant neoplasm of cervix</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V72.32</td><td>Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>440623000</td><td>Microscopic examination of cervical Papanicolaou smear</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/1cf8c368-3c48-45b3-8dcd-af9e7a0c5423",
+          "display": "FOBT"
+        }, {
+          "reference": "DiagnosticReport/35c6b82e-951b-4a77-9918-567ea2527d57",
+          "display": "Cytology"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>05-22-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>128</td><td>mm[Hg]</td><td>05-22-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>25.8</td><td>kg/m2</td><td>09-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>09-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>09-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>24.9</td><td>kg/m2</td><td>11-22-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>11-22-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>11-22-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/0fdcb677-9da8-463b-8e38-559ad4c0b4db",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/0469fb86-c797-44b4-aea7-4d4bcfca6cff",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/82e6616c-37e6-450a-b0f2-3f2c0862dd2c",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/b0ded346-c442-462f-b936-f6d17d461d98",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/f0650372-0adb-4fd2-866a-83ed6fa57792",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/c70783e0-cb7d-48d2-956f-99a50640c6ff",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/3ca37ccb-394e-4d37-8290-993ef418a6e6",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/d9ecc287-ca03-435e-ad78-1c017217cd53",
+          "display": "BP Diastolic"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>ischemic vascular disease</td><td>SNOMED-CT</td><td>52674009</td><td><span/>Ischemia</td><td>12-02-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I24</td><td>Other acute ischemic heart diseases</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>411.89</td><td>Other acute and subacute forms of ischemic heart disease, other</td><td/><td/></tr><tr><td>Breast Cancer</td><td>SNOMED-CT</td><td>188161004</td><td><span/>Malignant neoplasm of female breast NOS</td><td>07-10-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>C50</td><td>Malignant neoplasm of breast</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>174.9</td><td>Malignant neoplasm of breast (female), unspecified</td><td/><td/></tr><tr><td>Breast Cancer ER or PR Positive</td><td>SNOMED-CT</td><td>417742002</td><td><span/>Hormone receptor positive tumor</td><td>07-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Breast Cancer Stage IC-IIIC</td><td>SNOMED-CT</td><td>261653007</td><td><span/>Tumor stage T2c</td><td>07-10-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/ae358384-a727-4a69-b3c7-684f98d718b0",
+          "display": "Tumor stage T2c"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use Cessation Counseling</td><td>CPT</td><td>99406</td><td><span/>Behav chng smoking 3-10 min</td><td>12-05-2009 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>384742004</td><td>Smoking cessation assistance</td><td/><td/></tr><tr><td>Breast Cancer Screening</td><td>CPT</td><td>77057</td><td><span/>Mammogram, screening</td><td>06-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0202</td><td>Screeningmammographydigital</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.31</td><td>Encounter for screening mammogram for malignant neoplasm of breast</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V76.12</td><td>Other screening mammogram</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>24623002</td><td>Screening mammography</td><td/><td/></tr><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>11-22-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>11-22-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>12-02-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>12-05-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>05-22-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>07-08-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>07-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>09-06-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>11-22-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/3e00aa78-a02a-40f2-af98-bcbe2cc9303f",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/889dc0bf-9a20-498f-b52a-20e3400a6225",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/d4976afc-9ff6-4de0-92b7-6c895c7cea51",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/76b988db-f832-42d3-a25b-ce9e9b05904a",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/e017fcb5-7d76-4229-a70f-27db870b12b1",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/7caf507c-e2a5-4266-8e3d-66e4e5048a3c",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/8667cdaf-9040-430a-be16-559820ee5e64",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/e426b7ab-e473-4054-985a-f35f2a71a7d0",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>12-02-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/42f3319a-c8c9-4b98-b242-dfd73d888094"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "f1c99c8e-88c4-4229-bf26-756c9393cb28",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1020",
+            "display": "Hinduism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Asian"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2028-9",
+            "display": "Asian"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Washington",
+          "state": "VA",
+          "postalCode": "20011",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Barnett",
+        "given": [ "Pauline" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(608)551-8587",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1950-01-13",
+      "address": [ {
+        "use": "home",
+        "line": [ "3407 Primrose Lane" ],
+        "city": "Madison",
+        "state": "WI",
+        "postalCode": "53703",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Mitchell",
+          "given": [ "Lisa" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(408)727-8069",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "LisaMMitchell@dayrep.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "2170 Black Oak Hollow Road" ],
+          "city": "Santa Clara",
+          "state": "CA",
+          "postalCode": "95054",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/1d670c8e-ba26-457a-9608-8207bd0efb95",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "1d670c8e-ba26-457a-9608-8207bd0efb95",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "67966aeb-5954-4e9a-9218-5bd620d80d56",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c09b20fd-4b5b-4b4a-8cbf-502da66be560",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "258bacc0-56b4-4ea1-8ef3-494454cf8d93",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "b6658af5-7994-41cd-9e44-dc5c1d8de99a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "ef08ccf9-de75-4f59-8c5d-56876052107d",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/124621a4-dc6e-4739-a7e9-59db79e16e98",
+        "display": "Tamoxifen 20 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "124621a4-dc6e-4739-a7e9-59db79e16e98",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "313195",
+          "display": "Tamoxifen 20 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "da35b0af-9e04-488c-8e11-1db4df870d6c",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "406524",
+          "display": "Doxycycline 75 MG Enteric Coated Tablet"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006275",
+          "display": "Tetracycline"
+        } ],
+        "text": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+      },
+      "patient": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "recordedDate": "2009-12-02T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "aa5d8fd2-7e91-4c76-a686-15a29ea14bbc",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "recordedDate": "2009-12-02T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "c2cd2d01-75a4-46e5-8f2a-9ce9ba1fcd21",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "recordedDate": "2009-12-02T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "1cf8c368-3c48-45b3-8dcd-af9e7a0c5423",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "167670005",
+          "display": "FOBT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "result": [ {
+        "reference": "Observation/3844a6ff-927f-4fc7-a898-96558f3e5a6b",
+        "display": "Hemoccult Stl Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3844a6ff-927f-4fc7-a898-96558f3e5a6b",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2335-8",
+          "display": "Hemoccult Stl Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82274",
+          "display": "Assay test for blood, fecal"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0328",
+          "display": "Fecal blood scrn immunoassay"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V76.51",
+          "display": "Special screening for malignant neoplasms of colon"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "252156002",
+          "display": "Occult blood screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-22T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "260385009",
+          "display": "negative"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "35c6b82e-951b-4a77-9918-567ea2527d57",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116147009",
+          "display": "Cytology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "result": [ {
+        "reference": "Observation/b3611afa-d9e0-4e68-a3ed-15a3d4545d70",
+        "display": "Cyto Cervix"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b3611afa-d9e0-4e68-a3ed-15a3d4545d70",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "10524-7",
+          "display": "Cyto Cervix"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "88174",
+          "display": "Cytopath, c/v auto, in fluid"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0147",
+          "display": "Scr c/v cyto, automated sys"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z12.4",
+          "display": "Encounter for screening for malignant neoplasm of cervix"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.32",
+          "display": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "440623000",
+          "display": "Microscopic examination of cervical Papanicolaou smear"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-22T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "17621005",
+          "display": "normal"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0fdcb677-9da8-463b-8e38-559ad4c0b4db",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-22T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0469fb86-c797-44b4-aea7-4d4bcfca6cff",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-22T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 24.9,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "82e6616c-37e6-450a-b0f2-3f2c0862dd2c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-22T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b0ded346-c442-462f-b936-f6d17d461d98",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-22T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f0650372-0adb-4fd2-866a-83ed6fa57792",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-22T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 128,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c70783e0-cb7d-48d2-956f-99a50640c6ff",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3ca37ccb-394e-4d37-8290-993ef418a6e6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 25.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d9ecc287-ca03-435e-ad78-1c017217cd53",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ae358384-a727-4a69-b3c7-684f98d718b0",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "261653007",
+          "display": "Tumor stage T2c"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "onsetDateTime": "2010-07-10T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "3e00aa78-a02a-40f2-af98-bcbe2cc9303f",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "period": {
+        "start": "2009-12-02T10:00:00+01:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "ischemic vascular disease"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/41fb894b-8132-4c87-bdd3-546b08a70a68",
+        "display": "ischemic vascular disease"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "41fb894b-8132-4c87-bdd3-546b08a70a68",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "ischemic vascular disease"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I24",
+          "display": "Other acute ischemic heart diseases"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "411.89",
+          "display": "Other acute and subacute forms of ischemic heart disease, other"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "onsetDateTime": "2009-12-02T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "889dc0bf-9a20-498f-b52a-20e3400a6225",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "period": {
+        "start": "2009-12-05T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d4976afc-9ff6-4de0-92b7-6c895c7cea51",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "period": {
+        "start": "2010-07-10T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "188161004",
+          "display": "Breast Cancer"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "417742002",
+          "display": "Breast Cancer ER or PR Positive"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "261653007",
+          "display": "Breast Cancer Stage IC-IIIC"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/41fb894b-8132-4c87-bdd3-546b08a70a68",
+        "display": "ischemic vascular disease"
+      }, {
+        "reference": "Condition/41fb894b-8132-4c87-bdd3-546b08a70a68",
+        "display": "ischemic vascular disease"
+      }, {
+        "reference": "Condition/41fb894b-8132-4c87-bdd3-546b08a70a68",
+        "display": "ischemic vascular disease"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "76b988db-f832-42d3-a25b-ce9e9b05904a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "period": {
+        "start": "2010-07-08T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "e017fcb5-7d76-4229-a70f-27db870b12b1",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "period": {
+        "start": "2010-11-22T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7caf507c-e2a5-4266-8e3d-66e4e5048a3c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8667cdaf-9040-430a-be16-559820ee5e64",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "period": {
+        "start": "2010-05-22T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "e426b7ab-e473-4054-985a-f35f2a71a7d0",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "period": {
+        "start": "2010-09-06T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "42f3319a-c8c9-4b98-b242-dfd73d888094",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f1c99c8e-88c4-4229-bf26-756c9393cb28",
+        "display": "Pauline Barnett"
+      },
+      "effectivePeriod": {
+        "start": "2009-12-02T10:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  } ]
+}

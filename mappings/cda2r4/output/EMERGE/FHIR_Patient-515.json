@@ -1,0 +1,1698 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "457c6e79-d2ec-4b59-a440-64f3cd48ef42",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "date": "2014-04-16T11:55:19+02:00",
+      "author": [ {
+        "reference": "Practitioner/5629f452-ead0-4976-9c10-531079962839",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/288f8272-bcb1-48e8-b257-6c3ec4c4273b",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:19+02:00",
+        "party": {
+          "reference": "Practitioner/288f8272-bcb1-48e8-b257-6c3ec4c4273b",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/82ce1817-acd4-486f-ae7c-79eab4e64416",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-04-20T10:00:00+02:00",
+          "end": "2010-12-28T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/a2274ad9-fa28-49a0-a443-f01fa0e55aac",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>04-20-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr><tr><td>low back pain</td><td>SNOMED-CT</td><td>279039007</td><td><span/>Low back pain</td><td>05-20-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>M54.9</td><td>Dorsalgia, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>724.2</td><td>Lumbago</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/7d6ee238-7714-440f-b0a5-7a508c1a628c",
+          "display": "Essential hypertension"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>55</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>04-20-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>75.6</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>04-20-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>154</td><td>mg/dL</td><td>125-200 mg/dL</td><td>04-20-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>117</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>04-20-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/12b89634-3de4-499d-b7f2-a2f8962ce412",
+          "display": "Lipid Panel"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>33.1</td><td>kg/m2</td><td>04-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>04-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>76</td><td>/min</td><td>04-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>04-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>05-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>74</td><td>/min</td><td>05-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>128</td><td>mm[Hg]</td><td>05-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>09-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>74</td><td>/min</td><td>09-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>09-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>30.9</td><td>kg/m2</td><td>12-02-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>12-02-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>76</td><td>/min</td><td>12-02-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>12-02-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/ad40e2bb-7cd4-4825-96d2-d9d419a94501",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/378f341b-be26-49af-aa9d-7439050c6ea8",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/344ef1c6-bd73-4515-b628-138a64b3f1bf",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/47763b31-9938-40fc-938b-149d5d18b1ff",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/41d2296c-50d6-4de3-8b85-bd2e462928e6",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/007d6835-f214-49c9-b74f-9ae3a73c5d1f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/8a5bcaa6-24cf-4742-a77b-8b21a4f44cbc",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/ab8bf1a0-c982-4463-ac1c-03d7d7405909",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/8ea3a1df-559f-4fea-a886-f1608f69bcc5",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/bb777c3d-344b-4bab-bc28-ed368aa7ba31",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/37682bdb-baa1-4a36-823f-21c4169daf87",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/2c5f8de5-cba9-4942-8fb3-057c9040ea99",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/9e8968df-0c70-45e2-9b93-ce7c440315c4",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/66924a26-2344-42a7-919d-aa789f0eb9c6",
+          "display": "BP Diastolic"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antihypertensive combinations</td><td>RxNorm</td><td>858828</td><td><span/>Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet</td><td>04-20-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/f68decd9-b8ce-42f5-b608-77f3023153a2",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>04-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient Including Orthopedics an</td><td>CPT</td><td>98940</td><td><span/>Chiropractic manipulation</td><td>05-20-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient Including Orthopedics an</td><td>CPT</td><td>98940</td><td><span/>Chiropractic manipulation</td><td>09-06-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>12-02-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/7a3ad8a9-5a13-47c9-a1f4-afb84088349a",
+          "display": "Chiropractic manipulation"
+        }, {
+          "reference": "Encounter/930e9278-c3de-4c2c-8f09-2e1e04d52d29",
+          "display": "Chiropractic manipulation"
+        }, {
+          "reference": "Encounter/27228674-cbec-4ec2-8d85-e95dce34558a",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/8950079e-836b-42a3-8c5b-3346dcb3acdd",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>04-20-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/b6a09153-9a43-4551-8145-2a2d62caed30"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>04-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr><tr><td>Colonoscopy</td><td>CPT</td><td>45378</td><td><span/>Diagnostic colonoscopy</td><td>12-28-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0121</td><td>Colon ca scrn not hi rsk ind</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.11</td><td>Encounter for screening for malignant neoplasm of colon</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>45.23</td><td>Colonoscopy</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>174184006</td><td>Diagnostic endoscopic examination on colon</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>04-20-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Mild</td><td>Very susceptible</td><td>04-20-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Moderate</td><td>Very susceptible</td><td>04-20-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/2ab47a93-f95c-45cb-be99-35eb97ea69a5",
+          "display": "Penicillin V + Penicillin V"
+        }, {
+          "reference": "AllergyIntolerance/5d26608d-d9ad-43eb-b774-64fa93656b6a",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/c8f52507-1cff-4032-9aac-9cf01604954a",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a246043a-ba8c-471e-b6a3-fae44c571aa3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1074",
+            "display": "Native American"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Oakland",
+          "state": "CA",
+          "postalCode": "94612",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Robbins",
+        "given": [ "Adrian" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(317)579-0679",
+        "use": "mobile"
+      } ],
+      "gender": "male",
+      "birthDate": "1960-05-08",
+      "address": [ {
+        "use": "home",
+        "line": [ "2256 Barfield Lane" ],
+        "city": "Indianapolis",
+        "state": "IN",
+        "postalCode": "46250",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "McCullough",
+          "given": [ "Alice" ],
+          "prefix": [ "Mrs." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(262)235-8448",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "AliceMMcCullough@teleworm.us",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "229 Pearcy Avenue" ],
+          "city": "West Allis",
+          "state": "WI",
+          "postalCode": "53227",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/0e51c5ab-c7b0-4c69-9e70-43165c1bb2c6",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "0e51c5ab-c7b0-4c69-9e70-43165c1bb2c6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5629f452-ead0-4976-9c10-531079962839",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "288f8272-bcb1-48e8-b257-6c3ec4c4273b",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a2274ad9-fa28-49a0-a443-f01fa0e55aac",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "82ce1817-acd4-486f-ae7c-79eab4e64416",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "7d6ee238-7714-440f-b0a5-7a508c1a628c",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Essential hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "onsetDateTime": "2010-04-20T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "12b89634-3de4-499d-b7f2-a2f8962ce412",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "result": [ {
+        "reference": "Observation/770c190c-6efd-4336-b231-13e794533ae0",
+        "display": "Cholest SerPl-mCnc"
+      }, {
+        "reference": "Observation/0630dda5-56c0-4325-b345-47c76ed04703",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/14958aa0-f16e-4406-96bd-a1eff9027a4c",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/1b48c04b-d259-429c-abab-093800eb259d",
+        "display": "HDLc SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "770c190c-6efd-4336-b231-13e794533ae0",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 154,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0630dda5-56c0-4325-b345-47c76ed04703",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 117,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "14958aa0-f16e-4406-96bd-a1eff9027a4c",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 75.6,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1b48c04b-d259-429c-abab-093800eb259d",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 55,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ad40e2bb-7cd4-4825-96d2-d9d419a94501",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "378f341b-be26-49af-aa9d-7439050c6ea8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 33.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "344ef1c6-bd73-4515-b628-138a64b3f1bf",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "47763b31-9938-40fc-938b-149d5d18b1ff",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "41d2296c-50d6-4de3-8b85-bd2e462928e6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "007d6835-f214-49c9-b74f-9ae3a73c5d1f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8a5bcaa6-24cf-4742-a77b-8b21a4f44cbc",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ab8bf1a0-c982-4463-ac1c-03d7d7405909",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8ea3a1df-559f-4fea-a886-f1608f69bcc5",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 128,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bb777c3d-344b-4bab-bc28-ed368aa7ba31",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "37682bdb-baa1-4a36-823f-21c4169daf87",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-02T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c5f8de5-cba9-4942-8fb3-057c9040ea99",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-02T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 30.9,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9e8968df-0c70-45e2-9b93-ce7c440315c4",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-02T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "66924a26-2344-42a7-919d-aa789f0eb9c6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-02T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "f68decd9-b8ce-42f5-b608-77f3023153a2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/cd8742f8-fa6d-4fc3-851b-9894e2c10be6",
+        "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "cd8742f8-fa6d-4fc3-851b-9894e2c10be6",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "858828",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7a3ad8a9-5a13-47c9-a1f4-afb84088349a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "98940",
+          "display": "Chiropractic manipulation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "period": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "279039007",
+          "display": "low back pain"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/9254b22e-82e0-4d16-a00b-f1acf1eb096c",
+        "display": "low back pain"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "9254b22e-82e0-4d16-a00b-f1acf1eb096c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "279039007",
+          "display": "low back pain"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "M54.9",
+          "display": "Dorsalgia, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "724.2",
+          "display": "Lumbago"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "onsetDateTime": "2010-05-20T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "930e9278-c3de-4c2c-8f09-2e1e04d52d29",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "98940",
+          "display": "Chiropractic manipulation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "period": {
+        "start": "2010-09-06T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "27228674-cbec-4ec2-8d85-e95dce34558a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "period": {
+        "start": "2010-12-02T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8950079e-836b-42a3-8c5b-3346dcb3acdd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "period": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/9254b22e-82e0-4d16-a00b-f1acf1eb096c",
+        "display": "low back pain"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b6a09153-9a43-4551-8145-2a2d62caed30",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-20T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "2ab47a93-f95c-45cb-be99-35eb97ea69a5",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "recordedDate": "2010-04-20T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "5d26608d-d9ad-43eb-b774-64fa93656b6a",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "recordedDate": "2010-04-20T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "c8f52507-1cff-4032-9aac-9cf01604954a",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/a246043a-ba8c-471e-b6a3-fae44c571aa3",
+        "display": "Adrian Robbins"
+      },
+      "recordedDate": "2010-04-20T10:00:00+02:00"
+    }
+  } ]
+}

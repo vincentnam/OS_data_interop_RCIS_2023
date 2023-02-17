@@ -1,0 +1,118 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "5771fb43-b70b-464f-87fc-fd5caec761a1",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.1",
+        "value": "TT988"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "11504-8",
+          "display": "Surgical Operation Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d20722a9-04ef-4af8-a263-dc023328f25d",
+        "display": "John Wayne"
+      },
+      "date": "2013-06-25T17:37:08+02:00",
+      "author": [ {
+        "reference": "Practitioner/ea7f65bd-2b66-4017-8289-9c1bf9fce6bd",
+        "display": "General Surgery"
+      } ],
+      "title": "Operative Report",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-06-25T17:37:08+02:00",
+        "party": {
+          "reference": "Practitioner/32a48483-8a44-45c4-825f-19f23a18e253",
+          "display": "General Surgery"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/7a15e8b2-9f2d-4038-8c71-83d5c541a9b2",
+        "display": "Default Center"
+      },
+      "event": [ {
+        "period": {
+          "start": "2013-06-25",
+          "end": "2013-06-25"
+        },
+        "detail": [ {
+          "reference": "Practitioner/32a48483-8a44-45c4-825f-19f23a18e253",
+          "display": "General Surgery"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "d20722a9-04ef-4af8-a263-dc023328f25d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "123"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Wayne",
+        "given": [ "John" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1965-01-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ea7f65bd-2b66-4017-8289-9c1bf9fce6bd",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Surgery",
+        "given": [ "General" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "32a48483-8a44-45c4-825f-19f23a18e253",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Surgery",
+        "given": [ "General" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "7a15e8b2-9f2d-4038-8c71-83d5c541a9b2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Default Center"
+    }
+  } ]
+}

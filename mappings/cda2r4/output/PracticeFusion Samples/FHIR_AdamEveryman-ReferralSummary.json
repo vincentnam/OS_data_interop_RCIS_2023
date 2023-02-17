@@ -1,0 +1,742 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "d1ff1a16-b706-4afd-b57a-3d58b74f9218",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1",
+        "value": "310936"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of episode note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "date": "2014-04-26T10:01:00+02:00",
+      "author": [ {
+        "reference": "Practitioner/bf92e4bf-1a42-4ed3-b2ba-451782d86c84",
+        "display": "Nancy Nightingale"
+      }, {
+        "reference": "Practitioner/bf92e4bf-1a42-4ed3-b2ba-451782d86c84"
+      }, {
+        "reference": "Practitioner/bf92e4bf-1a42-4ed3-b2ba-451782d86c84"
+      } ],
+      "title": "Summary of Care",
+      "confidentiality": "R",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2014-04-25T02:19:00+02:00",
+        "party": {
+          "reference": "Practitioner/90a4cb8d-f46d-4f29-ac92-f0049474fe45",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/f1fc4648-56b7-4aa9-bcd9-c80a509a49ec",
+        "display": "Get Well Clinic"
+      },
+      "section": [ {
+        "title": "Allergies",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, Adverse Reactions, Alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Allergy</th><th>Date</th><th>Reaction Status</th><th>Severity Status</th></tr></thead><tbody><tr><td>Bicillin L-A</td><td>Onset: Not Indicated</td><td>Hives</td><td>Very Mild</td></tr><tr><td>Codeine Phosphate</td><td>Onset: Not Indicated</td><td>Nausea</td><td>Mild</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/a38ff9a4-5dca-4468-8ee6-a33c4ff4cbef",
+          "display": "Bicillin L-A"
+        }, {
+          "reference": "AllergyIntolerance/22410fa4-6531-420c-a3ef-9feeb991e65a",
+          "display": "Codeine Phosphate"
+        } ]
+      }, {
+        "title": "Immunizations",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of Immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Vaccine</th><th>Date</th><th>Delivery Status</th></tr></thead><tbody><tr><td>Influenza, seasonal, injectable</td><td>2010-08-15</td><td>Historical</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/c454cd07-1404-49b9-8053-a8bd4a69f150",
+          "display": "Influenza, seasonal, injectable"
+        } ]
+      }, {
+        "title": "Problem List",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem List"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Problem Description</th><th>Problem StartDate</th><th>Status</th></tr></thead><tbody><tr><td>Asthma</td><td>2011-09-25</td><td>active</td></tr><tr><td>Costal chondritis</td><td>2012-08-15</td><td>active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/e68476b3-8453-4a3c-9f67-6e8458c28668",
+          "display": "Asthma"
+        }, {
+          "reference": "Condition/4365e33e-a284-4ba1-acd7-527a1a08ffaa",
+          "display": "Costal chondritis"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of Encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Encounter Type </th><th>Location Name</th><th>Performer</th><th>Date of Service</th></tr></thead><tbody><tr><td>No Encounters Indicated</td><td> </td><td> </td><td> </td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/d91e84b6-99fd-46e8-a46d-118ff45a8f5b"
+        } ]
+      }, {
+        "title": "Functional Status",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5",
+            "display": "Functional Status"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Functional</th><th>Date</th></tr></thead><tbody><tr><td>No functional Status Indicated</td><td>Not Applicable</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "Procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Procedure</th><th>Date</th></tr></thead><tbody><tr><td>No Procedures Indicated</td><td>Not Applicable</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/16b21ce2-195a-4cdc-9b90-c0972ae67715"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Not indicated</div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/876f0c06-f27c-49fa-a953-4cd694d120a2"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Social History</th><th>Effective Date</th></tr></thead><tbody><tr><td>Never smoker</td><td>2013-12-17</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/a316559a-6984-4902-8251-a64cf47d42d9"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Material</th><th>RXnormCode</th><th>GenericName</th><th>ProductStrength</th><th>StartDate</th><th>StopDate</th><th>SIG</th></tr></thead><tbody><tr><td>Proventil HFA (albuterol) inhalation aerosol</td><td>RxNorm: 746763</td><td>albuterol</td><td>CFC free 90 mcg/inh</td><td>2012-07-07</td><td>Not Indicated</td><td>2 puffs every 6 hours PRN wheezing</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/3cb75ae0-b099-46ce-8866-602379ab380d",
+          "display": "albuterol CFC free 90 mcg/inh"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "DCD2261B-FB04-4FDF-A7E3-003B1E6FD57B"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Everyman",
+        "given": [ "Adam" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1962-10-22",
+      "address": [ {
+        "use": "home",
+        "line": [ "No Address Indicated" ],
+        "city": "No City Indicated",
+        "state": "CA",
+        "postalCode": "99999",
+        "country": "United States of America"
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/3a70a715-8baf-4c00-a3cd-6e699f327369",
+        "display": "Get Well Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "3a70a715-8baf-4c00-a3cd-6e699f327369",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936"
+      } ],
+      "name": "Get Well Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(415)427-2132",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Beaverton",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "bf92e4bf-1a42-4ed3-b2ba-451782d86c84",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.1.1",
+        "value": "683246"
+      } ],
+      "name": [ {
+        "family": "Nightingale",
+        "given": [ "Nancy" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "Get Well Clinic Facility", "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "0e7568ba-bc41-42b8-bf62-56fdbe1d4c28",
+      "practitioner": {
+        "reference": "Practitioner/bf92e4bf-1a42-4ed3-b2ba-451782d86c84",
+        "display": "Nancy Nightingale"
+      },
+      "organization": {
+        "reference": "Organization/3a70a715-8baf-4c00-a3cd-6e699f327369",
+        "display": "Get Well Clinic"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "207Q00000X",
+          "display": "Family Medicine"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "90a4cb8d-f46d-4f29-ac92-f0049474fe45",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.4.1.3",
+        "value": "123456"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f1fc4648-56b7-4aa9-bcd9-c80a509a49ec",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936",
+        "value": "POCD_HD000040"
+      } ],
+      "name": "Get Well Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(415)427-2132",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Beaverton",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "a38ff9a4-5dca-4468-8ee6-a33c4ff4cbef",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "83899160"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "731570",
+          "display": "Bicillin L-A"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "recordedDate": "2013-12-18T01:28:53+01:00",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "126485001",
+            "display": "Hives"
+          } ]
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "22410fa4-6531-420c-a3ef-9feeb991e65a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "83899160"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "601263",
+          "display": "Codeine Phosphate"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "recordedDate": "2013-12-18T09:59:00+01:00",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "422587007",
+            "display": "Nausea"
+          } ]
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "c454cd07-1404-49b9-8053-a8bd4a69f150",
+      "identifier": [ {
+        "use": "official",
+        "value": "97D90ADC-3BB2-403B-A309-C5F38E67636C"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "primarySource": false
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "e68476b3-8453-4a3c-9f67-6e8458c28668",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.2.1",
+        "value": "A71337134-4d92-4550-983c-561dc595dd59"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "onsetDateTime": "2011-09-25T07:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "4365e33e-a284-4ba1-acd7-527a1a08ffaa",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.2.1",
+        "value": "A4c61f2bd-c5a7-4dc3-81be-d147cbef87cb"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "64109004",
+          "display": "Costal chondritis"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "onsetDateTime": "2012-08-15T07:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d91e84b6-99fd-46e8-a46d-118ff45a8f5b",
+      "identifier": [ {
+        "use": "official",
+        "system": "A94db41f8-15ab-4ec4-aa6a-97808b155d53",
+        "value": "1"
+      } ],
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "16b21ce2-195a-4cdc-9b90-c0972ae67715",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.9"
+      } ],
+      "status": "completed",
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "876f0c06-f27c-49fa-a953-4cd694d120a2",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "result": [ {
+        "reference": "Observation/40afaab2-5ee1-47d6-978d-0ed9585f6f07"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "40afaab2-5ee1-47d6-978d-0ed9585f6f07",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a316559a-6984-4902-8251-a64cf47d42d9",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "effectivePeriod": {
+        "start": "2013-12-17T08:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "3cb75ae0-b099-46ce-8866-602379ab380d",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.4.1"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/776cadf3-a853-45ee-ba9a-c0f3a9b3fe1b",
+        "display": "albuterol CFC free 90 mcg/inh"
+      },
+      "subject": {
+        "reference": "Patient/97c45304-8a9b-42eb-9bdd-88dac1ad25d6",
+        "display": "Adam Everyman"
+      },
+      "effectivePeriod": {
+        "start": "2012-07-07T07:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "776cadf3-a853-45ee-ba9a-c0f3a9b3fe1b",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "746763",
+          "display": "albuterol CFC free 90 mcg/inh"
+        } ]
+      }
+    }
+  } ]
+}

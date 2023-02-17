@@ -1,0 +1,1486 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "914d8fd0-07cd-42e3-a1cf-336b1e2a298e",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "date": "2014-04-16T11:54:49+02:00",
+      "author": [ {
+        "reference": "Practitioner/803a4885-b678-4a54-a626-012948307b71",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/dbcf79d3-c700-4205-909e-ff00d6c85b48",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:49+02:00",
+        "party": {
+          "reference": "Practitioner/dbcf79d3-c700-4205-909e-ff00d6c85b48",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/957a5fcb-8619-4646-8233-01150c513ad3",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-05-03T10:00:00+02:00",
+          "end": "2010-06-12T10:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/8179ab49-f657-4b40-8ae7-32a380a2e942",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild</td><td>Very susceptible</td><td>05-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Fatal</td><td>Very susceptible</td><td>05-03-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>05-03-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/5ca7e018-6c5c-4180-aefe-138286053061",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/9a68354c-8b25-41b1-8a0c-31948c72a453",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/bdef4b2c-ac13-4815-8ae5-b2e41a5af117",
+          "display": "Penicillin V + Penicillin V"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>ACE inhibitor or ARB</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>05-03-2010 10:00:00</td><td>Active</td></tr><tr><td>Beta Blocker Therapy</td><td>RxNorm</td><td>866924</td><td><span/>Metoprolol Tartrate 25 MG Oral Tablet</td><td>05-03-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/8970adcc-5fb7-4715-9f79-dfbd76de935c",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/ae701fb9-d7e0-4a7f-94fb-352f97d849f7",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>05-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/d6f258bb-9d47-4800-a065-fb6f1dbf1563"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>25.8</td><td>kg/m2</td><td>05-03-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>05-03-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>76</td><td>/min</td><td>05-03-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>136</td><td>mm[Hg]</td><td>05-03-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>25.1</td><td>kg/m2</td><td>06-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>06-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>72</td><td>/min</td><td>06-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>138</td><td>mm[Hg]</td><td>06-12-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/8e765063-6883-4c4b-a4cd-80491900c30d",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/8280a864-0587-48fb-8e45-b335b7f8dcd3",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/34dd146d-4f54-49ad-b461-50d818003a9f",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/17468ff5-b58e-45bf-a85a-1363d0d239d5",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/6ad37ce9-cf0f-4cee-bc3e-a25324f230f9",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/369e5d8c-127e-45f4-afbb-ff354d287f48",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/67e59dd9-5dba-4444-8110-0310a5c5b9f8",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/e9eeeed9-591e-47fc-a99d-3427871ddbf6",
+          "display": "Heart Rate"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>05-03-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>06-12-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/c75a92c2-fa24-4493-95d6-a253a4204a4e",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/13a97d51-6cb7-473d-8612-14cad7651776",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Heart Failure</td><td>SNOMED-CT</td><td>84114007</td><td><span/>Heart failure</td><td>05-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I50.9</td><td>Heart failure, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>428.9</td><td>Heart failure, unspecified</td><td/><td/></tr><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>05-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/2af2494e-6b5d-4dab-863c-575d7aca0763",
+          "display": "Heart failure"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>05-03-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Ejection Fraction</td><td>SNOMED-CT</td><td>70822001</td><td><span/>Cardiac ejection fraction, function</td><td>05-03-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>57</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>05-03-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>99</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>05-03-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>198</td><td>mg/dL</td><td>125-200 mg/dL</td><td>05-03-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>210</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>05-03-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/3fffcddf-023d-4b7e-8033-dd3975f644db",
+          "display": "Lipid Panel"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1077",
+            "display": "Protestant"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Atlanta",
+          "state": "GA",
+          "postalCode": "30328",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Buchanan",
+        "given": [ "Benjamin" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(707)484-1029",
+        "use": "mobile"
+      } ],
+      "gender": "male",
+      "birthDate": "1942-08-29",
+      "address": [ {
+        "use": "home",
+        "line": [ "2476 Fairway Drive" ],
+        "city": "Concord",
+        "state": "CA",
+        "postalCode": "94520",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Louis",
+          "given": [ "Jimmy" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(212)946-0770",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "JimmyJLouis@dayrep.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "1492 Rosewood Lane" ],
+          "city": "New York",
+          "state": "NY",
+          "postalCode": "10018",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/8d1b7a55-2e1f-41e4-b4ed-b5e939211572",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "8d1b7a55-2e1f-41e4-b4ed-b5e939211572",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "803a4885-b678-4a54-a626-012948307b71",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "dbcf79d3-c700-4205-909e-ff00d6c85b48",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "8179ab49-f657-4b40-8ae7-32a380a2e942",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "957a5fcb-8619-4646-8233-01150c513ad3",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "5ca7e018-6c5c-4180-aefe-138286053061",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "recordedDate": "2010-05-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "9a68354c-8b25-41b1-8a0c-31948c72a453",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "recordedDate": "2010-05-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "bdef4b2c-ac13-4815-8ae5-b2e41a5af117",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "recordedDate": "2010-05-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "8970adcc-5fb7-4715-9f79-dfbd76de935c",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/426c09c2-55a0-4a27-856c-b190be61014b",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "426c09c2-55a0-4a27-856c-b190be61014b",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "ae701fb9-d7e0-4a7f-94fb-352f97d849f7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/9ba3db30-6c49-4678-94f7-08be0c5fbb91",
+        "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "9ba3db30-6c49-4678-94f7-08be0c5fbb91",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866924",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d6f258bb-9d47-4800-a065-fb6f1dbf1563",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8e765063-6883-4c4b-a4cd-80491900c30d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 25.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8280a864-0587-48fb-8e45-b335b7f8dcd3",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "34dd146d-4f54-49ad-b461-50d818003a9f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "17468ff5-b58e-45bf-a85a-1363d0d239d5",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 136,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6ad37ce9-cf0f-4cee-bc3e-a25324f230f9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 25.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "369e5d8c-127e-45f4-afbb-ff354d287f48",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 138,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "67e59dd9-5dba-4444-8110-0310a5c5b9f8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e9eeeed9-591e-47fc-a99d-3427871ddbf6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "c75a92c2-fa24-4493-95d6-a253a4204a4e",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "period": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "84114007",
+          "display": "Heart Failure"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/5e6bad37-8840-42e6-aa5c-588ed37d1d6e",
+        "display": "Hypertension"
+      }, {
+        "reference": "Condition/d8692ba8-8c35-4d93-896e-73df93f539f5",
+        "display": "Heart Failure"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "5e6bad37-8840-42e6-aa5c-588ed37d1d6e",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "onsetDateTime": "2010-05-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "d8692ba8-8c35-4d93-896e-73df93f539f5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "84114007",
+          "display": "Heart Failure"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I50.9",
+          "display": "Heart failure, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "428.9",
+          "display": "Heart failure, unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "onsetDateTime": "2010-05-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "13a97d51-6cb7-473d-8612-14cad7651776",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "period": {
+        "start": "2010-06-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "2af2494e-6b5d-4dab-863c-575d7aca0763",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "84114007",
+          "display": "Heart failure"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I50.9",
+          "display": "Heart failure, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "428.9",
+          "display": "Heart failure, unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "onsetDateTime": "2010-05-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "3fffcddf-023d-4b7e-8033-dd3975f644db",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "result": [ {
+        "reference": "Observation/af4b414b-e9e6-41d1-b521-353239e5cfc3",
+        "display": "Cholest SerPl-mCnc"
+      }, {
+        "reference": "Observation/1e4f59a0-e64d-4290-a759-d26664eea6da",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/e692a88f-7bf3-4e24-bdc3-f2edcb3e92f3",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/ae1b4476-e622-470b-9bc2-568a56844eef",
+        "display": "HDLc SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "af4b414b-e9e6-41d1-b521-353239e5cfc3",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 198,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1e4f59a0-e64d-4290-a759-d26664eea6da",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 210,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e692a88f-7bf3-4e24-bdc3-f2edcb3e92f3",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 99,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ae1b4476-e622-470b-9bc2-568a56844eef",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0fb0538d-6ba9-4ba5-b595-3efd657b9270",
+        "display": "Benjamin Buchanan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 57,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  } ]
+}

@@ -1,0 +1,1780 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "3f18b9be-301d-4f91-97fa-a84fd57d03b3",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "date": "2014-04-16T11:55:28+02:00",
+      "author": [ {
+        "reference": "Practitioner/0130acdb-7c8c-470b-8e5d-7f3a30a6d914",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/202c70a1-7cb0-429d-b5e6-84d0595b4a7f",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:28+02:00",
+        "party": {
+          "reference": "Practitioner/202c70a1-7cb0-429d-b5e6-84d0595b4a7f",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/f9ffc9b6-c3d6-4411-8db4-91d9201e7722",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-01-25T10:00:00+01:00",
+          "end": "2010-11-24T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/642aef9c-f069-4362-9d1d-d711d22246d8",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Arrhythmia</td><td>SNOMED-CT</td><td>44808001</td><td><span/>Conduction disorder of the heart</td><td>07-16-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I45.9</td><td>Conduction disorder, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>426.9</td><td>Conduction disorder, unspecified</td><td/><td/></tr><tr><td>Bradycardia</td><td>SNOMED-CT</td><td>48867003</td><td><span/>Bradycardia</td><td>07-16-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>R00.1</td><td>Bradycardia, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>427.81</td><td>Sinoatrial node dysfunction</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/33fc5bd1-08cf-40b7-be34-e20bd8cabafb",
+          "display": "Bradycardia"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>01-25-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>05-08-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter ED</td><td>CPT</td><td>99281</td><td><span/>Emergency dept visit</td><td>07-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>07-20-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>11-24-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/df641a3e-4aef-4f62-bc6f-f18c7bfd5586",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/6b3ef1dc-0da4-4336-9b32-73c1a6394100",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/ba406a71-912e-41c8-9977-32ab3d81df96",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/c4696598-eab3-4bab-ae4e-aa8fbc851094",
+          "display": "Emergency dept visit"
+        }, {
+          "reference": "Encounter/5523e2b3-39fc-4936-ad5a-469c92c58490",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>01-25-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/52dbab41-91cd-4334-803c-8cd02ef3df8b"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Pap Test</td><td>LOINC</td><td>10524-7</td><td><span/>Cyto Cervix</td><td>normal</td><td/><td>NA</td><td>05-08-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>88174</td><td>Cytopath, c/v auto, in fluid</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0147</td><td>Scr c/v cyto, automated sys</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.4</td><td>Encounter for screening for malignant neoplasm of cervix</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V72.32</td><td>Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>440623000</td><td>Microscopic examination of cervical Papanicolaou smear</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/faf9489f-6107-4731-ae22-490c8721dd65",
+          "display": "Cytology"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>19.9</td><td>kg/m2</td><td>01-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>74</td><td>mm[Hg]</td><td>01-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>62</td><td>/min</td><td>01-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>116</td><td>mm[Hg]</td><td>01-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>19.8</td><td>kg/m2</td><td>05-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>62</td><td>mm[Hg]</td><td>05-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>64</td><td>/min</td><td>05-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>110</td><td>mm[Hg]</td><td>05-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>07-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>48</td><td>/min</td><td>07-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>122</td><td>mm[Hg]</td><td>07-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>70</td><td>mm[Hg]</td><td>07-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>68</td><td>/min</td><td>07-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>112</td><td>mm[Hg]</td><td>07-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>20.1</td><td>kg/m2</td><td>11-24-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>70</td><td>mm[Hg]</td><td>11-24-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>68</td><td>/min</td><td>11-24-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>114</td><td>mm[Hg]</td><td>11-24-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/6542e123-d68b-4ee4-be0a-20eeec1b2b46",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/fd45fc5a-78b8-4a95-80fb-aa2d29e01dbc",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/db32b7f8-6d1b-42fa-8d65-3543a41c2f21",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/a081cc92-c273-4fc8-a7c0-bd3af88477d6",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/433bc9b7-de3a-4c6a-8b74-f8bc30f30080",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/ee712db1-8254-4a44-ac5c-f411cb095689",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/10cfa8cd-37fb-49d7-a890-e995f57ee4e9",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/8a9b110e-e90f-448d-85c4-e604be43e646",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/303cf73c-030e-4001-b390-6f682cb65196",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/25ecaf3b-ffc0-4496-827d-fdc7bbf3f3e0",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/f3f469c7-1f05-44c9-a99a-3404cd1f1e60",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/951ae6e4-0279-4f69-a4ca-9aacaaa668df",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/767f2f29-d446-44ce-a0b3-baed12702158",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/f87110df-df6c-4240-bc37-4bcdf3be1fc7",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/1232fe64-3d52-4926-84b2-772e6d9ea89c",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/6644653f-adb8-427c-aed2-4a773e09e80f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/32bf482b-9b4f-4a43-8009-a8d871233c2d",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/db11fe3d-5fa1-4d19-adc1-1ecbc0befeb8",
+          "display": "Heart Rate"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>01-25-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Fosfomycin</td><td>RxNorm</td><td>808917</td><td><span/>Fosfomycin 33.3 MG/ML Oral Suspension</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>01-25-2010 10:00:00</td><td>Active</td></tr><tr><td>Tetracyclines</td><td>RxNorm</td><td>406524</td><td><span/>Doxycycline 75 MG Enteric Coated Tablet</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>01-25-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>NDF-RT</td><td>N0000006275</td><td>Tetracycline</td><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/afd1b5d7-5afd-4f3f-b72f-0814cd39f178",
+          "display": "Fosfomycin + Fosfomycin 33.3 MG/ML Oral Suspension"
+        }, {
+          "reference": "AllergyIntolerance/27b6d82e-7520-470d-96f8-0e93ef3a9f18",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/ca2c754c-5e4a-4b62-8e7c-0c13d6b7d442",
+          "display": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antiplatelets</td><td>RxNorm</td><td>243670</td><td><span/>Aspirin 81 MG Oral Tablet</td><td>07-20-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/b0a673ce-faef-4344-9a7c-81029394c77a",
+          "display": "Aspirin 81 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Breast Cancer Screening</td><td>CPT</td><td>77057</td><td><span/>Mammogram, screening</td><td>06-16-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0202</td><td>Screeningmammographydigital</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.31</td><td>Encounter for screening mammogram for malignant neoplasm of breast</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V76.12</td><td>Other screening mammogram</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>24623002</td><td>Screening mammography</td><td/><td/></tr><tr><td>Cardiac Monitoring</td><td>SNOMED-CT</td><td>23852006</td><td><span/>Cardiac monitoring</td><td>07-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>dietary consultation order</td><td>SNOMED-CT</td><td>103699006</td><td><span/>Patient referral to dietitian</td><td>11-24-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1007",
+            "display": "Atheism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Native Hawaiian or Other Pacific Islander"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2076-8",
+            "display": "Native Hawaiian or Other Pacific Islander"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Baton Rouge",
+          "state": "LA",
+          "postalCode": "70810",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Shaw",
+        "given": [ "Ruth" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(720)528-9699",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1950-01-24",
+      "address": [ {
+        "use": "home",
+        "line": [ "1834 Clay Lick Road" ],
+        "city": "Centennial",
+        "state": "CO",
+        "postalCode": "80111",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Agustin",
+          "given": [ "Jack" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(601)816-0793",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "JackPAgustin@dayrep.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "506 Devils Hill Road" ],
+          "city": "Jackson",
+          "state": "MS",
+          "postalCode": "39201",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/de7655e9-fd22-47fd-9f97-4522fbfc47cd",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "de7655e9-fd22-47fd-9f97-4522fbfc47cd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0130acdb-7c8c-470b-8e5d-7f3a30a6d914",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "202c70a1-7cb0-429d-b5e6-84d0595b4a7f",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "642aef9c-f069-4362-9d1d-d711d22246d8",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f9ffc9b6-c3d6-4411-8db4-91d9201e7722",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "33fc5bd1-08cf-40b7-be34-e20bd8cabafb",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "48867003",
+          "display": "Bradycardia"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "R00.1",
+          "display": "Bradycardia, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "427.81",
+          "display": "Sinoatrial node dysfunction"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "onsetDateTime": "2010-07-16T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "df641a3e-4aef-4f62-bc6f-f18c7bfd5586",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "period": {
+        "start": "2010-05-08T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "6b3ef1dc-0da4-4336-9b32-73c1a6394100",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "period": {
+        "start": "2010-01-25T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "ba406a71-912e-41c8-9977-32ab3d81df96",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "period": {
+        "start": "2010-07-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "c4696598-eab3-4bab-ae4e-aa8fbc851094",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99281",
+          "display": "Emergency dept visit"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "period": {
+        "start": "2010-07-16T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44808001",
+          "display": "Arrhythmia"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "48867003",
+          "display": "Bradycardia"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/f12fc9b9-5296-424a-b567-c2667805561a",
+        "display": "Bradycardia"
+      }, {
+        "reference": "Condition/38557f0b-cbbb-4194-85c2-0f9381d189c4",
+        "display": "Arrhythmia"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f12fc9b9-5296-424a-b567-c2667805561a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "48867003",
+          "display": "Bradycardia"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "R00.1",
+          "display": "Bradycardia, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "427.81",
+          "display": "Sinoatrial node dysfunction"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "onsetDateTime": "2010-07-16T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "38557f0b-cbbb-4194-85c2-0f9381d189c4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44808001",
+          "display": "Arrhythmia"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I45.9",
+          "display": "Conduction disorder, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "426.9",
+          "display": "Conduction disorder, unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "onsetDateTime": "2010-07-16T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5523e2b3-39fc-4936-ad5a-469c92c58490",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "period": {
+        "start": "2010-11-24T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "52dbab41-91cd-4334-803c-8cd02ef3df8b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-01-25T10:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "faf9489f-6107-4731-ae22-490c8721dd65",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116147009",
+          "display": "Cytology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "result": [ {
+        "reference": "Observation/4d38c1cd-1d83-45a0-948b-fe8077d02572",
+        "display": "Cyto Cervix"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4d38c1cd-1d83-45a0-948b-fe8077d02572",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "10524-7",
+          "display": "Cyto Cervix"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "88174",
+          "display": "Cytopath, c/v auto, in fluid"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0147",
+          "display": "Scr c/v cyto, automated sys"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z12.4",
+          "display": "Encounter for screening for malignant neoplasm of cervix"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.32",
+          "display": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "440623000",
+          "display": "Microscopic examination of cervical Papanicolaou smear"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "17621005",
+          "display": "normal"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6542e123-d68b-4ee4-be0a-20eeec1b2b46",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-24T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 20.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fd45fc5a-78b8-4a95-80fb-aa2d29e01dbc",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-24T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 114,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "db32b7f8-6d1b-42fa-8d65-3543a41c2f21",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-24T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 70,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a081cc92-c273-4fc8-a7c0-bd3af88477d6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-24T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 68,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "433bc9b7-de3a-4c6a-8b74-f8bc30f30080",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 62,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ee712db1-8254-4a44-ac5c-f411cb095689",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 64,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "10cfa8cd-37fb-49d7-a890-e995f57ee4e9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 19.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8a9b110e-e90f-448d-85c4-e604be43e646",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 110,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "303cf73c-030e-4001-b390-6f682cb65196",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 68,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "25ecaf3b-ffc0-4496-827d-fdc7bbf3f3e0",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 70,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f3f469c7-1f05-44c9-a99a-3404cd1f1e60",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 112,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "951ae6e4-0279-4f69-a4ca-9aacaaa668df",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-01-25T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "767f2f29-d446-44ce-a0b3-baed12702158",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-01-25T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 62,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f87110df-df6c-4240-bc37-4bcdf3be1fc7",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-01-25T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 116,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1232fe64-3d52-4926-84b2-772e6d9ea89c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-01-25T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 19.9,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6644653f-adb8-427c-aed2-4a773e09e80f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 122,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "32bf482b-9b4f-4a43-8009-a8d871233c2d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "db11fe3d-5fa1-4d19-adc1-1ecbc0befeb8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 48,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "afd1b5d7-5afd-4f3f-b72f-0814cd39f178",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "808917",
+          "display": "Fosfomycin 33.3 MG/ML Oral Suspension"
+        } ],
+        "text": "Fosfomycin + Fosfomycin 33.3 MG/ML Oral Suspension"
+      },
+      "patient": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "recordedDate": "2010-01-25T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "27b6d82e-7520-470d-96f8-0e93ef3a9f18",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "recordedDate": "2010-01-25T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "ca2c754c-5e4a-4b62-8e7c-0c13d6b7d442",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "406524",
+          "display": "Doxycycline 75 MG Enteric Coated Tablet"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006275",
+          "display": "Tetracycline"
+        } ],
+        "text": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+      },
+      "patient": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "recordedDate": "2010-01-25T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "b0a673ce-faef-4344-9a7c-81029394c77a",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/fc123a2f-e54b-405c-a1f3-539f818052e9",
+        "display": "Aspirin 81 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/fc381346-c8c1-4e17-b99c-eb0f85420cb6",
+        "display": "Ruth Shaw"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "fc123a2f-e54b-405c-a1f3-539f818052e9",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "243670",
+          "display": "Aspirin 81 MG Oral Tablet"
+        } ]
+      }
+    }
+  } ]
+}

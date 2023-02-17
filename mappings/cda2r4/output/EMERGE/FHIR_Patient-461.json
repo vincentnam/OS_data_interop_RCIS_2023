@@ -1,0 +1,1832 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "49f52763-1a9d-4e7c-9a7b-10a6e87d0e85",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "date": "2014-04-16T11:55:16+02:00",
+      "author": [ {
+        "reference": "Practitioner/b1750f29-8d8e-4619-8479-bf3057947ece",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/0667b27b-7821-4385-9b3e-bcab8f243a7e",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:16+02:00",
+        "party": {
+          "reference": "Practitioner/0667b27b-7821-4385-9b3e-bcab8f243a7e",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/9f47035b-46b7-4212-ae3d-d91a38ef2eab",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2007-05-31T10:00:00+02:00",
+          "end": "2010-10-05T10:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/cee84e58-4b51-4de6-b25a-08b08b8a6092",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>04-16-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/5286e9f6-40a3-4e88-b2af-887120e68db6",
+          "display": "Essential hypertension"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antihypertensive combinations</td><td>RxNorm</td><td>858828</td><td><span/>Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet</td><td>04-16-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/398320bb-acb7-414a-b14b-1917359ffff5",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>05-31-2007 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>04-01-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Prev Med Services 18 and Older</td><td>CPT</td><td>99396</td><td><span/>Prev visit, est, age 40-64</td><td>04-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>09-16-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>10-05-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/24e6b6cc-d9cb-4af0-a570-4b434798aeb2",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/7c7234a7-bb68-4433-ab72-d28db152b7c6",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/1aa8ee2a-c6c4-4c15-9961-0a13fac0b6e2",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/79bba7f0-014e-4ebe-8c55-9c5b12813c52",
+          "display": "Prev visit, est, age 40-64"
+        }, {
+          "reference": "Encounter/498f7844-a9bb-4946-81e5-089eb6d4dd85",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>22.5</td><td>kg/m2</td><td>05-31-2007 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>23.4</td><td>kg/m2</td><td>04-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>90</td><td>mm[Hg]</td><td>04-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>84</td><td>/min</td><td>04-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>142</td><td>mm[Hg]</td><td>04-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>90</td><td>mm[Hg]</td><td>09-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>82</td><td>/min</td><td>09-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>140</td><td>mm[Hg]</td><td>09-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>22.8</td><td>kg/m2</td><td>10-05-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>10-05-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>80</td><td>/min</td><td>10-05-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>10-05-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/8cc2489b-bcf0-4974-81d7-72f93ca7a48d",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/d2665eb6-4ab8-4597-a603-8bc1d07daf38",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/0cd90137-0bdc-4d72-a2cc-0f2d17a5c64f",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/b76a502d-3f0e-4b84-854a-61462c75d5e8",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/915809ea-eb49-41a0-a9a7-17129b6ef9d5",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/568e87c6-0b50-42ea-b22d-984398425293",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/b5ebd015-ab24-4736-ba03-7515c39634b5",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/20dc56ee-f30a-44e1-978e-f85a29bec3b0",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/a1f175f8-9efd-4b60-84f3-f4a878147f6c",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/cc85721a-c29a-495b-a32e-21c01feae770",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/d8d1c05a-8337-45d4-934a-3b173fdbac7e",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/e91c7e84-f582-481f-8158-a89f4117f6fe",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>57</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>04-16-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>99.2</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>04-16-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>179</td><td>mg/dL</td><td>125-200 mg/dL</td><td>04-16-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>114</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>04-16-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Chlamydia Screening</td><td>LOINC</td><td>31777-6</td><td><span/>C trach Ag XXX Ql</td><td>negative</td><td/><td>NA</td><td>10-05-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87270</td><td>Chlamydia trachomatis ag if</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121953005</td><td>Measurement of Chlamydia pneumoniae antibody</td><td/><td/><td/><td/><td/></tr><tr><td>Pap Test</td><td>LOINC</td><td>10524-7</td><td><span/>Cyto Cervix</td><td>normal</td><td/><td>NA</td><td>10-05-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>88174</td><td>Cytopath, c/v auto, in fluid</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0147</td><td>Scr c/v cyto, automated sys</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.4</td><td>Encounter for screening for malignant neoplasm of cervix</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V72.32</td><td>Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>440623000</td><td>Microscopic examination of cervical Papanicolaou smear</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/16805510-bb06-4129-92e9-4d6468808510",
+          "display": "Cytology"
+        }, {
+          "reference": "DiagnosticReport/64493b8e-2c2a-433a-aa01-f6bdc231fa24",
+          "display": "Lipid Panel"
+        }, {
+          "reference": "DiagnosticReport/585664ed-9ef8-44e6-b9b0-6f500b307640",
+          "display": "Microbiology"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>05-31-2007 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/15d6e420-f6dc-40c5-afc8-9dd693bb66a3"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use Cessation Counseling</td><td>CPT</td><td>99406</td><td><span/>Behav chng smoking 3-10 min</td><td>04-16-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>384742004</td><td>Smoking cessation assistance</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Fatal</td><td>Susceptible</td><td>05-31-2007 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Neomycin</td><td>RxNorm</td><td>866041</td><td><span/>Neomycin Sulfate 500 MG</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>05-31-2007 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>05-31-2007 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/465da9b2-a33a-444d-a52a-9b892b07220f",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/92a8b2d0-a28a-4b6b-8bf5-dd4f2bc1a33b",
+          "display": "Neomycin + Neomycin Sulfate 500 MG"
+        }, {
+          "reference": "AllergyIntolerance/4e18bd0f-ccf7-465c-bb2c-12f12130404a",
+          "display": "Penicillin V + Penicillin V"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "c53b947b-606c-4b21-990f-5a0e16775fab",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1059",
+            "display": "Zen Buddhism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Appleton",
+          "state": "WI",
+          "postalCode": "54913",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Webster",
+        "given": [ "Jean" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(419)760-6272",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1968-09-10",
+      "address": [ {
+        "use": "home",
+        "line": [ "3310 Hill Street" ],
+        "city": "Defiance",
+        "state": "OH",
+        "postalCode": "43512",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Wolfe",
+          "given": [ "Brandon" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(201)479-1582",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "BrandonDWolfe@jourrapide.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "3458 Walnut Avenue" ],
+          "city": "Lyndhurst",
+          "state": "NJ",
+          "postalCode": "7071",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/d1e0b17f-9a04-413d-a98c-9e5eabf0ccb9",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "d1e0b17f-9a04-413d-a98c-9e5eabf0ccb9",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "b1750f29-8d8e-4619-8479-bf3057947ece",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0667b27b-7821-4385-9b3e-bcab8f243a7e",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "cee84e58-4b51-4de6-b25a-08b08b8a6092",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "9f47035b-46b7-4212-ae3d-d91a38ef2eab",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "5286e9f6-40a3-4e88-b2af-887120e68db6",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Essential hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "onsetDateTime": "2010-04-16T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "398320bb-acb7-414a-b14b-1917359ffff5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/54ebe2c1-b4ca-431e-89e7-70d05252e8a9",
+        "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "54ebe2c1-b4ca-431e-89e7-70d05252e8a9",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "858828",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "24e6b6cc-d9cb-4af0-a570-4b434798aeb2",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "period": {
+        "start": "2007-05-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7c7234a7-bb68-4433-ab72-d28db152b7c6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "period": {
+        "start": "2010-09-16T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "1aa8ee2a-c6c4-4c15-9961-0a13fac0b6e2",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "period": {
+        "start": "2010-10-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "79bba7f0-014e-4ebe-8c55-9c5b12813c52",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99396",
+          "display": "Prev visit, est, age 40-64"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "period": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/65eafc48-6edd-4a33-bf14-b1f65677686c",
+        "display": "Hypertension"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "65eafc48-6edd-4a33-bf14-b1f65677686c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "onsetDateTime": "2010-04-16T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "498f7844-a9bb-4946-81e5-089eb6d4dd85",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "period": {
+        "start": "2010-04-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8cc2489b-bcf0-4974-81d7-72f93ca7a48d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 142,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d2665eb6-4ab8-4597-a603-8bc1d07daf38",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0cd90137-0bdc-4d72-a2cc-0f2d17a5c64f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 23.4,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b76a502d-3f0e-4b84-854a-61462c75d5e8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "915809ea-eb49-41a0-a9a7-17129b6ef9d5",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-05T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "568e87c6-0b50-42ea-b22d-984398425293",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-05T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b5ebd015-ab24-4736-ba03-7515c39634b5",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-05T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "20dc56ee-f30a-44e1-978e-f85a29bec3b0",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-05T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 22.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a1f175f8-9efd-4b60-84f3-f4a878147f6c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "cc85721a-c29a-495b-a32e-21c01feae770",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 140,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d8d1c05a-8337-45d4-934a-3b173fdbac7e",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e91c7e84-f582-481f-8158-a89f4117f6fe",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2007-05-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 22.5,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "16805510-bb06-4129-92e9-4d6468808510",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116147009",
+          "display": "Cytology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "result": [ {
+        "reference": "Observation/aefa6f1f-8ea4-4368-a371-186ef7fb99bd",
+        "display": "Cyto Cervix"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aefa6f1f-8ea4-4368-a371-186ef7fb99bd",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "10524-7",
+          "display": "Cyto Cervix"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "88174",
+          "display": "Cytopath, c/v auto, in fluid"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0147",
+          "display": "Scr c/v cyto, automated sys"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z12.4",
+          "display": "Encounter for screening for malignant neoplasm of cervix"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.32",
+          "display": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "440623000",
+          "display": "Microscopic examination of cervical Papanicolaou smear"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-05T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "17621005",
+          "display": "normal"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "64493b8e-2c2a-433a-aa01-f6bdc231fa24",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "result": [ {
+        "reference": "Observation/c57163b9-6898-4930-9329-89b04d6f22e7",
+        "display": "Cholest SerPl-mCnc"
+      }, {
+        "reference": "Observation/3e334a45-8489-47c7-9293-88cb9a1b91be",
+        "display": "HDLc SerPl-sCnc"
+      }, {
+        "reference": "Observation/274344df-801f-4adc-a4d9-ed5418497a04",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/d374a89c-bd2c-4931-956a-ec8c0521093e",
+        "display": "LDLc SerPl-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c57163b9-6898-4930-9329-89b04d6f22e7",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 179,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3e334a45-8489-47c7-9293-88cb9a1b91be",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 57,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "274344df-801f-4adc-a4d9-ed5418497a04",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 114,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d374a89c-bd2c-4931-956a-ec8c0521093e",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 99.2,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "585664ed-9ef8-44e6-b9b0-6f500b307640",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "269934003",
+          "display": "Microbiology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "result": [ {
+        "reference": "Observation/56b53931-f7e4-4d21-bbd3-8c3d9d33e5b5",
+        "display": "C trach Ag XXX Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "56b53931-f7e4-4d21-bbd3-8c3d9d33e5b5",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "31777-6",
+          "display": "C trach Ag XXX Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87270",
+          "display": "Chlamydia trachomatis ag if"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121953005",
+          "display": "Measurement of Chlamydia pneumoniae antibody"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-05T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "260385009",
+          "display": "negative"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "15d6e420-f6dc-40c5-afc8-9dd693bb66a3",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "effectivePeriod": {
+        "start": "2007-05-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "465da9b2-a33a-444d-a52a-9b892b07220f",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "recordedDate": "2007-05-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "92a8b2d0-a28a-4b6b-8bf5-dd4f2bc1a33b",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866041",
+          "display": "Neomycin Sulfate 500 MG"
+        } ],
+        "text": "Neomycin + Neomycin Sulfate 500 MG"
+      },
+      "patient": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "recordedDate": "2007-05-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "4e18bd0f-ccf7-465c-bb2c-12f12130404a",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/c53b947b-606c-4b21-990f-5a0e16775fab",
+        "display": "Jean Webster"
+      },
+      "recordedDate": "2007-05-31T10:00:00+02:00"
+    }
+  } ]
+}

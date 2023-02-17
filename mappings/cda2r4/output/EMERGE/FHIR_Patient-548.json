@@ -1,0 +1,1332 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "a35c1377-144b-4ac8-9229-9b5a2d74359a",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "date": "2014-04-16T11:55:22+02:00",
+      "author": [ {
+        "reference": "Practitioner/db630d72-dab3-4675-9e3f-a8be17533ed3",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/42f2f430-f791-4dd6-90db-7190be6c7d1a",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:22+02:00",
+        "party": {
+          "reference": "Practitioner/42f2f430-f791-4dd6-90db-7190be6c7d1a",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/e794a629-fbfb-4d4b-b70d-fb2f7f5736a8",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-05-10T10:00:00+02:00",
+          "end": "2010-09-10T10:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/2ae1d9a2-cedf-436d-a58a-7539729123cd",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/a9090e59-17b0-444d-83bc-96039772537a"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Codeine</td><td>NDF-RT</td><td>N0000006691</td><td><span/>Codeine</td><td><span/>Mild</td><td>Very susceptible</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Neomycin</td><td>RxNorm</td><td>866041</td><td><span/>Neomycin Sulfate 500 MG</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>05-10-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/c04efb24-892b-47f0-b0e2-ef2c6cbad60c",
+          "display": "Neomycin + Neomycin Sulfate 500 MG"
+        }, {
+          "reference": "AllergyIntolerance/4f07a91b-e8ec-4ad1-9e94-541ef21574e3",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/ddffc02a-a33c-42df-b7a1-ab01e9eddc8c",
+          "display": "Codeine + Codeine"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>05-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Tobacco Use Cessation Counseling</td><td>CPT</td><td>99406</td><td><span/>Behav chng smoking 3-10 min</td><td>05-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>384742004</td><td>Smoking cessation assistance</td><td/><td/></tr><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>09-10-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>24.1</td><td>kg/m2</td><td>05-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>05-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>134</td><td>mm[Hg]</td><td>05-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>24.1</td><td>kg/m2</td><td>09-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>09-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>132</td><td>mm[Hg]</td><td>09-10-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/8383ec76-e30e-4e12-ae62-b9720a3780fe",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/32f8495c-3551-4abb-9e01-9b0edec49f89",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/f8d3c700-8427-433b-a98c-ddd4e1f30ffc",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/ddfa70d5-993a-4d0e-96ef-9195631ef45f",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/86282037-1373-4b89-8777-69b265074754",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/065faed0-bf89-40e3-ae5e-e36aaac3be81",
+          "display": "BP Systolic"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Smoking Cessation Agents</td><td>RxNorm</td><td>1046847</td><td><span/>24 HR Nicotine 0.313 MG/HR Transdermal Patch</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>09-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>09-10-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/11d6a2f3-eb3b-4320-965f-463b8a689383",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        }, {
+          "reference": "MedicationStatement/2262b392-bbac-4e72-873a-d804973e8cb8",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        }, {
+          "reference": "MedicationStatement/5b6851b8-cc7b-4398-90e0-251e18e9e55e",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        }, {
+          "reference": "MedicationStatement/eb15971e-8e8c-4f03-a54e-9459e0275890",
+          "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+        }, {
+          "reference": "MedicationStatement/67f0fb8d-2659-4f22-b20c-d35541bd4dc9",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>05-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Persistent</td><td>SNOMED-CT</td><td>427295004</td><td><span/>Moderate persistent asthma</td><td>08-17-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45.42</td><td>Moderate persistent asthma with status asthmaticus</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>09-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>09-10-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/185d2136-8600-421b-a427-722e2a77bb4d",
+          "display": "Moderate persistent asthma"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>05-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>08-17-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>09-10-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/f87f31ea-1ecb-4459-87bd-d0eeba85c9d4",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/114161e3-94e7-4c00-99cd-904519d09788",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/35d940a2-f6b9-49cd-b8ad-65117a1293c8",
+          "display": "Office consultation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "ca00a240-9002-4715-8ae2-db5495caeb1c",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1059",
+            "display": "Zen Buddhism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Mohave Valley",
+          "state": "AZ",
+          "postalCode": "86440",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Hart",
+        "given": [ "Vincent" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(856)580-9373",
+        "use": "mobile"
+      } ],
+      "gender": "male",
+      "birthDate": "1972-03-23",
+      "address": [ {
+        "use": "home",
+        "line": [ "3078 Prospect Street" ],
+        "city": "Camden",
+        "state": "NJ",
+        "postalCode": "8102",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Preciado",
+          "given": [ "Richard" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(315)522-0578",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "RichardSPreciado@rhyta.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "1132 Buckhannan Avenue" ],
+          "city": "Utica",
+          "state": "NY",
+          "postalCode": "13502",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/23ebf00d-b1d7-4fc5-b13b-9abdaef63313",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "23ebf00d-b1d7-4fc5-b13b-9abdaef63313",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "db630d72-dab3-4675-9e3f-a8be17533ed3",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "42f2f430-f791-4dd6-90db-7190be6c7d1a",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "2ae1d9a2-cedf-436d-a58a-7539729123cd",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "e794a629-fbfb-4d4b-b70d-fb2f7f5736a8",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a9090e59-17b0-444d-83bc-96039772537a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-10T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "c04efb24-892b-47f0-b0e2-ef2c6cbad60c",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866041",
+          "display": "Neomycin Sulfate 500 MG"
+        } ],
+        "text": "Neomycin + Neomycin Sulfate 500 MG"
+      },
+      "patient": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "recordedDate": "2010-05-10T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "4f07a91b-e8ec-4ad1-9e94-541ef21574e3",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "recordedDate": "2010-05-10T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "ddffc02a-a33c-42df-b7a1-ab01e9eddc8c",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006691",
+          "display": "Codeine"
+        } ],
+        "text": "Codeine + Codeine"
+      },
+      "patient": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "recordedDate": "2010-05-10T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8383ec76-e30e-4e12-ae62-b9720a3780fe",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 24.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "32f8495c-3551-4abb-9e01-9b0edec49f89",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f8d3c700-8427-433b-a98c-ddd4e1f30ffc",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ddfa70d5-993a-4d0e-96ef-9195631ef45f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "86282037-1373-4b89-8777-69b265074754",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 24.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "065faed0-bf89-40e3-ae5e-e36aaac3be81",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 134,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "11d6a2f3-eb3b-4320-965f-463b8a689383",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/8bbe8afb-127f-462d-8018-26ed97786f2e",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "8bbe8afb-127f-462d-8018-26ed97786f2e",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "318142",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "2262b392-bbac-4e72-873a-d804973e8cb8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/b4c10c7a-66e5-4aa7-ab34-b74f97be2f91",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "b4c10c7a-66e5-4aa7-ab34-b74f97be2f91",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "5b6851b8-cc7b-4398-90e0-251e18e9e55e",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/b4c10c7a-66e5-4aa7-ab34-b74f97be2f91",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "eb15971e-8e8c-4f03-a54e-9459e0275890",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/a24add4a-39c5-456e-b692-652fa1492e95",
+        "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "a24add4a-39c5-456e-b692-652fa1492e95",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1046847",
+          "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "67f0fb8d-2659-4f22-b20c-d35541bd4dc9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/8bbe8afb-127f-462d-8018-26ed97786f2e",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "185d2136-8600-421b-a427-722e2a77bb4d",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "427295004",
+          "display": "Moderate persistent asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45.42",
+          "display": "Moderate persistent asthma with status asthmaticus"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "onsetDateTime": "2010-08-17T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f87f31ea-1ecb-4459-87bd-d0eeba85c9d4",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "period": {
+        "start": "2010-05-10T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/d6e58fb7-f587-4e49-9f14-a6d2788f95f7",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/466bbc99-966a-4626-b782-03dfce2493df",
+        "display": "Asthma Daytime Symptoms Quantified"
+      }, {
+        "reference": "Condition/1e1f289d-5e95-4c2e-8410-dc1602d14f3a",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "d6e58fb7-f587-4e49-9f14-a6d2788f95f7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "onsetDateTime": "2010-05-10T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "466bbc99-966a-4626-b782-03dfce2493df",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "onsetDateTime": "2010-05-10T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "1e1f289d-5e95-4c2e-8410-dc1602d14f3a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "onsetDateTime": "2010-05-10T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "114161e3-94e7-4c00-99cd-904519d09788",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "period": {
+        "start": "2010-08-17T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "427295004",
+          "display": "Asthma Persistent"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/1e1f289d-5e95-4c2e-8410-dc1602d14f3a",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "35d940a2-f6b9-49cd-b8ad-65117a1293c8",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ca00a240-9002-4715-8ae2-db5495caeb1c",
+        "display": "Vincent Hart"
+      },
+      "period": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/1e1f289d-5e95-4c2e-8410-dc1602d14f3a",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      }, {
+        "reference": "Condition/1e1f289d-5e95-4c2e-8410-dc1602d14f3a",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      } ]
+    }
+  } ]
+}

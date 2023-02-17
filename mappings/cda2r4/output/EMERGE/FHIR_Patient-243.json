@@ -1,0 +1,1663 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "bdc6dd5f-1dd3-4300-9fc7-e639e1d8c4fd",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "date": "2014-04-16T11:55:00+02:00",
+      "author": [ {
+        "reference": "Practitioner/f547b72f-e760-4211-8901-7bdf60da2928",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/058a5c3c-43fe-404f-a026-a7debecdb83a",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:00+02:00",
+        "party": {
+          "reference": "Practitioner/058a5c3c-43fe-404f-a026-a7debecdb83a",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/58e00ec3-6b9b-4775-9198-db5f84c043d6",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2009-06-08T10:00:00+02:00",
+          "end": "2010-10-10T10:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/7e9094f3-2e12-4bc2-acb3-8b866c805f83",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild</td><td>Very susceptible</td><td>05-06-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>05-06-2010 10:00:00</td><td>Active</td></tr><tr><td>Codeine</td><td>NDF-RT</td><td>N0000006691</td><td><span/>Codeine</td><td><span/>Fatal</td><td>Susceptible</td><td>05-06-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/c96b5092-967c-41a4-ac3e-2ba21d681ce4",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/145bf4bc-64f0-4d01-94d3-0ef24bc1e753",
+          "display": "Codeine + Codeine"
+        }, {
+          "reference": "AllergyIntolerance/6981a2ba-6aeb-4640-8fcd-46e5abb7fccb",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>05-06-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>06-08-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>06-11-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>10-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/eb530b3a-da26-4c86-9c9d-9d21bf4948aa",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/491759a6-33c9-4608-bb66-4985119335ab",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/6e852b8b-9e4d-4900-903d-1a35a1977ef1",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/df3cc32a-0719-43e5-b0be-0a963d72c3cd",
+          "display": "Hospital discharge day"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>29.9</td><td>kg/m2</td><td>05-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>92</td><td>mm[Hg]</td><td>05-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>88</td><td>/min</td><td>05-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>144</td><td>mm[Hg]</td><td>05-06-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>94</td><td>mm[Hg]</td><td>06-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>86</td><td>/min</td><td>06-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>146</td><td>mm[Hg]</td><td>06-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>27.4</td><td>kg/m2</td><td>10-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>92</td><td>mm[Hg]</td><td>10-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>88</td><td>/min</td><td>10-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>142</td><td>mm[Hg]</td><td>10-10-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/13a68eff-a010-44eb-b84a-d1131390bb6a",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/435d48c5-4348-4f70-8d10-852d938afa9f",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/254b7a38-c7d5-47f7-9b19-746378ed26a9",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/7e8e4f12-de52-4e17-8c6d-70643bf22cfb",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/94132416-cca1-450e-b267-a10aea7c468c",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/0be8cb10-541a-4ecb-ae33-c66b59677e30",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/18c82036-6d0c-43c2-ab48-30f0912cfb8f",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/9bd31798-af7d-424d-8e17-f749901334c8",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/7ff8ebc8-9bc9-4a91-bafd-41baaf69909b",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/40c452fc-249a-47c5-b929-b415ae1a883c",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/6828250d-767c-4449-9778-5b4062928cdd",
+          "display": "Heart Rate"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>05-06-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>05-06-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>06-08-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr><tr><td>ischemic vascular disease</td><td>SNOMED-CT</td><td>52674009</td><td><span/>Ischemia</td><td>06-08-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I24</td><td>Other acute ischemic heart diseases</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>411.89</td><td>Other acute and subacute forms of ischemic heart disease, other</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/d5183ba5-149c-4ad5-a045-dba79a84c803",
+          "display": "Ischemia"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>05-06-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/a7aeca22-c09d-4604-9859-2cf11f75d810"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>58</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>05-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>93</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>05-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>180</td><td>mg/dL</td><td>125-200 mg/dL</td><td>05-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>145</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>05-06-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/626d4296-3f60-43d2-b07b-c28bdc1a0452",
+          "display": "Lipid Panel"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Oral anti-platelet therapy</td><td>RxNorm</td><td>243670</td><td><span/>Aspirin 81 MG Oral Tablet</td><td>06-11-2010 10:00:00</td><td>Active</td></tr><tr><td>Statins</td><td>RxNorm</td><td>617314</td><td><span/>atorvastatin 10 MG Oral Tablet [Lipitor]</td><td>06-11-2010 10:00:00</td><td>Active</td></tr><tr><td>Oral anti-platelet therapy</td><td>RxNorm</td><td>243670</td><td><span/>Aspirin 81 MG Oral Tablet</td><td>10-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Statins</td><td>RxNorm</td><td>617314</td><td><span/>atorvastatin 10 MG Oral Tablet [Lipitor]</td><td>10-10-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/6f3582c8-6b38-488f-b6ec-75de3c2bb1ce",
+          "display": "Aspirin 81 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/ba91474d-b95f-4569-9f84-4c6619e32758",
+          "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+        }, {
+          "reference": "MedicationStatement/bba48fd7-be6f-4c52-9179-24897682a364",
+          "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+        }, {
+          "reference": "MedicationStatement/46f80f0f-c301-4b06-a9cf-e933c50f0984",
+          "display": "Aspirin 81 MG Oral Tablet"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1077",
+            "display": "Protestant"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Tempe",
+          "state": "AZ",
+          "postalCode": "85281",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Logan",
+        "given": [ "Stacy" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(901)517-8510",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1932-03-23",
+      "address": [ {
+        "use": "home",
+        "line": [ "472 Lightning Point Drive" ],
+        "city": "Memphis",
+        "state": "TN",
+        "postalCode": "38110",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Thompson",
+          "given": [ "Zachary" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(302)389-8875",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "ZacharyOThompson@fleckens.hu",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "3746 Callison Lane" ],
+          "city": "Newark",
+          "state": "DE",
+          "postalCode": "19714",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/8657e727-acbf-4720-8dc8-8153c770dcda",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "8657e727-acbf-4720-8dc8-8153c770dcda",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "f547b72f-e760-4211-8901-7bdf60da2928",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "058a5c3c-43fe-404f-a026-a7debecdb83a",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "7e9094f3-2e12-4bc2-acb3-8b866c805f83",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "58e00ec3-6b9b-4775-9198-db5f84c043d6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "c96b5092-967c-41a4-ac3e-2ba21d681ce4",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "recordedDate": "2010-05-06T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "145bf4bc-64f0-4d01-94d3-0ef24bc1e753",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006691",
+          "display": "Codeine"
+        } ],
+        "text": "Codeine + Codeine"
+      },
+      "patient": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "recordedDate": "2010-05-06T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "6981a2ba-6aeb-4640-8fcd-46e5abb7fccb",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "recordedDate": "2010-05-06T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "eb530b3a-da26-4c86-9c9d-9d21bf4948aa",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "period": {
+        "start": "2010-10-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "491759a6-33c9-4608-bb66-4985119335ab",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "period": {
+        "start": "2010-06-08T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "ischemic vascular disease"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/17fa6b59-cc30-4974-8582-25b92ca2da8b",
+        "display": "ischemic vascular disease"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "17fa6b59-cc30-4974-8582-25b92ca2da8b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "ischemic vascular disease"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I24",
+          "display": "Other acute ischemic heart diseases"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "411.89",
+          "display": "Other acute and subacute forms of ischemic heart disease, other"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "onsetDateTime": "2010-06-08T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "6e852b8b-9e4d-4900-903d-1a35a1977ef1",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "period": {
+        "start": "2010-05-06T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "df3cc32a-0719-43e5-b0be-0a963d72c3cd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "period": {
+        "start": "2010-06-11T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "13a68eff-a010-44eb-b84a-d1131390bb6a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 88,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "435d48c5-4348-4f70-8d10-852d938afa9f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 92,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "254b7a38-c7d5-47f7-9b19-746378ed26a9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 142,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7e8e4f12-de52-4e17-8c6d-70643bf22cfb",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 27.4,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "94132416-cca1-450e-b267-a10aea7c468c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 86,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0be8cb10-541a-4ecb-ae33-c66b59677e30",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 146,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "18c82036-6d0c-43c2-ab48-30f0912cfb8f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 94,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9bd31798-af7d-424d-8e17-f749901334c8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 144,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7ff8ebc8-9bc9-4a91-bafd-41baaf69909b",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 92,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "40c452fc-249a-47c5-b929-b415ae1a883c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 29.9,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6828250d-767c-4449-9778-5b4062928cdd",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 88,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "d5183ba5-149c-4ad5-a045-dba79a84c803",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "52674009",
+          "display": "Ischemia"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I24",
+          "display": "Other acute ischemic heart diseases"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "411.89",
+          "display": "Other acute and subacute forms of ischemic heart disease, other"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "onsetDateTime": "2010-06-08T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a7aeca22-c09d-4604-9859-2cf11f75d810",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "626d4296-3f60-43d2-b07b-c28bdc1a0452",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "result": [ {
+        "reference": "Observation/893b1209-eeec-4a34-86a3-741be4cfb75b",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/b0397a19-ec64-471b-b196-45e9a2ceb7b6",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/84717a84-b347-49f9-b0a7-2883e295079a",
+        "display": "Cholest SerPl-mCnc"
+      }, {
+        "reference": "Observation/6ff91318-c396-40bc-84af-e94ced20b826",
+        "display": "HDLc SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "893b1209-eeec-4a34-86a3-741be4cfb75b",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 145,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b0397a19-ec64-471b-b196-45e9a2ceb7b6",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 93,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "84717a84-b347-49f9-b0a7-2883e295079a",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 180,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6ff91318-c396-40bc-84af-e94ced20b826",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-06T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 58,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "6f3582c8-6b38-488f-b6ec-75de3c2bb1ce",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/be207986-3970-4101-b383-46c3b192e9ac",
+        "display": "Aspirin 81 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "be207986-3970-4101-b383-46c3b192e9ac",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "243670",
+          "display": "Aspirin 81 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "ba91474d-b95f-4569-9f84-4c6619e32758",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/7966ab94-e4df-4de5-a515-75fadb532002",
+        "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "7966ab94-e4df-4de5-a515-75fadb532002",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "617314",
+          "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "bba48fd7-be6f-4c52-9179-24897682a364",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/7966ab94-e4df-4de5-a515-75fadb532002",
+        "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-11T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "46f80f0f-c301-4b06-a9cf-e933c50f0984",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/be207986-3970-4101-b383-46c3b192e9ac",
+        "display": "Aspirin 81 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/7dbb710f-177d-4e78-895d-5e6bb8e46c37",
+        "display": "Stacy Logan"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-11T10:00:00+02:00"
+      }
+    }
+  } ]
+}

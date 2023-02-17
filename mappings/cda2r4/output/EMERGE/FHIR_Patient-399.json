@@ -1,0 +1,1471 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "5b805256-c5d5-44fc-a9d0-86987dbe3f6f",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "date": "2014-04-16T11:55:11+02:00",
+      "author": [ {
+        "reference": "Practitioner/e05eb123-849c-4367-923e-ca27017bb439",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/e762de3a-46ea-4b80-ae97-78600a6990d9",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:11+02:00",
+        "party": {
+          "reference": "Practitioner/e762de3a-46ea-4b80-ae97-78600a6990d9",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/c07d0d8c-2bac-47d5-81a3-7c990053a319",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-09-08T10:00:00+02:00",
+          "end": "2010-12-20T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/be3093ec-3957-45e3-afe1-7603dc4c747b",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>09-08-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Prev Med-Individual counseling</td><td>CPT</td><td>99404</td><td><span/>Preventive counseling, indiv</td><td>10-11-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>12-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/8b943ca8-150b-4b24-b492-cec0717b71df",
+          "display": "Preventive counseling, indiv"
+        }, {
+          "reference": "Encounter/fae9eb0c-570f-42c7-b3dd-fe2d687029c7",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/8ff8b32b-d8ef-48d2-8138-8478f765d5f2",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Ejection Fraction</td><td>SNOMED-CT</td><td>70822001</td><td><span/>Cardiac ejection fraction, function</td><td>10-01-2010 10:00:00</td><td>Performed</td></tr><tr><td>Breast Cancer Screening</td><td>CPT</td><td>77057</td><td><span/>Mammogram, screening</td><td>11-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0202</td><td>Screeningmammographydigital</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.31</td><td>Encounter for screening mammogram for malignant neoplasm of breast</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V76.12</td><td>Other screening mammogram</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>24623002</td><td>Screening mammography</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>ACE inhibitor or ARB</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>10-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Beta Blocker Therapy</td><td>RxNorm</td><td>866924</td><td><span/>Metoprolol Tartrate 25 MG Oral Tablet</td><td>10-05-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/85514aa1-9ea2-4a9a-a6b6-db83c5e19de0",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/8db412aa-3431-43da-9d47-32903038e99e",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>27.5</td><td>kg/m2</td><td>09-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>92</td><td>mm[Hg]</td><td>09-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>82</td><td>/min</td><td>09-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>158</td><td>mm[Hg]</td><td>09-08-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>27.1</td><td>kg/m2</td><td>10-11-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>90</td><td>mm[Hg]</td><td>10-11-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>84</td><td>/min</td><td>10-11-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>156</td><td>mm[Hg]</td><td>10-11-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>92</td><td>mm[Hg]</td><td>12-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>84</td><td>/min</td><td>12-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>154</td><td>mm[Hg]</td><td>12-20-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/d5b7a568-9d6d-4088-ab88-1e9fc4339900",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/34af8bc2-05a3-4bfd-868d-f47ebe7c853f",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/11d8fa6f-d8a9-408f-b473-f2770860a077",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/0fa4bcc8-1572-4784-a964-a8bb96cb9176",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/35d15226-a681-4db7-a520-155ca7d576ba",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/52a773fc-ff46-4fb5-9f2b-959709861a4b",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/bb2cd91d-d102-4c54-9068-ad9fe50d51bc",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/e5ab46af-1c81-4f36-b43e-cd72960045f3",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/ee484d08-3e3e-424c-9940-e7f7bc91c6a7",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/785d77b7-6312-4af1-acaa-0824beb18c7d",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/2bea14ea-53d9-4d91-8c11-659de39d710a",
+          "display": "Heart Rate"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Heart Failure</td><td>SNOMED-CT</td><td>84114007</td><td><span/>Heart failure</td><td>10-05-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I50.9</td><td>Heart failure, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>428.9</td><td>Heart failure, unspecified</td><td/><td/></tr><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>10-05-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/fa6396dc-629b-4fd8-9f91-72b200bcd4a0",
+          "display": "Essential hypertension"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild</td><td>Moderately Susceptible</td><td>09-08-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Neomycin</td><td>RxNorm</td><td>866041</td><td><span/>Neomycin Sulfate 500 MG</td><td><span/>Severe</td><td>Susceptible</td><td>09-08-2010 10:00:00</td><td>Active</td></tr><tr><td>Tetracyclines</td><td>RxNorm</td><td>406524</td><td><span/>Doxycycline 75 MG Enteric Coated Tablet</td><td><span/>Moderate to severe</td><td>Very susceptible</td><td>09-08-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>NDF-RT</td><td>N0000006275</td><td>Tetracycline</td><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/6eb5d4b2-7777-4dc9-8005-dac36bbdb2d3",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/75b94b3b-e56b-41cc-aa48-f19352095b90",
+          "display": "Neomycin + Neomycin Sulfate 500 MG"
+        }, {
+          "reference": "AllergyIntolerance/59e52ed5-87c2-45d9-be47-f703071cf39e",
+          "display": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>FOBT</td><td>LOINC</td><td>2335-8</td><td><span/>Hemoccult Stl Ql</td><td>negative</td><td/><td>NA</td><td>11-15-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82274</td><td>Assay test for blood, fecal</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0328</td><td>Fecal blood scrn immunoassay</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V76.51</td><td>Special screening for malignant neoplasms of colon</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>252156002</td><td>Occult blood screening</td><td/><td/><td/><td/><td/></tr><tr><td>Pap Test</td><td>LOINC</td><td>10524-7</td><td><span/>Cyto Cervix</td><td>normal</td><td/><td>NA</td><td>11-15-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>88174</td><td>Cytopath, c/v auto, in fluid</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0147</td><td>Scr c/v cyto, automated sys</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.4</td><td>Encounter for screening for malignant neoplasm of cervix</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V72.32</td><td>Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>440623000</td><td>Microscopic examination of cervical Papanicolaou smear</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/548e42b6-9534-475e-89b4-4d48ea7d66e6",
+          "display": "Cytology"
+        }, {
+          "reference": "DiagnosticReport/70afda40-c49e-4bbe-930a-ebb5416fa85d",
+          "display": "FOBT"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>09-08-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/8ce5b5e6-fc17-4d7e-a478-fa641199d5db"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1020",
+            "display": "Hinduism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Mesa",
+          "state": "AZ",
+          "postalCode": "85201",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Lee",
+        "given": [ "Rose" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(608)361-9733",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1949-05-08",
+      "address": [ {
+        "use": "home",
+        "line": [ "2339 Lauren Drive" ],
+        "city": "Beloit",
+        "state": "WI",
+        "postalCode": "53511",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Uchida",
+          "given": [ "James" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(818)362-4963",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "JamesLUchida@jourrapide.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "2149 Edsel Road" ],
+          "city": "Sylmar",
+          "state": "CA",
+          "postalCode": "91342",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/217acffe-bf09-4d0f-ae2c-61e8c6e11459",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "217acffe-bf09-4d0f-ae2c-61e8c6e11459",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e05eb123-849c-4367-923e-ca27017bb439",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e762de3a-46ea-4b80-ae97-78600a6990d9",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "be3093ec-3957-45e3-afe1-7603dc4c747b",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "c07d0d8c-2bac-47d5-81a3-7c990053a319",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8b943ca8-150b-4b24-b492-cec0717b71df",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99404",
+          "display": "Preventive counseling, indiv"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "period": {
+        "start": "2010-10-11T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "fae9eb0c-570f-42c7-b3dd-fe2d687029c7",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "period": {
+        "start": "2010-12-20T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8ff8b32b-d8ef-48d2-8138-8478f765d5f2",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "period": {
+        "start": "2010-09-08T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "85514aa1-9ea2-4a9a-a6b6-db83c5e19de0",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/07e4ba33-20df-4738-9048-16551ec67aa8",
+        "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "07e4ba33-20df-4738-9048-16551ec67aa8",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866924",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "8db412aa-3431-43da-9d47-32903038e99e",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/736e456c-efe3-4473-9205-77257d97d30a",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "736e456c-efe3-4473-9205-77257d97d30a",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d5b7a568-9d6d-4088-ab88-1e9fc4339900",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 158,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "34af8bc2-05a3-4bfd-868d-f47ebe7c853f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 27.5,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "11d8fa6f-d8a9-408f-b473-f2770860a077",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 92,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0fa4bcc8-1572-4784-a964-a8bb96cb9176",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "35d15226-a681-4db7-a520-155ca7d576ba",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-11T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "52a773fc-ff46-4fb5-9f2b-959709861a4b",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-11T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 156,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bb2cd91d-d102-4c54-9068-ad9fe50d51bc",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-11T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 27.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5ab46af-1c81-4f36-b43e-cd72960045f3",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-11T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ee484d08-3e3e-424c-9940-e7f7bc91c6a7",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-20T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 154,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "785d77b7-6312-4af1-acaa-0824beb18c7d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-20T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 92,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bea14ea-53d9-4d91-8c11-659de39d710a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-20T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "fa6396dc-629b-4fd8-9f91-72b200bcd4a0",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Essential hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "onsetDateTime": "2010-10-05T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "6eb5d4b2-7777-4dc9-8005-dac36bbdb2d3",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "recordedDate": "2010-09-08T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "75b94b3b-e56b-41cc-aa48-f19352095b90",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866041",
+          "display": "Neomycin Sulfate 500 MG"
+        } ],
+        "text": "Neomycin + Neomycin Sulfate 500 MG"
+      },
+      "patient": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "recordedDate": "2010-09-08T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "59e52ed5-87c2-45d9-be47-f703071cf39e",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "406524",
+          "display": "Doxycycline 75 MG Enteric Coated Tablet"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006275",
+          "display": "Tetracycline"
+        } ],
+        "text": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+      },
+      "patient": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "recordedDate": "2010-09-08T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "548e42b6-9534-475e-89b4-4d48ea7d66e6",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116147009",
+          "display": "Cytology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "result": [ {
+        "reference": "Observation/b1472164-c3cf-4746-92cb-fed4025f02a0",
+        "display": "Cyto Cervix"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b1472164-c3cf-4746-92cb-fed4025f02a0",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "10524-7",
+          "display": "Cyto Cervix"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "88174",
+          "display": "Cytopath, c/v auto, in fluid"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0147",
+          "display": "Scr c/v cyto, automated sys"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z12.4",
+          "display": "Encounter for screening for malignant neoplasm of cervix"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.32",
+          "display": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "440623000",
+          "display": "Microscopic examination of cervical Papanicolaou smear"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-15T10:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "17621005",
+          "display": "normal"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "70afda40-c49e-4bbe-930a-ebb5416fa85d",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "167670005",
+          "display": "FOBT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "result": [ {
+        "reference": "Observation/af8ff8b0-8cde-4b0d-b9dc-a3d45cfd67d8",
+        "display": "Hemoccult Stl Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "af8ff8b0-8cde-4b0d-b9dc-a3d45cfd67d8",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2335-8",
+          "display": "Hemoccult Stl Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82274",
+          "display": "Assay test for blood, fecal"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0328",
+          "display": "Fecal blood scrn immunoassay"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V76.51",
+          "display": "Special screening for malignant neoplasms of colon"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "252156002",
+          "display": "Occult blood screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-15T10:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "260385009",
+          "display": "negative"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8ce5b5e6-fc17-4d7e-a478-fa641199d5db",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/13a90fa8-9032-4d59-a04a-b19c6f5e9a3b",
+        "display": "Rose Lee"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-08T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  } ]
+}

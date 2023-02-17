@@ -1,0 +1,1460 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "eb8aeffe-af2f-47d1-8cbb-74524463784c",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "date": "2014-04-16T11:54:55+02:00",
+      "author": [ {
+        "reference": "Practitioner/14e1d55a-4674-4dcb-8389-0175dc9c6004",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/c673ef50-5c83-4140-9042-d1b5d981777b",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:55+02:00",
+        "party": {
+          "reference": "Practitioner/c673ef50-5c83-4140-9042-d1b5d981777b",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/a11c2d3e-7e14-4a39-a45c-9024075c801f",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-03-31T10:00:00+02:00",
+          "end": "2010-10-30T10:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/f9cb5ef3-1762-454d-9ee3-e9e1fdf22fb6",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/06d2bfb3-186e-4766-acce-9ee1d550dc3f"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Moderate</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/777644a0-c854-4c51-97bf-b5cbb65548de",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/2c5d910f-44d3-4375-a31d-866111f4cb93",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/4c81a5f8-cf53-4a55-b87a-ccc22bbc51b3",
+          "display": "Penicillin V + Penicillin V"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Insulin</td><td>RxNorm</td><td>847207</td><td><span/>3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/4584454e-d266-41b4-b9a1-70f21231ff8a",
+          "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diabetes</td><td>SNOMED-CT</td><td>44054006</td><td><span/>Diabetes mellitus type 2</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>E11.9</td><td>Type 2 diabetes mellitus without complications</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>250.00</td><td>Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>04-12-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>04-12-2010 10:00:00</td><td>Active</td></tr><tr><td>Diabetic Retinopathy</td><td>SNOMED-CT</td><td>312904009</td><td><span/>Moderate nonproliferative diabetic retinopathy</td><td>04-12-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>E13.33</td><td>Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>362.05</td><td>Moderate nonproliferative diabetic retinopathy</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/fc2880c4-2275-4e45-868f-6471401ec7c4",
+          "display": "Asthma causes night symptoms 1 to 2 times per month"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Ophthalmological Services</td><td>CPT</td><td>92012</td><td><span/>Eye exam established pat</td><td>04-12-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>07-24-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Ophthalmological Services</td><td>CPT</td><td>92012</td><td><span/>Eye exam established pat</td><td>10-30-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/636ba8bb-4eba-4a00-a8a3-cbc3a932c152",
+          "display": "Eye exam established pat"
+        }, {
+          "reference": "Encounter/d0f149f2-101a-4ff2-8d68-918b562ef581",
+          "display": "Eye exam established pat"
+        }, {
+          "reference": "Encounter/f9ff0307-4fde-418c-b6cf-99e7ed9c7570",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/f9f96e64-62cf-49ea-9d26-c73cf3e24d44",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Eye Exam</td><td>CPT</td><td>92012</td><td><span/>Eye exam established pat</td><td>04-12-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S0621</td><td>Routine ophthalmological exa</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>95.03</td><td>Extended ophthalmologic work-up</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>36228007</td><td>Ophthalmic examination and evaluation</td><td/><td/></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>04-12-2010 10:00:00</td><td>Performed</td></tr><tr><td>Macular or Fundus Exam</td><td>SNOMED-CT</td><td>312905005</td><td><span/>Severe nonproliferative diabetic retinopathy</td><td>04-12-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>37231002</td><td>Macular retinal edema</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>410455004</td><td>Slit lamp fundus examination</td><td/><td/></tr><tr><td>severity of retinopathy and macular edema fin</td><td>SNOMED-CT</td><td>399875001</td><td><span/>Non-high-risk proliferative diabetic retinopathy with clinically significant macular edema</td><td>04-12-2010 10:00:00</td><td>Performed</td></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>10-30-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>28.8</td><td>kg/m2</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>72</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>112</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>70</td><td>mm[Hg]</td><td>04-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>110</td><td>mm[Hg]</td><td>04-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>27.3</td><td>kg/m2</td><td>07-24-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>74</td><td>mm[Hg]</td><td>10-30-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>115</td><td>mm[Hg]</td><td>10-30-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/80c26b1d-444b-44cf-a6e0-62c86cbc0d33",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/9d3d20b4-4a89-483b-bd58-8e99019fab1c",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/1902df5d-7309-47ff-8df1-0d177721557a",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/80e31b96-762b-4aa3-a866-78b0a31ea86a",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/828a253c-f331-4c3b-9495-117194f661ae",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/52e59e44-0f96-4410-b9d2-7504271781eb",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/e8551811-8563-41e6-abcd-646a283ee9c8",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/56c882d4-d5f1-4619-97fe-a0305dec5612",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>7</td><td>%</td><td>4-5.6%</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>6.5</td><td>%</td><td>4-5.6%</td><td>07-24-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/d2ad86a5-aa14-4d48-9237-eca4aad70b0e",
+          "display": "Blood Chemistry"
+        }, {
+          "reference": "DiagnosticReport/2de85159-d628-4ce6-9fa1-519db22fc504",
+          "display": "Blood Chemistry"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1005",
+            "display": "Anglican"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Chillicothe",
+          "state": "MO",
+          "postalCode": "64601",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Anderson",
+        "given": [ "Shannon" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(410)214-8225",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1984-09-19",
+      "address": [ {
+        "use": "home",
+        "line": [ "4043 Hamilton Drive" ],
+        "city": "Baltimore",
+        "state": "MD",
+        "postalCode": "21202",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Renfrow",
+          "given": [ "Patricia" ],
+          "prefix": [ "Mrs." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(830)772-6135",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "PatriciaPRenfrow@einrot.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "2406 Crestview Terrace" ],
+          "city": "Lytle",
+          "state": "TX",
+          "postalCode": "78052",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/f1b8d160-db8a-467c-993f-8aa1b48bd385",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f1b8d160-db8a-467c-993f-8aa1b48bd385",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "14e1d55a-4674-4dcb-8389-0175dc9c6004",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c673ef50-5c83-4140-9042-d1b5d981777b",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "f9cb5ef3-1762-454d-9ee3-e9e1fdf22fb6",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "a11c2d3e-7e14-4a39-a45c-9024075c801f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "06d2bfb3-186e-4766-acce-9ee1d550dc3f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "777644a0-c854-4c51-97bf-b5cbb65548de",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "2c5d910f-44d3-4375-a31d-866111f4cb93",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "4c81a5f8-cf53-4a55-b87a-ccc22bbc51b3",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "4584454e-d266-41b4-b9a1-70f21231ff8a",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/6818f622-4c75-4db6-b850-b48b1d30967c",
+        "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "6818f622-4c75-4db6-b850-b48b1d30967c",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "847207",
+          "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "fc2880c4-2275-4e45-868f-6471401ec7c4",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma causes night symptoms 1 to 2 times per month"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "onsetDateTime": "2010-04-12T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "636ba8bb-4eba-4a00-a8a3-cbc3a932c152",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "92012",
+          "display": "Eye exam established pat"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "period": {
+        "start": "2010-04-12T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "312904009",
+          "display": "Diabetic Retinopathy"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/36fabdd4-660f-4bcc-8ce1-de34b0c1d013",
+        "display": "Asthma Daytime Symptoms Quantified"
+      }, {
+        "reference": "Condition/bed03a7c-3712-447b-abba-029fb0692b78",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      }, {
+        "reference": "Condition/ff53fb9b-0788-45d9-9e25-b99c15a2b15f",
+        "display": "Diabetic Retinopathy"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "36fabdd4-660f-4bcc-8ce1-de34b0c1d013",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "onsetDateTime": "2010-04-12T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "bed03a7c-3712-447b-abba-029fb0692b78",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "onsetDateTime": "2010-04-12T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ff53fb9b-0788-45d9-9e25-b99c15a2b15f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "312904009",
+          "display": "Diabetic Retinopathy"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "E13.33",
+          "display": "Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "362.05",
+          "display": "Moderate nonproliferative diabetic retinopathy"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "onsetDateTime": "2010-04-12T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d0f149f2-101a-4ff2-8d68-918b562ef581",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "92012",
+          "display": "Eye exam established pat"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "period": {
+        "start": "2010-10-30T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f9ff0307-4fde-418c-b6cf-99e7ed9c7570",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/ff53fb9b-0788-45d9-9e25-b99c15a2b15f",
+        "display": "Diabetic Retinopathy"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f9f96e64-62cf-49ea-9d26-c73cf3e24d44",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "period": {
+        "start": "2010-07-24T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "80c26b1d-444b-44cf-a6e0-62c86cbc0d33",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-30T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9d3d20b4-4a89-483b-bd58-8e99019fab1c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-30T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 115,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1902df5d-7309-47ff-8df1-0d177721557a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 70,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "80e31b96-762b-4aa3-a866-78b0a31ea86a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 110,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "828a253c-f331-4c3b-9495-117194f661ae",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 28.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "52e59e44-0f96-4410-b9d2-7504271781eb",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e8551811-8563-41e6-abcd-646a283ee9c8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 112,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "56c882d4-d5f1-4619-97fe-a0305dec5612",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 27.3,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "d2ad86a5-aa14-4d48-9237-eca4aad70b0e",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "result": [ {
+        "reference": "Observation/d78549b6-ae4e-4927-8685-0ea6edbcd0f3",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d78549b6-ae4e-4927-8685-0ea6edbcd0f3",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 7,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "2de85159-d628-4ce6-9fa1-519db22fc504",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "result": [ {
+        "reference": "Observation/16fce2ae-cbf9-4fea-89d4-10933ebbc54a",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "16fce2ae-cbf9-4fea-89d4-10933ebbc54a",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5fa86d61-c31f-45b5-98b2-8bcc8edfd0e9",
+        "display": "Shannon Anderson"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 6.5,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  } ]
+}

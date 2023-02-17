@@ -1,0 +1,1435 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "f3312d8d-6915-457b-8dca-3611c8345f48",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "date": "2014-04-16T11:54:57+02:00",
+      "author": [ {
+        "reference": "Practitioner/0c6eb6e7-e5eb-4bb5-83e1-dcc919c15e57",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/7c99304d-1120-4094-b083-b1acd46c8166",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:57+02:00",
+        "party": {
+          "reference": "Practitioner/7c99304d-1120-4094-b083-b1acd46c8166",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/7e6085bf-e7b6-4683-9701-c3e4a534171c",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-05-13T10:00:00+02:00",
+          "end": "2010-11-30T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/ee5ae2c1-8f9d-48e3-add7-4878c090052f",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Pap Test</td><td>LOINC</td><td>10524-7</td><td><span/>Cyto Cervix</td><td>normal</td><td/><td>NA</td><td>09-07-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>88174</td><td>Cytopath, c/v auto, in fluid</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0147</td><td>Scr c/v cyto, automated sys</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.4</td><td>Encounter for screening for malignant neoplasm of cervix</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V72.32</td><td>Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>440623000</td><td>Microscopic examination of cervical Papanicolaou smear</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/e6888928-d817-4dba-8e82-3cb8e6bb8cc3",
+          "display": "Cytology"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>05-13-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Ob/Gyn</td><td>ICD-9-CM</td><td>V72.31</td><td><span/>Routine gynecological examination</td><td>09-07-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Prev Med Services 18 and Older</td><td>CPT</td><td>99396</td><td><span/>Prev visit, est, age 40-64</td><td>10-12-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>11-30-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/b62af4ba-d085-44a5-b0a4-c02a1b103d39",
+          "display": "Prev visit, est, age 40-64"
+        }, {
+          "reference": "Encounter/2177075b-cb28-4741-b6fb-2d739ea8adc9",
+          "display": "Routine gynecological examination"
+        }, {
+          "reference": "Encounter/5937a692-947c-4195-85d6-601d0c5bb2eb",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/bff7593c-c418-4027-89cd-93cda35688ba",
+          "display": "Office consultation"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>05-13-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/2595bb39-7103-4e4c-9a01-80b55acb9c98"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild</td><td>Very susceptible</td><td>05-13-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Moderate to severe</td><td>Susceptible</td><td>05-13-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Severe</td><td>Very susceptible</td><td>05-13-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/cd82caaa-1d30-4b75-801f-14f8fae87eba",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/fd94c294-1208-4af4-85d9-193de698001c",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/851e038b-590c-4178-b85e-d784d17eeb64",
+          "display": "Penicillin V + Penicillin V"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>05-13-2010 10:00:00</td><td>Performed</td></tr><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>05-13-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>05-13-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>05-13-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>05-13-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>05-13-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Persistent</td><td>SNOMED-CT</td><td>427295004</td><td><span/>Moderate persistent asthma</td><td>05-13-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45.42</td><td>Moderate persistent asthma with status asthmaticus</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>11-30-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>11-30-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/62cef7e8-5730-4ff7-93bd-147a31753e5d",
+          "display": "Asthma causes daytime symptoms 1 to 2 times per month"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>05-13-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>05-13-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/c4af92dc-7b95-4d72-ba34-dcf2f3d7e701",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        }, {
+          "reference": "MedicationStatement/fcfe704a-15da-4cd4-a529-b0aedcb819d6",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>28.3</td><td>kg/m2</td><td>05-13-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>72</td><td>mm[Hg]</td><td>05-13-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>84</td><td>/min</td><td>05-13-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>112</td><td>mm[Hg]</td><td>05-13-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>74</td><td>mm[Hg]</td><td>11-30-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>86</td><td>/min</td><td>11-30-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>116</td><td>mm[Hg]</td><td>11-30-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/8b525a5e-d203-414d-8470-5fb2572c71f5",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/3fe7d1d6-0587-47bc-853b-1dfc73fddacc",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/f6d011ab-c458-4241-920e-d5a6c79cb38d",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/d3a29023-eb6a-4dd0-bec1-75fc08e78569",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/e29b4315-b702-48bd-b089-ace15f23dee6",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/3b4a00d2-d15c-476e-9c87-d0072698a859",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/f5065272-7732-42e6-ac19-0ac60b40d722",
+          "display": "BP Diastolic"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1020",
+            "display": "Hinduism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Cleveland",
+          "state": "OH",
+          "postalCode": "44115",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Casey",
+        "given": [ "Phyllis" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(562)333-2494",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1978-02-03",
+      "address": [ {
+        "use": "home",
+        "line": [ "1213 Reynolds Alley" ],
+        "city": "Los Angeles",
+        "state": "CA",
+        "postalCode": "90017",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Lawson",
+          "given": [ "Becky" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(530)886-2897",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "BeckyDLawson@superrito.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "4208 Byers Lane" ],
+          "city": "Auburn",
+          "state": "CA",
+          "postalCode": "95603",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/27e22c43-c416-4cae-995f-c132a4c5a6c7",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "27e22c43-c416-4cae-995f-c132a4c5a6c7",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0c6eb6e7-e5eb-4bb5-83e1-dcc919c15e57",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "7c99304d-1120-4094-b083-b1acd46c8166",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ee5ae2c1-8f9d-48e3-add7-4878c090052f",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "7e6085bf-e7b6-4683-9701-c3e4a534171c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "e6888928-d817-4dba-8e82-3cb8e6bb8cc3",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116147009",
+          "display": "Cytology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "result": [ {
+        "reference": "Observation/04f2f026-8713-42ef-8229-1251601c619d",
+        "display": "Cyto Cervix"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "04f2f026-8713-42ef-8229-1251601c619d",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "10524-7",
+          "display": "Cyto Cervix"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "88174",
+          "display": "Cytopath, c/v auto, in fluid"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0147",
+          "display": "Scr c/v cyto, automated sys"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z12.4",
+          "display": "Encounter for screening for malignant neoplasm of cervix"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.32",
+          "display": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "440623000",
+          "display": "Microscopic examination of cervical Papanicolaou smear"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-07T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "17621005",
+          "display": "normal"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "b62af4ba-d085-44a5-b0a4-c02a1b103d39",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99396",
+          "display": "Prev visit, est, age 40-64"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "period": {
+        "start": "2010-10-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "2177075b-cb28-4741-b6fb-2d739ea8adc9",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.31",
+          "display": "Routine gynecological examination"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "period": {
+        "start": "2010-09-07T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5937a692-947c-4195-85d6-601d0c5bb2eb",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "period": {
+        "start": "2010-05-13T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "427295004",
+          "display": "Asthma Persistent"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/ac2b4f67-3863-4b95-a4c1-0a7d8b4253ae",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      }, {
+        "reference": "Condition/ee095394-e61f-4efd-ab25-27137d8998c4",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/c6de782c-1f4a-4d69-a9ef-333c712a4227",
+        "display": "Asthma Daytime Symptoms Quantified"
+      }, {
+        "reference": "Condition/c3abc214-841b-40db-82fc-60647cc1f213",
+        "display": "Asthma Persistent"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ac2b4f67-3863-4b95-a4c1-0a7d8b4253ae",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "onsetDateTime": "2010-05-13T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ee095394-e61f-4efd-ab25-27137d8998c4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "onsetDateTime": "2010-05-13T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "c6de782c-1f4a-4d69-a9ef-333c712a4227",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "onsetDateTime": "2010-05-13T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "c3abc214-841b-40db-82fc-60647cc1f213",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "427295004",
+          "display": "Asthma Persistent"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45.42",
+          "display": "Moderate persistent asthma with status asthmaticus"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "onsetDateTime": "2010-05-13T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "bff7593c-c418-4027-89cd-93cda35688ba",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "period": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/c3abc214-841b-40db-82fc-60647cc1f213",
+        "display": "Asthma Persistent"
+      }, {
+        "reference": "Condition/c3abc214-841b-40db-82fc-60647cc1f213",
+        "display": "Asthma Persistent"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2595bb39-7103-4e4c-9a01-80b55acb9c98",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-13T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "cd82caaa-1d30-4b75-801f-14f8fae87eba",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "recordedDate": "2010-05-13T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "fd94c294-1208-4af4-85d9-193de698001c",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "recordedDate": "2010-05-13T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "851e038b-590c-4178-b85e-d784d17eeb64",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "recordedDate": "2010-05-13T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "62cef7e8-5730-4ff7-93bd-147a31753e5d",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma causes daytime symptoms 1 to 2 times per month"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "onsetDateTime": "2010-11-30T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "c4af92dc-7b95-4d72-ba34-dcf2f3d7e701",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/3f817125-1db5-4fd5-8d5e-99c892420d83",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-13T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "3f817125-1db5-4fd5-8d5e-99c892420d83",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "318142",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "fcfe704a-15da-4cd4-a529-b0aedcb819d6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/fa77bf57-cb93-4e56-9d4d-f5ca2d233af7",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-13T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "fa77bf57-cb93-4e56-9d4d-f5ca2d233af7",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8b525a5e-d203-414d-8470-5fb2572c71f5",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-13T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3fe7d1d6-0587-47bc-853b-1dfc73fddacc",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-13T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 28.3,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f6d011ab-c458-4241-920e-d5a6c79cb38d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-13T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d3a29023-eb6a-4dd0-bec1-75fc08e78569",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-13T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 112,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e29b4315-b702-48bd-b089-ace15f23dee6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 86,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3b4a00d2-d15c-476e-9c87-d0072698a859",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 116,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f5065272-7732-42e6-ac19-0ac60b40d722",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/68d0fcd8-e034-43cf-a573-ed9a890a77a1",
+        "display": "Phyllis Casey"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  } ]
+}

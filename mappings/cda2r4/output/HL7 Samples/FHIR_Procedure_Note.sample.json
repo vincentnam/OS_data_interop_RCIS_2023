@@ -1,0 +1,1072 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "7ff7b9e0-aa3e-4d32-aa48-8d06c32c0600",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "999021"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "28570-0",
+          "display": "Procedure Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "date": "2005-03-29T17:15:04+05:00",
+      "author": [ {
+        "reference": "Practitioner/123f4770-b12c-4517-8e09-c9776c401933",
+        "display": "Henry Seven"
+      } ],
+      "title": "Good Health Clinic Procedure Note",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2005-03-29T22:44:11+05:00",
+        "party": {
+          "reference": "Practitioner/d4d9bd81-a858-4da5-8f93-973958297bf7",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2005-03-29T22:44:11+05:00",
+        "party": {
+          "reference": "Practitioner/d4d9bd81-a858-4da5-8f93-973958297bf7",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/6cc07470-dfe8-4c73-86ca-4c12e0894963",
+        "display": "Good Health Clinic"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-06-01",
+          "end": "2010-09-15"
+        },
+        "detail": [ {
+          "reference": "Practitioner/25b78774-d289-43de-b8c8-e295be296e03",
+          "display": "Dr. Pseudo Physician-1"
+        }, {
+          "reference": "Practitioner/dd3728ae-3811-4454-a85a-b0ba9776c52b",
+          "display": "Dr. Pseudo Physician-3"
+        } ]
+      } ],
+      "section": [ {
+        "title": "ASSESSMENT",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "51848-0",
+            "display": "ASSESSMENT"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ol><li>Recurrent GI bleed of unknown etiology; hypotension perhaps secondary to this but as likely secondary to polypharmacy.</li><li>Acute on chronic anemia secondary to #1.</li><li>Azotemia, acute renal failure with volume loss secondary to #1.</li><li>Hyperkalemia secondary to #3 and on ACE and K+ supplement.</li><li>Other chronic diagnoses as noted above, currently stable.</li></ol></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "ClinicalImpression/314fcf36-82c6-492e-9dda-6daacf296c36",
+          "display": "ASSESSMENT"
+        } ]
+      }, {
+        "title": "Allergies, Adverse Reactions, Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Substance</th><th>Reaction</th><th>Status</th></tr></thead><tbody><tr><td>Penicillin</td><td><span>Hives</span></td><td>Active</td></tr><tr><td>Aspirin</td><td><span>Wheezing</span></td><td>Active</td></tr><tr><td>Codeine</td><td><span>Nausea</span></td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/c8740839-ed1d-44bf-8b1a-333e3878cf5d",
+          "display": "Aspirin"
+        }, {
+          "reference": "AllergyIntolerance/aa487de1-971c-4f37-86c3-e32410ff23f8",
+          "display": "Penicillin"
+        }, {
+          "reference": "AllergyIntolerance/2aacce48-97d6-4295-b386-a0fc0ec5b1b9",
+          "display": "Aspirin"
+        } ]
+      }, {
+        "title": "Plan of Care",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Treatment plan"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Planned Activity</th><th>Planned Date</th></tr></thead><tbody><tr><td>Colonoscopy</td><td>April 21, 2000</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/26532202-e787-446f-a625-0b8e67ec130c"
+        } ]
+      }, {
+        "title": "Family history",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10157-6"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Father (deceased)</p><table border=\"1\" width=\"100%\"><thead><tr><th>Diagnosis</th><th>Age At Onset</th></tr></thead><tbody><tr><td>Myocardial Infarction (cause of death)</td><td>57</td></tr><tr><td>Diabetes</td><td>40</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "FamilyMemberHistory/4a009457-4937-4aec-bab6-77c997578642"
+        } ]
+      }, {
+        "title": "MEDICATIONS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "HISTORY OF MEDICATION USE"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Medication</th><th>Directions</th><th>Start Date</th><th>Status</th><th>Indications</th><th>Fill Instructions</th></tr></thead><tbody><tr><td><span>Proventil 0.09 MG/ACTUAT inhalant solution</span></td><td>2 puffs QID PRN wheezing</td><td>2011-03-01</td><td>Active</td><td>Bronchitis (32398004 SNOMED CT)</td><td>Generic Substitition Allowed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/42843c0d-4ac1-4da9-ba64-2f4fc7e9695b",
+          "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Social History Element</th><th>Description</th><th>Effective Dates</th></tr></thead><tbody><tr><td><span/> smoking</td><td>1 pack per day</td><td>1947 - 1972</td></tr><tr><td><span/> smoking</td><td>None</td><td>1973 - </td></tr><tr><td><span/>Alcohol consumption</td><td>None</td><td>1973 - </td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/208495a4-e379-4da8-8f24-8dda7826125d",
+          "display": "Cigarette smoking"
+        }, {
+          "reference": "Observation/7df0c04d-6916-473a-82d5-84502bb360a0",
+          "display": "Alcohol consumption"
+        }, {
+          "reference": "Observation/1d33e84c-0747-420d-81d0-b245ed99a5e6",
+          "display": "Cigarette smoking"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.1.11.19185",
+            "code": "1013",
+            "display": "Christian (non-Catholic, non-specific)"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "state": "MA",
+          "postalCode": "02368",
+          "country": "USA"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "12345"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-1234"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Everyman",
+        "given": [ "Adam", "Frankie" ],
+        "prefix": [ "Mr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(781)555-1212",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1954-11-25",
+      "address": [ {
+        "use": "home",
+        "line": [ "17 Daws Rd." ],
+        "city": "Blue Bell",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "O",
+            "display": "Other"
+          } ]
+        } ],
+        "name": {
+          "family": "Relative",
+          "given": [ "Ralph" ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(781)555-1212",
+          "use": "home"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "17 Daws Rd." ],
+          "city": "Blue Bell",
+          "state": "MA",
+          "postalCode": "02368",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "fr-CN"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/72da93bb-ab4a-41c6-9fca-61801d91e4f9",
+        "display": "Good Health Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "72da93bb-ab4a-41c6-9fca-61801d91e4f9",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19"
+      } ],
+      "name": "Good Health Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(781)555-1212",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave" ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "123f4770-b12c-4517-8e09-c9776c401933",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5",
+        "value": "KP00017"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1003",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave." ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "d4d9bd81-a858-4da5-8f93-973958297bf7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "KP00017"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1003",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave." ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "25b78774-d289-43de-b8c8-e295be296e03",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Physician-1",
+        "given": [ "Pseudo" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-301-975-3251",
+        "use": "home"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "31ce6e6c-5b53-4771-8303-57036e36c454",
+      "practitioner": {
+        "reference": "Practitioner/25b78774-d289-43de-b8c8-e295be296e03",
+        "display": "Dr. Pseudo Physician-1"
+      },
+      "organization": {
+        "reference": "Organization/8e44af3d-34d3-462d-9b80-7bafeb705438",
+        "display": "NIST HL7 Test Laboratory"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "200000000X",
+          "display": "Allopathic and Osteopathic Physicians"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "8e44af3d-34d3-462d-9b80-7bafeb705438",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.72.5"
+      } ],
+      "name": "NIST HL7 Test Laboratory"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "dd3728ae-3811-4454-a85a-b0ba9776c52b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "PseudoMD-3"
+      } ],
+      "name": [ {
+        "family": "Physician-3",
+        "given": [ "Pseudo" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-301-975-3251",
+        "use": "home"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "7cc9246f-d668-4e56-87b4-808196fd781e",
+      "practitioner": {
+        "reference": "Practitioner/dd3728ae-3811-4454-a85a-b0ba9776c52b",
+        "display": "Dr. Pseudo Physician-3"
+      },
+      "organization": {
+        "reference": "Organization/a366b7e3-8b14-452c-ab1c-180ce12091cc",
+        "display": "HL7 Test Laboratory"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "207RG0100X",
+          "display": "Gastroenterologist"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "a366b7e3-8b14-452c-ab1c-180ce12091cc",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19.123"
+      } ],
+      "name": "HL7 Test Laboratory"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "6cc07470-dfe8-4c73-86ca-4c12e0894963",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19.5"
+      } ],
+      "name": "Good Health Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1212",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "17 Daws Rd." ],
+        "city": "Blue Bell",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "ClinicalImpression",
+      "id": "314fcf36-82c6-492e-9dda-6daacf296c36",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "51848-0",
+          "display": "ASSESSMENT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "c8740839-ed1d-44bf-8b1a-333e3878cf5d",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1191",
+          "display": "ASPIRIN"
+        } ],
+        "text": "Aspirin"
+      },
+      "patient": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "onsetDateTime": "2011-02-15",
+      "recordedDate": "2009-09-02",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "56018004",
+            "display": "Wheezing"
+          } ]
+        } ],
+        "onset": "2009-07-11"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "aa487de1-971c-4f37-86c3-e32410ff23f8",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314422",
+          "display": "ALLERGENIC EXTRACT, PENICILLIN"
+        } ],
+        "text": "Penicillin"
+      },
+      "patient": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "onsetDateTime": "2011-02-15",
+      "recordedDate": "2009-09-02",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "247472004",
+            "display": "Hives"
+          } ]
+        } ],
+        "onset": "2009-07-11"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "2aacce48-97d6-4295-b386-a0fc0ec5b1b9",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "2670",
+          "display": "Codeine"
+        } ],
+        "text": "Aspirin"
+      },
+      "patient": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "onsetDateTime": "2011-02-15",
+      "recordedDate": "2009-09-02",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "73879007",
+            "display": "Nausea"
+          } ]
+        } ],
+        "onset": "2009-07-11"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "26532202-e787-446f-a625-0b8e67ec130c",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Planned Activity</th><th>Planned Date</th></tr></thead><tbody><tr><td>Colonoscopy</td><td>April 21, 2000</td></tr></tbody></table></div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "Plan of Care",
+      "description": "<div><table border=\"1\" width=\"100%\"><thead><tr><th>Planned Activity</th><th>Planned Date</th></tr></thead><tbody><tr><td>Colonoscopy</td><td>April 21, 2000</td></tr></tbody></table></div>",
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "activity": [ {
+        "reference": {
+          "reference": "ServiceRequest/2cd32c54-aa11-4d88-a55b-4df653bd09d6",
+          "display": "Colonoscopy"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "id": "2cd32c54-aa11-4d88-a55b-4df653bd09d6",
+      "identifier": [ {
+        "use": "official",
+        "value": "9a6d1bac-17d3-4195-89a4-1121bc809a5c"
+      } ],
+      "status": "active",
+      "intent": "plan",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "310634005",
+          "display": "Colonoscopy"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "FamilyMemberHistory",
+      "id": "4a009457-4937-4aec-bab6-77c997578642",
+      "status": "completed",
+      "patient": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "relationship": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.111",
+          "code": "FTH",
+          "display": "Father"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "9947008",
+          "display": "Biological father"
+        } ]
+      },
+      "sex": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/administrative-gender",
+          "code": "male",
+          "display": "Male"
+        } ]
+      },
+      "bornDate": "1912",
+      "deceasedBoolean": true,
+      "condition": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "22298006",
+            "display": "Myocardial infarction"
+          } ]
+        },
+        "outcome": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "419099009",
+            "display": "Dead"
+          } ]
+        },
+        "onsetAge": {
+          "value": 57,
+          "unit": "a",
+          "system": "http://unitsofmeasure.org"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "46635009",
+            "display": "Diabetes mellitus type 1"
+          } ]
+        },
+        "onsetAge": {
+          "value": 40,
+          "unit": "a",
+          "system": "http://unitsofmeasure.org"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "42843c0d-4ac1-4da9-ba64-2f4fc7e9695b",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/ee9a228e-7ec6-4a05-952e-b58e58ca9928",
+        "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+      },
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "effectivePeriod": {
+        "start": "2011-03-01",
+        "end": "2012-03-01"
+      },
+      "reasonReference": [ {
+        "reference": "Condition/25ee0117-7f7b-4bf8-a349-7bf2b1da6b3f",
+        "display": "Bronchitis"
+      } ],
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 6,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38216",
+            "display": "RESPIRATORY (INHALATION)"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          },
+          "rateRange": {
+            "low": {
+              "value": 90,
+              "unit": "ml/min",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "ee9a228e-7ec6-4a05-952e-b58e58ca9928",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "329498",
+          "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+        }, {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "573621",
+          "display": "Proventil 0.09 MG/ACTUAT inhalant solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "25ee0117-7f7b-4bf8-a349-7bf2b1da6b3f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "32398004",
+          "display": "Bronchitis"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "61b3163c-6a8c-47f5-bc06-0c11e51518c6",
+      "status": "completed",
+      "intent": "instance-order",
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "requester": {
+        "reference": "Practitioner/24d71acf-6385-40ec-8114-dfc09d12df37",
+        "display": "Dr. Robert Michaels"
+      },
+      "dispenseRequest": {
+        "validityPeriod": {
+          "start": "2002-01-01"
+        },
+        "numberOfRepeatsAllowed": 1,
+        "quantity": {
+          "value": 75,
+          "unit": "1"
+        }
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "24d71acf-6385-40ec-8114-dfc09d12df37",
+      "identifier": [ {
+        "use": "official"
+      } ],
+      "name": [ {
+        "family": "Michaels",
+        "given": [ "Robert" ],
+        "prefix": [ "Dr." ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationDispense",
+      "id": "7bf2b9b8-c697-417e-b822-5fa6e5261092",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.2.3.4.56789.1",
+        "value": "cb734647-fc99-424c-a864-7e3cda82e704"
+      } ],
+      "status": "completed",
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/9c0f7526-8cd8-4796-bf7b-0308d3e374b8",
+          "display": "Dr. Robert Michaels"
+        }
+      } ],
+      "quantity": {
+        "value": 75,
+        "unit": "1",
+        "system": "http://unitsofmeasure.org/ucum.html"
+      },
+      "whenPrepared": "2002-01-01",
+      "dosageInstruction": [ {
+        "timing": {
+          "event": [ "2002-01-01" ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 75,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "9c0f7526-8cd8-4796-bf7b-0308d3e374b8",
+      "identifier": [ {
+        "use": "official"
+      } ],
+      "name": [ {
+        "family": "Michaels",
+        "given": [ "Robert" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "address": [ {
+        "line": [ "17 Daws Rd." ],
+        "city": "Blue Bell",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "f94647ed-063d-4624-98dd-8a2a0ca347fa",
+      "practitioner": {
+        "reference": "Practitioner/9c0f7526-8cd8-4796-bf7b-0308d3e374b8",
+        "display": "Dr. Robert Michaels"
+      },
+      "organization": {
+        "reference": "Organization/6cc07470-dfe8-4c73-86ca-4c12e0894963",
+        "display": "Good Health Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "208495a4-e379-4da8-8f24-8dda7826125d",
+      "identifier": [ {
+        "use": "official",
+        "value": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "230056004",
+          "display": "Cigarette smoking"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "effectivePeriod": {
+        "start": "1947",
+        "end": "1972"
+      },
+      "valueString": "1 pack per day"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7df0c04d-6916-473a-82d5-84502bb360a0",
+      "identifier": [ {
+        "use": "official",
+        "value": "37f76c51-6411-4e1d-8a37-957fd49d2cef"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "160573003",
+          "display": "Alcohol consumption"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "effectivePeriod": {
+        "start": "1973"
+      },
+      "valueString": "None"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1d33e84c-0747-420d-81d0-b245ed99a5e6",
+      "identifier": [ {
+        "use": "official",
+        "value": "45efb604-7049-4a2e-ad33-d38556c9636c"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "230056004",
+          "display": "Cigarette smoking"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e0e7783d-ad0f-47df-afef-a4d884d82dc6",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "effectivePeriod": {
+        "start": "1973"
+      },
+      "valueString": "None"
+    }
+  } ]
+}

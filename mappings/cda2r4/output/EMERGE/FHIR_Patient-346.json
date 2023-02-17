@@ -1,0 +1,1794 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "33ae2306-eff8-4c31-b2c7-337dcced6e09",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "date": "2014-04-16T11:55:07+02:00",
+      "author": [ {
+        "reference": "Practitioner/d773d845-c044-48be-8383-11be45fa321c",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/74a4c435-4628-4c7f-87f3-4837b3881414",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:07+02:00",
+        "party": {
+          "reference": "Practitioner/74a4c435-4628-4c7f-87f3-4837b3881414",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/6bdf971a-1fe8-4436-a7d5-09d2215de6b4",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-07-05T10:00:00+02:00",
+          "end": "2010-11-10T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/0c52cb9f-7c19-46c2-a757-be0d6e55073a",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>ACE inhibitor or ARB</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td>Anticoagulants</td><td>RxNorm</td><td>855326</td><td><span/>Warfarin Sodium 4 MG Oral Tablet [Coumadin]</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td>Beta Blocker Therapy</td><td>RxNorm</td><td>866924</td><td><span/>Metoprolol Tartrate 25 MG Oral Tablet</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td>Smoking Cessation Agents</td><td>RxNorm</td><td>1046847</td><td><span/>24 HR Nicotine 0.313 MG/HR Transdermal Patch</td><td>11-10-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/49949681-7eae-46c8-9f9e-8eca2e286c7a",
+          "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+        }, {
+          "reference": "MedicationStatement/2c140d1c-edfe-4a18-95b1-1151a6787ecf",
+          "display": "Warfarin Sodium 4 MG Oral Tablet [Coumadin]"
+        }, {
+          "reference": "MedicationStatement/30973051-d28f-41fe-a7a3-f77b04563f01",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/e9e23262-2cdf-40e0-b591-b29bf86d0b83",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>07-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>08-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>08-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>09-04-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>09-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>11-10-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/be09c910-5131-4dee-b4bd-e8b36386bc49",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/68adb04b-d738-4312-8efd-b3d1bb0fc1a1",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/7f75d8b9-66c0-4528-9fc7-43482e42685d",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/f5221d65-8ec1-44f3-8ea9-8f7337647ab3",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/abd61f60-f004-4677-9509-8e1eb6b5609d",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/fc22eb92-27bf-40cb-8e0c-08e0a484003a",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>23.2</td><td>kg/m2</td><td>07-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>74</td><td>mm[Hg]</td><td>07-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>84</td><td>/min</td><td>07-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>07-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>22.6</td><td>kg/m2</td><td>09-30-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/3935ce52-af2b-4a3c-b47b-990d68c51893",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/dcafc755-1d8d-465e-997f-294a39c247d5",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/9013a1fe-de3b-4d4f-af95-f67ca76e4643",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/7678476c-4d29-4172-9953-f62724d06db2",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/f2a45cb7-1f93-4283-8686-a7f686e16179",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Atrial Fibrillation</td><td>SNOMED-CT</td><td>49436004</td><td><span/>Atrial fibrillation</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I48.91</td><td>Unspecified atrial fibrillation</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>427.31</td><td>Atrial fibrillation</td><td/><td/></tr><tr><td>Heart Failure</td><td>SNOMED-CT</td><td>84114007</td><td><span/>Heart failure</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I50.9</td><td>Heart failure, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>428.9</td><td>Heart failure, unspecified</td><td/><td/></tr><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr><tr><td>AJCC Cancer Stage Low Risk Recurrence Prostat</td><td>SNOMED-CT</td><td>261650005</td><td><span/>Tumor stage T1c</td><td>08-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Prostate Cancer</td><td>SNOMED-CT</td><td>399068003</td><td><span/>Malignant tumor of prostate</td><td>08-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>C61</td><td>Malignant neoplasm of prostate</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>185</td><td>Malignant neoplasm of prostate</td><td/><td/></tr><tr><td>Pain Related to Prostate Cancer</td><td>SNOMED-CT</td><td>282743009</td><td><span/>Malignant bone pain</td><td>09-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>G89.3</td><td>Neoplasm related pain (acute) (chronic)</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>338.3</td><td>Neoplasm related pain (acute) (chronic)</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/5b2946b5-d876-4ca7-bf2a-56b04138c7f1",
+          "display": "Atrial fibrillation"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Gleason Score</td><td>LOINC</td><td>35266-6</td><td><span/>Gleason Score Spec Ql</td><td>3</td><td>NA</td><td>2-10</td><td>07-05-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>SNOMED-CT</td><td>384997002</td><td>Total Gleason score</td><td/><td/><td/><td/><td/></tr><tr><td>Prostate Specific Antigen Test</td><td>LOINC</td><td>19195-7</td><td><span/>PSA SerPl-aCnc</td><td>6</td><td>ng/mL</td><td>&amp;lt;2.5 ng/mL</td><td>07-05-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84153</td><td>Assay of psa, total</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>63476009</td><td>Prostate specific antigen measurement</td><td/><td/><td/><td/><td/></tr><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>54</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>07-15-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>106</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>07-15-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>189</td><td>mg/dL</td><td>125-200 mg/dL</td><td>07-15-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>147</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>07-15-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/065f45e6-7e94-4648-8359-d289eb61eb82",
+          "display": "Blood Chemistry"
+        }, {
+          "reference": "DiagnosticReport/dc01ae1a-30ff-4ae6-a32e-d6de69760be1",
+          "display": "Lipid Panel"
+        }, {
+          "reference": "DiagnosticReport/4c73a9ea-f239-4d81-ae5f-9e28966431cc",
+          "display": "Pathology"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/dd63f84f-de72-4b37-afe8-d947a772a372"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>07-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>07-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr><tr><td>Ejection Fraction</td><td>SNOMED-CT</td><td>70822001</td><td><span/>Cardiac ejection fraction, function</td><td>07-15-2010 10:00:00</td><td>Performed</td></tr><tr><td>Tobacco Use Cessation Counseling</td><td>CPT</td><td>99406</td><td><span/>Behav chng smoking 3-10 min</td><td>07-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>384742004</td><td>Smoking cessation assistance</td><td/><td/></tr><tr><td>Prostate Cancer Treatment</td><td>CPT</td><td>55810</td><td><span/>Extensive prostate surgery</td><td>08-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>176259004</td><td>Radical prostatectomy - unspecified excision of pelvic nodes</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/080dee33-ea17-4852-ba8a-4748fa492e77",
+          "display": "Extensive prostate surgery"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Moderate</td><td>Moderately Susceptible</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Fosfomycin</td><td>RxNorm</td><td>808917</td><td><span/>Fosfomycin 33.3 MG/ML Oral Suspension</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td>Tetracyclines</td><td>RxNorm</td><td>406524</td><td><span/>Doxycycline 75 MG Enteric Coated Tablet</td><td><span/>Fatal</td><td>Susceptible</td><td>07-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>NDF-RT</td><td>N0000006275</td><td>Tetracycline</td><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/1362e083-d393-4440-9116-0b6919016165",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/2fdea4a8-ec2c-44df-a2f0-2c6265a59d1c",
+          "display": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+        }, {
+          "reference": "AllergyIntolerance/02b8d579-adc5-4d7e-89ea-e04c1e90bee1",
+          "display": "Fosfomycin + Fosfomycin 33.3 MG/ML Oral Suspension"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "af202c5f-69ca-4a28-bf95-5f10c457484f",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1020",
+            "display": "Hinduism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Mcdermitt",
+          "state": "NV",
+          "postalCode": "89421",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Evans",
+        "given": [ "Scott" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(423)263-3016",
+        "use": "mobile"
+      } ],
+      "gender": "male",
+      "birthDate": "1933-10-17",
+      "address": [ {
+        "use": "home",
+        "line": [ "1977 Nixon Avenue" ],
+        "city": "Etowah",
+        "state": "TN",
+        "postalCode": "37331",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Edwards",
+          "given": [ "Johanna" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(619)767-6449",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "JohannaREdwards@dayrep.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "599 Grim Avenue" ],
+          "city": "San Diego",
+          "state": "CA",
+          "postalCode": "92103",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/69159d10-c908-4351-880f-f707204b3987",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "69159d10-c908-4351-880f-f707204b3987",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "d773d845-c044-48be-8383-11be45fa321c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "74a4c435-4628-4c7f-87f3-4837b3881414",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0c52cb9f-7c19-46c2-a757-be0d6e55073a",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "6bdf971a-1fe8-4436-a7d5-09d2215de6b4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "49949681-7eae-46c8-9f9e-8eca2e286c7a",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/5c4d48a0-c3ee-4dd1-9f2d-7ba9ba3cad95",
+        "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-10T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "5c4d48a0-c3ee-4dd1-9f2d-7ba9ba3cad95",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1046847",
+          "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "2c140d1c-edfe-4a18-95b1-1151a6787ecf",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/04ca4e30-fa0f-4a4c-9ddc-6bde33410b5f",
+        "display": "Warfarin Sodium 4 MG Oral Tablet [Coumadin]"
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "04ca4e30-fa0f-4a4c-9ddc-6bde33410b5f",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "855326",
+          "display": "Warfarin Sodium 4 MG Oral Tablet [Coumadin]"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "30973051-d28f-41fe-a7a3-f77b04563f01",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/cc19d3e4-e1ac-4ef7-96a3-f69afb8067b8",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "cc19d3e4-e1ac-4ef7-96a3-f69afb8067b8",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "e9e23262-2cdf-40e0-b591-b29bf86d0b83",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/2ecd8f57-ad35-480d-b45c-c2cc895e6500",
+        "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "2ecd8f57-ad35-480d-b45c-c2cc895e6500",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866924",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "be09c910-5131-4dee-b4bd-e8b36386bc49",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "period": {
+        "start": "2010-09-04T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "68adb04b-d738-4312-8efd-b3d1bb0fc1a1",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "period": {
+        "start": "2010-11-10T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7f75d8b9-66c0-4528-9fc7-43482e42685d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "period": {
+        "start": "2010-08-31T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "261650005",
+          "display": "AJCC Cancer Stage Low Risk Recurrence Prostat"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "399068003",
+          "display": "Prostate Cancer"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/9ab59434-7e5b-4fe9-80d8-4b82939153c0",
+        "display": "Prostate Cancer"
+      }, {
+        "reference": "Condition/bff9b51d-f521-4606-84cd-ec43a2901d7c",
+        "display": "AJCC Cancer Stage Low Risk Recurrence Prostat"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "9ab59434-7e5b-4fe9-80d8-4b82939153c0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "399068003",
+          "display": "Prostate Cancer"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "C61",
+          "display": "Malignant neoplasm of prostate"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "185",
+          "display": "Malignant neoplasm of prostate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "onsetDateTime": "2010-08-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "bff9b51d-f521-4606-84cd-ec43a2901d7c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "261650005",
+          "display": "AJCC Cancer Stage Low Risk Recurrence Prostat"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "onsetDateTime": "2010-08-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f5221d65-8ec1-44f3-8ea9-8f7337647ab3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "period": {
+        "start": "2010-08-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "abd61f60-f004-4677-9509-8e1eb6b5609d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "period": {
+        "start": "2010-09-15T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "282743009",
+          "display": "Pain Related to Prostate Cancer"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/bff9b51d-f521-4606-84cd-ec43a2901d7c",
+        "display": "AJCC Cancer Stage Low Risk Recurrence Prostat"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "fc22eb92-27bf-40cb-8e0c-08e0a484003a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "period": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "49436004",
+          "display": "Atrial Fibrillation"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "84114007",
+          "display": "Heart Failure"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/bff9b51d-f521-4606-84cd-ec43a2901d7c",
+        "display": "AJCC Cancer Stage Low Risk Recurrence Prostat"
+      }, {
+        "reference": "Condition/bff9b51d-f521-4606-84cd-ec43a2901d7c",
+        "display": "AJCC Cancer Stage Low Risk Recurrence Prostat"
+      }, {
+        "reference": "Condition/bff9b51d-f521-4606-84cd-ec43a2901d7c",
+        "display": "AJCC Cancer Stage Low Risk Recurrence Prostat"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3935ce52-af2b-4a3c-b47b-990d68c51893",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dcafc755-1d8d-465e-997f-294a39c247d5",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9013a1fe-de3b-4d4f-af95-f67ca76e4643",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 23.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7678476c-4d29-4172-9953-f62724d06db2",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f2a45cb7-1f93-4283-8686-a7f686e16179",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-30T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 22.6,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "5b2946b5-d876-4ca7-bf2a-56b04138c7f1",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "49436004",
+          "display": "Atrial fibrillation"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I48.91",
+          "display": "Unspecified atrial fibrillation"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "427.31",
+          "display": "Atrial fibrillation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "onsetDateTime": "2010-07-15T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "065f45e6-7e94-4648-8359-d289eb61eb82",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "result": [ {
+        "reference": "Observation/9fef4ed2-6e02-45d5-a012-08b7810c8570",
+        "display": "PSA SerPl-aCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9fef4ed2-6e02-45d5-a012-08b7810c8570",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "19195-7",
+          "display": "PSA SerPl-aCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84153",
+          "display": "Assay of psa, total"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "63476009",
+          "display": "Prostate specific antigen measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-05T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 6,
+        "unit": "ng/mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/mL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<2.5 ng/mL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "dc01ae1a-30ff-4ae6-a32e-d6de69760be1",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "result": [ {
+        "reference": "Observation/ece6a0d7-1933-4e85-9ea5-df4293e3ac3b",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/6a54ac52-7618-48c4-b743-5b2a8ee95148",
+        "display": "Cholest SerPl-mCnc"
+      }, {
+        "reference": "Observation/f27c998b-08dc-4b50-985b-35053d6f9a28",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/9857099c-e71e-4d4c-8415-c5f4950fe774",
+        "display": "HDLc SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ece6a0d7-1933-4e85-9ea5-df4293e3ac3b",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 147,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6a54ac52-7618-48c4-b743-5b2a8ee95148",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 189,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f27c998b-08dc-4b50-985b-35053d6f9a28",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 106,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9857099c-e71e-4d4c-8415-c5f4950fe774",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 54,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "4c73a9ea-f239-4d81-ae5f-9e28966431cc",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116784002",
+          "display": "Pathology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "result": [ {
+        "reference": "Observation/87287b77-f9d7-4863-bc9d-34ec1b14c4fb",
+        "display": "Gleason Score Spec Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "87287b77-f9d7-4863-bc9d-34ec1b14c4fb",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "35266-6",
+          "display": "Gleason Score Spec Ql"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "384997002",
+          "display": "Total Gleason score"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-05T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "NA",
+        "system": "http://unitsofmeasure.org",
+        "code": "NA"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "2-10"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dd63f84f-de72-4b37-afe8-d947a772a372",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "080dee33-ea17-4852-ba8a-4748fa492e77",
+      "identifier": [ {
+        "use": "official",
+        "value": "e401f340-7be2-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "55810",
+          "display": "Extensive prostate surgery"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "176259004",
+          "display": "Radical prostatectomy - unspecified excision of pelvic nodes"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "performedPeriod": {
+        "start": "2010-08-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "1362e083-d393-4440-9116-0b6919016165",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "recordedDate": "2010-07-15T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "2fdea4a8-ec2c-44df-a2f0-2c6265a59d1c",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "406524",
+          "display": "Doxycycline 75 MG Enteric Coated Tablet"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006275",
+          "display": "Tetracycline"
+        } ],
+        "text": "Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet"
+      },
+      "patient": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "recordedDate": "2010-07-15T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "02b8d579-adc5-4d7e-89ea-e04c1e90bee1",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "808917",
+          "display": "Fosfomycin 33.3 MG/ML Oral Suspension"
+        } ],
+        "text": "Fosfomycin + Fosfomycin 33.3 MG/ML Oral Suspension"
+      },
+      "patient": {
+        "reference": "Patient/af202c5f-69ca-4a28-bf95-5f10c457484f",
+        "display": "Scott Evans"
+      },
+      "recordedDate": "2010-07-15T10:00:00+02:00"
+    }
+  } ]
+}

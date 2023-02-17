@@ -1,0 +1,1504 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "130da29f-fa76-4f74-b5cc-391c99069cbf",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "date": "2014-04-16T11:55:19+02:00",
+      "author": [ {
+        "reference": "Practitioner/19e052ee-09e9-40b5-94bc-d4912234b1f1",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/798c9d4f-38af-4383-bf16-6e32c460c15e",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:19+02:00",
+        "party": {
+          "reference": "Practitioner/798c9d4f-38af-4383-bf16-6e32c460c15e",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/3b3431d3-319e-443c-b2ca-a874b2abc737",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-03-31T10:00:00+02:00",
+          "end": "2010-12-15T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/b96c75da-8cc2-498c-8b41-dc6016d87e1c",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>09-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>12-15-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/4eb7deb6-f80d-4f52-b826-95539c5c9bb3",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/5e276835-1c55-4c52-8fbe-b174a78d6f5a",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/78bd1005-f506-4222-a236-788241e40c0c",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Tetracyclines</td><td>NDF-RT</td><td>N0000006275</td><td><span/>Tetracycline</td><td>09-10-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>RxNorm</td><td>406524</td><td>Doxycycline 75 MG Enteric Coated Tablet</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/01090dcc-665c-4741-a593-b151ae1df369",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        }, {
+          "reference": "MedicationStatement/a59bbc04-dbeb-45a6-b630-e4b1221a37d9",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        }, {
+          "reference": "MedicationStatement/37916f9b-567a-4dd5-9f76-a4985c533638",
+          "display": "Tetracycline"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Mild to moderate</td><td>Very susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Moderate</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/ff0207d6-37a8-4d41-88ee-691ceddbf210",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/5b9bfbde-a9de-4a20-9645-dc1d86cc6701",
+          "display": "Penicillin V + Penicillin V"
+        }, {
+          "reference": "AllergyIntolerance/3ec7d579-484d-42d5-9776-b50f1108d53e",
+          "display": "Allergy to Eggs + Eggs"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Pharyngitis</td><td>SNOMED-CT</td><td>363746003</td><td><span/>Acute pharyngitis</td><td>09-10-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J02</td><td>Acute pharyngitis</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>462</td><td>Acute pharyngitis</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/ec49af65-b0c6-486e-b843-0270858c534c",
+          "display": "Asthma causes night symptoms 1 to 2 times per month"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>16.8</td><td>kg/m2</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>128</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>82</td><td>/min</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>80</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>09-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>80</td><td>/min</td><td>09-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>124</td><td>mm[Hg]</td><td>09-10-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>16.9</td><td>kg/m2</td><td>12-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>12-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>80</td><td>/min</td><td>12-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>12-15-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/8303f88d-f03f-42bb-9d9e-fbbf0c921753",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/96dac0ba-b046-4ea7-b57e-3da3b90f4cd1",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/e8132319-4642-422f-b507-3f3348ac11aa",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/b5339fb1-5f95-405b-96eb-a3478bd64aa8",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/c1501a14-9b19-4d0f-a715-c0f1813ce8c6",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/ff12da41-80d2-4b6d-8443-939eb391f055",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/dc22dc2d-70c0-4096-8652-79461e8a522c",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/041433de-50ab-4688-b286-0c6826deec89",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/885cd8f3-9051-4793-bc7d-aa6b887a3e68",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/a7907294-1264-4a9c-bc15-2e0307753db0",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/a14215bc-9ba8-4f3e-b540-7d7a51cb5ca3",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Group A Streptococcus Test</td><td>LOINC</td><td>31971-5</td><td><span/>S pyo Ag XXX Ql</td><td>positive</td><td/><td>NA</td><td>09-10-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87430</td><td>Strep a ag, eia</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>122121004</td><td>Streptococcus pyogenes antigen assay</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/823d1be6-7e2f-4f38-9e80-47027d293317",
+          "display": "Microbiology"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1074",
+            "display": "Native American"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Navarre",
+          "state": "OH",
+          "postalCode": "44662",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Harper",
+        "given": [ "Kimberly" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(208)677-0564",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1999-11-02",
+      "address": [ {
+        "use": "home",
+        "line": [ "4585 Seltice Way" ],
+        "city": "Burley",
+        "state": "ID",
+        "postalCode": "83318",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "Never Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Sosa",
+          "given": [ "Sheila" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(909)705-5909",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "SheilaTSosa@fleckens.hu",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "2741 Paradise Lane" ],
+          "city": "Riverside",
+          "state": "CA",
+          "postalCode": "92507",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/e237eaf1-96d8-49e6-a045-293bbc5cc19d",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "e237eaf1-96d8-49e6-a045-293bbc5cc19d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "19e052ee-09e9-40b5-94bc-d4912234b1f1",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "798c9d4f-38af-4383-bf16-6e32c460c15e",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "b96c75da-8cc2-498c-8b41-dc6016d87e1c",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "3b3431d3-319e-443c-b2ca-a874b2abc737",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4eb7deb6-f80d-4f52-b826-95539c5c9bb3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/778bf24a-6aa6-4dd3-8dc6-72ae5da5e977",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      }, {
+        "reference": "Condition/b9bfa5dd-04ae-42fb-90c7-7ae7b7bc8f8b",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/30b4a4ff-8c91-449d-a612-2c39a9541cbf",
+        "display": "Asthma Daytime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "778bf24a-6aa6-4dd3-8dc6-72ae5da5e977",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "b9bfa5dd-04ae-42fb-90c7-7ae7b7bc8f8b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "30b4a4ff-8c91-449d-a612-2c39a9541cbf",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5e276835-1c55-4c52-8fbe-b174a78d6f5a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "period": {
+        "start": "2010-12-15T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "78bd1005-f506-4222-a236-788241e40c0c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "period": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "363746003",
+          "display": "Pharyngitis"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/30b4a4ff-8c91-449d-a612-2c39a9541cbf",
+        "display": "Asthma Daytime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "01090dcc-665c-4741-a593-b151ae1df369",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/55e7e17c-69ff-4ea4-abfb-ac5b61248869",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "55e7e17c-69ff-4ea4-abfb-ac5b61248869",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "318142",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "a59bbc04-dbeb-45a6-b630-e4b1221a37d9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/bd52d709-ef76-403d-8ab5-6a8f1e99b1f3",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "bd52d709-ef76-403d-8ab5-6a8f1e99b1f3",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "37916f9b-567a-4dd5-9f76-a4985c533638",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/3b2e2505-8951-49d6-b60a-86233bdefef7",
+        "display": "Tetracycline"
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "3b2e2505-8951-49d6-b60a-86233bdefef7",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006275",
+          "display": "Tetracycline"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "ff0207d6-37a8-4d41-88ee-691ceddbf210",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "5b9bfbde-a9de-4a20-9645-dc1d86cc6701",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "3ec7d579-484d-42d5-9776-b50f1108d53e",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ec49af65-b0c6-486e-b843-0270858c534c",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma causes night symptoms 1 to 2 times per month"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8303f88d-f03f-42bb-9d9e-fbbf0c921753",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "96dac0ba-b046-4ea7-b57e-3da3b90f4cd1",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 124,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e8132319-4642-422f-b507-3f3348ac11aa",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b5339fb1-5f95-405b-96eb-a3478bd64aa8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 16.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c1501a14-9b19-4d0f-a715-c0f1813ce8c6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ff12da41-80d2-4b6d-8443-939eb391f055",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 128,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dc22dc2d-70c0-4096-8652-79461e8a522c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "041433de-50ab-4688-b286-0c6826deec89",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-15T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "885cd8f3-9051-4793-bc7d-aa6b887a3e68",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-15T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a7907294-1264-4a9c-bc15-2e0307753db0",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-15T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a14215bc-9ba8-4f3e-b540-7d7a51cb5ca3",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-15T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 16.9,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "823d1be6-7e2f-4f38-9e80-47027d293317",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "269934003",
+          "display": "Microbiology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "result": [ {
+        "reference": "Observation/0dfbf7af-9a59-4f43-8f66-998cc55fee0a",
+        "display": "S pyo Ag XXX Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0dfbf7af-9a59-4f43-8f66-998cc55fee0a",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "31971-5",
+          "display": "S pyo Ag XXX Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87430",
+          "display": "Strep a ag, eia"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "122121004",
+          "display": "Streptococcus pyogenes antigen assay"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f38fc542-bcaa-43b8-bfbf-34e4d0d03f43",
+        "display": "Kimberly Harper"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-10T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  } ]
+}

@@ -1,0 +1,1386 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "d9b6481f-f630-4a29-bca9-0f56f0d16ff8",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "date": "2014-04-16T11:55:21+02:00",
+      "author": [ {
+        "reference": "Practitioner/beffb85d-bf17-4f0f-8996-4d6c3204380a",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/91ef7587-921d-4726-a5c3-ae2d4507a62d",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:21+02:00",
+        "party": {
+          "reference": "Practitioner/91ef7587-921d-4726-a5c3-ae2d4507a62d",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/60b39b64-ff16-4d37-86c8-6811a245a5ff",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-04-01T10:00:00+02:00",
+          "end": "2010-12-15T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/874aaeb5-6f2b-4da2-b83d-2fcd3ec04fae",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>04-01-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter ED</td><td>CPT</td><td>99281</td><td><span/>Emergency dept visit</td><td>08-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>12-15-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/b33e1ca9-87ca-4455-855c-302c125d8151",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/5e2033c2-6e30-4460-be11-950c7e797658",
+          "display": "Emergency dept visit"
+        }, {
+          "reference": "Encounter/7b14a045-e52c-4862-b9b8-ce7af1da7f77",
+          "display": "Office consultation"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antiasthmatic steroids</td><td>RxNorm</td><td>351136</td><td><span/>Albuterol 0.417 MG/ML Inhalant Solution</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>RxNorm</td><td>828930</td><td>50 ACTUAT flunisolide 0.25 MG/ACTUAT Metered Dose Inhaler</td><td/><td/></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td>3rd generation cephalosporins</td><td>RxNorm</td><td>309078</td><td><span/>cefpodoxime 200 MG Oral Tablet</td><td>08-16-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/4e109eb5-4481-4ce3-929e-3fa03523ea30",
+          "display": "cefpodoxime 200 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/eff74269-1f9f-4b6a-9955-d5cf7f9bc8a2",
+          "display": "Albuterol 0.417 MG/ML Inhalant Solution"
+        }, {
+          "reference": "MedicationStatement/79ce8c67-8868-4b48-a7b5-242688ed24da",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td>Cystic Fibrosis</td><td>SNOMED-CT</td><td>190905008</td><td><span/>Cystic fibrosis</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>E84</td><td>Cystic fibrosis</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>277.00</td><td>Cystic fibrosis without mention of meconium ileus</td><td/><td/></tr><tr><td>Asthma Persistent</td><td>SNOMED-CT</td><td>427295004</td><td><span/>Moderate persistent asthma</td><td>08-16-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45.42</td><td>Moderate persistent asthma with status asthmaticus</td><td/><td/></tr><tr><td>Pharyngitis</td><td>SNOMED-CT</td><td>363746003</td><td><span/>Acute pharyngitis</td><td>08-16-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J02</td><td>Acute pharyngitis</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>462</td><td>Acute pharyngitis</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>12-15-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>12-15-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/10e3f51c-b092-4dbb-b24a-4d092cbb886a",
+          "display": "Moderate persistent asthma"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Group A Streptococcus Test</td><td>LOINC</td><td>31971-5</td><td><span/>S pyo Ag XXX Ql</td><td>positive</td><td/><td>NA</td><td>08-16-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87430</td><td>Strep a ag, eia</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>122121004</td><td>Streptococcus pyogenes antigen assay</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/2f7190e9-2275-48a4-8d36-9b82580b2fe2",
+          "display": "Microbiology"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Severe</td><td>Susceptible</td><td>04-01-2010 10:00:00</td><td>Active</td></tr><tr><td>Codeine</td><td>NDF-RT</td><td>N0000006691</td><td><span/>Codeine</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>04-01-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/33791b8f-ce12-4a4f-92b7-8c6d9a5440fc",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/8670455a-35d3-4472-a824-ef4288e2e312",
+          "display": "Codeine + Codeine"
+        }, {
+          "reference": "AllergyIntolerance/6c6f0105-4524-4652-9e82-1b898d1247ec",
+          "display": "Allergy to Eggs + Eggs"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>04-01-2010 10:00:00</td><td>Performed</td></tr><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>04-01-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>04-01-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>12-15-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>13.7</td><td>kg/m2</td><td>04-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>62</td><td>mm[Hg]</td><td>04-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>102</td><td>mm[Hg]</td><td>04-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>14.1</td><td>kg/m2</td><td>12-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>60</td><td>mm[Hg]</td><td>12-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>100</td><td>mm[Hg]</td><td>12-15-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/3dc78a5f-ba54-4576-bc0b-5a26f5bf5907",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/542bd723-448d-4ee7-92a9-fcf0c8cd812a",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/b628c82c-0fda-4d5c-97b5-7b80bd5be211",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/614d3bbf-0579-4b7f-bcd2-37de8c96167e",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/4ce1686d-a8cd-48e8-93de-9dac268a68e6",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/12ded836-b196-4142-b0f0-2c6624877e7c",
+          "display": "BP Diastolic"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "62d538cf-fb36-401e-805b-8379379c3521",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1074",
+            "display": "Native American"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Humble",
+          "state": "TX",
+          "postalCode": "77338",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Greene",
+        "given": [ "Dolores" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(714)381-9461",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "2001-11-02",
+      "address": [ {
+        "use": "home",
+        "line": [ "2127 Maple Street" ],
+        "city": "Anaheim",
+        "state": "CA",
+        "postalCode": "92805",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "Never Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Hoyle",
+          "given": [ "Sherry" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(520)732-7939",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "SherryRHoyle@cuvox.de",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "4817 Dogwood Lane" ],
+          "city": "Tucson",
+          "state": "AZ",
+          "postalCode": "85712",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/d87ce5c1-99b2-481a-bd83-ba42fc7f3bc1",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "d87ce5c1-99b2-481a-bd83-ba42fc7f3bc1",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "beffb85d-bf17-4f0f-8996-4d6c3204380a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "91ef7587-921d-4726-a5c3-ae2d4507a62d",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "874aaeb5-6f2b-4da2-b83d-2fcd3ec04fae",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "60b39b64-ff16-4d37-86c8-6811a245a5ff",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "b33e1ca9-87ca-4455-855c-302c125d8151",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "period": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "190905008",
+          "display": "Cystic Fibrosis"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/8f8e0dcd-2ac9-4440-a089-9ee3479914d7",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/5edec9be-c412-4ab7-8a02-2c81e38d9b60",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      }, {
+        "reference": "Condition/a7164588-2e5b-4980-a638-351f1466e3e9",
+        "display": "Cystic Fibrosis"
+      }, {
+        "reference": "Condition/4614d041-859f-405e-a139-e4bb81e5d872",
+        "display": "Asthma Daytime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "8f8e0dcd-2ac9-4440-a089-9ee3479914d7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "onsetDateTime": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "5edec9be-c412-4ab7-8a02-2c81e38d9b60",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "onsetDateTime": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "a7164588-2e5b-4980-a638-351f1466e3e9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "190905008",
+          "display": "Cystic Fibrosis"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "E84",
+          "display": "Cystic fibrosis"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "277.00",
+          "display": "Cystic fibrosis without mention of meconium ileus"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "onsetDateTime": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "4614d041-859f-405e-a139-e4bb81e5d872",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "onsetDateTime": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5e2033c2-6e30-4460-be11-950c7e797658",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99281",
+          "display": "Emergency dept visit"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "period": {
+        "start": "2010-08-16T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "427295004",
+          "display": "Asthma Persistent"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "363746003",
+          "display": "Pharyngitis"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/4614d041-859f-405e-a139-e4bb81e5d872",
+        "display": "Asthma Daytime Symptoms Quantified"
+      }, {
+        "reference": "Condition/4614d041-859f-405e-a139-e4bb81e5d872",
+        "display": "Asthma Daytime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7b14a045-e52c-4862-b9b8-ce7af1da7f77",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "period": {
+        "start": "2010-12-15T10:00:00+01:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/4614d041-859f-405e-a139-e4bb81e5d872",
+        "display": "Asthma Daytime Symptoms Quantified"
+      }, {
+        "reference": "Condition/4614d041-859f-405e-a139-e4bb81e5d872",
+        "display": "Asthma Daytime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "4e109eb5-4481-4ce3-929e-3fa03523ea30",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/62bed889-9167-43cc-a3e4-681b6a8d6f9a",
+        "display": "cefpodoxime 200 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-16T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "62bed889-9167-43cc-a3e4-681b6a8d6f9a",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "309078",
+          "display": "cefpodoxime 200 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "eff74269-1f9f-4b6a-9955-d5cf7f9bc8a2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/2b33963c-267a-40b4-ac92-5cf4cb0d0694",
+        "display": "Albuterol 0.417 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "2b33963c-267a-40b4-ac92-5cf4cb0d0694",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "351136",
+          "display": "Albuterol 0.417 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "79ce8c67-8868-4b48-a7b5-242688ed24da",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/9dae99d2-dc3c-499e-b13c-a4f89924fc80",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "9dae99d2-dc3c-499e-b13c-a4f89924fc80",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "10e3f51c-b092-4dbb-b24a-4d092cbb886a",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "427295004",
+          "display": "Moderate persistent asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45.42",
+          "display": "Moderate persistent asthma with status asthmaticus"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "onsetDateTime": "2010-08-16T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "2f7190e9-2275-48a4-8d36-9b82580b2fe2",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "269934003",
+          "display": "Microbiology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "result": [ {
+        "reference": "Observation/bfda2a10-18e0-4259-80f2-ec6abbafddf0",
+        "display": "S pyo Ag XXX Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bfda2a10-18e0-4259-80f2-ec6abbafddf0",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "31971-5",
+          "display": "S pyo Ag XXX Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87430",
+          "display": "Strep a ag, eia"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "122121004",
+          "display": "Streptococcus pyogenes antigen assay"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-16T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "33791b8f-ce12-4a4f-92b7-8c6d9a5440fc",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "recordedDate": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "8670455a-35d3-4472-a824-ef4288e2e312",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006691",
+          "display": "Codeine"
+        } ],
+        "text": "Codeine + Codeine"
+      },
+      "patient": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "recordedDate": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "6c6f0105-4524-4652-9e82-1b898d1247ec",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "recordedDate": "2010-04-01T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3dc78a5f-ba54-4576-bc0b-5a26f5bf5907",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 13.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "542bd723-448d-4ee7-92a9-fcf0c8cd812a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 62,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b628c82c-0fda-4d5c-97b5-7b80bd5be211",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 102,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "614d3bbf-0579-4b7f-bcd2-37de8c96167e",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-15T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 14.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4ce1686d-a8cd-48e8-93de-9dac268a68e6",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-15T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 100,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12ded836-b196-4142-b0f0-2c6624877e7c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/62d538cf-fb36-401e-805b-8379379c3521",
+        "display": "Dolores Greene"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-15T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 60,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  } ]
+}

@@ -1,0 +1,276 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "9dfc9b85-966b-4f73-a39c-b1f56992dd58",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "999021"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "11490-0",
+          "display": "Discharge summarization note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ac0bf21a-6eec-4e96-b19f-09cc6882f3e0",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "date": "2005-03-29T17:15:04+05:00",
+      "author": [ {
+        "reference": "Practitioner/4f447c62-c047-4159-a11e-3048ea93c66d",
+        "display": "Henry Seven"
+      } ],
+      "title": "Discharge Summary (UD)",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2005-03-29T22:44:11+05:00",
+        "party": {
+          "reference": "Practitioner/f9798cec-b87e-4b05-a5b6-a7132df575b8",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2005-03-29T22:44:11+05:00",
+        "party": {
+          "reference": "Practitioner/f9798cec-b87e-4b05-a5b6-a7132df575b8",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/b39d9a79-9054-4161-b3de-dc9cfdc7ce90",
+        "display": "Good Health Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "ac0bf21a-6eec-4e96-b19f-09cc6882f3e0",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.1.11.19185",
+            "code": "1013",
+            "display": "Christian (non-Catholic, non-specific)"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "state": "MA",
+          "postalCode": "02368",
+          "country": "USA"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "12345"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Everyman",
+        "given": [ "Adam", "Frankie" ],
+        "prefix": [ "Mr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(781)555-1212",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1954-11-25",
+      "address": [ {
+        "use": "home",
+        "line": [ "17 Daws Rd." ],
+        "city": "Blue Bell",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "O",
+            "display": "Other"
+          } ]
+        } ],
+        "name": {
+          "family": "Relative",
+          "given": [ "Ralph" ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(781)555-1212",
+          "use": "home"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "17 Daws Rd." ],
+          "city": "Blue Bell",
+          "state": "MA",
+          "postalCode": "02368",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "fr-CN"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/778f3a43-1fc4-4263-8fc6-bd08d208c13d",
+        "display": "Good Health Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "778f3a43-1fc4-4263-8fc6-bd08d208c13d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19"
+      } ],
+      "name": "Good Health Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(781)555-1212",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave" ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "4f447c62-c047-4159-a11e-3048ea93c66d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5",
+        "value": "KP00017"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1003",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave." ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "f9798cec-b87e-4b05-a5b6-a7132df575b8",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "KP00017"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1003",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave." ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "b39d9a79-9054-4161-b3de-dc9cfdc7ce90",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19.5"
+      } ],
+      "name": "Good Health Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1212",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "17 Daws Rd." ],
+        "city": "Blue Bell",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  } ]
+}

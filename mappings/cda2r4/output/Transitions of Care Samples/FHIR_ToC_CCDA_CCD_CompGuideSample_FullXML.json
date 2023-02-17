@@ -1,0 +1,3196 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "2481f5d4-cdb7-486c-8825-01a664b7470c",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:1.1.1.1.1.1.1.1.1",
+        "value": "Test CCDA"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "date": "2012-11-26T00:00:00+00:00",
+      "author": [ {
+        "reference": "Practitioner/a7233e4a-f401-4427-a15c-89fd7792c3bc",
+        "display": "Raymond Boccino MD"
+      } ],
+      "title": "Primo Adult Health: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2012-11-26T00:00:00+01:00",
+        "party": {
+          "reference": "Practitioner/a7233e4a-f401-4427-a15c-89fd7792c3bc",
+          "display": "Raymond Boccino MD"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/7eb7f7b0-5620-4c50-90de-cd9a82948eae",
+        "display": "Primo Adult Health"
+      },
+      "event": [ {
+        "period": {
+          "start": "1933-03-16",
+          "end": "2012-11-26"
+        },
+        "detail": [ {
+          "reference": "Practitioner/5f3e449d-7bc2-4d37-bd8c-751677d3fdde",
+          "display": "Dwayne Forge MD"
+        }, {
+          "reference": "Practitioner/a7233e4a-f401-4427-a15c-89fd7792c3bc",
+          "display": "Raymond Boccino MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "RESULTS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "RESULTS"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <ol>                     <li><span>TSH - 6 m[IU]/L (abnormal, high alert)</span></li>                     <li><span>Hgb a1c - 8% (abnormal, high alert)</span></li>                     <li><span>Creatinine - 1.5 mg/dL (abnormal)</span></li>                     <li><span>INR - 3.5 (abnormal, high alert)</span></li>                     <li><span>Echo EF - 55% (normal)</span></li>                     <li><span>Aortic Valve - 1.5 cm2, Stage II diastolic dysfunction (abnormal)</span></li>                     <li><span>EKG Impression - EKG rate 60s, A fib, LBBB</span></li>                                      </ol>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/8613afcc-910c-4027-aa70-037929393a10",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        }, {
+          "reference": "DiagnosticReport/a09603cd-c048-4ad5-a1be-74491e8aae9a",
+          "display": "INR in Platelet poor plasma by Coagulation assay"
+        }, {
+          "reference": "DiagnosticReport/fc150063-79d0-4de9-a29b-8d2fdb9b7df5",
+          "display": "Creatinine [Mass/volume] in Serum or Plasma"
+        }, {
+          "reference": "DiagnosticReport/4e6e0169-cf81-41c3-8fa8-4d82897b86db",
+          "display": "Thyrotropin [Units/volume] in Serum or Plasma by Detection limit less than or equal to 0.05 mIU/L"
+        }, {
+          "reference": "DiagnosticReport/156b917d-8286-4024-89d9-24f08f8bedd0",
+          "display": "EKG 12 channel panel"
+        }, {
+          "reference": "DiagnosticReport/c519a448-1e46-4bcc-afde-6a8a5e397409",
+          "display": "2D echocardiogram panel"
+        } ]
+      }, {
+        "title": "ALLERGIES",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <ol>                     <li><span>Allergy to Penicillin drugs</span></li>                     <li><span>Allergy to Bee Pollen</span></li>                  </ol>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/329c3de9-6d41-4e18-8831-89814c2c8b0f",
+          "display": "Bee Pollen"
+        }, {
+          "reference": "AllergyIntolerance/da6b08e9-561f-4f03-8f53-e81ec699d6a0",
+          "display": "Penicillin"
+        } ]
+      }, {
+        "title": "PLAN OF CARE",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Treatment plan"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <p>I have discussed this request for geriatric assessment and management with the patient who agrees with this plan.</p>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/75b0cb39-3eaf-48fe-afb9-e72ed94454ad"
+        } ]
+      }, {
+        "title": "IMMUNIZATIONS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <ol>                     <li><span>Influenza, seasonal, injectable, preservative free</span></li>                  </ol>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/e97b02ee-eddf-47ca-9ef5-5edd6a28c4ca",
+          "display": "Influenza, seasonal, injectable, preservative free"
+        } ]
+      }, {
+        "title": "FUNCTIONAL STATUS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> Difficulty remembering dates. Patient uses cane for walking.</div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "PROCEDURES",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <ol>                     <li><span>EKG (2012/10/15)</span></li>                     <li><span>Cholecystectomy (2006/06/01)</span></li>                     <li><span>Cataract Removal (2004/02/01)</span></li>                     <li><span>Angioplasty with Stent Placement (2002/08/01)</span></li>                     <li><span>Coronary Bypass (1997/11/01)</span></li>                     <li><span>Total Knee Arthroplasty (1997/03/01)</span></li>                     <li><span>Tonsillectomy (1944)</span></li>                  </ol>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/784ea9e0-a8ac-47ba-8f86-aa90605b8197",
+          "display": "Cataract Removal (2004/02/01)"
+        }, {
+          "reference": "Procedure/e5aef4e1-de30-4931-855b-0b74e8009625",
+          "display": "EKG (2012/10/15)"
+        }, {
+          "reference": "Procedure/c6793825-c50c-4c4e-8e11-bbdd3e5e5942",
+          "display": "Total Knee Arthroplasty (1997/03/01)"
+        }, {
+          "reference": "Procedure/2b829928-7829-4cc5-82bb-e6817a77134c",
+          "display": "Angioplasty with Stent Placement (2002/08/01)"
+        }, {
+          "reference": "Procedure/1c4968e9-6afa-44bb-8aae-cc78c155e406",
+          "display": "Coronary Bypass (1997/11/01)"
+        }, {
+          "reference": "Procedure/59050152-e1c0-469b-bd0f-a9e93247f122",
+          "display": "Cholecystectomy (2006/06/01)"
+        }, {
+          "reference": "Procedure/5e973824-5507-443f-957b-178c3f4a0bc7",
+          "display": "Tonsillectomy (1944)"
+        } ]
+      }, {
+        "title": "FAMILY HISTORY",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10157-6",
+            "display": "Family History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <p>Non-contributory</p>               </div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "PROBLEMS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span/>                  <ol>                     <li><span>Hypertension</span></li>                     <li><span>Hyperlipidemia</span></li>                     <li><span>Type II Diabetes</span></li>                     <li><span>Chronic Kidney Disease Stage III</span></li>                     <li><span>Hypothyroidism</span></li>                     <li><span>Coronary Artery Disease</span></li>                     <li><span>Benign prostatic hyperplasia</span></li>                     <li><span>Atrial fibrillation</span></li>                     <li><span>Diabetic neuropathy</span></li>                     <li><span>Generalized obesity</span></li>                     <li><span>Insomnia</span></li>                  </ol>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/534a474c-45bc-49bc-90bf-7950ec00ea27",
+          "display": "Essential Hypertension"
+        }, {
+          "reference": "Condition/edaeca0b-32ed-4fbb-b80d-942d68778e66",
+          "display": "Hypothyroidism"
+        }, {
+          "reference": "Condition/71e333e0-efc9-465c-8828-95afafb48802",
+          "display": "Generalized obesity"
+        }, {
+          "reference": "Condition/60d0ea32-bd9e-4a4a-ba5e-db7434bd32a6",
+          "display": "Coronary Artery Disease"
+        }, {
+          "reference": "Condition/c310d99a-d5bf-4325-8ecf-0e230c3910d5",
+          "display": "Diabetic neuropathy"
+        }, {
+          "reference": "Condition/f5c6a8e9-3b96-43dd-a3fa-a2e2d77b6ca6",
+          "display": "Chronic Kidney Disease Stage III"
+        }, {
+          "reference": "Condition/56ea7975-8d72-4a8b-96e0-c1f21d277d9d",
+          "display": "Insomnia"
+        }, {
+          "reference": "Condition/debad8f7-d1a7-425b-9ff5-1400d6bd5a52",
+          "display": "Diabetes Mellitus Type II "
+        }, {
+          "reference": "Condition/ea84116a-c7a6-4fed-9b49-1ccb05cd2ab3",
+          "display": "Hyperlipidemia"
+        }, {
+          "reference": "Condition/b40563ee-5875-44e5-8fa2-ff40ef7068bd",
+          "display": "Benign prostatic hyperplasia"
+        }, {
+          "reference": "Condition/fb8d0ff4-78a1-4ca0-810d-1e6a5d6a2761",
+          "display": "Atrial fibrillation"
+        } ]
+      }, {
+        "title": "SOCIAL HISTORY",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <ol>                     <li><span>50 pack year smoking history, quit 1997</span></li>                     <li><span>etoh (alcohol) daily, patient reports varies from 1 to many cocktails per day</span></li>                     <li><span>denies sexual activity due to impotence </span></li>                     <li><span>retired corporate executive</span></li>                  </ol>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/b743d264-37ad-4b71-9118-7c7d45d2706e"
+        } ]
+      }, {
+        "title": "MEDICATIONS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "HISTORY OF MEDICATION USE"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <ol>                     <li><span>Lisinopril - 20mg by mouth once daily</span></li>                     <li><span>Lasix - 40mg by mouth once daily</span></li>                     <li><span>K-Dur - 10mEq/L by mouth once daily</span></li>                                       <li><span>Norvasc - 10mg by mouth once daily</span></li>                     <li><span>Zocor - 40mg by mouth once daily before bed</span></li>                     <li><span>Lantus - 36 units once daily before bed</span></li>                     <li><span>gliburide - 2.5mg by mouth once daily</span></li>                     <li><span>synthroid - 0.1mg by mouth once daily</span></li>                     <li><span>Aleve - 220mg by mouth twice daily</span></li>                                         <li><span>Ultram - 50mg by mouth four times daily as needed for joint pain</span></li>                     <li><span>Aspirin - 81mg by mouth once daily</span></li>                     <li><span>Lopressor - 50mg by mouth twice daily</span></li>                     <li><span>Flomax - 0.4mg by mouth once daily</span></li>                     <li><span>Proscar - 5mg by mouth once daily</span></li>                     <li><span>Neurontin - 300mg by mouth three times daily</span></li>                     <li><span>Ativan - 1mg by mouth three times daily as needed for irritability</span></li>                     <li><span>miodarone - 200mg by mouth two times daily</span></li>                     <li><span>Coumadin - 5mg by mouth every other day starting 11/1/2012</span></li>                     <li><span>Coumadin - 2.5mg by mouth every other day starting 11/2/2012</span></li>                     <li><span>Ambien - 5mg by mouth once daily before bed</span></li>                  </ol>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/8fb88eb3-05a6-492c-b3dc-9441791d1f88",
+          "display": "miodarone - 200mg by mouth two times daily"
+        }, {
+          "reference": "MedicationStatement/e3e11506-69a0-48fd-ade1-bb5de1d4a260",
+          "display": "Lasix - 40mg by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/88e1933e-691b-4633-ba7c-d4916c7e4902",
+          "display": "Lantus - 36 units once daily before bed"
+        }, {
+          "reference": "MedicationStatement/9f5a91ba-9506-4b04-af3b-f0590fcaec9e",
+          "display": "Aspirin - 81mg by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/8d40a8da-47e8-4174-9e4b-9407f6cf1c47",
+          "display": "Zocor - 40mg by mouth once daily before bed"
+        }, {
+          "reference": "MedicationStatement/20efed44-9509-4191-bf78-c7a43493d066",
+          "display": "Proscar - 5mg by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/d20741c4-88fb-4777-9fbf-a55501cb5489",
+          "display": "Lopressor - 50mg by mouth twice daily"
+        }, {
+          "reference": "MedicationStatement/68f25b75-bc1c-4416-95d5-fd072a8ac662",
+          "display": "Ultram - 50mg by mouth four times daily as needed for joint pain"
+        }, {
+          "reference": "MedicationStatement/938b4b33-f00a-477b-b5fa-95a864ff36fd",
+          "display": "Ambien - 5mg by mouth once daily before bed"
+        }, {
+          "reference": "MedicationStatement/b120ec80-440a-4e3f-a4de-1f4ab6c74c50",
+          "display": "synthroid - 0.1mg by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/9acb3201-4dd8-45d7-8be6-00ef256a9f86",
+          "display": "Lisinopril - 20mg by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/221f6614-a315-4422-9238-e9b85132689b",
+          "display": "K-Dur - 10mEq/L by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/e5ec85bf-d5e2-478c-8861-afae14a04bc4",
+          "display": "Ativan - 1mg by mouth three times daily as needed for irritability"
+        }, {
+          "reference": "MedicationStatement/a78e29df-3364-44ea-b9e1-4b50977be170",
+          "display": "Coumadin - 2.5mg by mouth every other day starting 11/2/2012"
+        }, {
+          "reference": "MedicationStatement/1c57c48e-ad52-41d7-bc8d-e73ab5b54b4e",
+          "display": "Norvasc - 10mg by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/8a8cf080-32a9-4e8b-9993-822989c8ace6",
+          "display": "Neurontin - 300mg by mouth three times daily"
+        }, {
+          "reference": "MedicationStatement/b0150a6a-47c8-4abb-a9f4-2d6f9f74675c",
+          "display": "gliburide - 2.5mg by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/1f962395-4211-4bfb-814b-026c9161f20c",
+          "display": "Aleve - 220mg by mouth twice daily"
+        }, {
+          "reference": "MedicationStatement/55acbd8d-9fa5-4626-ae8d-e8afe8dd296e",
+          "display": "Flomax - 0.4mg by mouth once daily"
+        }, {
+          "reference": "MedicationStatement/e84ecc75-af1f-4634-a721-e5c291dc97ae",
+          "display": "Coumadin - 5mg by mouth every other day starting 11/1/2012"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "86a63d5f-aaf1-465d-8cee-36390de35f5b",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1041",
+            "display": "Roman Catholic"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "123-456-7890"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Bellic",
+        "given": [ "Nikolai" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1(571)555-0189",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1933-03-16",
+      "address": [ {
+        "use": "home",
+        "line": [ "100 Marshall Lane" ],
+        "city": "Springfield",
+        "state": "VA",
+        "postalCode": "22153",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "en"
+          } ]
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a7233e4a-f401-4427-a15c-89fd7792c3bc",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "12345"
+      } ],
+      "name": [ {
+        "family": "Boccino",
+        "given": [ "Raymond" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1(571)555-0179;ext=221",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1400 Main Street Ste G" ],
+        "city": "Springfield",
+        "state": "VA",
+        "postalCode": "22150",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5f3e449d-7bc2-4d37-bd8c-751677d3fdde",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "34567"
+      } ],
+      "name": [ {
+        "family": "Forge",
+        "given": [ "Dwayne" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1(571)555-0155",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "209 County Line Rd" ],
+        "city": "Springfield",
+        "state": "VA",
+        "postalCode": "22150"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "7eb7f7b0-5620-4c50-90de-cd9a82948eae",
+      "identifier": [ {
+        "use": "official",
+        "value": "1.1.1.1.1.1.1.1.2"
+      } ],
+      "name": "Primo Adult Health",
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1(571)555-0179",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1400 Main Street Ste G" ],
+        "city": "Springfield",
+        "state": "VA",
+        "postalCode": "22150",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "8613afcc-910c-4027-aa70-037929393a10",
+      "identifier": [ {
+        "use": "official",
+        "value": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "result": [ {
+        "reference": "Observation/f473d7ab-e3c1-45f9-8845-b9f57d4607b4",
+        "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f473d7ab-e3c1-45f9-8845-b9f57d4607b4",
+      "identifier": [ {
+        "use": "official",
+        "value": "dc16a671-c8f7-4125-a3f6-c8787606f576"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-26"
+      },
+      "valueQuantity": {
+        "value": 8,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "A",
+          "display": "abnormal"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "HH",
+          "display": "high alert"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "normal: 4.0-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "a09603cd-c048-4ad5-a1be-74491e8aae9a",
+      "identifier": [ {
+        "use": "official",
+        "value": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6301-6",
+          "display": "INR in Platelet poor plasma by Coagulation assay"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "result": [ {
+        "reference": "Observation/8b675ba3-e9c9-4c1e-aa37-d19213fd6bed",
+        "display": "INR in Platelet poor plasma by Coagulation assay"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8b675ba3-e9c9-4c1e-aa37-d19213fd6bed",
+      "identifier": [ {
+        "use": "official",
+        "value": "78df60b1-daf7-4838-b509-ec3a3f4116c1"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6301-6",
+          "display": "INR in Platelet poor plasma by Coagulation assay"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-26"
+      },
+      "valueQuantity": {
+        "value": 1.5,
+        "unit": "1",
+        "system": "http://unitsofmeasure.org",
+        "code": "1"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "A",
+          "display": "abnormal"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "HH",
+          "display": "high alert"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "Normal reference range 1.0-1.5; Targeted INR 2.0-3.0"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "fc150063-79d0-4de9-a29b-8d2fdb9b7df5",
+      "identifier": [ {
+        "use": "official",
+        "value": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2160-0",
+          "display": "Creatinine [Mass/volume] in Serum or Plasma"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "result": [ {
+        "reference": "Observation/56adec73-38e9-431f-953e-8ed5d3ad46f2",
+        "display": "Creatinine [Mass/volume] in Serum or Plasma"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "56adec73-38e9-431f-953e-8ed5d3ad46f2",
+      "identifier": [ {
+        "use": "official",
+        "value": "9cd43fa7-db31-4c29-ab30-83f92fdcaa20"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2160-0",
+          "display": "Creatinine [Mass/volume] in Serum or Plasma"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-26"
+      },
+      "valueQuantity": {
+        "value": 1.5,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "A",
+          "display": "abnormal"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "normal: below 1.5 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "4e6e0169-cf81-41c3-8fa8-4d82897b86db",
+      "identifier": [ {
+        "use": "official",
+        "value": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "11579-0",
+          "display": "Thyrotropin [Units/volume] in Serum or Plasma by Detection limit less than or equal to 0.05 mIU/L"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "result": [ {
+        "reference": "Observation/29541f19-84fa-4f39-935d-3b914f634518",
+        "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "29541f19-84fa-4f39-935d-3b914f634518",
+      "identifier": [ {
+        "use": "official",
+        "value": "1331eea1-3efe-497e-96bc-de56796a253d"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3016-3",
+          "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-26"
+      },
+      "valueQuantity": {
+        "value": 6,
+        "unit": "m[IU]/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "m[IU]/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "A",
+          "display": "abnormal"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "HH",
+          "display": "high alert"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "normal: 0.29–5.11 IU/ml"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "156b917d-8286-4024-89d9-24f08f8bedd0",
+      "identifier": [ {
+        "use": "official",
+        "value": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34534-8",
+          "display": "EKG 12 channel panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "result": [ {
+        "reference": "Observation/278202b9-fdf0-406b-86f8-403dca5f2f89",
+        "display": "EKG impression Narrative"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "278202b9-fdf0-406b-86f8-403dca5f2f89",
+      "identifier": [ {
+        "use": "official",
+        "value": "ba4f85fa-586c-4898-9aad-b592d4c2c383"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18844-1",
+          "display": "EKG impression Narrative"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-26"
+      },
+      "valueString": "EKG rate 60s, A fib, LBBB"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "c519a448-1e46-4bcc-afde-6a8a5e397409",
+      "identifier": [ {
+        "use": "official",
+        "value": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34552-0",
+          "display": "2D echocardiogram panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "result": [ {
+        "reference": "Observation/7cc6826b-b6d4-467a-9292-4f2898068154",
+        "display": "Aortic valve Ejection [Time] by US.doppler"
+      }, {
+        "reference": "Observation/7c8490b5-5720-4099-ba37-f9d13a9da2e3",
+        "display": "AV Orifice Area US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7cc6826b-b6d4-467a-9292-4f2898068154",
+      "identifier": [ {
+        "use": "official",
+        "value": "aaa00f9e-0154-4eaa-be85-aeb34169f06a"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18041-4",
+          "display": "Aortic valve Ejection [Time] by US.doppler"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-26"
+      },
+      "valueQuantity": {
+        "value": 55,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N",
+          "display": "normal"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "Normal: 50-75%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7c8490b5-5720-4099-ba37-f9d13a9da2e3",
+      "identifier": [ {
+        "use": "official",
+        "value": "347f958c-9b6b-4eeb-848d-624567117cb7"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18089-3",
+          "display": "AV Orifice Area US"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-26"
+      },
+      "valueQuantity": {
+        "value": 1.5,
+        "unit": "cm2",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm2"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "A",
+          "display": "abnormal"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "Normal (3.0-4.0 cm2), mild (1.5–2.0 cm2), moderate (1.0–1.5 cm2), severe (less than 1.0 cm2)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "329c3de9-6d41-4e18-8831-89814c2c8b0f",
+      "identifier": [ {
+        "use": "official",
+        "value": "1857d9c8-b58f-43ef-adef-7b2999c92f5e"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "environment" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "3729L8MA2C",
+          "display": "Bee Pollen"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "recordedDate": "1940-01-01",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "417516000",
+            "display": "Anaphylaxis due to substance"
+          } ]
+        } ],
+        "onset": "1940-01-01",
+        "severity": "severe"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "da6b08e9-561f-4f03-8f53-e81ec699d6a0",
+      "identifier": [ {
+        "use": "official",
+        "value": "200b7b4e-dcc2-47d2-8bce-2ce612dd4647"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "70618",
+          "display": "Penicillin"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "recordedDate": "1960-01-01",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "404640003",
+            "display": "Dizziness"
+          } ]
+        } ],
+        "onset": "1960-01-01",
+        "severity": "moderate"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "75b0cb39-3eaf-48fe-afb9-e72ed94454ad",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <p>I have discussed this request for geriatric assessment and management with the patient who agrees with this plan.</p>               </div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "PLAN OF CARE",
+      "description": "<div>                  <p>I have discussed this request for geriatric assessment and management with the patient who agrees with this plan.</p>               </div>",
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "e97b02ee-eddf-47ca-9ef5-5edd6a28c4ca",
+      "identifier": [ {
+        "use": "official",
+        "value": "b82150ba-bc2f-47a2-947c-930e3b4a3a5b"
+      } ],
+      "status": "not-done",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "140",
+          "display": "Influenza, seasonal, injectable, preservative free"
+        } ],
+        "text": "Influenza, seasonal, injectable, preservative free"
+      },
+      "patient": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "occurrenceDateTime": "2012-11-26",
+      "primarySource": false,
+      "manufacturer": {
+        "reference": "Organization/ae23b07b-c64f-4a3c-a2af-f96b610d1332",
+        "display": "Influenza Vaccine Company"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ae23b07b-c64f-4a3c-a2af-f96b610d1332",
+      "name": "Influenza Vaccine Company"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "784ea9e0-a8ac-47ba-8f86-aa90605b8197",
+      "identifier": [ {
+        "use": "official",
+        "value": "76be3bd8-b3cc-48cf-bb78-ecccd4cb5353"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "66983",
+          "display": "ICAPSULAR CATARACT XTRJ INSJ IO LENS PRSTH 1 STG"
+        } ],
+        "text": "Cataract Removal (2004/02/01)"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/a7376d6b-5385-4478-92f9-4f127ea106c7",
+          "display": "Marybeth Choy OD"
+        },
+        "onBehalfOf": {
+          "reference": "Organization/8ec95134-9d6b-4a9e-aee5-0d55085235cd"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a7376d6b-5385-4478-92f9-4f127ea106c7",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "45678"
+      } ],
+      "name": [ {
+        "family": "Choy",
+        "given": [ "Marybeth" ],
+        "suffix": [ "OD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1(571)555-0149",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "310 County Line Rd" ],
+        "city": "Springfield",
+        "state": "VA",
+        "postalCode": "22150"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "6487ea9b-3c79-447a-a5c9-8c83b0aac7d4",
+      "practitioner": {
+        "reference": "Practitioner/a7376d6b-5385-4478-92f9-4f127ea106c7",
+        "display": "Marybeth Choy OD"
+      },
+      "organization": {
+        "reference": "Organization/8ec95134-9d6b-4a9e-aee5-0d55085235cd",
+        "display": "\n                                 Vision Institute\n                              "
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "8ec95134-9d6b-4a9e-aee5-0d55085235cd",
+      "identifier": [ {
+        "use": "official",
+        "value": "1.1.1.1.1.1.1.1.5"
+      } ],
+      "name": "\n                                 Vision Institute\n                              ",
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1(571)555-0149",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "310 County Line Rd" ],
+        "city": "Springfield",
+        "state": "VA",
+        "postalCode": "22150"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "e5aef4e1-de30-4931-855b-0b74e8009625",
+      "identifier": [ {
+        "use": "official",
+        "value": "ff23c225-e011-486a-a807-c2a6e572ecf7"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "49038010",
+          "display": "EKG"
+        } ],
+        "text": "EKG (2012/10/15)"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "performedPeriod": {
+        "start": "2012-10-15T14:30:00+02:00",
+        "end": "2012-10-15T14:55:00+02:00"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/5f3e449d-7bc2-4d37-bd8c-751677d3fdde",
+          "display": "Dwayne Forge MD"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "c6793825-c50c-4c4e-8e11-bbdd3e5e5942",
+      "identifier": [ {
+        "use": "official",
+        "value": "a85eaf98-3129-4b2a-b5c2-ebcdf6efe10f"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "27447",
+          "display": "ARTHRP KNE CONDYLE+PLATU MEDIAL+LAT COMPARTMENTS"
+        } ],
+        "text": "Total Knee Arthroplasty (1997/03/01)"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "2b829928-7829-4cc5-82bb-e6817a77134c",
+      "identifier": [ {
+        "use": "official",
+        "value": "8adde4fa-20ae-4db5-a5cb-9942f0695c76"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "37205",
+          "display": "TCAT PLMT IV STENT PERCUTANEOUS 1ST VESSEL"
+        } ],
+        "text": "Angioplasty with Stent Placement (2002/08/01)"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/5f3e449d-7bc2-4d37-bd8c-751677d3fdde",
+          "display": "Dwayne Forge MD"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "1c4968e9-6afa-44bb-8aae-cc78c155e406",
+      "identifier": [ {
+        "use": "official",
+        "value": "7f12ca52-8632-4559-a994-8701722cb01b"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "33512",
+          "display": "CORONARY ARTERY BYPASS 3 CORONARY VENOUS GRAFTS"
+        } ],
+        "text": "Coronary Bypass (1997/11/01)"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/5f3e449d-7bc2-4d37-bd8c-751677d3fdde",
+          "display": "Dwayne Forge MD"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "59050152-e1c0-469b-bd0f-a9e93247f122",
+      "identifier": [ {
+        "use": "official",
+        "value": "97502608-440c-4ec1-9d8a-329a6ae11ac0"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "47600",
+          "display": "CHOLECYSTECTOMY"
+        } ],
+        "text": "Cholecystectomy (2006/06/01)"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/e87e2162-fb66-42b8-9834-5e06c00a243e",
+          "display": "Philip Bell MD"
+        },
+        "onBehalfOf": {
+          "reference": "Organization/b3cb4ba5-5a86-4075-bc3c-029b486b6e9d"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e87e2162-fb66-42b8-9834-5e06c00a243e",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "56789"
+      } ],
+      "name": [ {
+        "family": "Bell",
+        "given": [ "Philip" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1(571)555-0138",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "422 County Line Rd" ],
+        "city": "Springfield",
+        "state": "VA",
+        "postalCode": "22150"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "268714ad-b831-48b7-8747-3bc71cd43f89",
+      "practitioner": {
+        "reference": "Practitioner/e87e2162-fb66-42b8-9834-5e06c00a243e",
+        "display": "Philip Bell MD"
+      },
+      "organization": {
+        "reference": "Organization/b3cb4ba5-5a86-4075-bc3c-029b486b6e9d",
+        "display": "\n                                 Digestive Associates\n                              "
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "b3cb4ba5-5a86-4075-bc3c-029b486b6e9d",
+      "identifier": [ {
+        "use": "official",
+        "value": "1.1.1.1.1.1.1.1.4"
+      } ],
+      "name": "\n                                 Digestive Associates\n                              ",
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1(571)555-0138",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "422 County Line Rd" ],
+        "city": "Springfield",
+        "state": "VA",
+        "postalCode": "22150"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "5e973824-5507-443f-957b-178c3f4a0bc7",
+      "identifier": [ {
+        "use": "official",
+        "value": "71dcc9c7-c08e-40bf-b029-75b111215701"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "42825",
+          "display": "TONSILLECTOMY ONE-HALF UNDER AGE 12"
+        } ],
+        "text": "Tonsillectomy (1944)"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "534a474c-45bc-49bc-90bf-7950ec00ea27",
+      "identifier": [ {
+        "use": "official",
+        "value": "84a64e5c-eeff-4447-95b5-a0b754967ab7"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "5962100",
+          "display": "Essential Hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2005-05-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "edaeca0b-32ed-4fbb-b80d-942d68778e66",
+      "identifier": [ {
+        "use": "official",
+        "value": "cc1308af-6bca-4ea7-8236-6fd115753b2f"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "40930008",
+          "display": "Hypothyroidism"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2006-11-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "71e333e0-efc9-465c-8828-95afafb48802",
+      "identifier": [ {
+        "use": "official",
+        "value": "1458ebb0-5af1-45be-b7a4-fc3c13d9e36d"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "238134004",
+          "display": "Generalized obesity"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "1997-10-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "60d0ea32-bd9e-4a4a-ba5e-db7434bd32a6",
+      "identifier": [ {
+        "use": "official",
+        "value": "d207239d-bfed-4629-9e4d-af4a07265e71"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "8957000",
+          "display": "Coronary Artery Disease"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2009-07-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "c310d99a-d5bf-4325-8ecf-0e230c3910d5",
+      "identifier": [ {
+        "use": "official",
+        "value": "dc71710b-0f34-4f85-bd31-fc2b25697d91"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "230572002",
+          "display": "Diabetic neuropathy"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2006-06-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f5c6a8e9-3b96-43dd-a3fa-a2e2d77b6ca6",
+      "identifier": [ {
+        "use": "official",
+        "value": "4a658e81-3d8e-4980-bc33-4af1b5c65a0e"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "433144002",
+          "display": "Chronic Kidney Disease Stage III"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2009-01-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "56ea7975-8d72-4a8b-96e0-c1f21d277d9d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c0c1aae1-c9fd-4287-bb3a-7fb79c6f27f5"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "193462001",
+          "display": "Insomnia"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2011-09-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "debad8f7-d1a7-425b-9ff5-1400d6bd5a52",
+      "identifier": [ {
+        "use": "official",
+        "value": "904b119d-a238-4cb9-8e7a-71d5ea268456"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes Mellitus Type II "
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2008-11-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ea84116a-c7a6-4fed-9b49-1ccb05cd2ab3",
+      "identifier": [ {
+        "use": "official",
+        "value": "93f6e544-1d11-45cd-b760-cabeb40f5be0"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "5582204",
+          "display": "Hyperlipidemia"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2005-05-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "b40563ee-5875-44e5-8fa2-ff40ef7068bd",
+      "identifier": [ {
+        "use": "official",
+        "value": "ff4f72a1-75dd-4925-8efc-a1200ef286cd"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266569009",
+          "display": "Benign prostatic hyperplasia"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2008-04-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "fb8d0ff4-78a1-4ca0-810d-1e6a5d6a2761",
+      "identifier": [ {
+        "use": "official",
+        "value": "b5f9f547-0e8c-452a-963b-cdf38957fde8"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "49436004",
+          "display": "Atrial fibrillation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "onsetDateTime": "2010-09-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b743d264-37ad-4b71-9118-7c7d45d2706e",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "end": "1997"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "8517006",
+          "display": "former smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "8fb88eb3-05a6-492c-b3dc-9441791d1f88",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "308d05eb-a29d-4a59-a9ff-5936e09304ca"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/1c714fc0-692a-473e-96a6-1a2a09ae4094",
+        "display": "miodarone - 200mg by mouth two times daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 12,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "1c714fc0-692a-473e-96a6-1a2a09ae4094",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "833530",
+          "display": "Cordarone 200 MG Oral Tablet"
+        } ],
+        "text": "miodarone - 200mg by mouth two times daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "e3e11506-69a0-48fd-ade1-bb5de1d4a260",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "23581045-ee58-4a16-9a4c-d722a43d93f8"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/5be0c6c4-0b7a-455b-a766-7e5d1abf3a76",
+        "display": "Lasix - 40mg by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "5be0c6c4-0b7a-455b-a766-7e5d1abf3a76",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "313988",
+          "display": "Furosemide 40 MG Oral Tablet"
+        } ],
+        "text": "Lasix - 40mg by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "88e1933e-691b-4633-ba7c-d4916c7e4902",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "e146441f-d8db-451b-9b0a-b95d19da358a"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/00c08440-1f29-42dc-82a2-aa252ba2b854",
+        "display": "Lantus - 36 units once daily before bed"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38299",
+            "display": "SUBCUTANEOUS"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 0.36,
+            "unit": "ml",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "00c08440-1f29-42dc-82a2-aa252ba2b854",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "311041",
+          "display": "Insulin Glargine 100 UNT/ML Injectable Solution"
+        } ],
+        "text": "Lantus - 36 units once daily before bed"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "9f5a91ba-9506-4b04-af3b-f0590fcaec9e",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "f480e2a8-76ff-475c-95b9-effbabeff36b"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/97cb93e7-cecc-4ec3-abed-ee1bae6273e5",
+        "display": "Aspirin - 81mg by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "97cb93e7-cecc-4ec3-abed-ee1bae6273e5",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "308416",
+          "display": "Aspirin 81 MG Enteric Coated Tablet"
+        } ],
+        "text": "Aspirin - 81mg by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "8d40a8da-47e8-4174-9e4b-9407f6cf1c47",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "4a55ddeb-5aa6-47f0-b455-da9b5f7f9c75"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/27c967c6-2017-47a6-a605-ce2e4ae94710",
+        "display": "Zocor - 40mg by mouth once daily before bed"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "27c967c6-2017-47a6-a605-ce2e4ae94710",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198211",
+          "display": "Simvastatin 40 MG Oral Tablet"
+        } ],
+        "text": "Zocor - 40mg by mouth once daily before bed"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "20efed44-9509-4191-bf78-c7a43493d066",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "7005d27f-cd00-43e4-b980-ff3fa65012b4"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/138c2a4d-f325-4083-9230-a78aaab55d12",
+        "display": "Proscar - 5mg by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "138c2a4d-f325-4083-9230-a78aaab55d12",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "201961",
+          "display": "Proscar 5 MG Oral Tablet"
+        } ],
+        "text": "Proscar - 5mg by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "d20741c4-88fb-4777-9fbf-a55501cb5489",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "6dc89300-ff31-486b-b862-060c16517d60"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/c04a6b53-5062-4740-8228-b27fc3a9063f",
+        "display": "Lopressor - 50mg by mouth twice daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 12,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "c04a6b53-5062-4740-8228-b27fc3a9063f",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866514",
+          "display": "Metoprolol Tartrate 50 MG Oral Tablet"
+        } ],
+        "text": "Lopressor - 50mg by mouth twice daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "68f25b75-bc1c-4416-95d5-fd072a8ac662",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cced9bbd-0aa1-4826-95ce-ca446d5fd16e"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/e97a3713-a7b8-44b2-9c1c-bdbbdd286e4d",
+        "display": "Ultram - 50mg by mouth four times daily as needed for joint pain"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 6,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "e97a3713-a7b8-44b2-9c1c-bdbbdd286e4d",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "835603",
+          "display": "traMADol hydrochloride 50 MG Oral Tablet"
+        } ],
+        "text": "Ultram - 50mg by mouth four times daily as needed for joint pain"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "938b4b33-f00a-477b-b5fa-95a864ff36fd",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "15402969-f45c-4723-b4cd-e5a1e7c7075c"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/203d1a8f-1e50-4583-868e-54239d41e560",
+        "display": "Ambien - 5mg by mouth once daily before bed"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "203d1a8f-1e50-4583-868e-54239d41e560",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "854878",
+          "display": "Ambien 5 MG Oral Tablet"
+        } ],
+        "text": "Ambien - 5mg by mouth once daily before bed"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "b120ec80-440a-4e3f-a4de-1f4ab6c74c50",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "a47c03f4-7930-40cd-ad06-8ab82537c706"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/4011cb51-022f-4082-b5ff-d1f8de418bb5",
+        "display": "synthroid - 0.1mg by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "4011cb51-022f-4082-b5ff-d1f8de418bb5",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892246",
+          "display": "Levothyroxine Sodium 0.1 MG Oral Tablet"
+        } ],
+        "text": "synthroid - 0.1mg by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "9acb3201-4dd8-45d7-8be6-00ef256a9f86",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "f51687b3-19dc-445d-a3aa-8d756276c89f"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/75dc96a1-47f7-4269-8720-45c568a558c3",
+        "display": "Lisinopril - 20mg by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "75dc96a1-47f7-4269-8720-45c568a558c3",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314077",
+          "display": "Lisinopril 20 MG Oral Tablet"
+        } ],
+        "text": "Lisinopril - 20mg by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "221f6614-a315-4422-9238-e9b85132689b",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "becaa0c7-7916-4de3-b7cd-1b8be342087d"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/aabc4170-58c3-4b3d-ae93-578fa9af26ed",
+        "display": "K-Dur - 10mEq/L by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "aabc4170-58c3-4b3d-ae93-578fa9af26ed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "706459",
+          "display": "K-Dur 10 MEQ Extended Release Tablet"
+        } ],
+        "text": "K-Dur - 10mEq/L by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "e5ec85bf-d5e2-478c-8861-afae14a04bc4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "7546cefa-638c-4238-acc4-befe786a5c0c"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/c28d7384-9e5f-4c1c-b121-7cf5d92738bd",
+        "display": "Ativan - 1mg by mouth three times daily as needed for irritability"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 8,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "c28d7384-9e5f-4c1c-b121-7cf5d92738bd",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197900",
+          "display": "Lorazepam 0.5 MG Oral Tablet"
+        } ],
+        "text": "Ativan - 1mg by mouth three times daily as needed for irritability"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "a78e29df-3364-44ea-b9e1-4b50977be170",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "eba0c8b5-098d-4e0b-aaca-f47e54ab0d4e"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/a234e662-5c53-4d65-ac07-7ad5a52e1e10",
+        "display": "Coumadin - 2.5mg by mouth every other day starting 11/2/2012"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2012-11-02"
+            },
+            "period": 2,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "a234e662-5c53-4d65-ac07-7ad5a52e1e10",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "855312",
+          "display": "Warfarin Sodium 2.5 MG Oral Tablet"
+        } ],
+        "text": "Coumadin - 2.5mg by mouth every other day starting 11/2/2012"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "1c57c48e-ad52-41d7-bc8d-e73ab5b54b4e",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "f9fa3786-a767-4ca8-add4-72b61347aa0f"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/cfcad98f-20e3-46b7-b924-ee2140bb6dcd",
+        "display": "Norvasc - 10mg by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "cfcad98f-20e3-46b7-b924-ee2140bb6dcd",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "308135",
+          "display": "Amlodipine 10 MG Oral Tablet"
+        } ],
+        "text": "Norvasc - 10mg by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "8a8cf080-32a9-4e8b-9993-822989c8ace6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "5f14d454-1af7-44c8-9bb8-c6226476b328"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/430f74db-ff6b-4b41-a916-eceaeed6aee2",
+        "display": "Neurontin - 300mg by mouth three times daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 8,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "430f74db-ff6b-4b41-a916-eceaeed6aee2",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "105029",
+          "display": "Neurontin 300 MG Oral Capsule"
+        } ],
+        "text": "Neurontin - 300mg by mouth three times daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "b0150a6a-47c8-4abb-a9f4-2d6f9f74675c",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2f673e36-79de-45a3-ae20-321e561d41f5"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/fe9554fa-ee77-496b-8056-90b6d6e5a4ae",
+        "display": "gliburide - 2.5mg by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "fe9554fa-ee77-496b-8056-90b6d6e5a4ae",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "861748",
+          "display": "glyBURIDE 2.5 MG / metFORMIN hydrochloride 500 MG Oral Tablet"
+        } ],
+        "text": "gliburide - 2.5mg by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "1f962395-4211-4bfb-814b-026c9161f20c",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "65fa772c-188d-489f-8f1a-1b5e8db732b3"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/d9451049-1e35-4f75-835e-fbbcfea3ac91",
+        "display": "Aleve - 220mg by mouth twice daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 12,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "d9451049-1e35-4f75-835e-fbbcfea3ac91",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1112231",
+          "display": "Naproxen sodium 220 MG Oral Capsule"
+        } ],
+        "text": "Aleve - 220mg by mouth twice daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "55acbd8d-9fa5-4626-ae8d-e8afe8dd296e",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "87386f99-3730-492c-8d4a-c52233f6551c"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/beba5404-09f0-4669-81a0-2cec9ae684ee",
+        "display": "Flomax - 0.4mg by mouth once daily"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 24,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "beba5404-09f0-4669-81a0-2cec9ae684ee",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "863671",
+          "display": "Flomax 0.4 MG Oral Capsule"
+        } ],
+        "text": "Flomax - 0.4mg by mouth once daily"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "e84ecc75-af1f-4634-a721-e5c291dc97ae",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cd8215fd-a9d2-484d-86ad-2105272dc9c2"
+      } ],
+      "status": "active",
+      "medicationReference": {
+        "reference": "Medication/7d505b60-e4a8-4f75-9a85-ee505e440959",
+        "display": "Coumadin - 5mg by mouth every other day starting 11/1/2012"
+      },
+      "subject": {
+        "reference": "Patient/86a63d5f-aaf1-465d-8cee-36390de35f5b",
+        "display": "Nikolai Bellic"
+      },
+      "effectivePeriod": {
+        "start": "2012-11-01",
+        "end": "2012-12-31"
+      },
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2012-11-01"
+            },
+            "period": 2,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38288",
+            "display": "oral"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "1",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "7d505b60-e4a8-4f75-9a85-ee505e440959",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "855332",
+          "display": "Warfarin Sodium 5 MG Oral Tablet"
+        } ],
+        "text": "Coumadin - 5mg by mouth every other day starting 11/1/2012"
+      }
+    }
+  } ]
+}

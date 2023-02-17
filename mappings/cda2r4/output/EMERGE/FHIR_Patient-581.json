@@ -1,0 +1,1760 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "4e42b740-2e25-40ae-8c0b-756a25b2ec6e",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "date": "2014-04-16T11:55:24+02:00",
+      "author": [ {
+        "reference": "Practitioner/af626633-cdb0-40ff-8605-5aaf6c3895a5",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/aaa6b6d3-ec17-4750-a3e7-8ee615221a3d",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:24+02:00",
+        "party": {
+          "reference": "Practitioner/aaa6b6d3-ec17-4750-a3e7-8ee615221a3d",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/c020eb38-deec-4726-bec6-89e7d14484f7",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2002-05-02T10:00:00+02:00",
+          "end": "2010-10-04T10:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/a306f900-62a1-4e2d-936e-82e5b5cb8429",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild</td><td>Susceptible</td><td>05-02-2002 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Codeine</td><td>NDF-RT</td><td>N0000006691</td><td><span/>Codeine</td><td><span/>Mild to moderate</td><td>Very susceptible</td><td>05-02-2002 10:00:00</td><td>Active</td></tr><tr><td>Neomycin</td><td>RxNorm</td><td>866041</td><td><span/>Neomycin Sulfate 500 MG</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>05-02-2002 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/89e2b676-d29e-48f6-8ab1-7c5a96f23de6",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/533f38b5-833f-4877-9b20-2b05a785285e",
+          "display": "Neomycin + Neomycin Sulfate 500 MG"
+        }, {
+          "reference": "AllergyIntolerance/7b3d7c05-68fb-47c2-981f-ace74477b6b2",
+          "display": "Codeine + Codeine"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>34.7</td><td>kg/m2</td><td>05-02-2002 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>05-02-2002 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>72</td><td>/min</td><td>05-02-2002 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>124</td><td>mm[Hg]</td><td>05-02-2002 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>33.1</td><td>kg/m2</td><td>10-04-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/a3908ac5-c98b-4eac-85fa-0795444b74a2",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/3de79d57-1822-461e-8e85-7cf801ca9c47",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/0708d23e-e631-48be-9025-06fe0996d3bb",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/0bfa912a-cd22-4a46-ab39-106143cdf095",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/abdebe89-72be-4c99-b843-e6f473fbd451",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>05-02-2002 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>05-02-2002 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>05-02-2002 10:00:00</td><td>Performed</td></tr><tr><td>Tobacco Use Cessation Counseling</td><td>CPT</td><td>99406</td><td><span/>Behav chng smoking 3-10 min</td><td>05-02-2002 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>384742004</td><td>Smoking cessation assistance</td><td/><td/></tr><tr><td>Cardiac Monitoring</td><td>SNOMED-CT</td><td>23852006</td><td><span/>Cardiac monitoring</td><td>09-04-2010 10:00:00</td><td>Performed</td></tr><tr><td>nephropathy-related procedures</td><td>CPT</td><td>90935</td><td><span/>Hemodialysis, one evaluation</td><td>09-04-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0319</td><td>ESRD related svs 1visit 20+y</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z99.2</td><td>Dependence on renal dialysis</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>39.95</td><td>Hemodialysis</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>302497006</td><td>Hemodialysis</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Group A Streptococcus Test</td><td>LOINC</td><td>31971-5</td><td><span/>S pyo Ag XXX Ql</td><td>positive</td><td/><td>NA</td><td>05-02-2002 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87430</td><td>Strep a ag, eia</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>122121004</td><td>Streptococcus pyogenes antigen assay</td><td/><td/><td/><td/><td/></tr><tr><td>FOBT</td><td>LOINC</td><td>2335-8</td><td><span/>Hemoccult Stl Ql</td><td>negative</td><td/><td>NA</td><td>10-04-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82274</td><td>Assay test for blood, fecal</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0328</td><td>Fecal blood scrn immunoassay</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V76.51</td><td>Special screening for malignant neoplasms of colon</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>252156002</td><td>Occult blood screening</td><td/><td/><td/><td/><td/></tr><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>6.8</td><td>%</td><td>4-5.6%</td><td>10-04-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>58</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>10-04-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>86.4</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>10-04-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>167</td><td>mg/dL</td><td>125-200 mg/dL</td><td>10-04-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>113</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>10-04-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Urine Macroalbumin</td><td>LOINC</td><td>50561-0</td><td><span/>Prot Ur Strip.auto-mCnc</td><td>75</td><td>mg/dL</td><td>3.6-5.1 mg/dL</td><td>10-04-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84156</td><td>Assay of protein urine</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>57378007</td><td>Protein measurement, urine</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/dc5afb2c-3b55-4d65-b916-7510e8058eef",
+          "display": "Blood Chemistry"
+        }, {
+          "reference": "DiagnosticReport/0fdbecd2-8718-45c6-9a16-b724f4ecd77b",
+          "display": "Urinalysis"
+        }, {
+          "reference": "DiagnosticReport/d4ed4166-a7ac-4044-8239-8de1a6fe2c78",
+          "display": "Lipid Panel"
+        }, {
+          "reference": "DiagnosticReport/3ae5cac1-3aa3-4846-ad7d-0c137ce610dd",
+          "display": "FOBT"
+        }, {
+          "reference": "DiagnosticReport/af76c10e-4c0f-4cf7-8120-23f60b17512c",
+          "display": "Microbiology"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>05-02-2002 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/dc370408-28fd-42bb-9b20-d8195763ebcc"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diabetes</td><td>SNOMED-CT</td><td>44054006</td><td><span/>Diabetes mellitus type 2</td><td>05-02-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>E11.9</td><td>Type 2 diabetes mellitus without complications</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>250.00</td><td>Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled</td><td/><td/></tr><tr><td>Nephropathy</td><td>SNOMED-CT</td><td>46177005</td><td><span/>End stage renal disease</td><td>05-02-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>G58</td><td>Other mononeuropathies</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>585.6</td><td>End stage renal disease</td><td/><td/></tr><tr><td>Acute Renal Insufficiency</td><td>SNOMED-CT</td><td>14669001</td><td><span/>Acute renal failure syndrome</td><td>09-04-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>N17.9</td><td>Acute kidney failure, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>584.9</td><td>Acute kidney failure, unspecified</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/ce39dd35-47ed-4771-a05f-6e67c8f2e556",
+          "display": "Diabetes mellitus type 2"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>05-02-2002 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>06-01-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Ophthalmological Services</td><td>CPT</td><td>92012</td><td><span/>Eye exam established pat</td><td>07-03-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>09-04-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>10-04-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/f414e9c3-ad18-4b18-82c8-8354c011cb3e",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/70964f2a-6f5b-4a03-8a2c-f2080e81a984",
+          "display": "Eye exam established pat"
+        }, {
+          "reference": "Encounter/cafdb1b2-ccd4-4ccb-877a-d046e7b8e0aa",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/ab4377a6-0ce9-44ef-a2ee-b932dba00cdd",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/07590b82-701d-4a12-b216-919dd8795ef1",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Insulin</td><td>RxNorm</td><td>847207</td><td><span/>3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe</td><td>05-02-2002 10:00:00</td><td>Active</td></tr><tr><td>ACE inhibitor or ARB</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>05-02-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/32e45645-1c72-47ef-8059-018a98938513",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/454ff4d4-974b-4f41-b441-e358f6d6f4ae",
+          "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "6072b901-9584-46ab-b873-2a70856f15ac",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1059",
+            "display": "Zen Buddhism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Other Race"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2131-1",
+            "display": "Other Race"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Goleta",
+          "state": "CA",
+          "postalCode": "93117",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Wood",
+        "given": [ "Kristin" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(774)627-3613",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1952-03-26",
+      "address": [ {
+        "use": "home",
+        "line": [ "3856 Rockford Road" ],
+        "city": "Mansfield",
+        "state": "MA",
+        "postalCode": "2048",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Flores",
+          "given": [ "David" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(706)276-7542",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "DavidKFlores@gustr.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "395 Holly Street" ],
+          "city": "Ellijay",
+          "state": "GA",
+          "postalCode": "30540",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/1289df58-251d-4f0b-9306-90e173b44fd5",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "1289df58-251d-4f0b-9306-90e173b44fd5",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "af626633-cdb0-40ff-8605-5aaf6c3895a5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "aaa6b6d3-ec17-4750-a3e7-8ee615221a3d",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a306f900-62a1-4e2d-936e-82e5b5cb8429",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "c020eb38-deec-4726-bec6-89e7d14484f7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "89e2b676-d29e-48f6-8ab1-7c5a96f23de6",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "recordedDate": "2002-05-02T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "533f38b5-833f-4877-9b20-2b05a785285e",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866041",
+          "display": "Neomycin Sulfate 500 MG"
+        } ],
+        "text": "Neomycin + Neomycin Sulfate 500 MG"
+      },
+      "patient": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "recordedDate": "2002-05-02T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "7b3d7c05-68fb-47c2-981f-ace74477b6b2",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006691",
+          "display": "Codeine"
+        } ],
+        "text": "Codeine + Codeine"
+      },
+      "patient": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "recordedDate": "2002-05-02T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a3908ac5-c98b-4eac-85fa-0795444b74a2",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2002-05-02T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3de79d57-1822-461e-8e85-7cf801ca9c47",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2002-05-02T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 124,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0708d23e-e631-48be-9025-06fe0996d3bb",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2002-05-02T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0bfa912a-cd22-4a46-ab39-106143cdf095",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2002-05-02T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 34.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "abdebe89-72be-4c99-b843-e6f473fbd451",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-04T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 33.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "dc5afb2c-3b55-4d65-b916-7510e8058eef",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "result": [ {
+        "reference": "Observation/066d12d7-4f1f-4181-83dc-c89643183e01",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "066d12d7-4f1f-4181-83dc-c89643183e01",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-04T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 6.8,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "0fdbecd2-8718-45c6-9a16-b724f4ecd77b",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "27171005",
+          "display": "Urinalysis"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "result": [ {
+        "reference": "Observation/a037207b-b508-490e-a258-4978e350f98d",
+        "display": "Prot Ur Strip.auto-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a037207b-b508-490e-a258-4978e350f98d",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "50561-0",
+          "display": "Prot Ur Strip.auto-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84156",
+          "display": "Assay of protein urine"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "57378007",
+          "display": "Protein measurement, urine"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-04T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 75,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "3.6-5.1 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "d4ed4166-a7ac-4044-8239-8de1a6fe2c78",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "result": [ {
+        "reference": "Observation/d1c43ae5-f6ad-473a-85a5-f5a8e9cfc9e9",
+        "display": "HDLc SerPl-sCnc"
+      }, {
+        "reference": "Observation/01043010-08e6-4f33-85bb-1bfcc4d5a0bd",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/87da3584-75a7-47b4-988b-77df07b92273",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/884256d3-bd93-4925-a2e7-1d06f0a6d535",
+        "display": "Cholest SerPl-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d1c43ae5-f6ad-473a-85a5-f5a8e9cfc9e9",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-04T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 58,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "01043010-08e6-4f33-85bb-1bfcc4d5a0bd",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-04T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 86.4,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "87da3584-75a7-47b4-988b-77df07b92273",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-04T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 113,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "884256d3-bd93-4925-a2e7-1d06f0a6d535",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-04T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 167,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "3ae5cac1-3aa3-4846-ad7d-0c137ce610dd",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "167670005",
+          "display": "FOBT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "result": [ {
+        "reference": "Observation/3498c464-91ef-4c33-b943-91aeae7b065c",
+        "display": "Hemoccult Stl Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3498c464-91ef-4c33-b943-91aeae7b065c",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2335-8",
+          "display": "Hemoccult Stl Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82274",
+          "display": "Assay test for blood, fecal"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0328",
+          "display": "Fecal blood scrn immunoassay"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V76.51",
+          "display": "Special screening for malignant neoplasms of colon"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "252156002",
+          "display": "Occult blood screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-04T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "260385009",
+          "display": "negative"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "af76c10e-4c0f-4cf7-8120-23f60b17512c",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "269934003",
+          "display": "Microbiology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "result": [ {
+        "reference": "Observation/4f577768-9e98-4518-8547-d4589ed407cf",
+        "display": "S pyo Ag XXX Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4f577768-9e98-4518-8547-d4589ed407cf",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "31971-5",
+          "display": "S pyo Ag XXX Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87430",
+          "display": "Strep a ag, eia"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "122121004",
+          "display": "Streptococcus pyogenes antigen assay"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2002-05-02T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dc370408-28fd-42bb-9b20-d8195763ebcc",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2002-05-02T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ce39dd35-47ed-4771-a05f-6e67c8f2e556",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes mellitus type 2"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "E11.9",
+          "display": "Type 2 diabetes mellitus without complications"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "250.00",
+          "display": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "onsetDateTime": "2010-05-02T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f414e9c3-ad18-4b18-82c8-8354c011cb3e",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "period": {
+        "start": "2010-09-04T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "14669001",
+          "display": "Acute Renal Insufficiency"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/7a770a10-6a7a-4547-ad5f-ae383f0f1cf7",
+        "display": "Acute Renal Insufficiency"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "7a770a10-6a7a-4547-ad5f-ae383f0f1cf7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "14669001",
+          "display": "Acute Renal Insufficiency"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "N17.9",
+          "display": "Acute kidney failure, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "584.9",
+          "display": "Acute kidney failure, unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "onsetDateTime": "2010-09-04T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "70964f2a-6f5b-4a03-8a2c-f2080e81a984",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "92012",
+          "display": "Eye exam established pat"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "period": {
+        "start": "2010-07-03T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "cafdb1b2-ccd4-4ccb-877a-d046e7b8e0aa",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "period": {
+        "start": "2010-10-04T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "ab4377a6-0ce9-44ef-a2ee-b932dba00cdd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "period": {
+        "start": "2010-06-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "07590b82-701d-4a12-b216-919dd8795ef1",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "period": {
+        "start": "2002-05-02T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "32e45645-1c72-47ef-8059-018a98938513",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/baa93650-c72d-477e-b594-f228c86d5e54",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-02T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "baa93650-c72d-477e-b594-f228c86d5e54",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "454ff4d4-974b-4f41-b441-e358f6d6f4ae",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/f4c3bd37-4c45-4506-9c34-c8e69e51d909",
+        "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+      },
+      "subject": {
+        "reference": "Patient/6072b901-9584-46ab-b873-2a70856f15ac",
+        "display": "Kristin Wood"
+      },
+      "effectivePeriod": {
+        "start": "2002-05-02T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "f4c3bd37-4c45-4506-9c34-c8e69e51d909",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "847207",
+          "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+        } ]
+      }
+    }
+  } ]
+}

@@ -1,0 +1,1951 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "a7908207-3498-43eb-9929-773935d1f050",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "date": "2014-04-16T11:54:57+02:00",
+      "author": [ {
+        "reference": "Practitioner/16eb5e1f-80a3-464d-add5-edf18e802c61",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/b145ae1b-acde-402b-ab31-82fbf35f23f0",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:57+02:00",
+        "party": {
+          "reference": "Practitioner/b145ae1b-acde-402b-ab31-82fbf35f23f0",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/9fefccca-5058-42f4-8328-d3f309ceb416",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-02-06T10:00:00+01:00",
+          "end": "2010-11-03T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/ccf3ed80-6fb1-4aba-a758-5c6634c536bc",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Severe</td><td>Very susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Severe</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/9eb70695-3fb6-4f5d-9b68-787121777809",
+          "display": "Penicillin V + Penicillin V"
+        }, {
+          "reference": "AllergyIntolerance/5b583800-6043-40ec-94a2-7d66c9b40a01",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/a40edb6f-e5a5-418f-95d3-71d40ddd1201",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Chlamydia Screening</td><td>LOINC</td><td>31777-6</td><td><span/>C trach Ag XXX Ql</td><td>negative</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87270</td><td>Chlamydia trachomatis ag if</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121953005</td><td>Measurement of Chlamydia pneumoniae antibody</td><td/><td/><td/><td/><td/></tr><tr><td>Pap Test</td><td>LOINC</td><td>10524-7</td><td><span/>Cyto Cervix</td><td>normal</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>88174</td><td>Cytopath, c/v auto, in fluid</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0147</td><td>Scr c/v cyto, automated sys</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.4</td><td>Encounter for screening for malignant neoplasm of cervix</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V72.32</td><td>Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>440623000</td><td>Microscopic examination of cervical Papanicolaou smear</td><td/><td/><td/><td/><td/></tr><tr><td>Pregnancy Test</td><td>LOINC</td><td>2119-6</td><td><span/>HCG SerPl-sCnc</td><td>positive</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84702</td><td>Chorionic gonadotropin test</td><td/><td/><td/><td/><td/></tr><tr><td>Rh Status Mother</td><td>LOINC</td><td>1314-4</td><td><span/>Rh Ig Scn Bld-Imp</td><td>positive</td><td/><td>NA</td><td>05-09-2010 10:00:00</td><td>Completed</td></tr><tr><td>HIV Screening</td><td>LOINC</td><td>73906-0</td><td><span/>HIV1+2 IgG Bld Ql EIA.rapid</td><td>non-reactive</td><td/><td>NA</td><td>05-20-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87389</td><td>Hiv-1 ag w/hiv-1 &amp; hiv-2 ab</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>171121004</td><td>Human immunodeficiency virus screening</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/e1e95b3c-92cb-41aa-b565-acb6c5a5c746",
+          "display": "Microbiology"
+        }, {
+          "reference": "DiagnosticReport/e197a739-998e-4da3-a8ea-298c013761b3",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/b249eef2-27a9-4aee-a94a-9c59b12171bc",
+          "display": "Cytology"
+        }, {
+          "reference": "DiagnosticReport/e33695cf-25f5-4ff3-ae13-50ad3c64bab9",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/729d7f57-df13-43b7-8282-afdd7a0cb570",
+          "display": "Serology"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>70</td><td>mm[Hg]</td><td>05-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>114</td><td>mm[Hg]</td><td>05-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>72</td><td>mm[Hg]</td><td>09-26-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>116</td><td>mm[Hg]</td><td>09-26-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/dc2031e4-d3d5-42d7-bde9-610c099eccea",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/aef8561f-cf5f-4016-aac5-24d298ab6c1f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/b8751ba7-69cf-4cf2-9aa5-85ea7e4e4728",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/51906013-39d5-4a03-9dba-e245412f88a2",
+          "display": "BP Systolic"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>06-05-2010 10:00:00</td><td>Performed</td></tr><tr><td>Delivery Live Births-Procedure</td><td>CPT</td><td>59410</td><td><span/>Obstetrical care</td><td>10-11-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>169961004</td><td>Normal birth</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/f25a8a6b-ceda-40bd-a750-747be6c811f2",
+          "display": "Obstetrical care"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Estimated Date of Conception</td><td>SNOMED-CT</td><td>248986005</td><td><span/>Estimated date of conception</td><td>02-06-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>06-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>06-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Primagravida</td><td>SNOMED-CT</td><td>127364007</td><td><span/>Primigravida</td><td>09-02-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>09-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>D(Rh) Negative</td><td>SNOMED-CT</td><td>165746003</td><td><span/>RhD negative</td><td>09-08-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>O36.0120</td><td>Maternal care for anti-D [Rh] antibodies, second trimester, not applicable or unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>656.10</td><td>Rhesus isoimmunization, unspecified as to episode of care or not applicable</td><td/><td/></tr><tr><td>Pregnancy-related diagnosis</td><td>SNOMED-CT</td><td>199305006</td><td><span/>Complications specific to multiple gestation</td><td>10-11-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>O30</td><td>Multiple gestation</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>651.90</td><td>Unspecified multiple gestation, unspecified as to episode of care or not applicable</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/0338545f-5b44-46b2-aae2-15880d0d4db4",
+          "display": "Complications specific to multiple gestation"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/ecc04c9d-8951-4223-879d-50be5778e6b0"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>06-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>06-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Anti-D Immune Globulin</td><td>RxNorm</td><td>731378</td><td><span/>1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe</td><td>08-21-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/ecffdc26-2817-464e-9642-ac04c08ad355",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        }, {
+          "reference": "MedicationStatement/fb0c27e1-32d6-4d5f-a9d0-b1c74c94d683",
+          "display": "1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe"
+        }, {
+          "reference": "MedicationStatement/b72f39ee-6d8d-4ba9-831a-90f5351a52d1",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>05-05-2010 10:00:00</td><td>Performed</td></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>05-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>06-05-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>08-08-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>08-17-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-05-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-12-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-19-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-26-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>10-05-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>10-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>10-13-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>11-03-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/4191f152-b49d-4064-b68a-acc7c13ed359",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/c762d09c-0cb8-4eb1-a795-ec6c4f8c4c16",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/671b8d69-0b5e-4ffe-ac60-f695f529446c",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/a61323b2-b11a-4c99-b4f6-73e10ad66491",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/cb05d48a-ad40-42be-aaa3-4c8b3651a4bb",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/f8ab6d20-a815-4e78-8a8e-6ec78d47aad4",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/73ed04fa-04e5-41d4-91ba-6a0d74e8e6b6",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/bbb68a2d-0896-4e0d-83f9-89f7523eee76",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/58c39d86-4ffe-4efb-b3e7-9bbc7e85168a",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/69526325-3aed-40f5-97b3-968bd62c30f1",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/58f98c28-ee29-48e6-8150-bd1d03c05949",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/7c8764ed-5013-404d-b646-cb145bda8ece",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/d8d36da3-228b-4976-a651-8da2dae818f6",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/fb287e41-99fb-464d-a336-7b0cff50d1e2",
+          "display": "Prenatal visit"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "dc9793b9-fa8f-44a9-8142-c856cc85da10",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1005",
+            "display": "Anglican"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Other Race"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2131-1",
+            "display": "Other Race"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Elkridge",
+          "state": "MD",
+          "postalCode": "21227",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Harris",
+        "given": [ "Denise" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(508)477-8662",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1988-02-23",
+      "address": [ {
+        "use": "home",
+        "line": [ "1621 Ferguson Street" ],
+        "city": "Mashpee",
+        "state": "MA",
+        "postalCode": "2649",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Christensen",
+          "given": [ "David" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(937)674-3298",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "DavidPChristensen@gustr.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "11 Harter Street" ],
+          "city": "Dayton",
+          "state": "OH",
+          "postalCode": "45402",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/c1214f50-c567-43e0-a0ef-2ade7f56a7ae",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "c1214f50-c567-43e0-a0ef-2ade7f56a7ae",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "16eb5e1f-80a3-464d-add5-edf18e802c61",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "b145ae1b-acde-402b-ab31-82fbf35f23f0",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ccf3ed80-6fb1-4aba-a758-5c6634c536bc",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "9fefccca-5058-42f4-8328-d3f309ceb416",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "9eb70695-3fb6-4f5d-9b68-787121777809",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "5b583800-6043-40ec-94a2-7d66c9b40a01",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "a40edb6f-e5a5-418f-95d3-71d40ddd1201",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "e1e95b3c-92cb-41aa-b565-acb6c5a5c746",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "269934003",
+          "display": "Microbiology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "result": [ {
+        "reference": "Observation/ad9a4258-0fa0-4691-89fe-f489fc788926",
+        "display": "C trach Ag XXX Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ad9a4258-0fa0-4691-89fe-f489fc788926",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "31777-6",
+          "display": "C trach Ag XXX Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87270",
+          "display": "Chlamydia trachomatis ag if"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121953005",
+          "display": "Measurement of Chlamydia pneumoniae antibody"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "260385009",
+          "display": "negative"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "e197a739-998e-4da3-a8ea-298c013761b3",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "result": [ {
+        "reference": "Observation/83d03693-3f96-4915-b04d-1db1e07dfa3e",
+        "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "83d03693-3f96-4915-b04d-1db1e07dfa3e",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "73906-0",
+          "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87389",
+          "display": "Hiv-1 ag w/hiv-1 & hiv-2 ab"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "171121004",
+          "display": "Human immunodeficiency virus screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "131194007",
+          "display": "non-reactive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "b249eef2-27a9-4aee-a94a-9c59b12171bc",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116147009",
+          "display": "Cytology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "result": [ {
+        "reference": "Observation/ded906f1-2dab-430c-ad69-83dcce2fdb81",
+        "display": "Cyto Cervix"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ded906f1-2dab-430c-ad69-83dcce2fdb81",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "10524-7",
+          "display": "Cyto Cervix"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "88174",
+          "display": "Cytopath, c/v auto, in fluid"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0147",
+          "display": "Scr c/v cyto, automated sys"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z12.4",
+          "display": "Encounter for screening for malignant neoplasm of cervix"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.32",
+          "display": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "440623000",
+          "display": "Microscopic examination of cervical Papanicolaou smear"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "17621005",
+          "display": "normal"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "e33695cf-25f5-4ff3-ae13-50ad3c64bab9",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "result": [ {
+        "reference": "Observation/f803cab6-4c27-4b4a-b518-255c88474834",
+        "display": "HCG SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f803cab6-4c27-4b4a-b518-255c88474834",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2119-6",
+          "display": "HCG SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84702",
+          "display": "Chorionic gonadotropin test"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "729d7f57-df13-43b7-8282-afdd7a0cb570",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "result": [ {
+        "reference": "Observation/7035970c-d800-4548-8b7c-f918e628e351",
+        "display": "Rh Ig Scn Bld-Imp"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7035970c-d800-4548-8b7c-f918e628e351",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "1314-4",
+          "display": "Rh Ig Scn Bld-Imp"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-09T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dc2031e4-d3d5-42d7-bde9-610c099eccea",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-26T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aef8561f-cf5f-4016-aac5-24d298ab6c1f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-26T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 116,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b8751ba7-69cf-4cf2-9aa5-85ea7e4e4728",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 70,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "51906013-39d5-4a03-9dba-e245412f88a2",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 114,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "f25a8a6b-ceda-40bd-a750-747be6c811f2",
+      "identifier": [ {
+        "use": "official",
+        "value": "e401f340-7be2-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "59410",
+          "display": "Obstetrical care"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "169961004",
+          "display": "Normal birth"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "performedPeriod": {
+        "start": "2010-10-11T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "0338545f-5b44-46b2-aae2-15880d0d4db4",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "199305006",
+          "display": "Complications specific to multiple gestation"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "O30",
+          "display": "Multiple gestation"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "651.90",
+          "display": "Unspecified multiple gestation, unspecified as to episode of care or not applicable"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "onsetDateTime": "2010-10-11T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ecc04c9d-8951-4223-879d-50be5778e6b0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "ecffdc26-2817-464e-9642-ac04c08ad355",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/290d7d42-d2b2-49d0-ba22-153f6e338fa1",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "290d7d42-d2b2-49d0-ba22-153f6e338fa1",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "318142",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "fb0c27e1-32d6-4d5f-a9d0-b1c74c94d683",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/7f1f3e42-2220-4c30-82b5-28ad306cc543",
+        "display": "1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe"
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-21T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "7f1f3e42-2220-4c30-82b5-28ad306cc543",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "731378",
+          "display": "1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "b72f39ee-6d8d-4ba9-831a-90f5351a52d1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/f2a3d853-676c-4971-9e9f-d101fca0b462",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "f2a3d853-676c-4971-9e9f-d101fca0b462",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4191f152-b49d-4064-b68a-acc7c13ed359",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-10-13T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "c762d09c-0cb8-4eb1-a795-ec6c4f8c4c16",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-09-19T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "671b8d69-0b5e-4ffe-ac60-f695f529446c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-08-17T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "a61323b2-b11a-4c99-b4f6-73e10ad66491",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-09-26T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "cb05d48a-ad40-42be-aaa3-4c8b3651a4bb",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f8ab6d20-a815-4e78-8a8e-6ec78d47aad4",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-11-03T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "73ed04fa-04e5-41d4-91ba-6a0d74e8e6b6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-05-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "bbb68a2d-0896-4e0d-83f9-89f7523eee76",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-08-08T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "58c39d86-4ffe-4efb-b3e7-9bbc7e85168a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-05-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "69526325-3aed-40f5-97b3-968bd62c30f1",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-10-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "58f98c28-ee29-48e6-8150-bd1d03c05949",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-06-05T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/804ae513-667b-4d8a-8218-d3ab6a871d2c",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      }, {
+        "reference": "Condition/88deec0f-ba07-4488-8ae2-1a717bae6c98",
+        "display": "Asthma Daytime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "804ae513-667b-4d8a-8218-d3ab6a871d2c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "onsetDateTime": "2010-06-05T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "88deec0f-ba07-4488-8ae2-1a717bae6c98",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "onsetDateTime": "2010-06-05T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7c8764ed-5013-404d-b646-cb145bda8ece",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-09-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d8d36da3-228b-4976-a651-8da2dae818f6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-09-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "fb287e41-99fb-464d-a336-7b0cff50d1e2",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/dc9793b9-fa8f-44a9-8142-c856cc85da10",
+        "display": "Denise Harris"
+      },
+      "period": {
+        "start": "2010-10-05T10:00:00+02:00"
+      }
+    }
+  } ]
+}

@@ -1,0 +1,2683 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "ccc6ad6a-60b5-48f4-bb18-6dc692635d3d",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "date": "2014-04-16T11:55:29+02:00",
+      "author": [ {
+        "reference": "Practitioner/85c9d0f6-10dc-41a6-86fd-638dbba72f92",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/ca4b5dff-30da-4b8b-87a6-a00eef1bc655",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:29+02:00",
+        "party": {
+          "reference": "Practitioner/ca4b5dff-30da-4b8b-87a6-a00eef1bc655",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/98e7c027-fc0d-4986-8771-f1b4e1b21306",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-03-31T10:00:00+02:00",
+          "end": "2010-10-24T10:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/3022fa0d-83b6-4a7e-97f6-bcb482c67575",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter ED</td><td>CPT</td><td>99281</td><td><span/>Emergency dept visit</td><td>04-30-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>05-28-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>06-25-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>10-24-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/034d5128-613f-4494-86cf-e129d689c772",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/4ec4cc7e-788c-4b3d-9c38-3b2e30a48708",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/f3fe3eca-e966-476d-8d73-045646eedb6d",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/ead71be8-de68-4437-a7c1-473f43362daf",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/2d438a7f-3c33-42bb-95c1-ea74419ca92c",
+          "display": "Emergency dept visit"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>7.1</td><td>%</td><td>4-5.6%</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>60</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>204</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>300</td><td>mg/dL</td><td>125-200 mg/dL</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>180</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>6.5</td><td>%</td><td>4-5.6%</td><td>07-25-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>6.3</td><td>%</td><td>4-5.6%</td><td>10-24-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>55</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>10-24-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>133</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>10-24-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>220</td><td>mg/dL</td><td>125-200 mg/dL</td><td>10-24-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>160</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>10-24-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/ceee31d3-d96a-467b-8cb3-bbf4fad9a0f9",
+          "display": "Blood Chemistry"
+        }, {
+          "reference": "DiagnosticReport/2e39e825-4fa1-4278-856a-dbdfd9ad1321",
+          "display": "Lipid Panel"
+        }, {
+          "reference": "DiagnosticReport/825d8d9b-7563-4474-a2c7-e4966588463f",
+          "display": "Blood Chemistry"
+        }, {
+          "reference": "DiagnosticReport/494370be-ef73-4cf4-a31d-75d4e6f0691c",
+          "display": "Lipid Panel"
+        }, {
+          "reference": "DiagnosticReport/7627afbd-ee1a-4ef3-a85a-234838d86224",
+          "display": "Blood Chemistry"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>31.3</td><td>kg/m2</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>92</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>145</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>30.7</td><td>kg/m2</td><td>05-23-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>100</td><td>mm[Hg]</td><td>05-23-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>100</td><td>/min</td><td>05-23-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>160</td><td>mm[Hg]</td><td>05-23-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>05-28-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>88</td><td>/min</td><td>05-28-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>125</td><td>mm[Hg]</td><td>05-28-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>29.9</td><td>kg/m2</td><td>06-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>88</td><td>mm[Hg]</td><td>06-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>86</td><td>/min</td><td>06-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>132</td><td>mm[Hg]</td><td>06-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>28.2</td><td>kg/m2</td><td>10-24-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>84</td><td>mm[Hg]</td><td>10-24-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>84</td><td>/min</td><td>10-24-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>10-24-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/27f060ea-92d7-4446-9ab6-ab56bb7b89a7",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/12189c2c-c336-44ba-9f3a-debf93529872",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/1249725c-78d2-44b2-8c8a-23f2415a381f",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/23408623-9de1-452a-839e-a882171c1217",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/40a211be-aa8e-4c69-9198-6d0d24dfe5d9",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/9354e81a-c77b-4fe0-b94c-6d0196ad5552",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/1a33ea31-b6f7-4a47-b435-1147835bc92b",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/db9a5f7d-6e23-4eb7-b2fd-384dc00c2c7d",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/c005a022-b0a3-4250-b22d-4fca557993ad",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/bdd27c88-acf4-43f5-a2a6-97358c4e4131",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/0baa467b-c541-45bc-a262-e2c628080b08",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/fdbd82a6-b7a6-4f44-bb0f-caff63e44dda",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/d861b01d-4609-49bd-9b1d-e82887eb4d2f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/6aa46ab7-f06a-4507-9485-a9be809379dc",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/90650d60-6e56-4904-908a-06c452906772",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/892de390-5dc7-41f6-a108-8f15dcc526b9",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/803da016-0ad9-4db5-b723-dca3e62800b9",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/2c6031f6-6ac4-4d1f-bdaf-eadb5ee4e5b9",
+          "display": "BP Diastolic"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr><tr><td>X-ray Study</td><td>CPT</td><td>76499</td><td><span/>Radiographic procedure</td><td>05-23-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>363680008</td><td>Radiographic imaging procedure (procedure)</td><td/><td/></tr><tr><td>LVF Assessment</td><td>CPT</td><td>93543</td><td><span/>Injection for heart x-rays</td><td>05-24-2010 10:00:00</td><td>Performed</td></tr><tr><td>Cardiac Monitoring</td><td>SNOMED-CT</td><td>23852006</td><td><span/>Cardiac monitoring</td><td>05-25-2010 10:00:00</td><td>Performed</td></tr><tr><td>dietary consultation order</td><td>SNOMED-CT</td><td>103699006</td><td><span/>Patient referral to dietitian</td><td>05-27-2010 10:00:00</td><td>Performed</td></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>06-25-2010 10:00:00</td><td>Performed</td></tr><tr><td>Eye Exam</td><td>CPT</td><td>92012</td><td><span/>Eye exam established pat</td><td>07-30-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S0621</td><td>Routine ophthalmological exa</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>95.03</td><td>Extended ophthalmologic work-up</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>36228007</td><td>Ophthalmic examination and evaluation</td><td/><td/></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>10-24-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Mild to moderate</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Fatal</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/81878fa4-771f-479c-ac17-d344936531c9",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/0b8de047-ccf5-4deb-ba2c-b872ae1a261d",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/6b146713-68d6-4244-b8f8-4d9ae46a491f",
+          "display": "Penicillin V + Penicillin V"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/8e5b39e2-0ff2-4cb0-ada7-20e19fcb7cf2"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antidiabetics</td><td>RxNorm</td><td>744863</td><td><span/>exenatide 0.25 MG/ML Injectable Solution</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Antihypertensive combinations</td><td>RxNorm</td><td>858828</td><td><span/>Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Antiplatelets</td><td>RxNorm</td><td>243670</td><td><span/>Aspirin 81 MG Oral Tablet</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Beta Blocker Therapy</td><td>RxNorm</td><td>866924</td><td><span/>Metoprolol Tartrate 25 MG Oral Tablet</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Statins</td><td>RxNorm</td><td>617314</td><td><span/>atorvastatin 10 MG Oral Tablet [Lipitor]</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>ACE inhibitors</td><td>RxNorm</td><td>314076</td><td><span/>Lisinopril 10 MG Oral Tablet</td><td>10-24-2010 10:00:00</td><td>Active</td></tr><tr><td>Antidiabetics</td><td>RxNorm</td><td>744863</td><td><span/>exenatide 0.25 MG/ML Injectable Solution</td><td>10-24-2010 10:00:00</td><td>Active</td></tr><tr><td>Statins</td><td>RxNorm</td><td>617314</td><td><span/>atorvastatin 10 MG Oral Tablet [Lipitor]</td><td>10-24-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/af0686c6-c660-452b-bb17-f6c331cf2079",
+          "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+        }, {
+          "reference": "MedicationStatement/2572b395-52cd-4dd1-bf1e-cf1556e93275",
+          "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+        }, {
+          "reference": "MedicationStatement/a754e160-3009-4bc4-be8f-55eb93c9ca99",
+          "display": "exenatide 0.25 MG/ML Injectable Solution"
+        }, {
+          "reference": "MedicationStatement/46e3349e-2ce1-4e82-a34f-b4775e6ede71",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/2bb66aa4-0ba5-41d8-88db-be263c8e302a",
+          "display": "exenatide 0.25 MG/ML Injectable Solution"
+        }, {
+          "reference": "MedicationStatement/765fa072-66d9-4a5f-9d7d-f79162f766d5",
+          "display": "Aspirin 81 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/b6db9cc1-7ecf-4966-b66c-577559daf974",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/74f17fde-7730-484b-8d01-16bc1391d168",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Coronary Artery Disease No MI</td><td>SNOMED-CT</td><td>53741008</td><td><span/>Coronary arteriosclerosis</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I25.1</td><td>Atherosclerotic heart disease of native coronary artery</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>414.01</td><td>Coronary atherosclerosis of native coronary artery</td><td/><td/></tr><tr><td>Diabetes</td><td>SNOMED-CT</td><td>44054006</td><td><span/>Diabetes mellitus type 2</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>E11.9</td><td>Type 2 diabetes mellitus without complications</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>250.00</td><td>Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled</td><td/><td/></tr><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr><tr><td>Myocardial Infarction</td><td>SNOMED-CT</td><td>304914007</td><td><span/>Acute Q wave myocardial infarction</td><td>05-28-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I21.3</td><td>ST elevation (STEMI) myocardial infarction of unspecified site</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>410.90</td><td>Acute myocardial infarction of unspecified site, episode of care unspecified</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/7599ffe0-38f5-45a6-93b6-aa7dbe7a59c9",
+          "display": "Acute Q wave myocardial infarction"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1074",
+            "display": "Native American"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Boston",
+          "state": "MA",
+          "postalCode": "2110",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Collier",
+        "given": [ "Toni" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(276)701-0595",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1943-09-03",
+      "address": [ {
+        "use": "home",
+        "line": [ "1214 Douglas Dairy Road" ],
+        "city": "Richlands",
+        "state": "VA",
+        "postalCode": "24641",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Boatwright",
+          "given": [ "Ruth" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(208)472-7487",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "RuthJBoatwright@teleworm.us",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "3482 Young Road" ],
+          "city": "Boise",
+          "state": "ID",
+          "postalCode": "83702",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/7d4f9067-f2f0-4255-9c75-fb8fa8b0663c",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "7d4f9067-f2f0-4255-9c75-fb8fa8b0663c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "85c9d0f6-10dc-41a6-86fd-638dbba72f92",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ca4b5dff-30da-4b8b-87a6-a00eef1bc655",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3022fa0d-83b6-4a7e-97f6-bcb482c67575",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "98e7c027-fc0d-4986-8771-f1b4e1b21306",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "034d5128-613f-4494-86cf-e129d689c772",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "period": {
+        "start": "2010-06-25T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4ec4cc7e-788c-4b3d-9c38-3b2e30a48708",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "period": {
+        "start": "2010-05-28T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "304914007",
+          "display": "Myocardial Infarction"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/bc512270-1c36-492d-986f-a224b5dfa558",
+        "display": "Myocardial Infarction"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "bc512270-1c36-492d-986f-a224b5dfa558",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "304914007",
+          "display": "Myocardial Infarction"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I21.3",
+          "display": "ST elevation (STEMI) myocardial infarction of unspecified site"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "410.90",
+          "display": "Acute myocardial infarction of unspecified site, episode of care unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "onsetDateTime": "2010-05-28T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f3fe3eca-e966-476d-8d73-045646eedb6d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "period": {
+        "start": "2010-10-24T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "ead71be8-de68-4437-a7c1-473f43362daf",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "53741008",
+          "display": "Coronary Artery Disease No MI"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/bc512270-1c36-492d-986f-a224b5dfa558",
+        "display": "Myocardial Infarction"
+      }, {
+        "reference": "Condition/bc512270-1c36-492d-986f-a224b5dfa558",
+        "display": "Myocardial Infarction"
+      }, {
+        "reference": "Condition/bc512270-1c36-492d-986f-a224b5dfa558",
+        "display": "Myocardial Infarction"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "2d438a7f-3c33-42bb-95c1-ea74419ca92c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99281",
+          "display": "Emergency dept visit"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "period": {
+        "start": "2010-04-30T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "ceee31d3-d96a-467b-8cb3-bbf4fad9a0f9",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "result": [ {
+        "reference": "Observation/75340b13-ffd4-400d-a07a-f6001d2abe5e",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "75340b13-ffd4-400d-a07a-f6001d2abe5e",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 6.5,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "2e39e825-4fa1-4278-856a-dbdfd9ad1321",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "result": [ {
+        "reference": "Observation/20caa764-9904-4e4f-9f24-20daf8d6523d",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/fb71a5ad-b0f5-440d-8a5e-33f0776d659c",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/47ffc665-2a68-493c-b2c7-ed999aac4f91",
+        "display": "Cholest SerPl-mCnc"
+      }, {
+        "reference": "Observation/d04621f6-2c05-467d-b5f5-394ba2878cab",
+        "display": "HDLc SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "20caa764-9904-4e4f-9f24-20daf8d6523d",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 180,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fb71a5ad-b0f5-440d-8a5e-33f0776d659c",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 204,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "47ffc665-2a68-493c-b2c7-ed999aac4f91",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 300,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d04621f6-2c05-467d-b5f5-394ba2878cab",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 60,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "825d8d9b-7563-4474-a2c7-e4966588463f",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "result": [ {
+        "reference": "Observation/16becdf0-47d9-46a7-af94-c0e8f732b247",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "16becdf0-47d9-46a7-af94-c0e8f732b247",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 6.3,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "494370be-ef73-4cf4-a31d-75d4e6f0691c",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "result": [ {
+        "reference": "Observation/b6b51660-ab6e-4c07-90f2-f0dca16c85c5",
+        "display": "Cholest SerPl-mCnc"
+      }, {
+        "reference": "Observation/23b451c4-65aa-4e84-a8ef-2fb4f585029b",
+        "display": "HDLc SerPl-sCnc"
+      }, {
+        "reference": "Observation/bef35dcd-7b9d-4bf6-a3e8-b3b9104265b0",
+        "display": "LDLc SerPl-mCnc"
+      }, {
+        "reference": "Observation/583c5416-d6c7-4c7c-94f2-d0899ce6a7ef",
+        "display": "Trigl SerPl Calc-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b6b51660-ab6e-4c07-90f2-f0dca16c85c5",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 220,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "23b451c4-65aa-4e84-a8ef-2fb4f585029b",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 55,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bef35dcd-7b9d-4bf6-a3e8-b3b9104265b0",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 133,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "583c5416-d6c7-4c7c-94f2-d0899ce6a7ef",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 160,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "7627afbd-ee1a-4ef3-a85a-234838d86224",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "result": [ {
+        "reference": "Observation/36e91b1b-454b-45fb-96a4-9381b07371cf",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "36e91b1b-454b-45fb-96a4-9381b07371cf",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 7.1,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "27f060ea-92d7-4446-9ab6-ab56bb7b89a7",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-28T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 125,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12189c2c-c336-44ba-9f3a-debf93529872",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-28T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1249725c-78d2-44b2-8c8a-23f2415a381f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-28T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 88,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "23408623-9de1-452a-839e-a882171c1217",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 31.3,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "40a211be-aa8e-4c69-9198-6d0d24dfe5d9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 145,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9354e81a-c77b-4fe0-b94c-6d0196ad5552",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 92,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1a33ea31-b6f7-4a47-b435-1147835bc92b",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-23T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 100,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "db9a5f7d-6e23-4eb7-b2fd-384dc00c2c7d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-23T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 100,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c005a022-b0a3-4250-b22d-4fca557993ad",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-23T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 30.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bdd27c88-acf4-43f5-a2a6-97358c4e4131",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-23T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 160,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0baa467b-c541-45bc-a262-e2c628080b08",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fdbd82a6-b7a6-4f44-bb0f-caff63e44dda",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d861b01d-4609-49bd-9b1d-e82887eb4d2f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6aa46ab7-f06a-4507-9485-a9be809379dc",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 28.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "90650d60-6e56-4904-908a-06c452906772",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 29.9,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "892de390-5dc7-41f6-a108-8f15dcc526b9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "803da016-0ad9-4db5-b723-dca3e62800b9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 86,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c6031f6-6ac4-4d1f-bdaf-eadb5ee4e5b9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 88,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "81878fa4-771f-479c-ac17-d344936531c9",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "0b8de047-ccf5-4deb-ba2c-b872ae1a261d",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "6b146713-68d6-4244-b8f8-4d9ae46a491f",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8e5b39e2-0ff2-4cb0-ada7-20e19fcb7cf2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "af0686c6-c660-452b-bb17-f6c331cf2079",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/915b69b2-c6b5-4c5d-b650-a998969cccbc",
+        "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "915b69b2-c6b5-4c5d-b650-a998969cccbc",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "617314",
+          "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "2572b395-52cd-4dd1-bf1e-cf1556e93275",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/915b69b2-c6b5-4c5d-b650-a998969cccbc",
+        "display": "atorvastatin 10 MG Oral Tablet [Lipitor]"
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "a754e160-3009-4bc4-be8f-55eb93c9ca99",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/82cc15e2-1aa4-4a63-ac0e-0f2b4ce2d6ff",
+        "display": "exenatide 0.25 MG/ML Injectable Solution"
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "82cc15e2-1aa4-4a63-ac0e-0f2b4ce2d6ff",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "744863",
+          "display": "exenatide 0.25 MG/ML Injectable Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "46e3349e-2ce1-4e82-a34f-b4775e6ede71",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/eb61052c-e1fa-4464-ab1b-3d1b1a303229",
+        "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "eb61052c-e1fa-4464-ab1b-3d1b1a303229",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866924",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "2bb66aa4-0ba5-41d8-88db-be263c8e302a",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/82cc15e2-1aa4-4a63-ac0e-0f2b4ce2d6ff",
+        "display": "exenatide 0.25 MG/ML Injectable Solution"
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "765fa072-66d9-4a5f-9d7d-f79162f766d5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/34a6ef5b-27b7-41ca-b589-d948feea595f",
+        "display": "Aspirin 81 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "34a6ef5b-27b7-41ca-b589-d948feea595f",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "243670",
+          "display": "Aspirin 81 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "b6db9cc1-7ecf-4966-b66c-577559daf974",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/6f37d258-4764-477e-af25-cb21322b6dcc",
+        "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "6f37d258-4764-477e-af25-cb21322b6dcc",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "858828",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "74f17fde-7730-484b-8d01-16bc1391d168",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/80a4da43-dd69-4567-b3aa-cba545f8ac5c",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-24T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "80a4da43-dd69-4567-b3aa-cba545f8ac5c",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "7599ffe0-38f5-45a6-93b6-aa7dbe7a59c9",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "304914007",
+          "display": "Acute Q wave myocardial infarction"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I21.3",
+          "display": "ST elevation (STEMI) myocardial infarction of unspecified site"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "410.90",
+          "display": "Acute myocardial infarction of unspecified site, episode of care unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/f9334d73-9c9c-4b2c-aec4-0d097c7d19d7",
+        "display": "Toni Collier"
+      },
+      "onsetDateTime": "2010-05-28T10:00:00+02:00"
+    }
+  } ]
+}

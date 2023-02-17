@@ -1,0 +1,1776 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "8443388b-da2d-40ae-8648-37be6142e319",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "date": "2014-04-16T11:55:02+02:00",
+      "author": [ {
+        "reference": "Practitioner/ba9f0621-eeff-4fe4-a87d-54668f2ababe",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/9f563f1b-139e-4ba1-8bd7-69ca592ca739",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:02+02:00",
+        "party": {
+          "reference": "Practitioner/9f563f1b-139e-4ba1-8bd7-69ca592ca739",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/fee03c1f-6ef4-4798-a800-63b241ddccc7",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "1984-06-05T10:00:00+02:00",
+          "end": "2010-06-27T10:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/74890039-cc25-4cd4-b1c1-cf037431c143",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Severe</td><td>Very susceptible</td><td>06-05-1984 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Moderate</td><td>Susceptible</td><td>06-05-1984 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/df368260-bdd7-4fa0-8cb8-9dd12652cb59",
+          "display": "Penicillin V + Penicillin V"
+        }, {
+          "reference": "AllergyIntolerance/ab85a935-dceb-424c-8fd7-2ccfd08766d6",
+          "display": "Allergy to Eggs + Eggs"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>05-07-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>05-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>05-15-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>05-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>06-27-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/8f514321-99a1-451f-ba81-08e756b5fc0b",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/a14a9187-b8ae-4791-985d-76e0f9d974ec",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/96f18394-dfca-483b-ab6f-83dab7ea1996",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/25804dd6-e7a9-4763-a0a4-0ff62e8fb372",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/32c47f72-787b-4337-b70e-c8e7550c5cb0",
+          "display": "Office/outpatient visit, est"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>29.1</td><td>kg/m2</td><td>05-07-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>82</td><td>mm[Hg]</td><td>05-07-2010 10:00:00</td><td>Finding</td></tr><tr><td>Heart Rate</td><td>LOINC</td><td>8867-4</td><td><span/>Heart Rate</td><td>86</td><td>/min</td><td>05-07-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>132</td><td>mm[Hg]</td><td>05-07-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/a6d238cd-3e69-4cda-b746-6bfb87285779",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/930ff12a-dd6e-44fb-9c9f-f57bbdf392b9",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/e4d3f25a-c956-414f-b4c0-c5462922b65c",
+          "display": "Heart Rate"
+        }, {
+          "reference": "Observation/545f84b8-1304-4e98-8743-b2c3954a90fd",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>X-ray Study</td><td>CPT</td><td>76499</td><td><span/>Radiographic procedure</td><td>06-02-1997 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>363680008</td><td>Radiographic imaging procedure (procedure)</td><td/><td/></tr><tr><td>X-ray Study</td><td>CPT</td><td>76499</td><td><span/>Radiographic procedure</td><td>05-06-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>363680008</td><td>Radiographic imaging procedure (procedure)</td><td/><td/></tr><tr><td>Counseling For Nutrition</td><td>CPT</td><td>97802</td><td><span/>Medical nutrition, indiv, in</td><td>05-07-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>S9470</td><td>Nutritional counseling, diet</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z00.8</td><td>Encounter for other general examination</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.3</td><td>Dietary surveillance and counseling</td><td/><td/></tr><tr><td>Counseling For Physical Activity</td><td>HCPCS</td><td>S9451</td><td><span/>Exercise class</td><td>05-07-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z71.3</td><td>Dietary counseling and surveillance</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V65.41</td><td>Exercise counseling</td><td/><td/></tr><tr><td>Foot Exam</td><td>SNOMED-CT</td><td>401191002</td><td><span/>Diabetic foot examination</td><td>05-07-2010 10:00:00</td><td>Performed</td></tr><tr><td>Tobacco Use Cessation Counseling</td><td>CPT</td><td>99406</td><td><span/>Behav chng smoking 3-10 min</td><td>05-07-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>384742004</td><td>Smoking cessation assistance</td><td/><td/></tr><tr><td>Colonoscopy</td><td>CPT</td><td>45378</td><td><span/>Diagnostic colonoscopy</td><td>05-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>HCPCS</td><td>G0121</td><td>Colon ca scrn not hi rsk ind</td><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.11</td><td>Encounter for screening for malignant neoplasm of colon</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>45.23</td><td>Colonoscopy</td><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>174184006</td><td>Diagnostic endoscopic examination on colon</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>05-07-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/b83cc426-b19a-4d76-9c64-2f853690453f"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>FOBT</td><td>LOINC</td><td>2335-8</td><td><span/>Hemoccult Stl Ql</td><td>negative</td><td/><td>NA</td><td>05-07-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82274</td><td>Assay test for blood, fecal</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0328</td><td>Fecal blood scrn immunoassay</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V76.51</td><td>Special screening for malignant neoplasms of colon</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>252156002</td><td>Occult blood screening</td><td/><td/><td/><td/><td/></tr><tr><td>HbA1c test</td><td>LOINC</td><td>4548-4</td><td><span/>Hgb A1c MFr Bld</td><td>6.3</td><td>%</td><td>4-5.6%</td><td>05-08-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83036</td><td>Glycated hemoglobin test</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>43396009</td><td>Hemoglobin A1c measurement</td><td/><td/><td/><td/><td/></tr><tr><td>High Density Lipoprotein (HDL)</td><td>LOINC</td><td>14646-4</td><td><span/>HDLc SerPl-sCnc</td><td>53</td><td>mg/dL</td><td>&amp;gt;=40 mg/dL</td><td>05-08-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83701</td><td>Lipoprotein bld, hr fraction</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>28036006</td><td>High density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Low Density Lipoprotein (LDL)</td><td>LOINC</td><td>2089-1</td><td><span/>LDLc SerPl-mCnc</td><td>105.8</td><td>mg/dL</td><td>&amp;lt;130 mg/dL (calc)</td><td>05-08-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>83721</td><td>Assay of blood lipoprotein</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>113079009</td><td>Low density lipoprotein cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Prostate Specific Antigen Test</td><td>LOINC</td><td>19195-7</td><td><span/>PSA SerPl-aCnc</td><td>0.5</td><td>ng/mL</td><td>&amp;lt;2.5 ng/mL</td><td>05-08-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84153</td><td>Assay of psa, total</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>63476009</td><td>Prostate specific antigen measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Total Cholesterol</td><td>LOINC</td><td>2093-3</td><td><span/>Cholest SerPl-mCnc</td><td>176</td><td>mg/dL</td><td>125-200 mg/dL</td><td>05-08-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>82465</td><td>Assay, bld/serum cholesterol</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121868005</td><td>Total cholesterol measurement</td><td/><td/><td/><td/><td/></tr><tr><td>Triglycerides</td><td>LOINC</td><td>12951-0</td><td><span/>Trigl SerPl Calc-mCnc</td><td>86</td><td>mg/dL</td><td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &amp;gt;60 years: 80-150 mg/dL | Therapeutic Target: &amp;lt;100 mg/dL </td><td>05-08-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84478</td><td>Assay of triglycerides</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>14740000</td><td>Triglycerides measurement</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/8a995dcd-3172-4bf3-ba6e-caffd4b82f41",
+          "display": "FOBT"
+        }, {
+          "reference": "DiagnosticReport/b4a65d3b-7a3c-4c32-a77c-4c5070c8fddc",
+          "display": "Lipid Panel"
+        }, {
+          "reference": "DiagnosticReport/01fd0d94-40f2-42bb-841c-894aa433d6ff",
+          "display": "Lipid Panel"
+        }, {
+          "reference": "DiagnosticReport/b87c7f7a-acf8-4cc3-84ce-4fa1530ba5ca",
+          "display": "Blood Chemistry"
+        }, {
+          "reference": "DiagnosticReport/05f00e14-25c4-48cf-9a3e-34d840e78672",
+          "display": "Blood Chemistry"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antihypertensive combinations</td><td>RxNorm</td><td>858828</td><td><span/>Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet</td><td>05-07-2010 10:00:00</td><td>Active</td></tr><tr><td>Insulin</td><td>RxNorm</td><td>847207</td><td><span/>3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe</td><td>05-07-2010 10:00:00</td><td>Active</td></tr><tr><td>Smoking Cessation Agents</td><td>RxNorm</td><td>1046847</td><td><span/>24 HR Nicotine 0.313 MG/HR Transdermal Patch</td><td>05-07-2010 10:00:00</td><td>Active</td></tr><tr><td>Chemotherapeutics</td><td>RxNorm</td><td>197862</td><td><span/>Leucovorin 25 MG Oral Tablet</td><td>05-15-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/f941fddd-18cd-4e9e-b563-c6ed9be28bd2",
+          "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+        }, {
+          "reference": "MedicationStatement/0c7d2073-931f-435a-8c9d-9e44f26a1a8c",
+          "display": "Leucovorin 25 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/92fd3048-191e-4731-b164-fe7789c1cf84",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/6486bf8f-aa7b-4fd7-a4e0-3a4091ea1dde",
+          "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>COPD</td><td>SNOMED-CT</td><td>13645005</td><td><span/>Chronic obstructive lung disease</td><td>05-07-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J44</td><td>Other chronic obstructive pulmonary disease</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.20</td><td>Chronic obstructive asthma, unspecified</td><td/><td/></tr><tr><td>Diabetes</td><td>SNOMED-CT</td><td>44054006</td><td><span/>Diabetes mellitus type 2</td><td>05-07-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>E11.9</td><td>Type 2 diabetes mellitus without complications</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>250.00</td><td>Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled</td><td/><td/></tr><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>05-07-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr><tr><td>Colon Ca metastasis</td><td>SNOMED-CT</td><td>94222008</td><td><span/>Secondary malignant neoplasm of bone</td><td>05-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>C78.7</td><td>Secondary malignant neoplasm of liver and intrahepatic bile duct</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>197.7</td><td>Malignant neoplasm of liver, secondary</td><td/><td/></tr><tr><td>Colon Cancer</td><td>SNOMED-CT</td><td>126838000</td><td><span/>Neoplasm of colon</td><td>05-15-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>C18.9</td><td>Malignant neoplasm of colon, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>153.9</td><td>Malignant neoplasm of colon, unspecified site</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/6dbe25bc-7bb0-4406-a4df-9e0277f6703f",
+          "display": "Diabetes mellitus type 2"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "0441bd38-bbc1-4625-b55d-a93b5d804996",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1005",
+            "display": "Anglican"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Other Race"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2131-1",
+            "display": "Other Race"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "New York",
+          "state": "NY",
+          "postalCode": "10018",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Perry",
+        "given": [ "Corey" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(414)339-4864",
+        "use": "mobile"
+      } ],
+      "gender": "male",
+      "birthDate": "1959-10-17",
+      "address": [ {
+        "use": "home",
+        "line": [ "3369 Johnny Lane" ],
+        "city": "New Berlin",
+        "state": "WI",
+        "postalCode": "53151",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Ortiz",
+          "given": [ "Joshua" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(774)368-7492",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "JoshuaEOrtiz@fleckens.hu",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "4819 Kennedy Court" ],
+          "city": "Bolton",
+          "state": "MA",
+          "postalCode": "1740",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/ae31f483-4785-4b9f-a117-6f9bb814b21b",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ae31f483-4785-4b9f-a117-6f9bb814b21b",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ba9f0621-eeff-4fe4-a87d-54668f2ababe",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "9f563f1b-139e-4ba1-8bd7-69ca592ca739",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "74890039-cc25-4cd4-b1c1-cf037431c143",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "fee03c1f-6ef4-4798-a800-63b241ddccc7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "df368260-bdd7-4fa0-8cb8-9dd12652cb59",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "recordedDate": "1984-06-05T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "ab85a935-dceb-424c-8fd7-2ccfd08766d6",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "recordedDate": "1984-06-05T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8f514321-99a1-451f-ba81-08e756b5fc0b",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "period": {
+        "start": "2010-05-15T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "94222008",
+          "display": "Colon Ca metastasis"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "126838000",
+          "display": "Colon Cancer"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/4709a937-304d-4c64-888d-3e9764a8359e",
+        "display": "Colon Cancer"
+      }, {
+        "reference": "Condition/2449fbff-2bf2-467b-a9bc-b924c7b8989b",
+        "display": "Colon Ca metastasis"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "4709a937-304d-4c64-888d-3e9764a8359e",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "126838000",
+          "display": "Colon Cancer"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "C18.9",
+          "display": "Malignant neoplasm of colon, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "153.9",
+          "display": "Malignant neoplasm of colon, unspecified site"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "onsetDateTime": "2010-05-15T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "2449fbff-2bf2-467b-a9bc-b924c7b8989b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "94222008",
+          "display": "Colon Ca metastasis"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "C78.7",
+          "display": "Secondary malignant neoplasm of liver and intrahepatic bile duct"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "197.7",
+          "display": "Malignant neoplasm of liver, secondary"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "onsetDateTime": "2010-05-15T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "a14a9187-b8ae-4791-985d-76e0f9d974ec",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "period": {
+        "start": "2010-05-07T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "13645005",
+          "display": "COPD"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/2449fbff-2bf2-467b-a9bc-b924c7b8989b",
+        "display": "Colon Ca metastasis"
+      }, {
+        "reference": "Condition/2449fbff-2bf2-467b-a9bc-b924c7b8989b",
+        "display": "Colon Ca metastasis"
+      }, {
+        "reference": "Condition/2449fbff-2bf2-467b-a9bc-b924c7b8989b",
+        "display": "Colon Ca metastasis"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "96f18394-dfca-483b-ab6f-83dab7ea1996",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "period": {
+        "start": "2010-05-16T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "25804dd6-e7a9-4763-a0a4-0ff62e8fb372",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "period": {
+        "start": "2010-06-27T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "32c47f72-787b-4337-b70e-c8e7550c5cb0",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "period": {
+        "start": "2010-05-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a6d238cd-3e69-4cda-b746-6bfb87285779",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "930ff12a-dd6e-44fb-9c9f-f57bbdf392b9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e4d3f25a-c956-414f-b4c0-c5462922b65c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart Rate"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 86,
+        "unit": "/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "545f84b8-1304-4e98-8743-b2c3954a90fd",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 29.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b83cc426-b19a-4d76-9c64-2f853690453f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "8a995dcd-3172-4bf3-ba6e-caffd4b82f41",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "167670005",
+          "display": "FOBT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "result": [ {
+        "reference": "Observation/0370db68-fbc3-489c-b7e5-ff8be71cb527",
+        "display": "Hemoccult Stl Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0370db68-fbc3-489c-b7e5-ff8be71cb527",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2335-8",
+          "display": "Hemoccult Stl Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82274",
+          "display": "Assay test for blood, fecal"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0328",
+          "display": "Fecal blood scrn immunoassay"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V76.51",
+          "display": "Special screening for malignant neoplasms of colon"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "252156002",
+          "display": "Occult blood screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "260385009",
+          "display": "negative"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "b4a65d3b-7a3c-4c32-a77c-4c5070c8fddc",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "result": [ {
+        "reference": "Observation/559e8644-d65b-4dce-b98b-b45a6a42e4c6",
+        "display": "HDLc SerPl-sCnc"
+      }, {
+        "reference": "Observation/11bec474-d834-4a2c-a68b-1e50b8abe044",
+        "display": "LDLc SerPl-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "559e8644-d65b-4dce-b98b-b45a6a42e4c6",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "14646-4",
+          "display": "HDLc SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83701",
+          "display": "Lipoprotein bld, hr fraction"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "28036006",
+          "display": "High density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 53,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": ">=40 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "11bec474-d834-4a2c-a68b-1e50b8abe044",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2089-1",
+          "display": "LDLc SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83721",
+          "display": "Assay of blood lipoprotein"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "113079009",
+          "display": "Low density lipoprotein cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 105.8,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<130 mg/dL (calc)"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "01fd0d94-40f2-42bb-841c-894aa433d6ff",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "16254007",
+          "display": "Lipid Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "result": [ {
+        "reference": "Observation/690a307a-96a0-4ad7-9fa4-dea7dc14f1ee",
+        "display": "Trigl SerPl Calc-mCnc"
+      }, {
+        "reference": "Observation/3718b4f9-95b9-4e0f-acf8-d0dfaf1073b6",
+        "display": "Cholest SerPl-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "690a307a-96a0-4ad7-9fa4-dea7dc14f1ee",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "12951-0",
+          "display": "Trigl SerPl Calc-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84478",
+          "display": "Assay of triglycerides"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "14740000",
+          "display": "Triglycerides measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 86,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL "
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3718b4f9-95b9-4e0f-acf8-d0dfaf1073b6",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholest SerPl-mCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "82465",
+          "display": "Assay, bld/serum cholesterol"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121868005",
+          "display": "Total cholesterol measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 176,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "125-200 mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "b87c7f7a-acf8-4cc3-84ce-4fa1530ba5ca",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "result": [ {
+        "reference": "Observation/713e2254-6db9-4c5c-be75-be2289410639",
+        "display": "Hgb A1c MFr Bld"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "713e2254-6db9-4c5c-be75-be2289410639",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hgb A1c MFr Bld"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83036",
+          "display": "Glycated hemoglobin test"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "43396009",
+          "display": "Hemoglobin A1c measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 6.3,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "4-5.6%"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "05f00e14-25c4-48cf-9a3e-34d840e78672",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "166312007",
+          "display": "Blood Chemistry"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "result": [ {
+        "reference": "Observation/b99eff26-d964-43b3-a93c-6b5ed6446bba",
+        "display": "PSA SerPl-aCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b99eff26-d964-43b3-a93c-6b5ed6446bba",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "19195-7",
+          "display": "PSA SerPl-aCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84153",
+          "display": "Assay of psa, total"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "63476009",
+          "display": "Prostate specific antigen measurement"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-08T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 0.5,
+        "unit": "ng/mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/mL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "<2.5 ng/mL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "f941fddd-18cd-4e9e-b563-c6ed9be28bd2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/e83be795-8c03-4489-b940-0c04777e74cf",
+        "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "e83be795-8c03-4489-b940-0c04777e74cf",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1046847",
+          "display": "24 HR Nicotine 0.313 MG/HR Transdermal Patch"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "0c7d2073-931f-435a-8c9d-9e44f26a1a8c",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/4db2feed-78a5-4fbb-ade5-ae89e75d1f9f",
+        "display": "Leucovorin 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "4db2feed-78a5-4fbb-ade5-ae89e75d1f9f",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197862",
+          "display": "Leucovorin 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "92fd3048-191e-4731-b164-fe7789c1cf84",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/6b8d297c-03be-4e8c-852f-8b475fd12355",
+        "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "6b8d297c-03be-4e8c-852f-8b475fd12355",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "858828",
+          "display": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "6486bf8f-aa7b-4fd7-a4e0-3a4091ea1dde",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/6fc870de-5104-4aad-939f-d4486ec23309",
+        "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-07T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "6fc870de-5104-4aad-939f-d4486ec23309",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "847207",
+          "display": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "6dbe25bc-7bb0-4406-a4df-9e0277f6703f",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes mellitus type 2"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "E11.9",
+          "display": "Type 2 diabetes mellitus without complications"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "250.00",
+          "display": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/0441bd38-bbc1-4625-b55d-a93b5d804996",
+        "display": "Corey Perry"
+      },
+      "onsetDateTime": "2010-05-07T10:00:00+02:00"
+    }
+  } ]
+}

@@ -1,0 +1,1133 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "1cba7562-c24c-490a-a039-c3fe920f3e51",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "date": "2014-04-16T11:54:51+02:00",
+      "author": [ {
+        "reference": "Practitioner/8a912342-7674-461e-87f2-43b1aaf55259",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/1e37fe10-5adb-4692-8cff-f9c3f3942312",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:51+02:00",
+        "party": {
+          "reference": "Practitioner/1e37fe10-5adb-4692-8cff-f9c3f3942312",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/4bee4fc1-191a-4539-969b-5ae0f09ca6b0",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2009-07-20T10:00:00+02:00",
+          "end": "2010-12-26T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/14185b5a-7dac-4f9f-8d56-9d98c32877f3",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild</td><td>Susceptible</td><td>07-20-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Neomycin</td><td>RxNorm</td><td>866041</td><td><span/>Neomycin Sulfate 500 MG</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>07-20-2009 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>07-20-2009 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/8ac32a61-bdaa-438f-8a67-67d3c6059e88",
+          "display": "Penicillin V + Penicillin V"
+        }, {
+          "reference": "AllergyIntolerance/4560b72a-f6a5-40bf-a008-ba6fe745ff49",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/44538994-1119-4aa3-bc59-01d069b8fac1",
+          "display": "Neomycin + Neomycin Sulfate 500 MG"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No Information</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>07-20-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>08-22-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>10-24-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>06-20-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>06-27-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>09-17-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>11-16-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>12-21-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>12-26-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/7395a5b2-7c97-4894-a24b-f9b586b4318c",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/4e3d3dbd-17f3-461f-bf1f-1100172e371a",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/32c60a1e-a466-4761-b698-c5edc0de5244",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/4293c893-b92c-44b7-b7d2-2ecace58582a",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/78f99786-7d55-4b49-bf9d-e2af4c46724c",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/80ed4f77-c76e-4dde-a5be-5030fd23e4e7",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/5c560634-d4ff-49f0-9bce-70fa2210022c",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/fca7035c-a954-4e09-8108-b22fb22547cd",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/cfd72dc1-8af8-4b59-bf8b-2a23a28be0f6",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>13.5</td><td>kg/m2</td><td>07-20-2009 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>13.8</td><td>kg/m2</td><td>08-22-2009 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>13.8</td><td>kg/m2</td><td>10-24-2009 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>19.8</td><td>kg/m2</td><td>06-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>17.4</td><td>kg/m2</td><td>06-27-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>18.7</td><td>kg/m2</td><td>09-17-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>19.2</td><td>kg/m2</td><td>12-21-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>15.7</td><td>kg/m2</td><td>12-26-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/5e736c56-0ddc-4ce1-92dc-9989c1a1c7c1",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/08a0bbbe-8c95-4823-bc55-421c48391f37",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/770e5414-8570-4e17-a0f4-0034eb123699",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/ba94a357-ebaa-4fe7-9b60-3908b7fe69a5",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/3f1a6020-4d01-42e9-a222-41e6a106ac8b",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/016c52ad-db0d-4942-aee3-4243bf94f6fd",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/19ce1b7e-1335-49cc-8fb7-fd2d85f631c9",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/3fc7d9d2-870b-4803-a29b-bcb8d012c612",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1020",
+            "display": "Hinduism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Houston",
+          "state": "TX",
+          "postalCode": "77002",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Lowe",
+        "given": [ "Freddie" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(269)308-4868",
+        "use": "mobile"
+      } ],
+      "gender": "male",
+      "birthDate": "2009-06-20",
+      "address": [ {
+        "use": "home",
+        "line": [ "806 Shingleton Road" ],
+        "city": "Grand Rapids",
+        "state": "MI",
+        "postalCode": "49503",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "Never Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Graves",
+          "given": [ "John" ],
+          "prefix": [ "Dr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(484)286-1709",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "JohnJGraves@gustr.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "4275 Renwick Drive" ],
+          "city": "Newark",
+          "state": "PA",
+          "postalCode": "19714",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/3410cb97-4a42-4b27-8ac5-9b86fb965681",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "3410cb97-4a42-4b27-8ac5-9b86fb965681",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "8a912342-7674-461e-87f2-43b1aaf55259",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "1e37fe10-5adb-4692-8cff-f9c3f3942312",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "14185b5a-7dac-4f9f-8d56-9d98c32877f3",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "4bee4fc1-191a-4539-969b-5ae0f09ca6b0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "8ac32a61-bdaa-438f-8a67-67d3c6059e88",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "recordedDate": "2009-07-20T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "4560b72a-f6a5-40bf-a008-ba6fe745ff49",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "recordedDate": "2009-07-20T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "44538994-1119-4aa3-bc59-01d069b8fac1",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866041",
+          "display": "Neomycin Sulfate 500 MG"
+        } ],
+        "text": "Neomycin + Neomycin Sulfate 500 MG"
+      },
+      "patient": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "recordedDate": "2009-07-20T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7395a5b2-7c97-4894-a24b-f9b586b4318c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2010-11-16T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4e3d3dbd-17f3-461f-bf1f-1100172e371a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2010-06-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "32c60a1e-a466-4761-b698-c5edc0de5244",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2010-12-21T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4293c893-b92c-44b7-b7d2-2ecace58582a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2010-06-27T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "78f99786-7d55-4b49-bf9d-e2af4c46724c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2010-12-26T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "80ed4f77-c76e-4dde-a5be-5030fd23e4e7",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2009-07-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5c560634-d4ff-49f0-9bce-70fa2210022c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2009-10-24T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "fca7035c-a954-4e09-8108-b22fb22547cd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2010-09-17T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "cfd72dc1-8af8-4b59-bf8b-2a23a28be0f6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "period": {
+        "start": "2009-08-22T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "5e736c56-0ddc-4ce1-92dc-9989c1a1c7c1",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "effectivePeriod": {
+        "start": "2009-08-22T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 13.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "08a0bbbe-8c95-4823-bc55-421c48391f37",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-27T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 17.4,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "770e5414-8570-4e17-a0f4-0034eb123699",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "effectivePeriod": {
+        "start": "2009-07-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 13.5,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ba94a357-ebaa-4fe7-9b60-3908b7fe69a5",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "effectivePeriod": {
+        "start": "2009-10-24T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 13.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3f1a6020-4d01-42e9-a222-41e6a106ac8b",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-21T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 19.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "016c52ad-db0d-4942-aee3-4243bf94f6fd",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-26T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 15.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "19ce1b7e-1335-49cc-8fb7-fd2d85f631c9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-17T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 18.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3fc7d9d2-870b-4803-a29b-bcb8d012c612",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4ba6a0e8-0471-4eca-a75a-45b729af5a0b",
+        "display": "Freddie Lowe"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 19.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  } ]
+}

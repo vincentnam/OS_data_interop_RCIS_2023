@@ -1,0 +1,864 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "07cc2200-d1a3-461d-96eb-6967d8713942",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "2014_ClinicalSummary",
+        "assigner": {
+          "display": "KAREO EHR"
+        }
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "date": "2014-05-31T15:47:32-07:00",
+      "author": [ {
+        "reference": "Practitioner/049af2e3-bff2-48dc-9bac-44257ef484ee"
+      } ],
+      "title": "dododoc: Health Summary",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2014-05-31T15:47:32-07:00",
+        "party": {
+          "reference": "Practitioner/924c4cc9-1ff5-4fab-b14c-b7e67f7d018d"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-05-31T15:47:32-07:00",
+        "party": {
+          "reference": "Practitioner/409b0ff6-68b0-4830-b407-b837e0d019df"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/6bafd0c9-e03f-48d5-9589-49174c3347da",
+        "display": "dododoc"
+      },
+      "event": [ {
+        "detail": [ {
+          "reference": "Practitioner/1f6c0eef-9619-4cce-bdcd-e5741ab41b36"
+        } ]
+      } ],
+      "section": [ {
+        "title": "MEDICATIONS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of medication use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Medication</th><th>Start Date</th><th>Instructions</th><th>Status</th></tr></thead><tbody><tr><td><span>acetaminophen-aspirin buffered 250 mg-250 mg oral tablet, [RxNorm: 432638]</span></td><td>05/31/2014</td><td/><td>Active</td></tr><tr><td><span>Lipitor 10 mg oral tablet, [RxNorm: 617312]</span></td><td>05/15/2014</td><td>1 g orally once a day with meals x1 day</td><td>Discontinued</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/2b4ad532-a78f-49e7-8b6f-61339429941c",
+          "display": "Lipitor 10 mg oral tablet"
+        }, {
+          "reference": "MedicationStatement/8ced2ec9-38e3-4a25-8591-329b2144b5ed",
+          "display": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet"
+        } ]
+      }, {
+        "title": "IMMUNIZATIONS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Vaccine Name</th><th>Date</th><th>Status</th></tr></thead><tbody><tr><td><span>Pneumococcal (PCV, PPSV), [CVX: 33]</span></td><td>05/15/2014</td><td>Completed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/78c537dd-16ca-4bee-bb92-58354b84ba16",
+          "display": "Pneumococcal (PCV, PPSV), [CVX: 33]"
+        } ]
+      }, {
+        "title": "SOCIAL HISTORY",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social history"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>No Information About Social History</span></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "PROBLEMS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem List"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Problem</th><th>Effective Dates</th><th>Problem Status</th></tr></thead><tbody><tr><td>Hypothyroidism, [40930008]</td><td>08/05/2012</td><td>ACTIVE</td></tr><tr><td>Acute bronchitis, [10509002]</td><td>10/02/2012</td><td>ACTIVE</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/f15beae3-89c6-483f-a374-c0638351e690",
+          "display": "Hypothyroidism"
+        }, {
+          "reference": "Condition/f0b1ba0c-ec26-4b61-b0b4-e8cca83ed22c",
+          "display": "Acute bronchitis"
+        } ]
+      }, {
+        "title": "PLAN OF CARE",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Treatment plan"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Plan of care</th></tr></thead><tbody><tr><td> No Information About Plan of Care </td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/fd4fe507-4c95-4b0d-812a-b212d8c2ed2f"
+        } ]
+      }, {
+        "title": "RESULTS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests and/or laboratory data"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>No Information About Results</span></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/96c5f4ea-f964-4d75-8275-e84e50ae7198"
+        } ]
+      }, {
+        "title": "ENCOUNTERS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "Encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Encounter Diagnosis</th><th>Performer</th><th>Date</th><th>Status</th></tr></thead><tbody><tr><td>No information about encounters</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "VITAL SIGNS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th align=\"right\">Date / Time:</th><th>05/15/2014</th></tr></thead><tbody><tr><th align=\"left\">Height</th><td><span>71.0 [in_us]</span></td></tr><tr><th align=\"left\">Weight</th><td><span>160.0 [lb_av]</span></td></tr><tr><th align=\"left\">BMI</th><td><span>22.32 kg/m2</span></td></tr><tr><th align=\"left\">Blood Pressure</th><td><span>120.0/0.0 mm[Hg]</span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/8af520e3-da27-4aa8-a55e-2730ba473bc8",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/74e7e473-9bbb-4c7b-8c81-ff39a41f0b2b",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/9f8002f8-7c54-4122-b020-f3517cd56fa7",
+          "display": "Patient Body Weight - Measured"
+        }, {
+          "reference": "Observation/20a92d3d-a257-475e-95c7-a4394dfa6477",
+          "display": "BMI (Body Mass Index)"
+        }, {
+          "reference": "Observation/d9c4d8fe-ee57-446c-8486-cce4da2f5416",
+          "display": "Height"
+        } ]
+      }, {
+        "title": "ADVERSE REACTIONS, ALERTS, ALLERGIES",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Type</th><th>Substance</th><th>Reaction</th><th>Severity</th><th>Status</th></tr></thead><tbody><tr><td>No information about allergies</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "PROCEDURES",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "History of Procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>No Information About Procedures</span></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/41783950-9d2a-4d3f-a5f9-cb714c6ccdf4",
+          "display": "No Information About Procedures"
+        } ]
+      }, {
+        "title": "FUNCTIONAL STATUS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5",
+            "display": "Functional status assessment"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Cognitive/Functional Findings</th></tr></thead><tbody><tr> <td>No information available</td> </tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "28366080"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "DEMO",
+        "given": [ "MILLER" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "3108391111",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1947-10-10",
+      "address": [ {
+        "use": "home",
+        "line": [ "26 N. Martin Street" ],
+        "city": "Los Angeles",
+        "state": "CA",
+        "postalCode": "90005",
+        "country": "United States of America"
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/52094c4c-03df-4eba-81b7-b96011b2d925",
+        "display": "dododoc"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "52094c4c-03df-4eba-81b7-b96011b2d925",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19"
+      } ],
+      "name": "dododoc",
+      "address": [ {
+        "use": "work"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "049af2e3-bff2-48dc-9bac-44257ef484ee",
+      "address": [ {
+        "use": "work"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "924c4cc9-1ff5-4fab-b14c-b7e67f7d018d",
+      "address": [ {
+        "use": "work"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "409b0ff6-68b0-4830-b407-b837e0d019df",
+      "address": [ {
+        "use": "work"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "1f6c0eef-9619-4cce-bdcd-e5741ab41b36",
+      "address": [ {
+        "use": "work"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "6bafd0c9-e03f-48d5-9589-49174c3347da",
+      "name": "dododoc",
+      "address": [ {
+        "use": "work"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "2b4ad532-a78f-49e7-8b6f-61339429941c",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "3d1ea1e4-bb78-4735-b069-a92987f29f7c"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/22cc5482-75b0-4930-a794-578510459d5e",
+        "display": "Lipitor 10 mg oral tablet"
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "effectivePeriod": {
+        "start": "2014-05-15",
+        "end": "2014-05-15"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "22cc5482-75b0-4930-a794-578510459d5e",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "617312",
+          "display": "Lipitor 10 mg oral tablet"
+        }, {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "617312",
+          "display": "Lipitor 10 mg oral tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "8ced2ec9-38e3-4a25-8591-329b2144b5ed",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "b5bc46bc-f1f1-4022-8ac3-8cda40972258"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/b79fd6ba-01ff-4891-b78f-2df82cff25b1",
+        "display": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet"
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "effectivePeriod": {
+        "start": "2014-05-31"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "b79fd6ba-01ff-4891-b78f-2df82cff25b1",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "432638",
+          "display": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet"
+        }, {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "432638",
+          "display": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "78c537dd-16ca-4bee-bb92-58354b84ba16",
+      "identifier": [ {
+        "use": "official",
+        "value": "fada6f25-cacb-407c-a8a3-342d2b2a7a19"
+      } ],
+      "status": "not-done",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "33",
+          "display": "Pneumococcal (PCV, PPSV)"
+        } ],
+        "text": "Pneumococcal (PCV, PPSV), [CVX: 33]"
+      },
+      "patient": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "occurrenceDateTime": "2014-05-15",
+      "primarySource": false,
+      "manufacturer": {
+        "reference": "Organization/a190c5a2-31c2-4113-a99b-be5693b319d6",
+        "display": "Merck And Co., Inc."
+      },
+      "lotNumber": "3422",
+      "doseQuantity": {
+        "value": 2.0,
+        "unit": "mL",
+        "system": "http://unitsofmeasure.org/ucum.html"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "a190c5a2-31c2-4113-a99b-be5693b319d6",
+      "name": "Merck And Co., Inc."
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f15beae3-89c6-483f-a374-c0638351e690",
+      "identifier": [ {
+        "use": "official",
+        "value": "e4c67d71-caf8-4f31-97a1-2653e32dbd76"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "40930008",
+          "display": "Hypothyroidism"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "onsetDateTime": "2012-08-05"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f0b1ba0c-ec26-4b61-b0b4-e8cca83ed22c",
+      "identifier": [ {
+        "use": "official",
+        "value": "9540fc68-36de-4900-bd8a-af9975c4b063"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10509002",
+          "display": "Acute bronchitis"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "onsetDateTime": "2012-10-02"
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "fd4fe507-4c95-4b0d-812a-b212d8c2ed2f",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Plan of care</th></tr></thead><tbody><tr><td> No Information About Plan of Care </td></tr></tbody></table></div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "PLAN OF CARE",
+      "description": "<div><table><thead><tr><th>Plan of care</th></tr></thead><tbody><tr><td> No Information About Plan of Care </td></tr></tbody></table></div>",
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "96c5f4ea-f964-4d75-8275-e84e50ae7198",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3208.101.10",
+        "value": "20130607113300-ResultOrganizer"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8af520e3-da27-4aa8-a55e-2730ba473bc8",
+      "identifier": [ {
+        "use": "official",
+        "value": "d8f42588-f562-429f-a52d-a10d9275c61f"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "effectivePeriod": {
+        "start": "2014-05-15"
+      },
+      "valueQuantity": {
+        "value": 0.0,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "74e7e473-9bbb-4c7b-8c81-ff39a41f0b2b",
+      "identifier": [ {
+        "use": "official",
+        "value": "b6ca5c94-ec5f-4a04-8d5a-e3546ef7eea9"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "effectivePeriod": {
+        "start": "2014-05-15"
+      },
+      "valueQuantity": {
+        "value": 120.0,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9f8002f8-7c54-4122-b020-f3517cd56fa7",
+      "identifier": [ {
+        "use": "official",
+        "value": "76a84b28-0949-44af-9870-e4a22907a945"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3141-9",
+          "display": "Patient Body Weight - Measured"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "effectivePeriod": {
+        "start": "2014-05-15"
+      },
+      "valueQuantity": {
+        "value": 160.0,
+        "unit": "[lb_av]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[lb_av]"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "20a92d3d-a257-475e-95c7-a4394dfa6477",
+      "identifier": [ {
+        "use": "official",
+        "value": "98d05d45-7041-421a-8d14-0014682dee19"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI (Body Mass Index)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "effectivePeriod": {
+        "start": "2014-05-15"
+      },
+      "valueQuantity": {
+        "value": 22.32,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d9c4d8fe-ee57-446c-8486-cce4da2f5416",
+      "identifier": [ {
+        "use": "official",
+        "value": "c9152fe6-b5c1-45a4-ade8-acade1932980"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Height"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "effectivePeriod": {
+        "start": "2014-05-15"
+      },
+      "valueQuantity": {
+        "value": 71.0,
+        "unit": "[in_us]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[in_us]"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "41783950-9d2a-4d3f-a5f9-cb714c6ccdf4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3208.101.10",
+        "value": "20130607114600-ProcedureActivity"
+      } ],
+      "status": "completed",
+      "code": {
+        "text": "No Information About Procedures"
+      },
+      "subject": {
+        "reference": "Patient/bd42cb60-e47f-421b-acef-5dfe158cdc9d",
+        "display": "MILLER DEMO"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/cdaf28e8-e085-4bc9-94a1-a6f41af50805"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "cdaf28e8-e085-4bc9-94a1-a6f41af50805",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3208.101.3",
+        "value": "20130607154800-UnknownPersonnel"
+      } ]
+    }
+  } ]
+}

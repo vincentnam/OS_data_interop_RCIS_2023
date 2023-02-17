@@ -1,0 +1,822 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "ef99477f-b853-4438-8435-3cbc5caefcbc",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "date": "2014-04-16T11:55:16+02:00",
+      "author": [ {
+        "reference": "Practitioner/d06734cf-5dcb-4041-a507-6ec930158201",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/2ffe2e6e-741f-4f43-96df-096e99299ff8",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:16+02:00",
+        "party": {
+          "reference": "Practitioner/2ffe2e6e-741f-4f43-96df-096e99299ff8",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/d544e9d4-4605-4269-be9d-875f5bf3d9d1",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2009-03-15T10:00:00+01:00",
+          "end": "2011-03-24T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/f38c56b6-6633-4cdf-8b37-084d1eaa02e2",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>04-17-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Moderate</td><td>Moderately Susceptible</td><td>04-17-2009 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Mild</td><td>Susceptible</td><td>04-17-2009 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/bdbeb532-beb5-45ae-9e51-d621247f9c64",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/218a4381-522c-471d-94de-3a7464964dfa",
+          "display": "Penicillin V + Penicillin V"
+        }, {
+          "reference": "AllergyIntolerance/9bf33002-e4df-40f6-b1b8-f75472e601b4",
+          "display": "Allergy to Eggs + Eggs"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>16.1</td><td>kg/m2</td><td>03-24-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/b0732666-22ac-4eac-a770-367df4c94b3c",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>04-17-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>05-19-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>07-21-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>03-17-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>06-17-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>09-18-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>09-23-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>03-24-2011 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/8e374c27-2ca9-40a0-b92a-923cfe910b39",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/0d8ff8ca-4c1b-4a38-a8ec-3b95971b4bbc",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/662b7289-1d3c-4fab-8487-7d91de6e4ad1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/8714a4b8-c242-49fd-9b93-00ccc32e7b7a",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/b0452faa-eb41-4819-ba07-68b191cf518a",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/0f207ddb-ac1d-489f-b5dd-26e35a6b3ff4",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/6df826f5-527b-49ec-a0f5-dce989c3e4b9",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/e707b2ef-cf16-4909-964a-fa400566949f",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No Information</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "5adf278f-9317-46fa-b3d4-03e75cbda327",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1020",
+            "display": "Hinduism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Raleigh",
+          "state": "NC",
+          "postalCode": "27607",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Gross",
+        "given": [ "Todd" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(434)851-3353",
+        "use": "mobile"
+      } ],
+      "gender": "male",
+      "birthDate": "2009-03-17",
+      "address": [ {
+        "use": "home",
+        "line": [ "1773 Queens Lane" ],
+        "city": "Lynchburg",
+        "state": "VA",
+        "postalCode": "24504",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "Never Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Middaugh",
+          "given": [ "Jeannette" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(801)696-5349",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "JeannetteBMiddaugh@gustr.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "2040 Hickory Street" ],
+          "city": "Murray",
+          "state": "UT",
+          "postalCode": "84107",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/b7a31128-ff56-478c-935e-c1300c49ba51",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "b7a31128-ff56-478c-935e-c1300c49ba51",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "d06734cf-5dcb-4041-a507-6ec930158201",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "2ffe2e6e-741f-4f43-96df-096e99299ff8",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "f38c56b6-6633-4cdf-8b37-084d1eaa02e2",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "d544e9d4-4605-4269-be9d-875f5bf3d9d1",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "bdbeb532-beb5-45ae-9e51-d621247f9c64",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "recordedDate": "2009-04-17T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "218a4381-522c-471d-94de-3a7464964dfa",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "recordedDate": "2009-04-17T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "9bf33002-e4df-40f6-b1b8-f75472e601b4",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "recordedDate": "2009-04-17T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b0732666-22ac-4eac-a770-367df4c94b3c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-24T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 16.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8e374c27-2ca9-40a0-b92a-923cfe910b39",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "period": {
+        "start": "2009-04-17T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "0d8ff8ca-4c1b-4a38-a8ec-3b95971b4bbc",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "period": {
+        "start": "2009-07-21T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "662b7289-1d3c-4fab-8487-7d91de6e4ad1",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "period": {
+        "start": "2011-03-24T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "8714a4b8-c242-49fd-9b93-00ccc32e7b7a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "period": {
+        "start": "2009-05-19T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "b0452faa-eb41-4819-ba07-68b191cf518a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "period": {
+        "start": "2010-09-18T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "0f207ddb-ac1d-489f-b5dd-26e35a6b3ff4",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "period": {
+        "start": "2010-03-17T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "6df826f5-527b-49ec-a0f5-dce989c3e4b9",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "period": {
+        "start": "2010-06-17T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "e707b2ef-cf16-4909-964a-fa400566949f",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5adf278f-9317-46fa-b3d4-03e75cbda327",
+        "display": "Todd Gross"
+      },
+      "period": {
+        "start": "2010-09-23T10:00:00+02:00"
+      }
+    }
+  } ]
+}

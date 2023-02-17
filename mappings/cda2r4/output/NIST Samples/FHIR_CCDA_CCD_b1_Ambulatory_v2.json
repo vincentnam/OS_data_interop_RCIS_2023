@@ -1,0 +1,1850 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "8f93b698-b8fb-4c3f-9907-89512210de1a",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:1.1.1.1.1.1.1.1.1",
+        "value": "Test CCDA"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "date": "2012-09-12T00:00:00+00:00",
+      "author": [ {
+        "reference": "Practitioner/b91b04c9-abda-48f4-b508-36594f39a7df",
+        "display": "Dr Henry Seven"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2012-08-13",
+        "party": {
+          "reference": "Practitioner/79a34462-1817-4c8d-8432-83563bd8c510",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2012-08-13",
+        "party": {
+          "reference": "Practitioner/79a34462-1817-4c8d-8432-83563bd8c510",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/ab5e5ee8-7bba-4806-a074-7578cb29fade",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2012-08-06",
+          "end": "2012-08-13"
+        },
+        "detail": [ {
+          "reference": "Practitioner/85f47b5c-b774-4316-92d0-50d387e4e185",
+          "display": "Dr. Henry Seven"
+        }, {
+          "reference": "Practitioner/78e6d1bd-5fea-4951-90ad-fbaa294bf8dc",
+          "display": "Dr. Henry Seven"
+        } ]
+      } ],
+      "section": [ {
+        "title": "RESULTS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "RESULTS"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table>                     <tbody>                        <tr>                           <td colspan=\"2\">LABORATORY INFORMATION</td>                        </tr>                        <tr>                           <td colspan=\"2\">Chemistries and drug levels</td>                        </tr>                        <tr>                           <td><span>HGB (M 13-18 g/dl; F 12-16 g/dl)</span></td>                           <td>13.2</td>                        </tr>                        <tr>                           <td><span>WBC (4.3-10.8 10+3/ul)</span></td>                           <td>6.7</td>                        </tr>                        <tr>                           <td><span>PLT (135-145 meq/l)</span></td>                           <td>123 (L)</td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/f417a50c-c998-4cdb-8f4c-480e48b17962",
+          "display": "CBC WO DIFFERENTIAL"
+        } ]
+      }, {
+        "title": "IMMUNIZATIONS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span/>                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Vaccine</th>                           <th>Date</th>                           <th>Status</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td><span/>Influenza virus vaccine, IM</td>                           <td>May 2012</td>                           <td>Completed</td>                        </tr>                        <tr>                           <td><span/>Tetanus and diphtheria toxoids, IM</td>                           <td>Apr 2012</td>                           <td>Completed</td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/75cd4349-4e49-4753-b56e-cba8fb521ad0",
+          "display": "Tetanus and diphtheria toxoids - preservative free"
+        }, {
+          "reference": "Immunization/14f2718d-09d2-4bfa-ba38-b900fae092af",
+          "display": "Influenza virus vaccine"
+        } ]
+      }, {
+        "title": "SOCIAL HISTORY",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Social History Element</th>                           <th>Description</th>                           <th>Effective Dates</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td>                              <span/> smoking</td>                           <td>Former Smoker (1 pack per day</td>                           <td>20050501 to 20110227</td>                        </tr>                        <tr>                           <td>                              <span/> smoking</td>                           <td>Current Everyday Smoker 2 packs per day</td>                           <td>20110227 - today</td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/2d0af4f6-3cc1-4ac1-9ea2-11fe15447ab4",
+          "display": "Cigarette smoking"
+        }, {
+          "reference": "Observation/1a0e6cf2-8438-431a-a7e1-6f9a39b8ec9d",
+          "display": "Cigarette smoking"
+        }, {
+          "reference": "Observation/8bfb724e-533e-4055-be81-e5075eea6a76"
+        } ]
+      }, {
+        "title": "PROBLEMS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span/>                  <ol>                     <li><span>Pneumonia : Status - Resolved</span></li>                     <li><span>Asthma : Status - Active</span></li>                  </ol>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/ccbf6af8-cdf0-4eb7-a0fa-1f8ad8cc2a4a",
+          "display": "Asthma"
+        } ]
+      }, {
+        "title": "ENCOUNTERS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Encounter</th>                           <th>Performer</th>                           <th>Location</th>                           <th>Date</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td>                              <span/> Pnuemonia</td>                           <td>Dr Henry Seven</td>                           <td>Community Health and Hospitals</td>                           <td>20120806</td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/28f5efa8-30eb-423b-941c-e5b167c85d45",
+          "display": "InPatient Admission"
+        } ]
+      }, {
+        "title": "VITAL SIGNS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "VITAL SIGNS"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th align=\"right\">Date / Time: </th>                           <th>Nov 1, 2011</th>                           <th>August 6, 2012</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <th align=\"left\">Height</th>                           <td>                              <span>69 inches</span></td>                           <td>                              <span>69 inches</span></td>                        </tr>                        <tr>                           <th align=\"left\">Weight</th>                           <td>                              <span>189 lbs</span></td>                           <td>                              <span>194 lbs</span></td>                        </tr>                        <tr>                           <th align=\"left\">Blood Pressure</th>                           <td><span>132/86 mmHg</span></td>                           <td><span>145/88 mmHg</span></td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/245ad94c-21ea-4acf-8ccd-0428e0c7479b",
+          "display": "Height"
+        }, {
+          "reference": "Observation/28c58b2a-58a8-4733-8cc1-69f300cfc2b8",
+          "display": "Patient Body Weight - Measured"
+        }, {
+          "reference": "Observation/001b63b4-b914-428d-a1e6-4d02acb9380d",
+          "display": "Intravascular Systolic"
+        }, {
+          "reference": "Observation/4cb38783-6656-49c5-b642-5b5a199675d8",
+          "display": "Height"
+        }, {
+          "reference": "Observation/e567d288-4e64-4281-9efb-e9439076bd40",
+          "display": "Patient Body Weight - Measured"
+        }, {
+          "reference": "Observation/fc7977d8-3b51-46bc-9c6a-a6eda7226091",
+          "display": "Intravascular Systolic"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "HISTORY OF MEDICATION USE"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Medication</th>                           <th>Directions</th>                           <th>Start Date</th>                           <th>Status</th>                           <th>Indications</th>                           <th>Fill Instructions</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td><span>Albuterol 0.09 MG/ACTUAT inhalant solution</span></td>                           <td>0.09 MG/ACTUAT inhalant solution, 2 puffs once</td>                           <td>20120806</td>                           <td>Active</td>                           <td>Pneumonia (233604007 SNOMED CT)</td>                           <td><span>Generic Substitition Allowed</span></td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/eb0a5cad-261a-43cb-8eb4-12b91390b5c2",
+          "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+        } ]
+      }, {
+        "title": "FUNCTIONAL STATUS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Functional Condition</th>                           <th>Effective Dates</th>                           <th>Condition Status</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td>                             <span>Dependence on cane</span></td>                           <td>2008</td>                           <td>Active</td>                        </tr>                        <tr>                           <td>                              <span>Memory impairment</span>                          </td>                           <td>2008</td>                           <td>Active</td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "ALLERGIES, ADVERSE REACTIONS, ALERTS",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Substance</th>                           <th>Reaction</th>                           <th>Severity</th>                           <th>Status</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td>Penicillin G benzathine</td>                           <td><span>Hives</span></td>                           <td><span>Moderate to severe</span></td>                           <td>Inactive</td>                        </tr>                        <tr>                           <td>Codeine</td>                           <td><span>Shortness of Breath</span></td>                           <td><span>Moderate</span></td>                           <td>Active</td>                        </tr>                        <tr>                           <td>Aspirin</td>                           <td><span>Hives</span></td>                           <td><span>Mild to moderate</span></td>                           <td>Active</td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/bc26754d-a1fd-4bd0-a056-4527924a9f54",
+          "display": "Aspirin"
+        }, {
+          "reference": "AllergyIntolerance/7d2176f1-35bc-4444-917d-4668408c2339",
+          "display": "Codeine"
+        }, {
+          "reference": "AllergyIntolerance/c626e119-8c25-4b43-9943-b7956488a7dd",
+          "display": "Penicillin G benzathine"
+        } ]
+      }, {
+        "title": "CARE PLAN",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Treatment plan"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Planned Activity</th>                           <th>Planned Date</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td>Consultation with Dr George Potomac for Asthma</td>                           <td>20120820</td>                        </tr>                        <tr>                           <td>Chest X-ray</td>                           <td>20120826</td>                        </tr>                        <tr>                           <td>Sputum Culture</td>                           <td>20120820</td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/035fc47c-8337-4db9-83df-9291b799a229"
+        } ]
+      }, {
+        "title": "PROCEDURES",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Procedure</th>                           <th>Date</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td>                              <span>Chest X-Ray</span>                           </td>                           <td>8/7/2012</td>                        </tr>                     </tbody>                  </table>               </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/dd670236-9016-4742-ba82-907e61335390",
+          "display": "Chest X-Ray"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "99266e7b-f813-49bc-ac01-2d0e65ff8604",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1013",
+            "display": "Christian (non-Catholic, non-specific)"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Beaverton",
+          "state": "OR",
+          "postalCode": "97006",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "1"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "123-101-5230"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Jones",
+        "given": [ "Myra" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(816)276-6909",
+        "use": "home"
+      } ],
+      "gender": "female",
+      "birthDate": "1947-05-01",
+      "address": [ {
+        "use": "home",
+        "line": [ "1357 Amber Drive" ],
+        "city": "Beaverton",
+        "state": "OR",
+        "postalCode": "97006",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "O",
+            "display": "Other"
+          } ]
+        } ],
+        "name": {
+          "family": "Jones",
+          "given": [ "Ralph" ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(816)276-6909",
+          "use": "home"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "1357 Amber Drive" ],
+          "city": "Beaverton",
+          "state": "OR",
+          "postalCode": "97006",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/2639b0bc-58ba-4bb8-b9d6-7d4c0025024a",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "2639b0bc-58ba-4bb8-b9d6-7d4c0025024a",
+      "identifier": [ {
+        "use": "official",
+        "value": "1.1.1.1.1.1.1.1.4"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Dr" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "b91b04c9-abda-48f4-b508-36594f39a7df",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "111111"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "prefix": [ "Dr" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "79a34462-1817-4c8d-8432-83563bd8c510",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "85f47b5c-b774-4316-92d0-50d387e4e185",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Dr" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "78e6d1bd-5fea-4951-90ad-fbaa294bf8dc",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-3"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Dr" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ab5e5ee8-7bba-4806-a074-7578cb29fade",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "f417a50c-c998-4cdb-8f4c-480e48b17962",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "43789009",
+          "display": "CBC WO DIFFERENTIAL"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "result": [ {
+        "reference": "Observation/c5c42e66-61cf-4293-8119-9d88f0562dc9",
+        "display": "PLT"
+      }, {
+        "reference": "Observation/e23405c6-2778-454c-bfab-2f80e12a2f68",
+        "display": "HGB"
+      }, {
+        "reference": "Observation/91e02051-2529-4533-9812-9a858c211c7e",
+        "display": "WBC"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c5c42e66-61cf-4293-8119-9d88f0562dc9",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "26515-7",
+          "display": "PLT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-10"
+      },
+      "performer": [ {
+        "reference": "Practitioner/19e3d138-8a22-442d-a009-f9786080cd1e"
+      } ],
+      "valueQuantity": {
+        "value": 123,
+        "unit": "10+3/ul",
+        "system": "http://unitsofmeasure.org",
+        "code": "10+3/ul"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "L"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "low": {
+          "value": 150,
+          "unit": "10+3/ul",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        },
+        "high": {
+          "value": 350,
+          "unit": "10+3/ul",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "19e3d138-8a22-442d-a009-f9786080cd1e",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e23405c6-2778-454c-bfab-2f80e12a2f68",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "30313-1",
+          "display": "HGB"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-10"
+      },
+      "performer": [ {
+        "reference": "Practitioner/3c9fae9c-8546-407b-b690-21abf9cfe829"
+      } ],
+      "valueQuantity": {
+        "value": 10.2,
+        "unit": "g/dl",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dl"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "M 13-18 g/dl; F 12-16 g/dl"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3c9fae9c-8546-407b-b690-21abf9cfe829",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9816ff4de8"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "91e02051-2529-4533-9812-9a858c211c7e",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "33765-9",
+          "display": "WBC"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-10"
+      },
+      "performer": [ {
+        "reference": "Practitioner/3cab1531-cda1-40b7-bf5e-5e9e52d803d8"
+      } ],
+      "valueQuantity": {
+        "value": 12.3,
+        "unit": "10+3/ul",
+        "system": "http://unitsofmeasure.org",
+        "code": "10+3/ul"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "low": {
+          "value": 4.3,
+          "unit": "10+3/ul",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        },
+        "high": {
+          "value": 10.8,
+          "unit": "10+3/ul",
+          "system": "http://unitsofmeasure.org/ucum.html"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3cab1531-cda1-40b7-bf5e-5e9e52d803d8",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620154-9d11-439e-92b3-5d9815ff4de8"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "75cd4349-4e49-4753-b56e-cba8fb521ad0",
+      "identifier": [ {
+        "use": "official",
+        "value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.59",
+          "code": "103",
+          "display": "Tetanus and diphtheria toxoids - preservative free"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.59",
+          "code": "09",
+          "display": "Tetanus and diphtheria toxoids - preservative free"
+        } ],
+        "text": "Tetanus and diphtheria toxoids - preservative free"
+      },
+      "patient": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "occurrenceDateTime": "2012-04-01",
+      "primarySource": false,
+      "manufacturer": {
+        "reference": "Organization/dc9d26a3-c24d-453e-8087-ec537ec0de84",
+        "display": "Health LS - Immuno Inc."
+      },
+      "route": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/nci",
+          "code": "C28161",
+          "display": "Intramuscular injection"
+        } ]
+      },
+      "doseQuantity": {
+        "value": 50,
+        "unit": "mcg",
+        "system": "http://unitsofmeasure.org/ucum.html"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "dc9d26a3-c24d-453e-8087-ec537ec0de84",
+      "name": "Health LS - Immuno Inc."
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "14f2718d-09d2-4bfa-ba38-b900fae092af",
+      "identifier": [ {
+        "use": "official",
+        "value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.59",
+          "code": "88",
+          "display": "Influenza virus vaccine"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.59",
+          "code": "111",
+          "display": "influenza, live, intranasal"
+        } ],
+        "text": "Influenza virus vaccine"
+      },
+      "patient": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "occurrenceDateTime": "2012-05-10",
+      "primarySource": false,
+      "route": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/nci",
+          "code": "C28161",
+          "display": "Intramuscular injection"
+        } ]
+      },
+      "doseQuantity": {
+        "value": 50,
+        "unit": "mcg",
+        "system": "http://unitsofmeasure.org/ucum.html"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2d0af4f6-3cc1-4ac1-9ea2-11fe15447ab4",
+      "identifier": [ {
+        "use": "official",
+        "value": "45efb604-7049-4a2e-ad33-d38556c9636c"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "230056004",
+          "display": "Cigarette smoking"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2011-02-27"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current Everyday Smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1a0e6cf2-8438-431a-a7e1-6f9a39b8ec9d",
+      "identifier": [ {
+        "use": "official",
+        "value": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "230056004",
+          "display": "Cigarette smoking"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2005-05-01",
+        "end": "2011-02-27"
+      },
+      "valueString": "1 pack per day"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8bfb724e-533e-4055-be81-e5075eea6a76",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2005-05-01",
+        "end": "2011-02-27"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "8517006",
+          "display": "Former smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ccbf6af8-cdf0-4eb7-a0fa-1f8ad8cc2a4a",
+      "identifier": [ {
+        "use": "official",
+        "value": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "onsetDateTime": "2007-01-03"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "28f5efa8-30eb-423b-941c-e5b167c85d45",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "4",
+          "code": "99222",
+          "display": "InPatient Admission"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2012-08-06"
+        },
+        "individual": {
+          "reference": "Practitioner/010ff9fb-dc6e-4c4c-82f0-fb1c8c458015"
+        }
+      } ],
+      "period": {
+        "start": "2012-08-06"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "233604007",
+          "display": "Pneumonia"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/b9ba5b5a-ead8-4786-a335-5f47590c623b",
+        "display": "Pneumonia"
+      } ],
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/ccbf6af8-cdf0-4eb7-a0fa-1f8ad8cc2a4a",
+          "display": "Asthma"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/b70fd6e3-6686-436e-8ee8-902a6580796d",
+          "display": "Community Health and Hospitals"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "010ff9fb-dc6e-4c4c-82f0-fb1c8c458015",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92a3-5d9815ff4de8"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "b9ba5b5a-ead8-4786-a335-5f47590c623b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "233604007",
+          "display": "Pneumonia"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "onsetDateTime": "2012-08-06"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "b70fd6e3-6686-436e-8ee8-902a6580796d",
+      "name": "Community Health and Hospitals",
+      "address": {
+        "line": [ "1002 Healthcare Dr" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "245ad94c-21ea-4acf-8ccd-0428e0c7479b",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Height"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2008-11-01"
+      },
+      "valueQuantity": {
+        "value": 69,
+        "unit": "in",
+        "system": "http://unitsofmeasure.org",
+        "code": "in"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "28c58b2a-58a8-4733-8cc1-69f300cfc2b8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3141-9",
+          "display": "Patient Body Weight - Measured"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2011-11-01"
+      },
+      "valueQuantity": {
+        "value": 189,
+        "unit": "lbs",
+        "system": "http://unitsofmeasure.org",
+        "code": "lbs"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "001b63b4-b914-428d-a1e6-4d02acb9380d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Intravascular Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2011-11-01"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4cb38783-6656-49c5-b642-5b5a199675d8",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Height"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06"
+      },
+      "valueQuantity": {
+        "value": 69,
+        "unit": "in",
+        "system": "http://unitsofmeasure.org",
+        "code": "in"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e567d288-4e64-4281-9efb-e9439076bd40",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3141-9",
+          "display": "Patient Body Weight - Measured"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06"
+      },
+      "valueQuantity": {
+        "value": 194,
+        "unit": "lbs",
+        "system": "http://unitsofmeasure.org",
+        "code": "lbs"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fc7977d8-3b51-46bc-9c6a-a6eda7226091",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Intravascular Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06"
+      },
+      "valueQuantity": {
+        "value": 145,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "eb0a5cad-261a-43cb-8eb4-12b91390b5c2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/311377e5-cce5-4b96-8b42-c3954e69b4cf",
+        "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06",
+        "end": "2012-08-13"
+      },
+      "reasonReference": [ {
+        "reference": "Condition/b9ba5b5a-ead8-4786-a335-5f47590c623b",
+        "display": "Pneumonia"
+      } ],
+      "dosage": [ {
+        "timing": {
+          "repeat": {
+            "period": 12,
+            "periodUnit": "h"
+          }
+        },
+        "route": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/nci",
+            "code": "C38216",
+            "display": "RESPIRATORY (INHALATION)"
+          } ]
+        },
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 0.09,
+            "unit": "mg/actuat",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          },
+          "rateRange": {
+            "low": {
+              "value": 90,
+              "unit": "ml/min",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "29d1fb11-4737-4a4c-a5b0-5173a441eee2",
+      "name": "Medication Factory Inc."
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "311377e5-cce5-4b96-8b42-c3954e69b4cf",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "573621",
+          "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+        }, {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "573621",
+          "display": "Proventil 0.09 MG/ACTUAT inhalant solution"
+        } ],
+        "text": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+      },
+      "manufacturer": {
+        "reference": "Organization/29d1fb11-4737-4a4c-a5b0-5173a441eee2",
+        "display": "Medication Factory Inc."
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "d3599e96-bf7a-45e4-b355-8a91fdc0113e",
+      "status": "completed",
+      "intent": "instance-order",
+      "medicationReference": {
+        "reference": "Medication/311377e5-cce5-4b96-8b42-c3954e69b4cf",
+        "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "requester": {
+        "reference": "Practitioner/9680e7f7-1300-4f00-a753-92e217b021ee",
+        "display": "Dr. Henry Seven"
+      },
+      "dispenseRequest": {
+        "validityPeriod": {
+          "start": "2012-08-06",
+          "end": "2012-08-13"
+        },
+        "numberOfRepeatsAllowed": 1,
+        "quantity": {
+          "value": 75,
+          "unit": "1"
+        }
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "9680e7f7-1300-4f00-a753-92e217b021ee",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815fe4de8"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "prefix": [ "Dr." ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationDispense",
+      "id": "086c92ac-d98b-4558-9dc2-3c794f99060b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.2.3.4.56789.1",
+        "value": "cb734647-fc99-424c-a864-7e3cda82e704"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/311377e5-cce5-4b96-8b42-c3954e69b4cf",
+        "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/a9eff7e4-2ab1-4f91-8c06-d62c5ac898b5",
+          "display": "Dr. Henry Seven"
+        }
+      } ],
+      "whenPrepared": "2012-08-06",
+      "dosageInstruction": [ {
+        "timing": {
+          "event": [ "2012-08-06" ]
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a9eff7e4-2ab1-4f91-8c06-d62c5ac898b5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.9999.456",
+        "value": "2981823"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Dr" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "0b5ec190-f1de-4ead-8b7a-3c8ececc5b62",
+      "practitioner": {
+        "reference": "Practitioner/a9eff7e4-2ab1-4f91-8c06-d62c5ac898b5",
+        "display": "Dr. Henry Seven"
+      },
+      "organization": {
+        "reference": "Organization/6d24c7ab-f31d-4a43-860e-b7251c8228aa",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "bc26754d-a1fd-4bd0-a056-4527924a9f54",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "intolerance",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1191",
+          "display": "Aspirin"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "onsetDateTime": "2008-05-01",
+      "recordedDate": "2008-05-01",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "247472004",
+            "display": "Hives"
+          } ]
+        } ],
+        "onset": "2008-05-01"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "7d2176f1-35bc-4444-917d-4668408c2339",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "intolerance",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "2670",
+          "display": "Codeine"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "onsetDateTime": "2006-05-01",
+      "recordedDate": "2006-05-01",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "267036007",
+            "display": "Shortness of Breath"
+          } ]
+        } ],
+        "onset": "2006-05-01"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "c626e119-8c25-4b43-9943-b7956488a7dd",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "inactive",
+          "display": "Inactive"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "intolerance",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7982",
+          "display": "Penicillin G benzathine"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "recordedDate": "2007-05-01",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "247472004",
+            "display": "Hives"
+          } ]
+        } ],
+        "onset": "2007-05-01"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "035fc47c-8337-4db9-83df-9291b799a229",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Planned Activity</th>                           <th>Planned Date</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td>Consultation with Dr George Potomac for Asthma</td>                           <td>20120820</td>                        </tr>                        <tr>                           <td>Chest X-ray</td>                           <td>20120826</td>                        </tr>                        <tr>                           <td>Sputum Culture</td>                           <td>20120820</td>                        </tr>                     </tbody>                  </table>               </div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "CARE PLAN",
+      "description": "<div>                  <table border=\"1\" width=\"100%\">                     <thead>                        <tr>                           <th>Planned Activity</th>                           <th>Planned Date</th>                        </tr>                     </thead>                     <tbody>                        <tr>                           <td>Consultation with Dr George Potomac for Asthma</td>                           <td>20120820</td>                        </tr>                        <tr>                           <td>Chest X-ray</td>                           <td>20120826</td>                        </tr>                        <tr>                           <td>Sputum Culture</td>                           <td>20120820</td>                        </tr>                     </tbody>                  </table>               </div>",
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "dd670236-9016-4742-ba82-907e61335390",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "168731009",
+          "display": "Chest X-Ray"
+        } ],
+        "text": "Chest X-Ray"
+      },
+      "subject": {
+        "reference": "Patient/99266e7b-f813-49bc-ac01-2d0e65ff8604",
+        "display": "Myra Jones"
+      },
+      "performedPeriod": {
+        "start": "2012-08-07"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/a44e7777-57d7-4b4a-b639-bee9652ec55d"
+        },
+        "onBehalfOf": {
+          "reference": "Organization/c26a196c-cb40-4889-a10d-fb105ae997cd"
+        }
+      } ],
+      "bodySite": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "82094008",
+          "display": "Lower Respiratory Tract Structure"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a44e7777-57d7-4b4a-b639-bee9652ec55d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5",
+        "value": "1234"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-555-1234",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Dr" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97266",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "076cb1b4-0352-4077-a7b0-2e1b634f8afe",
+      "practitioner": {
+        "reference": "Practitioner/a44e7777-57d7-4b4a-b639-bee9652ec55d"
+      },
+      "organization": {
+        "reference": "Organization/c26a196c-cb40-4889-a10d-fb105ae997cd",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "c26a196c-cb40-4889-a10d-fb105ae997cd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19.5"
+      } ],
+      "name": "Community Health and Hospitals"
+    }
+  } ]
+}

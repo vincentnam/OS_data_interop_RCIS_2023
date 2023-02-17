@@ -1,0 +1,2440 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "41e6def2-6e02-418d-a722-38aa4b228f4f",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "date": "2014-04-16T11:54:51+02:00",
+      "author": [ {
+        "reference": "Practitioner/aced5cc9-515b-48fe-84e9-b97b610a301a",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/65f4f8d9-1b35-45a7-94b9-1683050dd6b7",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:51+02:00",
+        "party": {
+          "reference": "Practitioner/65f4f8d9-1b35-45a7-94b9-1683050dd6b7",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/cdb93ef9-d63f-4994-b671-1cbf397fb8e5",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-01-16T10:00:00+01:00",
+          "end": "2010-12-01T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/bacde65b-83ed-45bd-b506-95eeffe04ad6",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/ad674ce4-e924-4718-9be1-50dd43b52918"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>04-10-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>04-10-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/5db22e9c-11e2-40aa-9232-e3064889a445",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        }, {
+          "reference": "MedicationStatement/37dfb1cb-982c-45f0-a584-04ec7cb551a9",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>04-28-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>132</td><td>mm[Hg]</td><td>04-28-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>82</td><td>mm[Hg]</td><td>06-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>134</td><td>mm[Hg]</td><td>06-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>07-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>07-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>09-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>126</td><td>mm[Hg]</td><td>09-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>82</td><td>mm[Hg]</td><td>10-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>134</td><td>mm[Hg]</td><td>10-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>82</td><td>mm[Hg]</td><td>10-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>132</td><td>mm[Hg]</td><td>10-25-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>84</td><td>mm[Hg]</td><td>12-01-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>136</td><td>mm[Hg]</td><td>12-01-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/e77a68b9-564d-497a-8c9e-bc1ed431a63f",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/bbad6c86-029c-404d-ba8b-1c3f930a7a99",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/57e8075a-bdc6-487d-928e-866bb2132065",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/f0bdb962-903b-41d3-a7a0-9d1e8cf1ebaa",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/652b58af-ac0d-46ea-9491-f4b257faad3f",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/bd299a30-e6d0-4a82-873f-f26c4170098f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/fec194c0-7b6d-46c3-93e3-644833602981",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/f53dfbb9-176e-4fb0-9682-07144012ba66",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/eee79285-151a-4396-a3cb-8ac8cf644027",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/b3f48c3e-8f0d-463d-b6ec-3ea88f0745e2",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/aac31be5-9ca3-4aa8-97ff-f89bcbdbb0f9",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/8eed52bb-2994-4e35-9baa-e55f2f2e665e",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/a0c36104-4cc2-43dc-9333-0c9ccbc59e9e",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/687a9d8f-2274-4bee-a6f0-15d64605ffab",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/a8919fa8-aeed-40b8-af4c-7c7499a06638",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/57d070f1-1ab5-4eab-b88c-169117eb9611",
+          "display": "BP Systolic"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use Cessation Counseling</td><td>CPT</td><td>99406</td><td><span/>Behav chng smoking 3-10 min</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>384742004</td><td>Smoking cessation assistance</td><td/><td/></tr><tr><td>Tobacco Use Cessation Counseling</td><td>CPT</td><td>99406</td><td><span/>Behav chng smoking 3-10 min</td><td>04-10-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>384742004</td><td>Smoking cessation assistance</td><td/><td/></tr><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>04-28-2010 10:00:00</td><td>Performed</td></tr><tr><td>Delivery Live Births-Procedure</td><td>CPT</td><td>59410</td><td><span/>Obstetrical care</td><td>10-25-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>169961004</td><td>Normal birth</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/00d3a3c9-2eb7-4a2b-aa3c-405f8410f508",
+          "display": "Obstetrical care"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Very susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Amikacin</td><td>RxNorm</td><td>905148</td><td><span/>Amikacin Sulfate 50 MG/ML Injectable Solution</td><td><span/>Mild</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Moderate</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/985ade7a-1634-4c78-a577-57f92543cbd8",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/80ea630c-6405-43cf-b63f-9bfc67ae7fea",
+          "display": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/ed027983-7bab-4190-ad0c-ae4672f08eb6",
+          "display": "Penicillin V + Penicillin V"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Estimated Date of Conception</td><td>SNOMED-CT</td><td>248986005</td><td><span/>Estimated date of conception</td><td>01-16-2010 10:00:00</td><td>Active</td></tr><tr><td>Pregnancy</td><td>SNOMED-CT</td><td>315903005</td><td><span/>Pregnant state, incidental</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>Z33.1</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>04-28-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms</td><td>SNOMED-CT</td><td>373899003</td><td><span/>Asthma daytime symptoms</td><td>04-28-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms</td><td>SNOMED-CT</td><td>395022009</td><td><span/>Asthma night-time symptoms</td><td>04-28-2010 10:00:00</td><td>Active</td></tr><tr><td>Hypertension</td><td>SNOMED-CT</td><td>59621000</td><td><span/>Essential hypertension</td><td>04-28-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>I10</td><td>Essential (primary) hypertension</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>401.9</td><td>Unspecified essential hypertension</td><td/><td/></tr><tr><td>Pregnancy-related diagnosis</td><td>SNOMED-CT</td><td>199305006</td><td><span/>Complications specific to multiple gestation</td><td>10-25-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>O30</td><td>Multiple gestation</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>651.90</td><td>Unspecified multiple gestation, unspecified as to episode of care or not applicable</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/8c98240a-8158-42b1-916e-2eee0cbb6f8d",
+          "display": "Asthma night-time symptoms"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>04-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>04-28-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>06-01-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>07-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Office Visit</td><td>CPT</td><td>99212</td><td><span/>Office/outpatient visit, est</td><td>08-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-01-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>09-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>10-01-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>10-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>10-25-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>10-29-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>12-01-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/ed3ef7ae-6f1d-49d5-9619-c6ba0b9793f3",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/7f942d20-187d-4443-b285-f75103bdad56",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/71c02674-4390-4d8c-a1d8-e5c9cd44a3c7",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/e92130fa-2969-437d-b192-5b311f1c2fef",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/5c3bcae6-fa37-4125-8226-9596bc61aea0",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/7681973d-d646-492e-9237-f7cec32b4d8b",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/78e2164f-8db2-4613-af93-58b4eee77da3",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/f7b1c402-36e2-47d5-bdb2-9c90e1560b63",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/29ae1e98-fa8a-4ee2-8ca4-37ff63b701fd",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/e63cbdd0-896c-4ccb-b6db-8b60840d13f7",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/e6d8f04f-0bc8-491e-9d84-57a5b2c3fc13",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/e5f45bce-c766-4ecc-a52b-bfee553d7b1d",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/7791f6ea-e4d1-47fe-8880-be9e5927c4b4",
+          "display": "Prenatal visit"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Pap Test</td><td>LOINC</td><td>10524-7</td><td><span/>Cyto Cervix</td><td>normal</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>88174</td><td>Cytopath, c/v auto, in fluid</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0147</td><td>Scr c/v cyto, automated sys</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.4</td><td>Encounter for screening for malignant neoplasm of cervix</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V72.32</td><td>Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>440623000</td><td>Microscopic examination of cervical Papanicolaou smear</td><td/><td/><td/><td/><td/></tr><tr><td>Pregnancy Test</td><td>LOINC</td><td>2119-6</td><td><span/>HCG SerPl-sCnc</td><td>positive</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84702</td><td>Chorionic gonadotropin test</td><td/><td/><td/><td/><td/></tr><tr><td>HIV Screening</td><td>LOINC</td><td>73906-0</td><td><span/>HIV1+2 IgG Bld Ql EIA.rapid</td><td>non-reactive</td><td/><td>NA</td><td>04-28-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87389</td><td>Hiv-1 ag w/hiv-1 &amp; hiv-2 ab</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>171121004</td><td>Human immunodeficiency virus screening</td><td/><td/><td/><td/><td/></tr><tr><td>Rh Status Baby</td><td>LOINC</td><td>1314-4</td><td><span/>Rh Ig Scn Bld-Imp</td><td>positive</td><td/><td>NA</td><td>10-01-2010 10:00:00</td><td>Completed</td></tr><tr><td>Rh Status Mother</td><td>LOINC</td><td>1314-4</td><td><span/>Rh Ig Scn Bld-Imp</td><td>positive</td><td/><td>NA</td><td>10-01-2010 10:00:00</td><td>Completed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/5c420131-7ca9-4c5d-91e1-f225b037c99b",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/94feb2b6-59c8-4c5c-a49c-3bfd7fa1ce06",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/4c70a014-66d5-444e-9ea0-e1412b1c4ca4",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/0af48186-3c5d-407f-b457-c82464ea1270",
+          "display": "Cytology"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "4f955f22-7e1b-4379-bdd4-3795334d5778",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1005",
+            "display": "Anglican"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Other Race"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2131-1",
+            "display": "Other Race"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Boise",
+          "state": "ID",
+          "postalCode": "83702",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Butler",
+        "given": [ "Melinda" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(614)975-6424",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1970-05-21",
+      "address": [ {
+        "use": "home",
+        "line": [ "4680 Andell Road" ],
+        "city": "Worthington",
+        "state": "OH",
+        "postalCode": "43085",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Lemire",
+          "given": [ "Nyla" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(254)498-0610",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "NylaLLemire@fleckens.hu",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "407 Sussex Court" ],
+          "city": "Waco",
+          "state": "TX",
+          "postalCode": "76701",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/f8c4d8c5-4fe6-44cf-8ada-47c64182dd8e",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f8c4d8c5-4fe6-44cf-8ada-47c64182dd8e",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "aced5cc9-515b-48fe-84e9-b97b610a301a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "65f4f8d9-1b35-45a7-94b9-1683050dd6b7",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "bacde65b-83ed-45bd-b506-95eeffe04ad6",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "cdb93ef9-d63f-4994-b671-1cbf397fb8e5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ad674ce4-e924-4718-9be1-50dd43b52918",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "5db22e9c-11e2-40aa-9232-e3064889a445",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/372df3f6-ee47-4ab9-8230-6488789b8bef",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "372df3f6-ee47-4ab9-8230-6488789b8bef",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "37dfb1cb-982c-45f0-a584-04ec7cb551a9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/7fb6f095-0ad2-42bb-9136-00fb6a6abefa",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "7fb6f095-0ad2-42bb-9136-00fb6a6abefa",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "318142",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e77a68b9-564d-497a-8c9e-bc1ed431a63f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bbad6c86-029c-404d-ba8b-1c3f930a7a99",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "57e8075a-bdc6-487d-928e-866bb2132065",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f0bdb962-903b-41d3-a7a0-9d1e8cf1ebaa",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "652b58af-ac0d-46ea-9491-f4b257faad3f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-01T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bd299a30-e6d0-4a82-873f-f26c4170098f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-01T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 136,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fec194c0-7b6d-46c3-93e3-644833602981",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f53dfbb9-176e-4fb0-9682-07144012ba66",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eee79285-151a-4396-a3cb-8ac8cf644027",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 126,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b3f48c3e-8f0d-463d-b6ec-3ea88f0745e2",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aac31be5-9ca3-4aa8-97ff-f89bcbdbb0f9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8eed52bb-2994-4e35-9baa-e55f2f2e665e",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 134,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a0c36104-4cc2-43dc-9333-0c9ccbc59e9e",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 134,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "687a9d8f-2274-4bee-a6f0-15d64605ffab",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-01T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a8919fa8-aeed-40b8-af4c-7c7499a06638",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-28T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "57d070f1-1ab5-4eab-b88c-169117eb9611",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-28T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "00d3a3c9-2eb7-4a2b-aa3c-405f8410f508",
+      "identifier": [ {
+        "use": "official",
+        "value": "e401f340-7be2-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "59410",
+          "display": "Obstetrical care"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "169961004",
+          "display": "Normal birth"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "performedPeriod": {
+        "start": "2010-10-25T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "985ade7a-1634-4c78-a577-57f92543cbd8",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "80ea630c-6405-43cf-b63f-9bfc67ae7fea",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "905148",
+          "display": "Amikacin Sulfate 50 MG/ML Injectable Solution"
+        } ],
+        "text": "Amikacin + Amikacin Sulfate 50 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "ed027983-7bab-4190-ad0c-ae4672f08eb6",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "8c98240a-8158-42b1-916e-2eee0cbb6f8d",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "395022009",
+          "display": "Asthma night-time symptoms"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "onsetDateTime": "2010-04-28T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "ed3ef7ae-6f1d-49d5-9619-c6ba0b9793f3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-04-28T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "373899003",
+          "display": "Asthma Daytime Symptoms"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "395022009",
+          "display": "Asthma Nighttime Symptoms"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/fa979628-af8e-41ee-948e-fa0eff3a3821",
+        "display": "Asthma Nighttime Symptoms"
+      }, {
+        "reference": "Condition/86ceae13-9465-4c3e-90b8-8526da9921a5",
+        "display": "Hypertension"
+      }, {
+        "reference": "Condition/801cabd1-427c-4421-983c-af6acc228c76",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/8d045fea-b1dd-4791-8d59-86d01e62239a",
+        "display": "Asthma Daytime Symptoms"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "fa979628-af8e-41ee-948e-fa0eff3a3821",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "395022009",
+          "display": "Asthma Nighttime Symptoms"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "onsetDateTime": "2010-04-28T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "86ceae13-9465-4c3e-90b8-8526da9921a5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "401.9",
+          "display": "Unspecified essential hypertension"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "onsetDateTime": "2010-04-28T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "801cabd1-427c-4421-983c-af6acc228c76",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "onsetDateTime": "2010-04-28T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "8d045fea-b1dd-4791-8d59-86d01e62239a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "373899003",
+          "display": "Asthma Daytime Symptoms"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "onsetDateTime": "2010-04-28T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7f942d20-187d-4443-b285-f75103bdad56",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-06-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "71c02674-4390-4d8c-a1d8-e5c9cd44a3c7",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-10-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "e92130fa-2969-437d-b192-5b311f1c2fef",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "315903005",
+          "display": "Pregnancy"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/8d045fea-b1dd-4791-8d59-86d01e62239a",
+        "display": "Asthma Daytime Symptoms"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5c3bcae6-fa37-4125-8226-9596bc61aea0",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-08-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7681973d-d646-492e-9237-f7cec32b4d8b",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-10-25T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "199305006",
+          "display": "Pregnancy-related diagnosis"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/8d045fea-b1dd-4791-8d59-86d01e62239a",
+        "display": "Asthma Daytime Symptoms"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "78e2164f-8db2-4613-af93-58b4eee77da3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-09-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f7b1c402-36e2-47d5-bdb2-9c90e1560b63",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99212",
+          "display": "Office/outpatient visit, est"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-04-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "29ae1e98-fa8a-4ee2-8ca4-37ff63b701fd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-12-01T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "e63cbdd0-896c-4ccb-b6db-8b60840d13f7",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-07-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "e6d8f04f-0bc8-491e-9d84-57a5b2c3fc13",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-09-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "e5f45bce-c766-4ecc-a52b-bfee553d7b1d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-10-29T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7791f6ea-e4d1-47fe-8880-be9e5927c4b4",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "period": {
+        "start": "2010-10-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "5c420131-7ca9-4c5d-91e1-f225b037c99b",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "result": [ {
+        "reference": "Observation/b8012fea-b9f2-47ac-bd05-b217e60f156d",
+        "display": "HCG SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b8012fea-b9f2-47ac-bd05-b217e60f156d",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2119-6",
+          "display": "HCG SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84702",
+          "display": "Chorionic gonadotropin test"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "94feb2b6-59c8-4c5c-a49c-3bfd7fa1ce06",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "result": [ {
+        "reference": "Observation/fb914d02-7404-4f0a-995b-1c3e0a9517fe",
+        "display": "Rh Ig Scn Bld-Imp"
+      }, {
+        "reference": "Observation/c6b14d11-d2d7-4372-89ff-0a5c057efa0e",
+        "display": "Rh Ig Scn Bld-Imp"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fb914d02-7404-4f0a-995b-1c3e0a9517fe",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "1314-4",
+          "display": "Rh Ig Scn Bld-Imp"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-01T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c6b14d11-d2d7-4372-89ff-0a5c057efa0e",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "1314-4",
+          "display": "Rh Ig Scn Bld-Imp"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-01T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "4c70a014-66d5-444e-9ea0-e1412b1c4ca4",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "result": [ {
+        "reference": "Observation/981e1ae6-6cc5-4452-923d-2d792dc26809",
+        "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "981e1ae6-6cc5-4452-923d-2d792dc26809",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "73906-0",
+          "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87389",
+          "display": "Hiv-1 ag w/hiv-1 & hiv-2 ab"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "171121004",
+          "display": "Human immunodeficiency virus screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-28T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "131194007",
+          "display": "non-reactive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "0af48186-3c5d-407f-b457-c82464ea1270",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116147009",
+          "display": "Cytology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "result": [ {
+        "reference": "Observation/bd337bc2-2ea1-4a22-ba88-8545596f6451",
+        "display": "Cyto Cervix"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bd337bc2-2ea1-4a22-ba88-8545596f6451",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "10524-7",
+          "display": "Cyto Cervix"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "88174",
+          "display": "Cytopath, c/v auto, in fluid"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0147",
+          "display": "Scr c/v cyto, automated sys"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z12.4",
+          "display": "Encounter for screening for malignant neoplasm of cervix"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.32",
+          "display": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "440623000",
+          "display": "Microscopic examination of cervical Papanicolaou smear"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/4f955f22-7e1b-4379-bdd4-3795334d5778",
+        "display": "Melinda Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "17621005",
+          "display": "normal"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  } ]
+}

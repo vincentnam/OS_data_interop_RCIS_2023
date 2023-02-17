@@ -1,0 +1,2093 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "599de165-82b7-4ff4-b101-0e280d93d3be",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "date": "2014-04-16T11:55:12+02:00",
+      "author": [ {
+        "reference": "Practitioner/f427fcb6-0793-4f09-9d44-f670cbc70701",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/5695cd76-d204-4ba4-a662-790ac2d55990",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:12+02:00",
+        "party": {
+          "reference": "Practitioner/5695cd76-d204-4ba4-a662-790ac2d55990",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/be31d996-a872-40ae-8092-23d6cb12bc1d",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-02-12T10:00:00+01:00",
+          "end": "2010-11-30T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/fb9e7348-3536-4be0-be56-b51bd6f591bb",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/b06d67b3-9d48-4c30-90a0-61bb4059359a"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Antiasthmatic combinations</td><td>RxNorm</td><td>388681</td><td><span/>Dyphylline 100 MG / Guaifenesin 100 MG Oral Tablet</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Macrolides</td><td>RxNorm</td><td>197650</td><td><span/>Erythromycin 500 MG Oral Tablet</td><td>11-30-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>RxNorm</td><td>686383</td><td>Erythromycin Ethylsuccinate 40 MG/ML / Sulfisoxazole 120 MG/ML Oral Suspension</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/6c34e070-3b79-4cdb-a58f-188991a5d0e7",
+          "display": "Dyphylline 100 MG / Guaifenesin 100 MG Oral Tablet"
+        }, {
+          "reference": "MedicationStatement/8c256ad6-cc02-4cdb-8dce-d07b0ef19d50",
+          "display": "Erythromycin 500 MG Oral Tablet"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>04-30-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>05-06-2010 10:00:00</td><td>Performed</td></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>06-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>08-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-12-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-30-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>10-15-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>10-22-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>10-25-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>11-30-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/4014bc04-cd40-485b-9eeb-5af0666071a2",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/d20571bf-54f1-4489-8f8c-df4c4af6258f",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/dbd2ea0f-2fcc-4670-8447-995d51adac66",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/7bc216c0-42a8-4495-92ff-742f1d48673d",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/fd7c4afd-4d37-4a90-b700-05baa1a4451f",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/4c303d6c-983a-454c-9957-cf2e4bc696a4",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/eeecbe3b-e9f1-4244-8de2-50e9e54fc2a8",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/d95b577b-6763-4ab8-9052-0e699b40e3fe",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/3524dd18-20c0-4d0e-9c77-a7c045a282f9",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/1628c277-5cb6-4a00-a5cb-61bd64b35566",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/3e88d052-508c-4c52-90f4-c0c84b8996b7",
+          "display": "Prenatal visit"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>23.7</td><td>kg/m2</td><td>03-31-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>76</td><td>mm[Hg]</td><td>07-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>128</td><td>mm[Hg]</td><td>07-15-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>08-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>08-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>74</td><td>mm[Hg]</td><td>09-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>128</td><td>mm[Hg]</td><td>09-12-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>09-22-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>09-22-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>09-29-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>132</td><td>mm[Hg]</td><td>09-29-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/6f1b2fed-0ad5-4654-b933-440559c2cf68",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/f3810cd5-dc0f-4a56-8237-3c6f159823e9",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/099661c6-f109-4951-96e1-cd712fdd6b95",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/2222bef0-804a-4f4a-bf8b-d72bf6a5389f",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/e1d041d8-0387-43dc-a14f-4e622a7df0e9",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/ba592052-b58a-431f-9e68-d2ae983794f2",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/2d5782de-9ecf-45cc-9867-302648f675fa",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/ac1c08d0-83e7-4ca1-a4fb-96afe692df0d",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/4402d559-8e48-4e38-aef7-4b6ddd108175",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/66b1c015-8668-438f-9c47-df80de92d05c",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/ed144245-b577-4606-94cb-130edc1ad041",
+          "display": "BP Diastolic"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Estimated Date of Conception</td><td>SNOMED-CT</td><td>248986005</td><td><span/>Estimated date of conception</td><td>02-12-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms</td><td>SNOMED-CT</td><td>373899003</td><td><span/>Asthma daytime symptoms</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms</td><td>SNOMED-CT</td><td>395022009</td><td><span/>Asthma night-time symptoms</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Pregnancy</td><td>SNOMED-CT</td><td>315903005</td><td><span/>Pregnant state, incidental</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>Z33.1</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Pharyngitis</td><td>SNOMED-CT</td><td>363746003</td><td><span/>Acute pharyngitis</td><td>09-30-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J02</td><td>Acute pharyngitis</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>462</td><td>Acute pharyngitis</td><td/><td/></tr><tr><td>Pregnancy-related diagnosis</td><td>SNOMED-CT</td><td>199305006</td><td><span/>Complications specific to multiple gestation</td><td>10-22-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>O30</td><td>Multiple gestation</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>651.90</td><td>Unspecified multiple gestation, unspecified as to episode of care or not applicable</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/92af5133-a151-490f-8b7d-c1ba314e5de3",
+          "display": "Asthma unspecified"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td>Delivery Live Births-Procedure</td><td>CPT</td><td>59410</td><td><span/>Obstetrical care</td><td>10-22-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>169961004</td><td>Normal birth</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/4b4a6404-8363-4c2c-81ea-3fdb2228367b",
+          "display": "Obstetrical care"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Very susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Fatal</td><td>Very susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Severe</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/8ba0669a-fafd-4168-b2d4-1cbb5deb7d1a",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        }, {
+          "reference": "AllergyIntolerance/4959e33e-236f-4035-8637-67cffed1e2d8",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/fe0c2a90-8ae8-490a-bb74-a87a1be5a6ba",
+          "display": "Penicillin V + Penicillin V"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Pregnancy Test</td><td>LOINC</td><td>2119-6</td><td><span/>HCG SerPl-sCnc</td><td>positive</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84702</td><td>Chorionic gonadotropin test</td><td/><td/><td/><td/><td/></tr><tr><td>HIV Screening</td><td>LOINC</td><td>73906-0</td><td><span/>HIV1+2 IgG Bld Ql EIA.rapid</td><td>non-reactive</td><td/><td>NA</td><td>08-20-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87389</td><td>Hiv-1 ag w/hiv-1 &amp; hiv-2 ab</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>171121004</td><td>Human immunodeficiency virus screening</td><td/><td/><td/><td/><td/></tr><tr><td>Rh Status Mother</td><td>LOINC</td><td>1314-4</td><td><span/>Rh Ig Scn Bld-Imp</td><td>positive</td><td/><td>NA</td><td>08-20-2010 10:00:00</td><td>Completed</td></tr><tr><td>Group A Streptococcus Test</td><td>LOINC</td><td>31971-5</td><td><span/>S pyo Ag XXX Ql</td><td>negative</td><td/><td>NA</td><td>11-30-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87430</td><td>Strep a ag, eia</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>122121004</td><td>Streptococcus pyogenes antigen assay</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/e78423c0-d76b-49b0-8518-b634154fb72d",
+          "display": "Microbiology"
+        }, {
+          "reference": "DiagnosticReport/11a5547a-86c6-4ed1-b07a-f0f95187b720",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/5ac07752-47f3-4085-a556-acc9e7049e0d",
+          "display": "Serology"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1020",
+            "display": "Hinduism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Panama City",
+          "state": "FL",
+          "postalCode": "32401",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Daniel",
+        "given": [ "Michele" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(207)483-5286",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1994-10-29",
+      "address": [ {
+        "use": "home",
+        "line": [ "1652 Victoria Court" ],
+        "city": "Columbia",
+        "state": "ME",
+        "postalCode": "4623",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Jackson",
+          "given": [ "Robert" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(773)510-7019",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "RobertSJackson@gustr.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "194 Cherry Camp Road" ],
+          "city": "Chicago",
+          "state": "IL",
+          "postalCode": "60631",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/0b38e63b-1884-4e11-b32a-34bdeccea72d",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "0b38e63b-1884-4e11-b32a-34bdeccea72d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "f427fcb6-0793-4f09-9d44-f670cbc70701",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5695cd76-d204-4ba4-a662-790ac2d55990",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "fb9e7348-3536-4be0-be56-b51bd6f591bb",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "be31d996-a872-40ae-8092-23d6cb12bc1d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b06d67b3-9d48-4c30-90a0-61bb4059359a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "6c34e070-3b79-4cdb-a58f-188991a5d0e7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/90d4b839-7336-460e-b3df-9db7a352af83",
+        "display": "Dyphylline 100 MG / Guaifenesin 100 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "90d4b839-7336-460e-b3df-9db7a352af83",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "388681",
+          "display": "Dyphylline 100 MG / Guaifenesin 100 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "8c256ad6-cc02-4cdb-8dce-d07b0ef19d50",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/a26a6dca-a74e-40af-b5a4-27c2362194bd",
+        "display": "Erythromycin 500 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "a26a6dca-a74e-40af-b5a4-27c2362194bd",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197650",
+          "display": "Erythromycin 500 MG Oral Tablet"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4014bc04-cd40-485b-9eeb-5af0666071a2",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-09-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d20571bf-54f1-4489-8f8c-df4c4af6258f",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "373899003",
+          "display": "Asthma Daytime Symptoms"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "395022009",
+          "display": "Asthma Nighttime Symptoms"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "315903005",
+          "display": "Pregnancy"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/c5860d83-2efe-427b-9cb7-667b5ed1cbb5",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/0bb3fc5f-344d-4114-99de-0a7c142d04fb",
+        "display": "Asthma Nighttime Symptoms"
+      }, {
+        "reference": "Condition/bb31ecf5-5288-4399-b83d-821f6720e49c",
+        "display": "Asthma Daytime Symptoms"
+      }, {
+        "reference": "Condition/bd6bd0ca-4596-4d15-be1e-5ee7473d151d",
+        "display": "Pregnancy"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "c5860d83-2efe-427b-9cb7-667b5ed1cbb5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "0bb3fc5f-344d-4114-99de-0a7c142d04fb",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "395022009",
+          "display": "Asthma Nighttime Symptoms"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "bb31ecf5-5288-4399-b83d-821f6720e49c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "373899003",
+          "display": "Asthma Daytime Symptoms"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "bd6bd0ca-4596-4d15-be1e-5ee7473d151d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "315903005",
+          "display": "Pregnancy"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z33.1",
+          "display": "Pregnant state, incidental"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "dbd2ea0f-2fcc-4670-8447-995d51adac66",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-11-30T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "7bc216c0-42a8-4495-92ff-742f1d48673d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-04-30T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "fd7c4afd-4d37-4a90-b700-05baa1a4451f",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-10-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4c303d6c-983a-454c-9957-cf2e4bc696a4",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-10-22T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "199305006",
+          "display": "Pregnancy-related diagnosis"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/bd6bd0ca-4596-4d15-be1e-5ee7473d151d",
+        "display": "Pregnancy"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "eeecbe3b-e9f1-4244-8de2-50e9e54fc2a8",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-05-06T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d95b577b-6763-4ab8-9052-0e699b40e3fe",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-06-15T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "3524dd18-20c0-4d0e-9c77-a7c045a282f9",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-10-25T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "1628c277-5cb6-4a00-a5cb-61bd64b35566",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-09-30T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "363746003",
+          "display": "Pharyngitis"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/bd6bd0ca-4596-4d15-be1e-5ee7473d151d",
+        "display": "Pregnancy"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "3e88d052-508c-4c52-90f4-c0c84b8996b7",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "period": {
+        "start": "2010-08-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6f1b2fed-0ad5-4654-b933-440559c2cf68",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 128,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f3810cd5-dc0f-4a56-8237-3c6f159823e9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-07-15T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 76,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "099661c6-f109-4951-96e1-cd712fdd6b95",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 74,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2222bef0-804a-4f4a-bf8b-d72bf6a5389f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-12T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 128,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e1d041d8-0387-43dc-a14f-4e622a7df0e9",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-29T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ba592052-b58a-431f-9e68-d2ae983794f2",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-29T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2d5782de-9ecf-45cc-9867-302648f675fa",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 23.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ac1c08d0-83e7-4ca1-a4fb-96afe692df0d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-22T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4402d559-8e48-4e38-aef7-4b6ddd108175",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-22T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "66b1c015-8668-438f-9c47-df80de92d05c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ed144245-b577-4606-94cb-130edc1ad041",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "92af5133-a151-490f-8b7d-c1ba314e5de3",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "onsetDateTime": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "4b4a6404-8363-4c2c-81ea-3fdb2228367b",
+      "identifier": [ {
+        "use": "official",
+        "value": "e401f340-7be2-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "59410",
+          "display": "Obstetrical care"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "169961004",
+          "display": "Normal birth"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "performedPeriod": {
+        "start": "2010-10-22T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "8ba0669a-fafd-4168-b2d4-1cbb5deb7d1a",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "4959e33e-236f-4035-8637-67cffed1e2d8",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "fe0c2a90-8ae8-490a-bb74-a87a1be5a6ba",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "e78423c0-d76b-49b0-8518-b634154fb72d",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "269934003",
+          "display": "Microbiology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "result": [ {
+        "reference": "Observation/3baed19e-617d-41b5-8df6-d8aef3ca6d87",
+        "display": "S pyo Ag XXX Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3baed19e-617d-41b5-8df6-d8aef3ca6d87",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "31971-5",
+          "display": "S pyo Ag XXX Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87430",
+          "display": "Strep a ag, eia"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "122121004",
+          "display": "Streptococcus pyogenes antigen assay"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-30T10:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "260385009",
+          "display": "negative"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "11a5547a-86c6-4ed1-b07a-f0f95187b720",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "result": [ {
+        "reference": "Observation/4548bc8b-c9de-4320-9bd1-c7c2a1678e0a",
+        "display": "Rh Ig Scn Bld-Imp"
+      }, {
+        "reference": "Observation/168187bf-c94e-4783-8810-5f9e70854706",
+        "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4548bc8b-c9de-4320-9bd1-c7c2a1678e0a",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "1314-4",
+          "display": "Rh Ig Scn Bld-Imp"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-20T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "168187bf-c94e-4783-8810-5f9e70854706",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "73906-0",
+          "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87389",
+          "display": "Hiv-1 ag w/hiv-1 & hiv-2 ab"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "171121004",
+          "display": "Human immunodeficiency virus screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-20T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "131194007",
+          "display": "non-reactive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "5ac07752-47f3-4085-a556-acc9e7049e0d",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "result": [ {
+        "reference": "Observation/0fc4d418-a6a0-466d-a168-516e56486a7a",
+        "display": "HCG SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0fc4d418-a6a0-466d-a168-516e56486a7a",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2119-6",
+          "display": "HCG SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84702",
+          "display": "Chorionic gonadotropin test"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/6c42c3d0-fb6e-425e-afde-2c43d50c8ecb",
+        "display": "Michele Daniel"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  } ]
+}

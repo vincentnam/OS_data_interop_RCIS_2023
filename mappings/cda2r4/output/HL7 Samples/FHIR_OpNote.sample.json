@@ -1,0 +1,462 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "7fe0df75-6369-4923-a525-2b7a452ac2ef",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "999021"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "11504-8",
+          "display": "Surgical Operation Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d5a5abbd-7d9d-4b57-91c0-4072e244e525",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "date": "2005-03-29T17:15:04+05:00",
+      "author": [ {
+        "reference": "Practitioner/983d6dbb-dc76-492c-9f85-7c97406039e8",
+        "display": "Henry Seven"
+      } ],
+      "title": "Good Health Clinic Operative Note",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2005-03-29T22:44:11+05:00",
+        "party": {
+          "reference": "Practitioner/7cc3477a-c38a-4538-90c9-24741dae8fd6",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2005-03-29T22:44:11+05:00",
+        "party": {
+          "reference": "Practitioner/7cc3477a-c38a-4538-90c9-24741dae8fd6",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/ebd2ec3b-8672-4d61-a338-6249ac289ac3",
+        "display": "Good Health Clinic"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-06-01",
+          "end": "2010-09-15"
+        },
+        "detail": [ {
+          "reference": "Practitioner/40dabf05-3fe5-449e-aa40-f9b0e3e3cece",
+          "display": "Dr. Pseudo Physician-1"
+        }, {
+          "reference": "Practitioner/978f65d5-2c6b-4a30-939b-83950d06eb0c",
+          "display": "Dr. Pseudo Physician-3"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Plan of Care",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Treatment plan"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Planned Activity</th><th>Planned Date</th></tr></thead><tbody><tr><td>Colonoscopy</td><td>April 21, 2000</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/623b2000-934f-4f5b-b37c-d56f088d0ce5"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "d5a5abbd-7d9d-4b57-91c0-4072e244e525",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.1.11.19185",
+            "code": "1013",
+            "display": "Christian (non-Catholic, non-specific)"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "state": "MA",
+          "postalCode": "02368",
+          "country": "USA"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "12345"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-1234"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Everyman",
+        "given": [ "Adam", "Frankie" ],
+        "prefix": [ "Mr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(781)555-1212",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1954-11-25",
+      "address": [ {
+        "use": "home",
+        "line": [ "17 Daws Rd." ],
+        "city": "Blue Bell",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "O",
+            "display": "Other"
+          } ]
+        } ],
+        "name": {
+          "family": "Relative",
+          "given": [ "Ralph" ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(781)555-1212",
+          "use": "home"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "17 Daws Rd." ],
+          "city": "Blue Bell",
+          "state": "MA",
+          "postalCode": "02368",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "fr-CN"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/3cb95904-88eb-4bb6-8d70-e3e3db721c8a",
+        "display": "Good Health Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "3cb95904-88eb-4bb6-8d70-e3e3db721c8a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19"
+      } ],
+      "name": "Good Health Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(781)555-1212",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave" ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "983d6dbb-dc76-492c-9f85-7c97406039e8",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5",
+        "value": "KP00017"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1003",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave." ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "7cc3477a-c38a-4538-90c9-24741dae8fd6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "KP00017"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1003",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "21 North Ave." ],
+        "city": "Burlington",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "40dabf05-3fe5-449e-aa40-f9b0e3e3cece",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Physician-1",
+        "given": [ "Pseudo" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-301-975-3251",
+        "use": "home"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "8160619f-4718-466c-9946-dd50c3f4e280",
+      "practitioner": {
+        "reference": "Practitioner/40dabf05-3fe5-449e-aa40-f9b0e3e3cece",
+        "display": "Dr. Pseudo Physician-1"
+      },
+      "organization": {
+        "reference": "Organization/3135242a-7246-4bed-84cc-6d13d40052f6",
+        "display": "NIST HL7 Test Laboratory"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "200000000X",
+          "display": "Allopathic and Osteopathic Physicians"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "3135242a-7246-4bed-84cc-6d13d40052f6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.72.5"
+      } ],
+      "name": "NIST HL7 Test Laboratory"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "978f65d5-2c6b-4a30-939b-83950d06eb0c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "PseudoMD-3"
+      } ],
+      "name": [ {
+        "family": "Physician-3",
+        "given": [ "Pseudo" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-301-975-3251",
+        "use": "home"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "915c3b66-99fc-4df0-a180-75cece676cc4",
+      "practitioner": {
+        "reference": "Practitioner/978f65d5-2c6b-4a30-939b-83950d06eb0c",
+        "display": "Dr. Pseudo Physician-3"
+      },
+      "organization": {
+        "reference": "Organization/ce958147-ba27-4431-b4e7-ef2e76be24b3",
+        "display": "HL7 Test Laboratory"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "200000000X",
+          "display": "Allopathic and Osteopathic Physicians"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ce958147-ba27-4431-b4e7-ef2e76be24b3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19.123"
+      } ],
+      "name": "HL7 Test Laboratory"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ebd2ec3b-8672-4d61-a338-6249ac289ac3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.19.5"
+      } ],
+      "name": "Good Health Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1212",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "17 Daws Rd." ],
+        "city": "Blue Bell",
+        "state": "MA",
+        "postalCode": "02368",
+        "country": "USA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "623b2000-934f-4f5b-b37c-d56f088d0ce5",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Planned Activity</th><th>Planned Date</th></tr></thead><tbody><tr><td>Colonoscopy</td><td>April 21, 2000</td></tr></tbody></table></div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "Plan of Care",
+      "description": "<div><table border=\"1\" width=\"100%\"><thead><tr><th>Planned Activity</th><th>Planned Date</th></tr></thead><tbody><tr><td>Colonoscopy</td><td>April 21, 2000</td></tr></tbody></table></div>",
+      "subject": {
+        "reference": "Patient/d5a5abbd-7d9d-4b57-91c0-4072e244e525",
+        "display": "Mr. Adam Frankie Everyman"
+      },
+      "activity": [ {
+        "reference": {
+          "reference": "ServiceRequest/65261bdf-6549-404d-b018-ee91b0a32b5e",
+          "display": "Colonoscopy"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "id": "65261bdf-6549-404d-b018-ee91b0a32b5e",
+      "identifier": [ {
+        "use": "official",
+        "value": "9a6d1bac-17d3-4195-89a4-1121bc809a5c"
+      } ],
+      "status": "active",
+      "intent": "plan",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "310634005",
+          "display": "Colonoscopy"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d5a5abbd-7d9d-4b57-91c0-4072e244e525",
+        "display": "Mr. Adam Frankie Everyman"
+      }
+    }
+  } ]
+}

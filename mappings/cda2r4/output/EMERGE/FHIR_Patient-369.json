@@ -1,0 +1,1943 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "c17d09bd-b543-41fe-a9c8-7144f80f015b",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "date": "2014-04-16T11:55:09+02:00",
+      "author": [ {
+        "reference": "Practitioner/794730b1-128d-4534-9917-142d949738a9",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/fb9975cb-67a5-4e49-8f96-437c14d3ddea",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:09+02:00",
+        "party": {
+          "reference": "Practitioner/fb9975cb-67a5-4e49-8f96-437c14d3ddea",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/f408c2fe-1c00-4fbe-9577-4312f5b11e36",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2010-02-06T10:00:00+01:00",
+          "end": "2010-11-03T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/dba9615a-0045-44b7-a18b-893e5293f393",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Severe</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Mild</td><td>Moderately Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td>Penicillin V</td><td>NDF-RT</td><td>N0000011298</td><td><span/>Penicillin V</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>03-31-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/6fcb0c77-b353-42d2-8e4d-c94a0761149b",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/10edfe50-ce4b-4f94-a040-7bd301695fb7",
+          "display": "Penicillin V + Penicillin V"
+        }, {
+          "reference": "AllergyIntolerance/14d9f802-7dc8-4070-a866-ea12b087e8cf",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>03-31-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>05-05-2010 10:00:00</td><td>Performed</td></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>05-20-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>06-05-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient</td><td>CPT</td><td>99213</td><td><span/>Office/outpatient visit, est</td><td>08-08-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-9-CM</td><td>V70.0</td><td>Routine general medical examination at a health care facility</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>08-17-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-05-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-12-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-19-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-26-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>10-05-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>10-10-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>10-13-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>11-03-2010 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/f3557da1-1a88-4168-bcee-67484f05bd7f",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/415bf4b4-dcec-42fd-b1b7-c103791b0bfd",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/516b0944-876d-4788-af7e-42250bc470e3",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/5b1cd4fe-18dc-49e3-8b9c-720b21fe7cbb",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/1b3df833-8816-4418-925e-2d645b396bed",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/d3c71f9a-8f70-4f60-99fd-eb7a2cd8ec02",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/cb83e438-bea9-4272-b516-091082c9f035",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/25b76a30-91b9-4833-af2b-aa11c2e1f8c6",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/c6805599-b012-4cb3-9c05-fbae9887ba62",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/52630c40-2137-43a1-8384-ca33a7f4201d",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "reference": "Encounter/5ed6893e-52a6-498a-9c5e-d9250f35bc37",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/c1214be8-b052-427e-8c4e-c726a3b6ea7e",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/560663e6-f28d-40d6-b4b7-0903f4d40c5a",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/f3f5f6b6-f3d0-4766-a82e-9263240d030c",
+          "display": "Initial inpatient consult"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Chlamydia Screening</td><td>LOINC</td><td>31777-6</td><td><span/>C trach Ag XXX Ql</td><td>negative</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87270</td><td>Chlamydia trachomatis ag if</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>121953005</td><td>Measurement of Chlamydia pneumoniae antibody</td><td/><td/><td/><td/><td/></tr><tr><td>Pap Test</td><td>LOINC</td><td>10524-7</td><td><span/>Cyto Cervix</td><td>normal</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>88174</td><td>Cytopath, c/v auto, in fluid</td><td/><td/><td/><td/><td/></tr><tr><td/><td>HCPCS</td><td>G0147</td><td>Scr c/v cyto, automated sys</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-10-CM</td><td>Z12.4</td><td>Encounter for screening for malignant neoplasm of cervix</td><td/><td/><td/><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V72.32</td><td>Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>440623000</td><td>Microscopic examination of cervical Papanicolaou smear</td><td/><td/><td/><td/><td/></tr><tr><td>Pregnancy Test</td><td>LOINC</td><td>2119-6</td><td><span/>HCG SerPl-sCnc</td><td>positive</td><td/><td>NA</td><td>03-31-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84702</td><td>Chorionic gonadotropin test</td><td/><td/><td/><td/><td/></tr><tr><td>Rh Status Mother</td><td>LOINC</td><td>1314-4</td><td><span/>Rh Ig Scn Bld-Imp</td><td>positive</td><td/><td>NA</td><td>05-09-2010 10:00:00</td><td>Completed</td></tr><tr><td>HIV Screening</td><td>LOINC</td><td>73906-0</td><td><span/>HIV1+2 IgG Bld Ql EIA.rapid</td><td>non-reactive</td><td/><td>NA</td><td>05-20-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87389</td><td>Hiv-1 ag w/hiv-1 &amp; hiv-2 ab</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>171121004</td><td>Human immunodeficiency virus screening</td><td/><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/3f834b66-ba15-4e40-acbe-c497ff0a7e17",
+          "display": "Cytology"
+        }, {
+          "reference": "DiagnosticReport/45dc0aa2-3118-48b6-b4fb-ab35a81865e1",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/d91aad1e-1916-4f71-971c-de5372660df6",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/2707f108-2742-49ea-ba3f-59666c92742b",
+          "display": "Microbiology"
+        }, {
+          "reference": "DiagnosticReport/638ba63d-ab47-4ee3-82d0-ca049549aa08",
+          "display": "Serology"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Estimated Date of Conception</td><td>SNOMED-CT</td><td>248986005</td><td><span/>Estimated date of conception</td><td>02-06-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>06-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>06-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Primagravida</td><td>SNOMED-CT</td><td>127364007</td><td><span/>Primigravida</td><td>09-02-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>09-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>D(Rh) Negative</td><td>SNOMED-CT</td><td>165746003</td><td><span/>RhD negative</td><td>09-08-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>O36.0120</td><td>Maternal care for anti-D [Rh] antibodies, second trimester, not applicable or unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>656.10</td><td>Rhesus isoimmunization, unspecified as to episode of care or not applicable</td><td/><td/></tr><tr><td>Pregnancy-related diagnosis</td><td>SNOMED-CT</td><td>199305006</td><td><span/>Complications specific to multiple gestation</td><td>10-11-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>O30</td><td>Multiple gestation</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>651.90</td><td>Unspecified multiple gestation, unspecified as to episode of care or not applicable</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/d61d93cd-ab44-4a16-a072-cd9303512488",
+          "display": "Estimated date of conception"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>06-05-2010 10:00:00</td><td>Performed</td></tr><tr><td>Delivery Live Births-Procedure</td><td>CPT</td><td>59410</td><td><span/>Obstetrical care</td><td>10-11-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>169961004</td><td>Normal birth</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/7b1d74e2-958a-4d52-9de6-9432abac56a3",
+          "display": "Obstetrical care"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>06-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>06-05-2010 10:00:00</td><td>Active</td></tr><tr><td>Anti-D Immune Globulin</td><td>RxNorm</td><td>731378</td><td><span/>1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe</td><td>08-21-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/31712239-6c41-4893-a988-910648d1726f",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        }, {
+          "reference": "MedicationStatement/c7af4bc0-c929-43f3-8836-4367e748739f",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        }, {
+          "reference": "MedicationStatement/05e8355f-9159-4d30-8f23-f0a84947633e",
+          "display": "1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>03-31-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/ed415781-383a-41ee-8dd8-2fb2ac98ff46"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>70</td><td>mm[Hg]</td><td>05-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>114</td><td>mm[Hg]</td><td>05-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>72</td><td>mm[Hg]</td><td>09-26-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>116</td><td>mm[Hg]</td><td>09-26-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/ec01ec64-c9b2-4139-a307-396aa682381c",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/4551e8fd-3393-4cfd-98f7-19e4b9701b4d",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/627ad64a-c50c-4e79-8ade-28bb0ecce322",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/30791298-97fc-42a4-bc9d-3e962d482dce",
+          "display": "BP Systolic"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "00f31cde-86dc-4406-9810-32dbbd5f0f35",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1007",
+            "display": "Atheism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Other Race"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2131-1",
+            "display": "Other Race"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "San Jose",
+          "state": "CA",
+          "postalCode": "95113",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Stokes",
+        "given": [ "Allison" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(330)543-9183",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1988-02-23",
+      "address": [ {
+        "use": "home",
+        "line": [ "1986 Little Street" ],
+        "city": "Akron",
+        "state": "OH",
+        "postalCode": "44308",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Cuffee",
+          "given": [ "Daniel" ],
+          "prefix": [ "Mr." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(704)454-7296",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "DanielSCuffee@rhyta.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "3758 Kooter Lane" ],
+          "city": "Harrisburg",
+          "state": "NC",
+          "postalCode": "28075",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/fef708db-30e3-45bc-90bf-f2f3eb733c0c",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "fef708db-30e3-45bc-90bf-f2f3eb733c0c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "794730b1-128d-4534-9917-142d949738a9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "fb9975cb-67a5-4e49-8f96-437c14d3ddea",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "dba9615a-0045-44b7-a18b-893e5293f393",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f408c2fe-1c00-4fbe-9577-4312f5b11e36",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "6fcb0c77-b353-42d2-8e4d-c94a0761149b",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "10edfe50-ce4b-4f94-a040-7bd301695fb7",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000011298",
+          "display": "Penicillin V"
+        } ],
+        "text": "Penicillin V + Penicillin V"
+      },
+      "patient": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "14d9f802-7dc8-4070-a866-ea12b087e8cf",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "recordedDate": "2010-03-31T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f3557da1-1a88-4168-bcee-67484f05bd7f",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-11-03T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "415bf4b4-dcec-42fd-b1b7-c103791b0bfd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-03-31T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "516b0944-876d-4788-af7e-42250bc470e3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-09-26T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5b1cd4fe-18dc-49e3-8b9c-720b21fe7cbb",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-09-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "1b3df833-8816-4418-925e-2d645b396bed",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-05-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d3c71f9a-8f70-4f60-99fd-eb7a2cd8ec02",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-05-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "cb83e438-bea9-4272-b516-091082c9f035",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-10-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "25b76a30-91b9-4833-af2b-aa11c2e1f8c6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-10-13T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "c6805599-b012-4cb3-9c05-fbae9887ba62",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-06-05T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/987e2e0d-70e4-4a81-b0fc-c046ac749004",
+        "display": "Asthma Daytime Symptoms Quantified"
+      }, {
+        "reference": "Condition/df647f29-57e2-43a5-b7a4-fb9596851199",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "987e2e0d-70e4-4a81-b0fc-c046ac749004",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "onsetDateTime": "2010-06-05T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "df647f29-57e2-43a5-b7a4-fb9596851199",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "onsetDateTime": "2010-06-05T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "52630c40-2137-43a1-8384-ca33a7f4201d",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99213",
+          "display": "Office/outpatient visit, est"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V70.0",
+          "display": "Routine general medical examination at a health care facility"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-08-08T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5ed6893e-52a6-498a-9c5e-d9250f35bc37",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-08-17T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "c1214be8-b052-427e-8c4e-c726a3b6ea7e",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-09-12T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "560663e6-f28d-40d6-b4b7-0903f4d40c5a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-09-19T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f3f5f6b6-f3d0-4766-a82e-9263240d030c",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "period": {
+        "start": "2010-10-10T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "3f834b66-ba15-4e40-acbe-c497ff0a7e17",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "116147009",
+          "display": "Cytology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "result": [ {
+        "reference": "Observation/91b4d2a0-5bca-4bf0-ae77-8cbe88f644e6",
+        "display": "Cyto Cervix"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "91b4d2a0-5bca-4bf0-ae77-8cbe88f644e6",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "10524-7",
+          "display": "Cyto Cervix"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "88174",
+          "display": "Cytopath, c/v auto, in fluid"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.13",
+          "code": "G0147",
+          "display": "Scr c/v cyto, automated sys"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z12.4",
+          "display": "Encounter for screening for malignant neoplasm of cervix"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V72.32",
+          "display": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "440623000",
+          "display": "Microscopic examination of cervical Papanicolaou smear"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "17621005",
+          "display": "normal"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "45dc0aa2-3118-48b6-b4fb-ab35a81865e1",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "result": [ {
+        "reference": "Observation/12d2a7cd-c25f-41ba-ba0f-45597da75b37",
+        "display": "Rh Ig Scn Bld-Imp"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12d2a7cd-c25f-41ba-ba0f-45597da75b37",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "1314-4",
+          "display": "Rh Ig Scn Bld-Imp"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-09T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "d91aad1e-1916-4f71-971c-de5372660df6",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "result": [ {
+        "reference": "Observation/484b4774-172b-4170-b753-fe3f7cdb9daf",
+        "display": "HCG SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "484b4774-172b-4170-b753-fe3f7cdb9daf",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2119-6",
+          "display": "HCG SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84702",
+          "display": "Chorionic gonadotropin test"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "2707f108-2742-49ea-ba3f-59666c92742b",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "269934003",
+          "display": "Microbiology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "result": [ {
+        "reference": "Observation/bddfac0b-8667-4c29-8062-2ef8798d4620",
+        "display": "C trach Ag XXX Ql"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bddfac0b-8667-4c29-8062-2ef8798d4620",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "31777-6",
+          "display": "C trach Ag XXX Ql"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87270",
+          "display": "Chlamydia trachomatis ag if"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "121953005",
+          "display": "Measurement of Chlamydia pneumoniae antibody"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "260385009",
+          "display": "negative"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "638ba63d-ab47-4ee3-82d0-ca049549aa08",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "result": [ {
+        "reference": "Observation/9ba10d16-4c75-40dd-a333-81ab37968e2c",
+        "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9ba10d16-4c75-40dd-a333-81ab37968e2c",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "73906-0",
+          "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87389",
+          "display": "Hiv-1 ag w/hiv-1 & hiv-2 ab"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "171121004",
+          "display": "Human immunodeficiency virus screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "131194007",
+          "display": "non-reactive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "d61d93cd-ab44-4a16-a072-cd9303512488",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "248986005",
+          "display": "Estimated date of conception"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "onsetDateTime": "2010-02-06T10:00:00+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "7b1d74e2-958a-4d52-9de6-9432abac56a3",
+      "identifier": [ {
+        "use": "official",
+        "value": "e401f340-7be2-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "59410",
+          "display": "Obstetrical care"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "169961004",
+          "display": "Normal birth"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "performedPeriod": {
+        "start": "2010-10-11T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "31712239-6c41-4893-a988-910648d1726f",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/dba7e7b5-db30-4375-b348-9e6569e8209b",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "dba7e7b5-db30-4375-b348-9e6569e8209b",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "318142",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "c7af4bc0-c929-43f3-8836-4367e748739f",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/4ef3c063-0c33-42f0-b96b-c56f8f6a672a",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-05T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "4ef3c063-0c33-42f0-b96b-c56f8f6a672a",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "05e8355f-9159-4d30-8f23-f0a84947633e",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/3b0e6373-f162-4adb-97fe-e6094af1db47",
+        "display": "1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe"
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-08-21T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "3b0e6373-f162-4adb-97fe-e6094af1db47",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "731378",
+          "display": "1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ed415781-383a-41ee-8dd8-2fb2ac98ff46",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-31T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec01ec64-c9b2-4139-a307-396aa682381c",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-26T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4551e8fd-3393-4cfd-98f7-19e4b9701b4d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-26T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 116,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "627ad64a-c50c-4e79-8ade-28bb0ecce322",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 70,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "30791298-97fc-42a4-bc9d-3e962d482dce",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/00f31cde-86dc-4406-9810-32dbbd5f0f35",
+        "display": "Allison Stokes"
+      },
+      "effectivePeriod": {
+        "start": "2010-05-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 114,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  } ]
+}

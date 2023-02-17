@@ -1,0 +1,1238 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "abfa9cce-8728-424b-9971-dfe70013b8e6",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1",
+        "value": "310936"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of episode note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "date": "2014-03-07T12:16:13+01:00",
+      "author": [ {
+        "reference": "Practitioner/a268f45d-7850-45e6-bf30-d85c7755f8d7",
+        "display": "Henry Seven"
+      }, {
+        "reference": "Practitioner/a268f45d-7850-45e6-bf30-d85c7755f8d7"
+      } ],
+      "title": "Summary of Care",
+      "confidentiality": "R",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2014-03-07T08:48:03+01:00",
+        "party": {
+          "reference": "Practitioner/66c2d8a6-639c-49d3-b506-1f3e1a9cac34",
+          "display": "Fname Lname"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/19859423-5f9f-45e3-9e0f-04cf056e3bc6",
+        "display": "Get Well Clinic"
+      },
+      "event": [ {
+        "period": {
+          "start": "2012-08-06T12:00:00+02:00",
+          "end": "2012-08-06T12:00:00+02:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/3fcd48a7-992d-4da5-9b5e-c00ceb0f6af8",
+          "display": "Fname Lname"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, Adverse Reactions, Alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Allergy</th><th>Date</th><th>Reaction Status</th><th>Severity Status</th></tr></thead><tbody><tr><td>Bicillin L-A</td><td>Onset: Not Indicated</td><td>Hives</td><td>Very Mild</td></tr><tr><td>Codeine Phosphate</td><td>Onset: Not Indicated</td><td>Shortness of breath</td><td>Mild</td></tr><tr><td>Aspirin</td><td>Onset: Not Indicated</td><td>Hives</td><td>Moderate</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/be1afa7e-6ba2-4ff6-b346-bd82e32b5d28",
+          "display": "Codeine Phosphate"
+        }, {
+          "reference": "AllergyIntolerance/9fb3421a-35fc-4488-95ca-09586f02617d",
+          "display": "Bicillin L-A"
+        }, {
+          "reference": "AllergyIntolerance/fcccfabc-c5af-4ac6-9e11-146943ae277c",
+          "display": "Aspirin"
+        } ]
+      }, {
+        "title": "Functional Status",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5",
+            "display": "Functional Status"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Functional</th><th>Date</th></tr></thead><tbody><tr><td>No functional Status Indicated</td><td>Not Applicable</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Immunizations",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of Immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Vaccine</th><th>Date</th><th>Delivery Status</th></tr></thead><tbody><tr><td>tetanus toxoid, unspecified formulation</td><td>2007-01-04</td><td>Historical</td></tr><tr><td>Influenza, seasonal, injectable, preservative free</td><td>2009-11-01</td><td>Historical</td></tr><tr><td>Influenza, seasonal, injectable, preservative free</td><td>2010-09-10</td><td>Historical</td></tr><tr><td>Pneumococcal, 23-valent, adult</td><td>2012-08-06</td><td>Historical</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/4069c53c-49d1-4d31-acdb-f51e11e25aa1",
+          "display": "Influenza, seasonal, injectable, preservative free"
+        }, {
+          "reference": "Immunization/c3de9cd4-f30c-4301-9008-0f5985acdedc",
+          "display": "tetanus toxoid, unspecified formulation"
+        }, {
+          "reference": "Immunization/5b01f947-1380-4405-aeba-f8da1d2a6fd2",
+          "display": "Pneumococcal, 23-valent, adult"
+        }, {
+          "reference": "Immunization/0529452d-8fe4-494f-8bf7-2bcbaf65adc1",
+          "display": "Influenza, seasonal, injectable, preservative free"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Test Name</th><th>Value</th><th>Date</th></tr></thead><tbody><tr><td>HGB</td><td>14.2 g/dL</td><td>2013-11-04</td></tr><tr><td>HCT</td><td>45 %</td><td>2013-11-04</td></tr><tr><td>WBC</td><td>7.6 10*3/ul</td><td>2013-11-04</td></tr><tr><td>PLT</td><td>220 10*3/ul</td><td>2013-11-04</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/2f65694b-4b0d-4fa7-b164-9626ad514afa",
+          "display": "Complete CBC"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of Encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Encounter Type </th><th>Location Name</th><th>Performer</th><th>Date of Service</th></tr></thead><tbody><tr><td>No Encounters Indicated</td><td> </td><td> </td><td> </td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/4feb6b00-ce4c-42aa-80d1-7cc8132e5d0f"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Material</th><th>RXnormCode</th><th>GenericName</th><th>ProductStrength</th><th>StartDate</th><th>StopDate</th><th>SIG</th></tr></thead><tbody><tr><td>Proventil (albuterol) inhalation aerosol</td><td>RxNorm: 307782</td><td>albuterol</td><td>90 mcg/inh</td><td>2012-08-06</td><td>Not Indicated</td><td>2 puffs once</td></tr><tr><td>Clarithromycin oral tablet</td><td>RxNorm: 197517</td><td>clarithromycin</td><td>500 mg</td><td>Not Indicated</td><td>Not Indicated</td><td>by mouth twice daily for 7 days</td></tr><tr><td>Metoprolol Tartrate (metoprolol) oral tablet</td><td>RxNorm: 866924</td><td>metoprolol</td><td>25 mg</td><td>Not Indicated</td><td>Not Indicated</td><td>by mouth once daily</td></tr><tr><td>Proventil (albuterol) inhalation aerosol</td><td>RxNorm: 307782</td><td>albuterol</td><td>90 mcg/inh</td><td>Not Indicated</td><td>Not Indicated</td><td>2 puffs every 6 hours PRN wheezing</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/45a8fc21-5b50-410f-8d06-932df0ce1a74",
+          "display": "albuterol 90 mcg/inh"
+        }, {
+          "reference": "MedicationStatement/85a6144a-beaf-45ec-9322-299853693df3",
+          "display": "metoprolol 25 mg"
+        }, {
+          "reference": "MedicationStatement/eea2d854-bd35-44b7-9e3d-a51de21ee050",
+          "display": "albuterol 90 mcg/inh"
+        }, {
+          "reference": "MedicationStatement/ac6cfce9-8228-4b1d-93c7-a108fb29058d",
+          "display": "clarithromycin 500 mg"
+        } ]
+      }, {
+        "title": "Problem List",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem List"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Problem Description</th><th>Problem StartDate</th><th>Status</th></tr></thead><tbody><tr><td>Viral pneumonia, unspecified</td><td>2012-08-01</td><td>active</td></tr><tr><td>Asthma, unspecified type, unspecified</td><td>2012-08-01</td><td>active</td></tr><tr><td>Hypoxemia</td><td>2012-08-01</td><td>active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/f0a91b30-d7af-4c9c-a1c0-7c400c4eae13",
+          "display": "Asthma, unspecified type, unspecified"
+        }, {
+          "reference": "Condition/55646739-ad76-4aaa-a2f4-ba6921b62327",
+          "display": "Hypoxemia"
+        }, {
+          "reference": "Condition/7a749d7e-f774-4c8f-b114-37a7f900e9a8",
+          "display": "Viral pneumonia, unspecified"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "Procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Procedure</th><th>Date</th></tr></thead><tbody><tr><td>No Procedures Indicated</td><td>Not Applicable</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/db9902e9-c6e7-47fc-a487-9c9519027cec"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Social History</th><th>Effective Date</th></tr></thead><tbody><tr><td>Smoker, current status unknown</td><td>1992-01-01</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/74053c4a-0f32-4645-82b1-d1fadc190287"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Caucasian or European American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "Caucasian or European American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "DCAC180E-B41C-4EF0-A066-A57429BAB8FF"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Jones",
+        "given": [ "Isabella" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1947-05-01",
+      "address": [ {
+        "use": "home",
+        "line": [ "No Address Indicated" ],
+        "city": "No City Indicated",
+        "state": "CA",
+        "postalCode": "99999",
+        "country": "United States of America"
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/4568315a-150a-4310-91e2-fd022e474e17",
+        "display": "Get Well Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "4568315a-150a-4310-91e2-fd022e474e17",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936"
+      } ],
+      "name": "Get Well Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(415)427-2132",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Beaverton",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a268f45d-7850-45e6-bf30-d85c7755f8d7",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.1.3",
+        "value": "671158"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "Get Well Clinic Facility", "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "abe2f731-51a5-42e7-bba9-d2cfec09e7f9",
+      "practitioner": {
+        "reference": "Practitioner/a268f45d-7850-45e6-bf30-d85c7755f8d7",
+        "display": "Henry Seven"
+      },
+      "organization": {
+        "reference": "Organization/4568315a-150a-4310-91e2-fd022e474e17",
+        "display": "Get Well Clinic"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "208D00000X",
+          "display": "General Practice"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "66c2d8a6-639c-49d3-b506-1f3e1a9cac34",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.4.1.3",
+        "value": "605196"
+      } ],
+      "name": [ {
+        "family": "Lname",
+        "given": [ "Fname" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3fcd48a7-992d-4da5-9b5e-c00ceb0f6af8",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.1.1"
+      } ],
+      "name": [ {
+        "family": "Lname",
+        "given": [ "Fname" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "d461477a-38c2-46ea-9d37-1c3a736287c0",
+      "practitioner": {
+        "reference": "Practitioner/3fcd48a7-992d-4da5-9b5e-c00ceb0f6af8",
+        "display": "Fname Lname"
+      },
+      "organization": {
+        "reference": "Organization/4568315a-150a-4310-91e2-fd022e474e17",
+        "display": "Get Well Clinic"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "260000000X",
+          "display": "Ambulatory Health Care Facilities"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "19859423-5f9f-45e3-9e0f-04cf056e3bc6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936",
+        "value": "POCD_HD000040"
+      } ],
+      "name": "Get Well Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(415)427-2132",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Beaverton",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "be1afa7e-6ba2-4ff6-b346-bd82e32b5d28",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "82682824"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "601263",
+          "display": "Codeine Phosphate"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "recordedDate": "2013-11-25T08:36:03+01:00",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "267036007",
+            "display": "Shortness of breath"
+          } ]
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "9fb3421a-35fc-4488-95ca-09586f02617d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "82682824"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "731570",
+          "display": "Bicillin L-A"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "recordedDate": "2013-11-26T06:44:03+01:00",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "126485001",
+            "display": "Hives"
+          } ]
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "fcccfabc-c5af-4ac6-9e11-146943ae277c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "82682824"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "212033",
+          "display": "Aspirin"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "recordedDate": "2013-11-26T02:21:50+01:00",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "126485001",
+            "display": "Hives"
+          } ]
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "4069c53c-49d1-4d31-acdb-f51e11e25aa1",
+      "identifier": [ {
+        "use": "official",
+        "value": "D184C6E2-4720-4861-8DB7-029EE7D95A20"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "140",
+          "display": "Influenza, seasonal, injectable, preservative free"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "primarySource": false
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "c3de9cd4-f30c-4301-9008-0f5985acdedc",
+      "identifier": [ {
+        "use": "official",
+        "value": "EAE1A4B7-B683-46CE-8BF1-4A29ADF32842"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "112",
+          "display": "tetanus toxoid, unspecified formulation"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "primarySource": false
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "5b01f947-1380-4405-aeba-f8da1d2a6fd2",
+      "identifier": [ {
+        "use": "official",
+        "value": "DD97B43A-0641-4D92-A260-6BA694611296"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "33",
+          "display": "Pneumococcal, 23-valent, adult"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "primarySource": false
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "0529452d-8fe4-494f-8bf7-2bcbaf65adc1",
+      "identifier": [ {
+        "use": "official",
+        "value": "292FAC29-B512-412A-A19B-9DABDE370529"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "140",
+          "display": "Influenza, seasonal, injectable, preservative free"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "primarySource": false
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "2f65694b-4b0d-4fa7-b164-9626ad514afa",
+      "identifier": [ {
+        "use": "official",
+        "value": "A616429ef-629e-4efb-bc66-d64531c3abd6"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "1002",
+          "display": "Complete CBC"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2014-03-07T00:55:32+01:00"
+      },
+      "issued": "2014-03-07T00:55:32.000+01:00",
+      "result": [ {
+        "reference": "Observation/267009c4-8175-456e-a49f-2118e5dc6a40",
+        "display": "WBC"
+      }, {
+        "reference": "Observation/54fb4336-c35e-4074-8e66-4a2f63fc079b",
+        "display": "PLT"
+      }, {
+        "reference": "Observation/1801ff97-f2ec-4328-b66a-ab7b44713ef6",
+        "display": "HCT"
+      }, {
+        "reference": "Observation/19871f37-2121-4703-8d7b-3a2f9900b87e",
+        "display": "HGB"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "267009c4-8175-456e-a49f-2118e5dc6a40",
+      "identifier": [ {
+        "use": "official",
+        "value": "814AFA87-104D-4228-8C63-70411CE5B364"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "33765-9",
+          "display": "WBC"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2013-11-04T08:35:51+01:00"
+      },
+      "valueQuantity": {
+        "value": 7.6,
+        "unit": "10*3/ul",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/ul"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "54fb4336-c35e-4074-8e66-4a2f63fc079b",
+      "identifier": [ {
+        "use": "official",
+        "value": "517E58C2-E43F-4615-852D-35F73C00DF95"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "26515-7",
+          "display": "PLT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2013-11-04T08:35:51+01:00"
+      },
+      "valueQuantity": {
+        "value": 220,
+        "unit": "10*3/ul",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/ul"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1801ff97-f2ec-4328-b66a-ab7b44713ef6",
+      "identifier": [ {
+        "use": "official",
+        "value": "E29AD808-BE6F-4ADC-A251-64D541859A7C"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "20570-8",
+          "display": "HCT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2013-11-04T08:35:51+01:00"
+      },
+      "valueQuantity": {
+        "value": 45,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "19871f37-2121-4703-8d7b-3a2f9900b87e",
+      "identifier": [ {
+        "use": "official",
+        "value": "367B4FC3-9EC9-4351-A926-A24815FD2154"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "30313-1",
+          "display": "HGB"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2013-11-04T08:35:51+01:00"
+      },
+      "valueQuantity": {
+        "value": 14.2,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4feb6b00-ce4c-42aa-80d1-7cc8132e5d0f",
+      "identifier": [ {
+        "use": "official",
+        "system": "Ab87823e5-4247-46dc-838c-2f154dafdd99",
+        "value": "1"
+      } ],
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "45a8fc21-5b50-410f-8d06-932df0ce1a74",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/5df301e4-bfdc-4e02-99bb-d9fd90882a1e",
+        "display": "albuterol 90 mcg/inh"
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "5df301e4-bfdc-4e02-99bb-d9fd90882a1e",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "307782",
+          "display": "albuterol 90 mcg/inh"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "85a6144a-beaf-45ec-9322-299853693df3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/9c6b1f10-e37d-4943-aa9a-479a97575cc4",
+        "display": "metoprolol 25 mg"
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "9c6b1f10-e37d-4943-aa9a-479a97575cc4",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866924",
+          "display": "metoprolol 25 mg"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "eea2d854-bd35-44b7-9e3d-a51de21ee050",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/5df301e4-bfdc-4e02-99bb-d9fd90882a1e",
+        "display": "albuterol 90 mcg/inh"
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T07:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "ac6cfce9-8228-4b1d-93c7-a108fb29058d",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/2f2206e7-9a34-4347-9793-447ffdf4436b",
+        "display": "clarithromycin 500 mg"
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "2f2206e7-9a34-4347-9793-447ffdf4436b",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197517",
+          "display": "clarithromycin 500 mg"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f0a91b30-d7af-4c9c-a1c0-7c400c4eae13",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
+        "value": "A66621245-3082-4e9b-a59f-c19be04d7066"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.90",
+          "display": "Asthma, unspecified type, unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "onsetDateTime": "2012-08-01T07:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "55646739-ad76-4aaa-a2f4-ba6921b62327",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
+        "value": "A1403e1b0-bf2d-4842-b851-883efad323ce"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "799.02",
+          "display": "Hypoxemia"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "onsetDateTime": "2012-08-01T07:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "7a749d7e-f774-4c8f-b114-37a7f900e9a8",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
+        "value": "A72101f83-b18b-4f88-a6da-64a70c05e139"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "480.9",
+          "display": "Viral pneumonia, unspecified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "onsetDateTime": "2012-08-01T07:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "db9902e9-c6e7-47fc-a487-9c9519027cec",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.9"
+      } ],
+      "status": "completed",
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "74053c4a-0f32-4645-82b1-d1fadc190287",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/c7e2ce64-5aae-4d03-acf7-ccf66e7c99d4",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "1992-01-01T08:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "77176002",
+          "display": "Smoker, current status unknown"
+        } ]
+      }
+    }
+  } ]
+}

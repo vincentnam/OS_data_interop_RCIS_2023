@@ -1,0 +1,1562 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "385c11fc-1ec8-49c5-a389-231b12e43645",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.1",
+        "value": "66670992"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18842-5",
+          "display": "DISCHARGE SUMMARIZATION NOTE"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "date": "2013-01-30T08:00:51-05:00",
+      "author": [ {
+        "reference": "Practitioner/387fdcc5-7b28-4259-abd8-e97efe57fe5c",
+        "display": "Dr Aaron Admit"
+      }, {
+        "reference": "Device/351e853f-44f3-4714-a664-f9fbd7d3e067"
+      } ],
+      "title": "Discharge Summary",
+      "confidentiality": "V",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-01-30T08:00:51-05:00",
+        "party": {
+          "reference": "Practitioner/387fdcc5-7b28-4259-abd8-e97efe57fe5c",
+          "display": "Dr Aaron Admit"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2013-01-30T08:00:51-05:00",
+        "party": {
+          "reference": "Practitioner/387fdcc5-7b28-4259-abd8-e97efe57fe5c",
+          "display": "Dr Aaron Admit"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/1292c7f3-b254-442e-a216-67fe9cc612c5",
+        "display": "Local Community Hospital"
+      },
+      "event": [ {
+        "period": {
+          "start": "2012-08-15T09:00:51+02:00",
+          "end": "2013-01-30T08:00:51-05:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/387fdcc5-7b28-4259-abd8-e97efe57fe5c",
+          "display": "Dr Aaron Admit"
+        }, {
+          "reference": "Practitioner/8a397a09-9eac-4512-9bf8-6160c47e6ef9",
+          "display": "Nancy Nightingale RN"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Functional Status",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5",
+            "display": "Functional Status"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><caption>Functional Status Health Issues</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Dependence on walking stick</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>2-Oct-2012</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr></tbody></table></li></ul><ul><caption>Cognitive Status Health Issues</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Memory Impairment</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>2-Oct-2012</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr></tbody></table></li></ul></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><caption>Smoking Status</caption><li><span>Never smoker</span><span> Started 2012</span></li></ul></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/3985b85c-4ce4-40d8-81f1-7e13238d7c72",
+          "display": "Assertion"
+        } ]
+      }, {
+        "title": "Plan of Care",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of Care"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><caption>Planned Observations</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Goal: stress management surveillance</span></span></span></td><td><span><span>On </span><span>2-Oct-2012</span></span><span><br/></span><span><span/></span></td><td><span><span>Goal</span></span></td></tr></tbody></table></li></ul></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/0c44f994-6076-43ad-a1f7-c8c2b5b7bcb6"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "History of Procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span>Intranasal oxygen therapy</span></td><td/><td/></tr><tr><td/><td/><td/></tr></tbody></table><table><thead><tr><th>Date</th><th>Description</th><th>Value</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Resulted on:</span></span><span><br/></span><span>2-Oct-2012</span></td><td><span>ECG</span></td><td><span>No abnormalities</span></td><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/9148add5-48c2-4f42-bbfe-0604a9ed4521",
+          "display": "ECG"
+        }, {
+          "reference": "Procedure/4094057f-4769-4f34-8104-ecceb7fcc162",
+          "display": "Intranasal oxygen therapy"
+        } ]
+      }, {
+        "title": "Allergies and Adverse Reactions",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Penicillin G benzathine</span></span></td><td><span><span><span>Onset<span>:</span></span><span>10-Jan-1998</span></span></span></td><td><span><span><span>Reaction: </span><span>Hives</span></span></span><span><br/></span><span><span>Status: </span><span>Active</span></span></td></tr><tr><td><span><span>Codeine</span></span></td><td><span><span><span>Onset<span>:</span></span><span>2-Oct-2012</span></span></span></td><td><span><span><span>Reaction: </span><span>Nausea</span></span></span><span><br/></span><span><span>Status: </span><span>Active</span></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/34ad4544-2f61-4669-aa12-317473683870",
+          "display": "Penicillin G benzathine"
+        }, {
+          "reference": "AllergyIntolerance/d8b5ad56-6eaa-4965-9a89-82e01c5cd377",
+          "display": "Codeine"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem List"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Angina</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>2-Oct-2012</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr><tr><td><span><span>Type II Diabetes</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>9-Jan-2009</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr><tr><td><span><span>Hypercholesterolemia</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>8-Aug-2008</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/956963f0-6db3-4ae4-ab56-476d7295f57b",
+          "display": "Type II Diabetes"
+        }, {
+          "reference": "Condition/8d65cfa2-e302-4254-a173-d8822f8ec717",
+          "display": "Angina"
+        }, {
+          "reference": "Condition/e04a7335-8808-4eec-9b4f-8bd85209b5a1",
+          "display": "Hypercholesterolemia"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "Encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tbody><tr><td><span><span>Hospital Admit</span></span><span><br/></span><span><span>Encounter Diagnosis: </span><span>Angina</span></span><span><span><span>Active</span></span></span><span><span>Local Community Hospital</span></span><span><br/></span><span><br/></span><span><span> Admit</span>, Aaron Dr </span></td><td><span><span>On </span><span>15-Aug-2012</span></span><span><br/></span><span><span>09:00</span></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/21cdcdc2-d7d8-4bac-b2fa-3b6c3ac2847f",
+          "display": "Hospital Admit"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests and/or laboratory data"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Date</th><th>Description</th><th>Value</th><th>Details</th></tr></thead><tbody><tr><td><span>Resulted on:</span><span><br/></span><span>2-Oct-2012</span></td><td colspan=\"2\"><span>BMP</span></td><td/><td/></tr><tr><td/><td><span>Na</span></td><td><span>135  mmol/L</span></td><td/></tr><tr><td/><td><span>K</span></td><td><span>3.5  mmol/L</span></td><td/></tr><tr><td/><td><span>Cl</span></td><td><span>110  mmol/L</span></td><td/></tr><tr><td/><td><span>CO2</span></td><td><span>25  mmol/L</span></td><td/></tr><tr><td/><td><span>BUN</span></td><td><span>25  mg/dL</span></td><td/></tr><tr><td/><td><span>Cr</span></td><td><span>1.0  mg/dL</span></td><td/></tr><tr><td/><td><span>Glu</span></td><td><span>199  mg/dL</span></td><td/></tr></tbody><tbody><tr><td><span><br/></span><span>2-Oct-2012</span></td><td><span>Troponin T</span></td><td><span>0.01  ng/ml</span></td><td/></tr><tr><td/><td/><td/><td/></tr></tbody><tbody><tr><td><span><br/></span><span>3-Oct-2012</span></td><td><span>Troponin T</span></td><td><span>0.01  ng/ml</span></td><td/></tr><tr><td/><td/><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/a1c78936-5adc-493e-83a9-414d9eaec11c",
+          "display": "BMP"
+        }, {
+          "reference": "DiagnosticReport/d28d554a-062c-427d-aaba-3a7d8257a377",
+          "display": "Troponin T"
+        }, {
+          "reference": "DiagnosticReport/11d01caf-845a-45e2-abdc-d0328f17399f",
+          "display": "Troponin T"
+        } ]
+      }, {
+        "title": "Immunization",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "Immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Influenza virus vaccine</span></span><span><br/></span></td><td><span><span>Administered on<span>:</span></span><span>2-Oct-2012</span></span></td><td><span><span> Site: </span><span><span>Left Arm</span></span></span><span><br/></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/5c632cd8-86ef-491c-b054-bca20475589b",
+          "display": "Influenza virus vaccine"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of medication use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Insulin aspart, human 100</span></span><span><br/></span><span><span><span>20 units sq TID/AC</span></span></span><span><br/></span><span><span><span>Three times daily before meals</span></span></span></td><td/><td><ul><li><table><tbody><tr><td><span> Started </span>8-Jan-2009</td></tr></tbody></table></li></ul><span><span/><span>Active</span></span></td></tr><tr><td><span><span>Lantus insulin</span></span><span><br/></span><span><span><span>20 units sq HS</span></span></span><span><br/></span><span><span><span>Once dainly before sleep</span></span></span></td><td/><td><ul><li><table><tbody><tr><td><span> Started </span>8-Jan-2009</td></tr></tbody></table></li></ul><span><span/><span>Active</span></span></td></tr><tr><td><span><span>Atorvastatin 40 MG Oral Tablet</span></span><span><br/></span><span><span><span>TAKE 1 TABLET once daily As Directed</span></span></span><span><br/></span><span><span/></span></td><td/><td><ul><li><table><tbody><tr><td><span> Started </span>8-Aug-2008</td></tr></tbody></table></li></ul><span><span/><span>Active</span></span></td></tr><tr><td><span><span>Aspirin 81 MG Oral Tablet</span></span><span><br/></span><span><span><span>TAKE 1 TABLET once daily As Directed</span></span></span><span><br/></span><span><span/></span></td><td/><td><ul><li><table><tbody><tr><td><span> Started </span>2-Oct-2012</td></tr></tbody></table></li></ul><span><span/><span>Active</span></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "876c5a46-ca0b-442c-b289-ad7d628660fe",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3",
+        "value": "110107073916280"
+      } ],
+      "name": [ {
+        "family": "Williams",
+        "given": [ "John" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-3333",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1947-04-07",
+      "address": [ {
+        "use": "home",
+        "line": [ "1234 Six Forks" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "US"
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/1292c7f3-b254-442e-a216-67fe9cc612c5",
+        "display": "Local Community Hospital"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "1292c7f3-b254-442e-a216-67fe9cc612c5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3",
+        "value": "3"
+      } ],
+      "name": "Local Community Hospital",
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-1014"
+      } ],
+      "address": [ {
+        "line": [ "4444 Hospital Way" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "387fdcc5-7b28-4259-abd8-e97efe57fe5c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "1111111111"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3",
+        "value": "91138"
+      } ],
+      "name": [ {
+        "family": "Admit",
+        "given": [ "Aaron" ],
+        "prefix": [ "Dr" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-1006"
+      } ],
+      "address": [ {
+        "line": [ "1006 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Device",
+      "id": "351e853f-44f3-4714-a664-f9fbd7d3e067",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.3.3",
+        "value": "3"
+      } ],
+      "manufacturer": "Sunrise Clinical System 11.200.4210.17305",
+      "type": {
+        "coding": [ {
+          "display": "Sunrise Clinical System 11.200.4210.17305"
+        } ]
+      },
+      "version": [ {
+        "value": "Sunrise Clinical System 11.200.4210.17305; Transform 4.1.1.18"
+      } ],
+      "owner": {
+        "reference": "Organization/1292c7f3-b254-442e-a216-67fe9cc612c5"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "8a397a09-9eac-4512-9bf8-6160c47e6ef9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3",
+        "value": "3333"
+      } ],
+      "name": [ {
+        "family": "Nightingale",
+        "given": [ "Nancy" ],
+        "suffix": [ "RN" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-1014"
+      } ],
+      "address": [ {
+        "line": [ "4444 Hospital Way" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3985b85c-4ce4-40d8-81f1-7e13238d7c72",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION",
+          "display": "Assertion"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012"
+      },
+      "issued": "2012-10-02T10:00:51+02:00",
+      "performer": [ {
+        "reference": "Practitioner/455231e5-188a-469f-bc2a-10390ae0cced"
+      } ],
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "455231e5-188a-469f-bc2a-10390ae0cced"
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "0c44f994-6076-43ad-a1f7-c8c2b5b7bcb6",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><caption>Planned Observations</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Goal: stress management surveillance</span></span></span></td><td><span><span>On </span><span>2-Oct-2012</span></span><span><br/></span><span><span/></span></td><td><span><span>Goal</span></span></td></tr></tbody></table></li></ul></div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "Plan of Care",
+      "description": "<div><ul><caption>Planned Observations</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Goal: stress management surveillance</span></span></span></td><td><span><span>On </span><span>2-Oct-2012</span></span><span><br></br></span><span><span></span></span></td><td><span><span>Goal</span></span></td></tr></tbody></table></li></ul></div>",
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9148add5-48c2-4f42-bbfe-0604a9ed4521",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.7",
+        "value": "456321"
+      } ],
+      "status": "preliminary",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "93000",
+          "display": "ECG"
+        } ],
+        "text": "ECG"
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueString": "No abnormalities"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "4094057f-4769-4f34-8104-ecceb7fcc162",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.7",
+        "value": "1122334455"
+      } ],
+      "status": "in-progress",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "71786000",
+          "display": "Intranasal oxygen therapy"
+        } ],
+        "text": "Intranasal oxygen therapy"
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "performedPeriod": {
+        "start": "2012-10-02"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "34ad4544-2f61-4669-aa12-317473683870",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.10",
+        "value": "613618700107"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.10",
+        "value": "613618700109"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7982",
+          "display": "Penicillin G benzathine"
+        } ],
+        "text": "Penicillin G benzathine"
+      },
+      "patient": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "1998-01-10",
+      "recordedDate": "1998-01-10",
+      "recorder": {
+        "reference": "Practitioner/a9ace638-b2b3-416c-8ab7-f063c8377f08"
+      },
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "247472004",
+            "display": "Hives"
+          } ],
+          "text": "Hives"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a9ace638-b2b3-416c-8ab7-f063c8377f08"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "d8b5ad56-6eaa-4965-9a89-82e01c5cd377",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.10",
+        "value": "624373800001"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.10",
+        "value": "637073500005"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "text": "Codeine"
+      },
+      "patient": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2012-10-02T10:00:51+02:00",
+      "recordedDate": "2012-10-02T10:00:51+02:00",
+      "recorder": {
+        "reference": "Practitioner/3c844838-c527-405d-b2d4-fabc918ed4aa"
+      },
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "422587007",
+            "display": "Nausea"
+          } ],
+          "text": "Nausea"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3c844838-c527-405d-b2d4-fabc918ed4aa"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "956963f0-6db3-4ae4-ab56-476d7295f57b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.1.2.1",
+        "value": "636842200007"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.1.2.1",
+        "value": "660100900011"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "190424003",
+          "display": "Type II Diabetes"
+        } ],
+        "text": "Type II Diabetes"
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2009-01-09",
+      "recordedDate": "2009-01-09T00:00:00-05:00",
+      "asserter": {
+        "reference": "Practitioner/0b5e9412-f229-408a-b913-5d304b20d6d5"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0b5e9412-f229-408a-b913-5d304b20d6d5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "8d65cfa2-e302-4254-a173-d8822f8ec717",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.1.2.1",
+        "value": "615028800003"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.1.2.1",
+        "value": "659935200001"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "194828000",
+          "display": "Angina"
+        } ],
+        "text": "Angina"
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2012-10-02",
+      "recordedDate": "2012-10-02T01:00:00-04:00",
+      "asserter": {
+        "reference": "Practitioner/4798adf8-ab1f-4be0-8fd2-07bf78a4ecf7"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "4798adf8-ab1f-4be0-8fd2-07bf78a4ecf7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "e04a7335-8808-4eec-9b4f-8bd85209b5a1",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.1.2.1",
+        "value": "6368422000072"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.1.2.1",
+        "value": "6601009000112"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "13644009",
+          "display": "Hypercholesterolemia"
+        } ],
+        "text": "Hypercholesterolemia"
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2008-08-08",
+      "recordedDate": "2008-08-08T01:00:00-04:00",
+      "asserter": {
+        "reference": "Practitioner/ede0b086-5e23-4ba3-bab6-5a795f7c6615"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ede0b086-5e23-4ba3-bab6-5a795f7c6615"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "21cdcdc2-d7d8-4bac-b2fa-3b6c3ac2847f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.3.4",
+        "value": "5283815"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99231",
+          "display": "UNK"
+        } ],
+        "text": "Hospital Admit"
+      } ],
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2012-08-15T09:00:51+02:00"
+        },
+        "individual": {
+          "reference": "Practitioner/387fdcc5-7b28-4259-abd8-e97efe57fe5c",
+          "display": "Dr Aaron Admit"
+        }
+      } ],
+      "period": {
+        "start": "2012-08-15T09:00:51+02:00"
+      },
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/d5db18df-6aaa-408a-94a9-0b519f047ff3",
+          "display": "Angina"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/122be938-e034-4aa6-8669-b8c46da2fd6a",
+          "display": "Local Community Hospital"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "d5db18df-6aaa-408a-94a9-0b519f047ff3",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.1.2.1",
+        "value": "55412"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "194828000",
+          "display": "Angina"
+        } ],
+        "text": "Angina"
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2012-10-02T10:00:51+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "122be938-e034-4aa6-8669-b8c46da2fd6a",
+      "name": "Local Community Hospital"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "a1c78936-5adc-493e-83a9-414d9eaec11c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "659988700005"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "24321-2",
+          "display": "BMP"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "issued": "2012-10-02T00:00:00.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/5891484f-f1a8-49fc-8331-6aeda823f2a5"
+      } ],
+      "result": [ {
+        "reference": "Observation/79023dca-e1cf-43e6-b4fa-13d96235f176",
+        "display": "CO2"
+      }, {
+        "reference": "Observation/05b3a9a2-7480-4ded-9baa-c9d5d90a24df",
+        "display": "Na"
+      }, {
+        "reference": "Observation/a8b321c9-69a8-4d17-8b35-eea203c0c72d",
+        "display": "Cr"
+      }, {
+        "reference": "Observation/53db1030-d45f-44cf-a10b-630f2321ae93",
+        "display": "K"
+      }, {
+        "reference": "Observation/1cfbf5e9-600f-408f-86b4-34dc90e1bec8",
+        "display": "Glu"
+      }, {
+        "reference": "Observation/b994f647-59d2-41a6-b872-800892076777",
+        "display": "BUN"
+      }, {
+        "reference": "Observation/d26484a9-1750-4812-adb2-67fcae47ffd7",
+        "display": "Cl"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5891484f-f1a8-49fc-8331-6aeda823f2a5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "79023dca-e1cf-43e6-b4fa-13d96235f176",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599887000034"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599889000034"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2028-9",
+          "display": "CO2"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueQuantity": {
+        "value": 25,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "05b3a9a2-7480-4ded-9baa-c9d5d90a24df",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599887000031"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599889000031"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2947-0",
+          "display": "Na"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueQuantity": {
+        "value": 135,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a8b321c9-69a8-4d17-8b35-eea203c0c72d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599887000036"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599889000036"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "38483-4",
+          "display": "Cr"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueQuantity": {
+        "value": 1.0,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "53db1030-d45f-44cf-a10b-630f2321ae93",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599887000032"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599889000032"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6298-4",
+          "display": "K"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueQuantity": {
+        "value": 3.5,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1cfbf5e9-600f-408f-86b4-34dc90e1bec8",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599887000037"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599889000037"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2339-0",
+          "display": "Glu"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueQuantity": {
+        "value": 199,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b994f647-59d2-41a6-b872-800892076777",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599887000035"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599889000035"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6299-2",
+          "display": "BUN"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueQuantity": {
+        "value": 25,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d26484a9-1750-4812-adb2-67fcae47ffd7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599887000033"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599889000033"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2069-3",
+          "display": "Cl"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueQuantity": {
+        "value": 110,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "d28d554a-062c-427d-aaba-3a7d8257a377",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "659988700005120"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin T"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "issued": "2012-10-02T00:00:00.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/1f386491-541b-4b16-ba69-7d82e0637e51"
+      } ],
+      "result": [ {
+        "reference": "Observation/fe38d654-fac0-4828-8208-0e96a4a4ecf4",
+        "display": "Troponin T"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "1f386491-541b-4b16-ba69-7d82e0637e51"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fe38d654-fac0-4828-8208-0e96a4a4ecf4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "65998870000391"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "65998890000391"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin T"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-02"
+      },
+      "valueQuantity": {
+        "value": 0.01,
+        "unit": "ng/ml",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/ml"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "11d01caf-845a-45e2-abdc-d0328f17399f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "65998870000512"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin T"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-03"
+      },
+      "issued": "2012-10-03T00:00:00.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/4e939ff8-2d5e-4c1f-af96-7473398a2b1b"
+      } ],
+      "result": [ {
+        "reference": "Observation/b7c41c9c-32fd-4905-a967-9b27c28f3721",
+        "display": "Troponin T"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "4e939ff8-2d5e-4c1f-af96-7473398a2b1b"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b7c41c9c-32fd-4905-a967-9b27c28f3721",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599887000039"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.5",
+        "value": "6599889000039"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin T"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2012-10-03"
+      },
+      "valueQuantity": {
+        "value": 0.01,
+        "unit": "ng/ml",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/ml"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "5c632cd8-86ef-491c-b054-bca20475589b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.4",
+        "value": "637382500009"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.99930.3.4.4",
+        "value": "637382500011"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "88",
+          "display": "Influenza virus vaccine"
+        } ],
+        "text": "Influenza virus vaccine"
+      },
+      "patient": {
+        "reference": "Patient/876c5a46-ca0b-442c-b289-ad7d628660fe",
+        "display": "John Williams"
+      },
+      "occurrenceDateTime": "2012-10-02",
+      "primarySource": true,
+      "site": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "368208006",
+          "display": "Left Arm"
+        } ]
+      },
+      "route": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/nci",
+          "code": "C28161",
+          "display": "INTRAMUSCULAR"
+        } ]
+      },
+      "performer": [ {
+        "function": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/v2/0443",
+            "code": "AP",
+            "display": "Administering Provider"
+          } ]
+        },
+        "actor": {
+          "reference": "Practitioner/8a397a09-9eac-4512-9bf8-6160c47e6ef9",
+          "display": "Nancy Nightingale RN"
+        }
+      } ]
+    }
+  } ]
+}

@@ -1,0 +1,889 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "49cf1f96-9832-4a5f-b532-984a66191ffb",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1",
+        "value": "310936"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of episode note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "date": "2014-05-07T01:33:40+02:00",
+      "author": [ {
+        "reference": "Practitioner/f2eb438e-66de-4c01-9002-addf29cbeeae",
+        "display": "Martin Green"
+      }, {
+        "reference": "Practitioner/f2eb438e-66de-4c01-9002-addf29cbeeae"
+      } ],
+      "title": "Summary of Care",
+      "confidentiality": "R",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2014-05-07T06:02:10+02:00",
+        "party": {
+          "reference": "Practitioner/4297a695-82e5-410f-8d36-7aa6c3e295c7",
+          "display": "Fname Lname"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/dad31abb-5527-4544-b348-4bd26cce6778",
+        "display": "Get Well Clinic"
+      },
+      "event": [ {
+        "period": {
+          "start": "2014-01-01T12:00:00+01:00",
+          "end": "2014-01-01T12:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/97145c64-79e2-4fbf-b1b3-27c00dadd810",
+          "display": "Fname Lname"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "Procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Procedure</th><th>Date</th></tr></thead><tbody><tr><td>Standard chest X-ray (procedure)</td><td>Performed: 2013-12-18</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/65d5093d-91d5-48a7-a3bf-c9440ecc7ed4",
+          "display": "Standard chest X-ray (procedure)"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Social History</th><th>Effective Date</th></tr></thead><tbody><tr><td>Never smoker</td><td>2013-12-17</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/bb7d21d7-d8fc-424e-b501-f99601048d63"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Not indicated</div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/0f884c9f-a8b5-4c42-8ec8-358a1af5cd29"
+        } ]
+      }, {
+        "title": "Problem List",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem List"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Problem Description</th><th>Problem StartDate</th><th>Status</th></tr></thead><tbody><tr><td>No Problems indicated</td><td> </td><td> </td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/140e386b-cdf2-4e83-8288-1bdf614cf6df"
+        } ]
+      }, {
+        "title": "Allergies",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, Adverse Reactions, Alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Allergy</th><th>Date</th><th>Reaction Status</th><th>Severity Status</th></tr></thead><tbody><tr><td>Bicillin L-A</td><td>Onset: Not Indicated</td><td>Hives</td><td>Very Mild</td></tr><tr><td>Aspirin</td><td>Onset: Not Indicated</td><td>Nausea</td><td>Mild</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/46ef5f4e-5bb2-4ce7-8a82-446271e40530",
+          "display": "Bicillin L-A"
+        }, {
+          "reference": "AllergyIntolerance/b72e3a2d-401b-43c6-afd6-5321fca04725",
+          "display": "Aspirin"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of Encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Encounter Type </th><th>Location Name</th><th>Performer</th><th>Date of Service</th></tr></thead><tbody><tr><td>Encounter: Encounter for &quot;check-up&quot; (procedure)</td><td>Get Well Clinic, 1002 Healthcare Dr., Beaverton, OR  97005 Phone: (415) 427-2132</td><td> Fname  Lname </td><td>2014-01-01</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/5a6a1009-c50b-4b01-b98b-e438b84872a5",
+          "display": "Encounter for \"check-up\" (procedure)"
+        } ]
+      }, {
+        "title": "Immunizations",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of Immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Vaccine</th><th>Date</th><th>Delivery Status</th></tr></thead><tbody><tr><td>No immunizations administered during visit</td><td>Not Applicable</td><td>Not Applicable</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/b9e4daa2-741a-484c-a24a-40c86a384bb3"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"95%\"><thead><tr><th>Material</th><th>RXnormCode</th><th>GenericName</th><th>ProductStrength</th><th>StartDate</th><th>StopDate</th><th>SIG</th></tr></thead><tbody><tr><td>Keflex (cephalexin) oral capsule</td><td>RxNorm: 212339</td><td>cephalexin</td><td>500 mg</td><td>2012-09-20</td><td>Not Indicated</td><td>4 times daily for 10 days</td></tr><tr><td>PROzac (FLUoxetine) oral capsule</td><td>RxNorm: 261287</td><td>FLUoxetine</td><td>40 mg</td><td>2011-11-10</td><td>Not Indicated</td><td>once daily</td></tr><tr><td>Synthroid (levothyroxine) oral tablet</td><td>RxNorm: 966247</td><td>levothyroxine</td><td>50 mcg (0.05 mg)</td><td>2010-04-15</td><td>Not Indicated</td><td>once daily</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/60e92591-16c5-4dce-863c-4bf3c3b05207",
+          "display": "levothyroxine 50 mcg (0.05 mg)"
+        }, {
+          "reference": "MedicationStatement/8081ceb6-846a-49ac-acde-c2474b405341",
+          "display": "cephalexin 500 mg"
+        }, {
+          "reference": "MedicationStatement/6bd58b96-aef3-4622-9928-d7a9afc8b4d8",
+          "display": "FLUoxetine 40 mg"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "e658e423-dce6-4227-9713-0084736993f7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "4A0D8938-A64B-41C9-8396-CF1869EA71C1"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Grant",
+        "given": [ "Mary" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1987-03-21",
+      "address": [ {
+        "use": "home",
+        "line": [ "No Address Indicated" ],
+        "city": "No City Indicated",
+        "state": "CA",
+        "postalCode": "99999",
+        "country": "United States of America"
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/e6d168e3-38e1-4073-88ba-4b8721561ad6",
+        "display": "Get Well Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "e6d168e3-38e1-4073-88ba-4b8721561ad6",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936"
+      } ],
+      "name": "Get Well Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(415)427-2132",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Beaverton",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "f2eb438e-66de-4c01-9002-addf29cbeeae",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.1.3",
+        "value": "683266"
+      } ],
+      "name": [ {
+        "family": "Green",
+        "given": [ "Martin" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "Get Well Clinic Facility", "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "9e0ad691-232d-4c62-b30c-0f881d1c135d",
+      "practitioner": {
+        "reference": "Practitioner/f2eb438e-66de-4c01-9002-addf29cbeeae",
+        "display": "Martin Green"
+      },
+      "organization": {
+        "reference": "Organization/e6d168e3-38e1-4073-88ba-4b8721561ad6",
+        "display": "Get Well Clinic"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "208D00000X",
+          "display": "General Practice"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "4297a695-82e5-410f-8d36-7aa6c3e295c7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.4.1.3",
+        "value": "605196"
+      } ],
+      "name": [ {
+        "family": "Lname",
+        "given": [ "Fname" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "97145c64-79e2-4fbf-b1b3-27c00dadd810",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.1.1"
+      } ],
+      "name": [ {
+        "family": "Lname",
+        "given": [ "Fname" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "bff8d102-5819-4041-87b8-308ff1151133",
+      "practitioner": {
+        "reference": "Practitioner/97145c64-79e2-4fbf-b1b3-27c00dadd810",
+        "display": "Fname Lname"
+      },
+      "organization": {
+        "reference": "Organization/e6d168e3-38e1-4073-88ba-4b8721561ad6",
+        "display": "Get Well Clinic"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.101",
+          "code": "260000000X",
+          "display": "Ambulatory Health Care Facilities"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "dad31abb-5527-4544-b348-4bd26cce6778",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936",
+        "value": "POCD_HD000040"
+      } ],
+      "name": "Get Well Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(415)427-2132",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Dr." ],
+        "city": "Beaverton",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "65d5093d-91d5-48a7-a3bf-c9440ecc7ed4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.9",
+        "value": "349"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "168731009",
+          "display": "Standard chest X-ray (procedure)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "performer": [ {
+        "actor": {
+          "reference": "Practitioner/a8c4086a-ede1-47dc-a224-f7ebf3621042",
+          "display": "Fname Lname"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a8c4086a-ede1-47dc-a224-f7ebf3621042",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.1.1.3",
+        "value": "605196"
+      } ],
+      "name": [ {
+        "family": "Lname",
+        "given": [ "Fname" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(555)555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "Get Well Clinic Facility", "1002 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States of America"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bb7d21d7-d8fc-424e-b501-f99601048d63",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "effectivePeriod": {
+        "start": "2013-12-17T08:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "0f884c9f-a8b5-4c42-8ec8-358a1af5cd29",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "result": [ {
+        "reference": "Observation/8409cc52-16e7-4691-b11a-13d69263c300"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8409cc52-16e7-4691-b11a-13d69263c300",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "140e386b-cdf2-4e83-8288-1bdf614cf6df",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.2.1"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "46ef5f4e-5bb2-4ce7-8a82-446271e40530",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "83900262"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "731570",
+          "display": "Bicillin L-A"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "recordedDate": "2013-12-18T03:51:13+01:00",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "126485001",
+            "display": "Hives"
+          } ]
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "b72e3a2d-401b-43c6-afd6-5321fca04725",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.3388.1.1.1.310936.3",
+        "value": "83900262"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "212033",
+          "display": "Aspirin"
+        } ]
+      },
+      "patient": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "recordedDate": "2013-12-18T08:51:30+01:00",
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "422587007",
+            "display": "Nausea"
+          } ]
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "5a6a1009-c50b-4b01-b98b-e438b84872a5",
+      "identifier": [ {
+        "use": "official",
+        "system": "A71277db8-8610-4912-9d29-46a11afd447f",
+        "value": "103583514"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185349003",
+          "display": "Encounter for \"check-up\" (procedure)"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2014-01-01T12:00:00+01:00",
+          "end": "2014-01-01T12:00:00+01:00"
+        },
+        "individual": {
+          "reference": "Practitioner/a8c4086a-ede1-47dc-a224-f7ebf3621042",
+          "display": "Fname Lname"
+        }
+      } ],
+      "period": {
+        "start": "2014-01-01T12:00:00+01:00",
+        "end": "2014-01-01T12:00:00+01:00"
+      },
+      "location": [ {
+        "location": {
+          "reference": "Location/a20fb974-b6b3-4181-91ed-affb1f96ca23"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "a20fb974-b6b3-4181-91ed-affb1f96ca23",
+      "telecom": [ {
+        "system": "phone",
+        "value": "(415)427-2132",
+        "use": "work"
+      } ],
+      "address": {
+        "use": "work",
+        "country": "United States of America"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "b9e4daa2-741a-484c-a24a-40c86a384bb3",
+      "status": "not-done",
+      "patient": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "primarySource": false,
+      "doseQuantity": {
+        "value": 0,
+        "unit": "1",
+        "system": "http://unitsofmeasure.org/ucum.html"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "60e92591-16c5-4dce-863c-4bf3c3b05207",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/e3691d5e-ffc4-408b-8698-bf0371986137",
+        "display": "levothyroxine 50 mcg (0.05 mg)"
+      },
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "effectivePeriod": {
+        "start": "2010-04-15T07:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "e3691d5e-ffc4-408b-8698-bf0371986137",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "966247",
+          "display": "levothyroxine 50 mcg (0.05 mg)"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "8081ceb6-846a-49ac-acde-c2474b405341",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/f09f8f51-670c-4227-a140-91854c066fc4",
+        "display": "cephalexin 500 mg"
+      },
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "effectivePeriod": {
+        "start": "2012-09-20T07:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "f09f8f51-670c-4227-a140-91854c066fc4",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "212339",
+          "display": "cephalexin 500 mg"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "6bd58b96-aef3-4622-9928-d7a9afc8b4d8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/8b0db507-64c2-489b-8473-71cda7d8ef2e",
+        "display": "FLUoxetine 40 mg"
+      },
+      "subject": {
+        "reference": "Patient/e658e423-dce6-4227-9713-0084736993f7",
+        "display": "Mary Grant"
+      },
+      "effectivePeriod": {
+        "start": "2011-11-10T08:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "8b0db507-64c2-489b-8473-71cda7d8ef2e",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "261287",
+          "display": "FLUoxetine 40 mg"
+        } ]
+      }
+    }
+  } ]
+}

@@ -1,0 +1,118 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "2784ea27-8e30-4f2d-8a7e-40c36c4267c1",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.1",
+        "value": "TT988"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "11504-8",
+          "display": "Surgical Operation Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/de19275a-36b8-401a-aef7-60d8898fea83",
+        "display": "Lary Byrd"
+      },
+      "date": "2012-12-21T01:26:13+01:00",
+      "author": [ {
+        "reference": "Practitioner/e7266761-8738-4710-95fb-2d9efbd1aa39",
+        "display": "Gastroenterology Surgery"
+      } ],
+      "title": "Operative Report",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2012-12-21T01:26:13+01:00",
+        "party": {
+          "reference": "Practitioner/55159e8c-d9fd-480a-88a9-42051c276128",
+          "display": "Gastroenterology Surgery"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/de2fd344-7e44-48d1-a0cd-539f5d23b1e7",
+        "display": "Default Center"
+      },
+      "event": [ {
+        "period": {
+          "start": "2012-12-21",
+          "end": "2012-12-21"
+        },
+        "detail": [ {
+          "reference": "Practitioner/55159e8c-d9fd-480a-88a9-42051c276128",
+          "display": "Gastroenterology Surgery"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "de19275a-36b8-401a-aef7-60d8898fea83",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "33"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Byrd",
+        "given": [ "Lary" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1967-05-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e7266761-8738-4710-95fb-2d9efbd1aa39",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Surgery",
+        "given": [ "Gastroenterology" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "55159e8c-d9fd-480a-88a9-42051c276128",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Surgery",
+        "given": [ "Gastroenterology" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "de2fd344-7e44-48d1-a0cd-539f5d23b1e7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Default Center"
+    }
+  } ]
+}

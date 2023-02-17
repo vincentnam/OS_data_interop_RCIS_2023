@@ -1,0 +1,118 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "599d2335-cbf2-4632-ad3b-2f9936836ad8",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.1",
+        "value": "TT988"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "11504-8",
+          "display": "Surgical Operation Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/1456d084-7752-42e6-a54e-89416cf36322",
+        "display": "John Wayne"
+      },
+      "date": "2013-03-22T14:55:55+01:00",
+      "author": [ {
+        "reference": "Practitioner/89248ed5-3521-4718-ac2d-08f538a5e0b9",
+        "display": "Ophthalmology Surgery"
+      } ],
+      "title": "Operative Report",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-03-22T14:55:55+01:00",
+        "party": {
+          "reference": "Practitioner/0d095f53-abd7-4add-b587-f78be05097e8",
+          "display": "Ophthalmology Surgery"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/1ab9012c-ee40-4118-a649-924b176f674e",
+        "display": "Default Center"
+      },
+      "event": [ {
+        "period": {
+          "start": "2013-03-22",
+          "end": "2013-03-22"
+        },
+        "detail": [ {
+          "reference": "Practitioner/0d095f53-abd7-4add-b587-f78be05097e8",
+          "display": "Ophthalmology Surgery"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "1456d084-7752-42e6-a54e-89416cf36322",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "123"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Wayne",
+        "given": [ "John" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1965-01-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "89248ed5-3521-4718-ac2d-08f538a5e0b9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Surgery",
+        "given": [ "Ophthalmology" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0d095f53-abd7-4add-b587-f78be05097e8",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Surgery",
+        "given": [ "Ophthalmology" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "1ab9012c-ee40-4118-a649-924b176f674e",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Default Center"
+    }
+  } ]
+}

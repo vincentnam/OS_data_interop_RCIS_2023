@@ -1,0 +1,136 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "873d39f2-dd11-4fae-8919-6d8f338c654d",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.1",
+        "value": "TT988"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "11504-8",
+          "display": "Surgical Operation Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/9e4b149c-ee67-4f8b-89b8-f9db207457e4",
+        "display": "Dee Fault"
+      },
+      "date": "2013-06-25T17:39:43+02:00",
+      "author": [ {
+        "reference": "Practitioner/0eef5634-308a-468f-99e5-6ba3a0bbeb36",
+        "display": "General Surgery"
+      } ],
+      "title": "Operative Report",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-06-25T17:39:43+02:00",
+        "party": {
+          "reference": "Practitioner/43699393-ab13-4817-b8c4-0705f84ba249",
+          "display": "General Surgery"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/44468bb4-684a-4112-afbd-488340861550",
+        "display": "Default Center"
+      },
+      "event": [ {
+        "period": {
+          "start": "2013-06-25",
+          "end": "2013-06-25"
+        },
+        "detail": [ {
+          "reference": "Practitioner/43699393-ab13-4817-b8c4-0705f84ba249",
+          "display": "General Surgery"
+        } ]
+      }, {
+        "period": {
+          "start": "2013-06-25",
+          "end": "2013-06-25"
+        },
+        "detail": [ {
+          "reference": "Practitioner/43699393-ab13-4817-b8c4-0705f84ba249",
+          "display": "General Surgery"
+        } ]
+      }, {
+        "period": {
+          "start": "2013-06-25",
+          "end": "2013-06-25"
+        },
+        "detail": [ {
+          "reference": "Practitioner/43699393-ab13-4817-b8c4-0705f84ba249",
+          "display": "General Surgery"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "9e4b149c-ee67-4f8b-89b8-f9db207457e4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "1"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Fault",
+        "given": [ "Dee" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1960-01-01"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0eef5634-308a-468f-99e5-6ba3a0bbeb36",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Surgery",
+        "given": [ "General" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "43699393-ab13-4817-b8c4-0705f84ba249",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Surgery",
+        "given": [ "General" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "44468bb4-684a-4112-afbd-488340861550",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Default Center"
+    }
+  } ]
+}

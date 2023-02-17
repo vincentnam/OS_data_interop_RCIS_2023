@@ -1,0 +1,2029 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "64227a45-0d26-4b93-96c3-0ba38a83537b",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "date": "2014-04-16T11:55:18+02:00",
+      "author": [ {
+        "reference": "Practitioner/d54a9f23-43a5-44fb-98cf-c65347df03de",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/ae3f7ded-56a7-4e8d-ba52-a336a793d619",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:55:18+02:00",
+        "party": {
+          "reference": "Practitioner/ae3f7ded-56a7-4e8d-ba52-a336a793d619",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/c43975df-d0cd-48db-9533-b6846d03be08",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2006-05-17T10:00:00+02:00",
+          "end": "2011-01-05T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/88dfdd72-c30d-442e-9d12-2e101df42ba7",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Asthma Symptom Assessment Tool</td><td>SNOMED-CT</td><td>401011001</td><td><span/>Peak expiratory flow rate monitoring using diary</td><td>06-03-2010 10:00:00</td><td>Performed</td></tr><tr><td>Delivery Live Births-Procedure</td><td>CPT</td><td>59410</td><td><span/>Obstetrical care</td><td>01-02-2011 10:00:00</td><td>Performed</td></tr><tr><td/><td>SNOMED-CT</td><td>169961004</td><td>Normal birth</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/df8f4586-6949-4966-8fff-83b8c95ebffe",
+          "display": "Obstetrical care"
+        } ]
+      }, {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Moderate to severe</td><td>Moderately Susceptible</td><td>06-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Codeine</td><td>NDF-RT</td><td>N0000006691</td><td><span/>Codeine</td><td><span/>Moderate</td><td>Very susceptible</td><td>06-03-2010 10:00:00</td><td>Active</td></tr><tr><td>Neomycin</td><td>RxNorm</td><td>866041</td><td><span/>Neomycin Sulfate 500 MG</td><td><span/>Mild</td><td>Susceptible</td><td>06-03-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/76e1d5d1-f13a-4ce0-8dd2-3d4c69a9bbfe",
+          "display": "Codeine + Codeine"
+        }, {
+          "reference": "AllergyIntolerance/b5430a1e-eebe-40ee-8dc6-1c272f7b9615",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/9faac5d5-769a-45a8-a874-713095f71e79",
+          "display": "Neomycin + Neomycin Sulfate 500 MG"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Long acting inhaled beta 2 agonist</td><td>RxNorm</td><td>318142</td><td><span/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td><td>06-03-2010 10:00:00</td><td>Active</td></tr><tr><td>Short acting beta 2 agonist</td><td>RxNorm</td><td>630208</td><td><span/>Albuterol 0.83 MG/ML Inhalant Solution</td><td>06-03-2010 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/50275c6a-baae-4e6f-8d25-14a951d8434b",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        }, {
+          "reference": "MedicationStatement/4eb4596d-dbb4-4eae-95f8-efd32242a0a6",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Tobacco Use</td><td>SNOMED-CT</td><td>266919005</td><td><span/>Never smoker (Never Smoked)</td><td>06-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>SNOMED-CT</td><td>449868002</td><td>Current every day smoker</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/a4fdc31d-25a9-45fe-ae0f-2bf1f358eb93"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>06-03-2010 10:00:00</td><td>Performed</td></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>07-01-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Office &amp; Outpatient Consult</td><td>CPT</td><td>99241</td><td><span/>Office consultation</td><td>08-08-2010 10:00:00</td><td>Performed</td></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>09-03-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>10-30-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>11-27-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>12-11-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>12-17-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Prenatal Visit</td><td>SNOMED-CT</td><td>424619006</td><td><span/>Prenatal visit</td><td>12-24-2010 10:00:00</td><td>Performed</td></tr><tr><td/><td>ICD-10-CM</td><td>Z34.9</td><td>Encounter for supervision of normal pregnancy, unspecified</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Encounter Acute Inpt</td><td>CPT</td><td>99251</td><td><span/>Initial inpatient consult</td><td>01-02-2011 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Inpatient Discharge</td><td>CPT</td><td>99238</td><td><span/>Hospital discharge day</td><td>01-05-2011 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/1e54d502-b143-47cf-9e05-581265672348",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/33950207-45ff-432a-b78b-12a8ccd17fe3",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/eaff9784-1480-4d7c-b780-41beecb1028b",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/bbfe1dd9-b95c-4b56-8f83-5f949c482abd",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/11d3ae59-53ae-4097-ac4e-f7f8a1b5561b",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/f15b1ee6-d85c-4a3e-af27-e6a6d8de2344",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/3fc1a22d-cc9a-4ac4-bf70-8dbebf275a38",
+          "display": "Office consultation"
+        }, {
+          "reference": "Encounter/013c825b-934b-46a8-8e30-28af63594413",
+          "display": "Hospital discharge day"
+        }, {
+          "reference": "Encounter/dac45cc6-9fa8-48c2-b4a4-0d644c66422a",
+          "display": "Initial inpatient consult"
+        }, {
+          "reference": "Encounter/d0abc5a9-4990-4779-ab7b-6dc97b432275",
+          "display": "Prenatal visit"
+        }, {
+          "reference": "Encounter/32473306-8f82-4c80-9d24-62516cab0daf",
+          "display": "Prenatal visit"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>HIV</td><td>SNOMED-CT</td><td>91947003</td><td><span/>Asymptomatic human immunodeficiency virus infection</td><td>05-17-2006 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>Z21</td><td>Asymptomatic human immunodeficiency virus [HIV] infection status</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V08</td><td>Asymptomatic human immunodeficiency virus [HIV] infection status</td><td/><td/></tr><tr><td>Estimated Date of Conception</td><td>SNOMED-CT</td><td>248986005</td><td><span/>Estimated date of conception</td><td>04-07-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma</td><td>SNOMED-CT</td><td>195979001</td><td><span/>Asthma unspecified</td><td>06-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>J45</td><td>Asthma</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>493.92</td><td>Asthma, unspecified type, with (acute) exacerbation</td><td/><td/></tr><tr><td>Asthma Daytime Symptoms Quantified</td><td>SNOMED-CT</td><td>370202007</td><td><span/>Asthma causes daytime symptoms 1 to 2 times per month</td><td>06-03-2010 10:00:00</td><td>Active</td></tr><tr><td>Asthma Nighttime Symptoms Quantified</td><td>SNOMED-CT</td><td>370205009</td><td><span/>Asthma causes night symptoms 1 to 2 times per month</td><td>06-03-2010 10:00:00</td><td>Active</td></tr><tr><td>Pregnancy</td><td>SNOMED-CT</td><td>315903005</td><td><span/>Pregnant state, incidental</td><td>06-03-2010 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>Z33.1</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>V22.2</td><td>Pregnant state, incidental</td><td/><td/></tr><tr><td>Pregnancy-related diagnosis</td><td>SNOMED-CT</td><td>199305006</td><td><span/>Complications specific to multiple gestation</td><td>01-02-2011 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-10-CM</td><td>O30</td><td>Multiple gestation</td><td/><td/></tr><tr><td/><td>ICD-9-CM</td><td>651.90</td><td>Unspecified multiple gestation, unspecified as to episode of care or not applicable</td><td/><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/8df79223-4cea-401f-a29e-01bda4236a7d",
+          "display": "Asymptomatic human immunodeficiency virus infection"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Reference Range</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>HIV Screening</td><td>LOINC</td><td>73906-0</td><td><span/>HIV1+2 IgG Bld Ql EIA.rapid</td><td>non-reactive</td><td/><td>NA</td><td>05-17-2006 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>87389</td><td>Hiv-1 ag w/hiv-1 &amp; hiv-2 ab</td><td/><td/><td/><td/><td/></tr><tr><td/><td>SNOMED-CT</td><td>171121004</td><td>Human immunodeficiency virus screening</td><td/><td/><td/><td/><td/></tr><tr><td>Pregnancy Test</td><td>LOINC</td><td>2119-6</td><td><span/>HCG SerPl-sCnc</td><td>positive</td><td/><td>NA</td><td>06-03-2010 10:00:00</td><td>Completed</td></tr><tr><td/><td>CPT</td><td>84702</td><td>Chorionic gonadotropin test</td><td/><td/><td/><td/><td/></tr><tr><td>Rh Status Mother</td><td>LOINC</td><td>1314-4</td><td><span/>Rh Ig Scn Bld-Imp</td><td>positive</td><td/><td>NA</td><td>10-30-2010 10:00:00</td><td>Completed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/92391b55-2b5c-482c-8e04-4677ca24538a",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/2370e5e2-6197-41e5-b1bc-c38de23f9d64",
+          "display": "Serology"
+        }, {
+          "reference": "DiagnosticReport/77c784ae-22b9-442d-bba0-af7360ec4865",
+          "display": "Serology"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>23.5</td><td>kg/m2</td><td>06-03-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>78</td><td>mm[Hg]</td><td>10-30-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>10-30-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>82</td><td>mm[Hg]</td><td>11-27-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>132</td><td>mm[Hg]</td><td>11-27-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>12-11-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>130</td><td>mm[Hg]</td><td>12-11-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>80</td><td>mm[Hg]</td><td>12-17-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>132</td><td>mm[Hg]</td><td>12-17-2010 10:00:00</td><td>Finding</td></tr><tr><td>Diastolic Blood Pressure</td><td>LOINC</td><td>8462-4</td><td><span/>BP Diastolic</td><td>84</td><td>mm[Hg]</td><td>12-24-2010 10:00:00</td><td>Finding</td></tr><tr><td>Systolic Blood Pressure</td><td>LOINC</td><td>8480-6</td><td><span/>BP Systolic</td><td>134</td><td>mm[Hg]</td><td>12-24-2010 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/4aa26043-171e-4389-b8e3-92a9858faeae",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/612c3b1a-74b6-4f48-8bcc-67e574312b56",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/4643c9f1-ba9c-4e80-b34d-390137b716eb",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/09ec85c6-8c7d-4517-8b78-b9079f3b8457",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/b3ac12d1-173c-41dd-814a-84d13f38b959",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/2f87b180-c615-45a7-b227-7e5657897b67",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/8b93af8f-17f6-4313-9082-3797b01e8582",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/0ea219cb-fddc-46d6-ad70-40f73703f305",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/639c8bc5-db34-447c-bdb1-9ea50ad8e622",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/022dd626-42c1-4fe9-a796-8cd2ddee6bad",
+          "display": "BP Diastolic"
+        }, {
+          "reference": "Observation/db5dd962-628e-47ea-9d5a-1df3b3eeb24f",
+          "display": "BP Systolic"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1059",
+            "display": "Zen Buddhism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Benicia",
+          "state": "CA",
+          "postalCode": "94510",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Nguyen",
+        "given": [ "Pamela" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(954)454-0073",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "1976-12-15",
+      "address": [ {
+        "use": "home",
+        "line": [ "3398 West Fork Drive" ],
+        "city": "Hallandale Beach",
+        "state": "FL",
+        "postalCode": "33009",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Rainwater",
+          "given": [ "Vicki" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(402)731-0954",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "VickiWRainwater@fleckens.hu",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "289 Snowbird Lane" ],
+          "city": "Omaha",
+          "state": "NE",
+          "postalCode": "68107",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/3f4bf99c-8faa-4913-a057-f974858df51a",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "3f4bf99c-8faa-4913-a057-f974858df51a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "d54a9f23-43a5-44fb-98cf-c65347df03de",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ae3f7ded-56a7-4e8d-ba52-a336a793d619",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "88dfdd72-c30d-442e-9d12-2e101df42ba7",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "c43975df-d0cd-48db-9533-b6846d03be08",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "df8f4586-6949-4966-8fff-83b8c95ebffe",
+      "identifier": [ {
+        "use": "official",
+        "value": "e401f340-7be2-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "59410",
+          "display": "Obstetrical care"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "169961004",
+          "display": "Normal birth"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "performedPeriod": {
+        "start": "2011-01-02T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "76e1d5d1-f13a-4ce0-8dd2-3d4c69a9bbfe",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006691",
+          "display": "Codeine"
+        } ],
+        "text": "Codeine + Codeine"
+      },
+      "patient": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "recordedDate": "2010-06-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "b5430a1e-eebe-40ee-8dc6-1c272f7b9615",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "recordedDate": "2010-06-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "9faac5d5-769a-45a8-a874-713095f71e79",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866041",
+          "display": "Neomycin Sulfate 500 MG"
+        } ],
+        "text": "Neomycin + Neomycin Sulfate 500 MG"
+      },
+      "patient": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "recordedDate": "2010-06-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "50275c6a-baae-4e6f-8d25-14a951d8434b",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/dcf8d438-3226-43fb-a874-f805cd6d401e",
+        "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-03T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "dcf8d438-3226-43fb-a874-f805cd6d401e",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "630208",
+          "display": "Albuterol 0.83 MG/ML Inhalant Solution"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "4eb4596d-dbb4-4eae-95f8-efd32242a0a6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/1b120210-bb91-4655-ab33-5be576adf730",
+        "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-03T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "1b120210-bb91-4655-ab33-5be576adf730",
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "318142",
+          "display": "salmeterol 0.05 MG/ACTUAT Inhalant Powder"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a4fdc31d-25a9-45fe-ae0f-2bf1f358eb93",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19",
+        "value": "123456789"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-03T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker (Never Smoked)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "1e54d502-b143-47cf-9e05-581265672348",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-11-27T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "33950207-45ff-432a-b78b-12a8ccd17fe3",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-10-30T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "eaff9784-1480-4d7c-b780-41beecb1028b",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-06-03T10:00:00+02:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "315903005",
+          "display": "Pregnancy"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/40726d77-2103-475d-a706-94ba435899a3",
+        "display": "Asthma Nighttime Symptoms Quantified"
+      }, {
+        "reference": "Condition/88cddf51-67cd-41ac-bfc2-29169b0b7847",
+        "display": "Asthma"
+      }, {
+        "reference": "Condition/b2d13eb7-6fdd-4cd2-84dd-dfbc0142f1d0",
+        "display": "Pregnancy"
+      }, {
+        "reference": "Condition/f58d05ec-15a0-4592-8fa6-22667e8882e7",
+        "display": "Asthma Daytime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "40726d77-2103-475d-a706-94ba435899a3",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370205009",
+          "display": "Asthma Nighttime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "onsetDateTime": "2010-06-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "88cddf51-67cd-41ac-bfc2-29169b0b7847",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195979001",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "J45",
+          "display": "Asthma"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "493.92",
+          "display": "Asthma, unspecified type, with (acute) exacerbation"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "onsetDateTime": "2010-06-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "b2d13eb7-6fdd-4cd2-84dd-dfbc0142f1d0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "315903005",
+          "display": "Pregnancy"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z33.1",
+          "display": "Pregnant state, incidental"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "onsetDateTime": "2010-06-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f58d05ec-15a0-4592-8fa6-22667e8882e7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e703",
+        "value": "45665"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "370202007",
+          "display": "Asthma Daytime Symptoms Quantified"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "onsetDateTime": "2010-06-03T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "bbfe1dd9-b95c-4b56-8f83-5f949c482abd",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-12-17T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "11d3ae59-53ae-4097-ac4e-f7f8a1b5561b",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-12-11T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f15b1ee6-d85c-4a3e-af27-e6a6d8de2344",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-07-01T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "3fc1a22d-cc9a-4ac4-bf70-8dbebf275a38",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99241",
+          "display": "Office consultation"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-08-08T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "013c825b-934b-46a8-8e30-28af63594413",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99238",
+          "display": "Hospital discharge day"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2011-01-05T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "dac45cc6-9fa8-48c2-b4a4-0d644c66422a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99251",
+          "display": "Initial inpatient consult"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2011-01-02T10:00:00+01:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "199305006",
+          "display": "Pregnancy-related diagnosis"
+        } ]
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/f58d05ec-15a0-4592-8fa6-22667e8882e7",
+        "display": "Asthma Daytime Symptoms Quantified"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d0abc5a9-4990-4779-ab7b-6dc97b432275",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-09-03T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "32473306-8f82-4c80-9d24-62516cab0daf",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "424619006",
+          "display": "Prenatal visit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z34.9",
+          "display": "Encounter for supervision of normal pregnancy, unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V22.2",
+          "display": "Pregnant state, incidental"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "period": {
+        "start": "2010-12-24T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "8df79223-4cea-401f-a29e-01bda4236a7d",
+      "identifier": [ {
+        "use": "official",
+        "value": "9d3d416d-45ab-4da1-912f-4583e0632000"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "91947003",
+          "display": "Asymptomatic human immunodeficiency virus infection"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z21",
+          "display": "Asymptomatic human immunodeficiency virus [HIV] infection status"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V08",
+          "display": "Asymptomatic human immunodeficiency virus [HIV] infection status"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "onsetDateTime": "2006-05-17T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "92391b55-2b5c-482c-8e04-4677ca24538a",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "result": [ {
+        "reference": "Observation/8c5cefc9-6a0c-43bd-a4f8-06b2807f0a11",
+        "display": "HCG SerPl-sCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8c5cefc9-6a0c-43bd-a4f8-06b2807f0a11",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2119-6",
+          "display": "HCG SerPl-sCnc"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "84702",
+          "display": "Chorionic gonadotropin test"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-03T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "2370e5e2-6197-41e5-b1bc-c38de23f9d64",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "result": [ {
+        "reference": "Observation/6d99dc92-3240-47bd-ab83-6443c33fc8df",
+        "display": "Rh Ig Scn Bld-Imp"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6d99dc92-3240-47bd-ab83-6443c33fc8df",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "1314-4",
+          "display": "Rh Ig Scn Bld-Imp"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-30T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "positive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "77c784ae-22b9-442d-bba0-af7360ec4865",
+      "identifier": [ {
+        "use": "official",
+        "value": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "275711006",
+          "display": "Serology"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "result": [ {
+        "reference": "Observation/633457e1-b1e0-4d91-88ae-33309aeb7a07",
+        "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "633457e1-b1e0-4d91-88ae-33309aeb7a07",
+      "identifier": [ {
+        "use": "official",
+        "value": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "73906-0",
+          "display": "HIV1+2 IgG Bld Ql EIA.rapid"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "87389",
+          "display": "Hiv-1 ag w/hiv-1 & hiv-2 ab"
+        }, {
+          "system": "http://snomed.info/sct",
+          "code": "171121004",
+          "display": "Human immunodeficiency virus screening"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2006-05-17T10:00:00+02:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "131194007",
+          "display": "non-reactive"
+        } ]
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "NA"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4aa26043-171e-4389-b8e3-92a9858faeae",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-03T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 23.5,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "612c3b1a-74b6-4f48-8bcc-67e574312b56",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-24T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 134,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4643c9f1-ba9c-4e80-b34d-390137b716eb",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-24T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 84,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "09ec85c6-8c7d-4517-8b78-b9079f3b8457",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-30T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 78,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b3ac12d1-173c-41dd-814a-84d13f38b959",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-10-30T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2f87b180-c615-45a7-b227-7e5657897b67",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-17T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8b93af8f-17f6-4313-9082-3797b01e8582",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-17T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0ea219cb-fddc-46d6-ad70-40f73703f305",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-27T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 82,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "639c8bc5-db34-447c-bdb1-9ea50ad8e622",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-11-27T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 132,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "022dd626-42c1-4fe9-a796-8cd2ddee6bad",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-11T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "db5dd962-628e-47ea-9d5a-1df3b3eeb24f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ff7982a3-f120-442d-a588-5b53c0ea8b9c",
+        "display": "Pamela Nguyen"
+      },
+      "effectivePeriod": {
+        "start": "2010-12-11T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  } ]
+}

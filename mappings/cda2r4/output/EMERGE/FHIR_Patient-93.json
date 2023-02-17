@@ -1,0 +1,1102 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "3bb3c0a3-b68f-4d28-bc70-c26b8ac82c22",
+      "identifier": {
+        "use": "official",
+        "value": "db734647-fc99-424c-a864-7e3cda82e703"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of Episode Note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "date": "2014-04-16T11:54:48+02:00",
+      "author": [ {
+        "reference": "Practitioner/c8bc8b10-7762-4801-a3ed-98f5b38bd474",
+        "display": "Henry Seven MD"
+      } ],
+      "title": "Community Health and Hospitals: Health Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-04-18T09:00:00+05:00",
+        "party": {
+          "reference": "Practitioner/9708c4a9-3d61-4703-bdce-977192e8388d",
+          "display": "Henry Seven"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2014-04-16T11:54:48+02:00",
+        "party": {
+          "reference": "Practitioner/9708c4a9-3d61-4703-bdce-977192e8388d",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/da338b2d-e4fe-419e-a45f-c57c7616d5fd",
+        "display": "Community Health and Hospitals"
+      },
+      "event": [ {
+        "period": {
+          "start": "2009-03-17T10:00:00+01:00",
+          "end": "2011-03-26T10:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/74a74217-fcf3-4806-aee3-9c73fe27e779",
+          "display": "Henry Seven MD"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Allergies,  Adverse Reactions & Alerts",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Severity</th><th>Susceptibility</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Allergy to Eggs</td><td>UNII</td><td>291P45F896</td><td><span/>Eggs</td><td><span/>Mild to moderate</td><td>Susceptible</td><td>04-19-2009 10:00:00</td><td>Active</td></tr><tr><td/><td>ICD-9-CM</td><td>V15.03</td><td>Allergy to eggs</td><td/><td/><td/><td/></tr><tr><td>Bakers Yeast</td><td>RxNorm</td><td>892677</td><td><span/>Baker's yeast allergenic extract 100 MG/ML Injectable Solution</td><td><span/>Severe</td><td>Susceptible</td><td>04-19-2009 10:00:00</td><td>Active</td></tr><tr><td>Codeine</td><td>NDF-RT</td><td>N0000006691</td><td><span/>Codeine</td><td><span/>Mild</td><td>Moderately Susceptible</td><td>04-19-2009 10:00:00</td><td>Active</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/a4a5fe3d-3033-4578-ab2f-7ab2bea67e05",
+          "display": "Codeine + Codeine"
+        }, {
+          "reference": "AllergyIntolerance/344dbaf2-2bcd-49d5-9a0f-f50b58ff61b7",
+          "display": "Allergy to Eggs + Eggs"
+        }, {
+          "reference": "AllergyIntolerance/04966ff1-5c4a-439e-aa6a-197342925ec6",
+          "display": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital Signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>11.2</td><td>kg/m2</td><td>04-19-2009 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>13.1</td><td>kg/m2</td><td>05-21-2009 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>13.8</td><td>kg/m2</td><td>07-23-2009 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>15.7</td><td>kg/m2</td><td>09-25-2009 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>19.8</td><td>kg/m2</td><td>03-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>18.7</td><td>kg/m2</td><td>06-16-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>19.2</td><td>kg/m2</td><td>09-20-2010 10:00:00</td><td>Finding</td></tr><tr><td>BMI</td><td>LOINC</td><td>39156-5</td><td><span/>BMI</td><td>17.4</td><td>kg/m2</td><td>03-26-2011 10:00:00</td><td>Finding</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/509d93cb-b8c1-4e6b-8aa7-4b3e71530697",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/176f2768-95e0-4847-9621-a8f5dfcf1500",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/263ce53b-7c2c-4f4d-aef9-960cc0e5be5d",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/d987fbb7-2ef7-4e85-833b-5b3129840d2a",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/13e1c386-86b2-42e4-85a1-d3f4933dfc57",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/899dfad7-56be-4da1-9984-88d1271a64b3",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/449ee798-3247-4016-9b70-6363af7a244a",
+          "display": "BMI"
+        }, {
+          "reference": "Observation/d26ed74a-7212-42af-b41c-c645f7a9ce4f",
+          "display": "BMI"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>04-19-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>05-21-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>07-23-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>09-25-2009 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>03-20-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>06-16-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>09-20-2010 10:00:00</td><td>Performed</td></tr><tr><td>Encounter Outpatient-Children</td><td>ICD-10-CM</td><td>Z00.1</td><td><span/>Encounter for newborn, infant and child health examinations</td><td>03-26-2011 10:00:00</td><td>Performed</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/64907a91-af20-4846-8f64-1d3fe503bb14",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/f2b19819-4ec1-4957-a7a5-4e9b6a81162a",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/d2e71bed-d1e1-4d02-88ed-3f24279062d2",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/4709555f-201f-4141-b6db-fb7d48bbafe1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/64aa2922-944f-4be7-a453-588a4d3b2779",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/d12ecf7e-8545-4913-8445-924717bfc7ee",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/b966f51b-a146-4a67-988c-966db6f8ff15",
+          "display": "Encounter for newborn, infant and child health examinations"
+        }, {
+          "reference": "Encounter/2dbb1b65-62bd-493f-a97a-09a74e4eebc7",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication Use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No Information</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Results"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Value</th><th>Unit</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "HISTORY OF PROCEDURES"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "PROBLEM LIST"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Group Description</th><th>Code System</th><th>Code</th><th>Code Description</th><th>Date and Time</th><th>Status</th></tr></thead><tbody><tr><td>No data</td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "urn:oid:2.16.840.1.113883.5.1076",
+            "code": "1007",
+            "display": "Atheism"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Pasadena",
+          "state": "CA",
+          "postalCode": "91101",
+          "country": "US"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",
+        "value": "998991"
+      }, {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "111-00-2330"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Butler",
+        "given": [ "Samantha" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "(985)902-6969",
+        "use": "mobile"
+      } ],
+      "gender": "female",
+      "birthDate": "2009-03-19",
+      "address": [ {
+        "use": "home",
+        "line": [ "166 Wood Street" ],
+        "city": "Hammond",
+        "state": "LA",
+        "postalCode": "70401",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "Never Married"
+        } ]
+      },
+      "contact": [ {
+        "relationship": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code": "C",
+            "display": "Emergency Contact"
+          } ]
+        } ],
+        "name": {
+          "family": "Gutierrez",
+          "given": [ "Kathleen" ],
+          "prefix": [ "Ms." ]
+        },
+        "telecom": [ {
+          "system": "phone",
+          "value": "(915)747-7956",
+          "use": "home"
+        }, {
+          "system": "email",
+          "value": "KathleenCGutierrez@superrito.com",
+          "use": "work"
+        } ],
+        "address": {
+          "use": "home",
+          "line": [ "1136 Birch  Street" ],
+          "city": "El Paso",
+          "state": "TX",
+          "postalCode": "79901",
+          "country": "US"
+        }
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "spa"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/9b4f9041-086a-48d4-b7d2-dff054819536",
+        "display": "Community Health and Hospitals"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "9b4f9041-086a-48d4-b7d2-dff054819536",
+      "identifier": [ {
+        "use": "official",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-5000",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c8bc8b10-7762-4801-a3ed-98f5b38bd474",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "9708c4a9-3d61-4703-bdce-977192e8388d",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "999999999"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "74a74217-fcf3-4806-aee3-9c73fe27e779",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "PseudoMD-1"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ],
+        "suffix": [ "MD" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-555-555-5000",
+        "use": "home"
+      } ],
+      "address": [ {
+        "line": [ "1001 Village Avenue" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "da338b2d-e4fe-419e-a45f-c57c7616d5fd",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "99999999"
+      } ],
+      "name": "Community Health and Hospitals",
+      "telecom": [ {
+        "system": "phone",
+        "value": " 555-555-1002",
+        "use": "work"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1002 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "99123",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "a4a5fe3d-3033-4578-ab2f-7ab2bea67e05",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.5",
+          "code": "N0000006691",
+          "display": "Codeine"
+        } ],
+        "text": "Codeine + Codeine"
+      },
+      "patient": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "recordedDate": "2009-04-19T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "344dbaf2-2bcd-49d5-9a0f-f50b58ff61b7",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "food" ],
+      "code": {
+        "coding": [ {
+          "system": "http://fdasis.nlm.nih.gov",
+          "code": "291P45F896",
+          "display": "Eggs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "V15.03",
+          "display": "Allergy to eggs"
+        } ],
+        "text": "Allergy to Eggs + Eggs"
+      },
+      "patient": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "recordedDate": "2009-04-19T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "04966ff1-5c4a-439e-aa6a-197342925ec6",
+      "identifier": [ {
+        "use": "official",
+        "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "892677",
+          "display": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+        } ],
+        "text": "Bakers Yeast + Baker's yeast allergenic extract 100 MG/ML Injectable Solution"
+      },
+      "patient": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "recordedDate": "2009-04-19T10:00:00+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "509d93cb-b8c1-4e6b-8aa7-4b3e71530697",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "effectivePeriod": {
+        "start": "2009-07-23T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 13.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "176f2768-95e0-4847-9621-a8f5dfcf1500",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-06-16T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 18.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "263ce53b-7c2c-4f4d-aef9-960cc0e5be5d",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-09-20T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 19.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d987fbb7-2ef7-4e85-833b-5b3129840d2a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "effectivePeriod": {
+        "start": "2009-09-25T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 15.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "13e1c386-86b2-42e4-85a1-d3f4933dfc57",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "effectivePeriod": {
+        "start": "2010-03-20T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 19.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "899dfad7-56be-4da1-9984-88d1271a64b3",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "effectivePeriod": {
+        "start": "2009-04-19T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 11.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "449ee798-3247-4016-9b70-6363af7a244a",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "effectivePeriod": {
+        "start": "2009-05-21T10:00:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 13.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d26ed74a-7212-42af-b41c-c645f7a9ce4f",
+      "identifier": [ {
+        "use": "official",
+        "value": "c6f88321-67ad-11db-bd13-0800200c9a66"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "effectivePeriod": {
+        "start": "2011-03-26T10:00:00+01:00"
+      },
+      "valueQuantity": {
+        "value": 17.4,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "64907a91-af20-4846-8f64-1d3fe503bb14",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "period": {
+        "start": "2009-04-19T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "f2b19819-4ec1-4957-a7a5-4e9b6a81162a",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "period": {
+        "start": "2011-03-26T10:00:00+01:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d2e71bed-d1e1-4d02-88ed-3f24279062d2",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "period": {
+        "start": "2010-09-20T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "4709555f-201f-4141-b6db-fb7d48bbafe1",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "period": {
+        "start": "2009-09-25T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "64aa2922-944f-4be7-a453-588a4d3b2779",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "period": {
+        "start": "2009-07-23T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "d12ecf7e-8545-4913-8445-924717bfc7ee",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "period": {
+        "start": "2009-05-21T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "b966f51b-a146-4a67-988c-966db6f8ff15",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "period": {
+        "start": "2010-06-16T10:00:00+02:00"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "2dbb1b65-62bd-493f-a97a-09a74e4eebc7",
+      "identifier": [ {
+        "use": "official",
+        "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "Z00.1",
+          "display": "Encounter for newborn, infant and child health examinations"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/20dfe803-feb9-411c-b7a8-2a9dc3feb1f5",
+        "display": "Samantha Butler"
+      },
+      "period": {
+        "start": "2010-03-20T10:00:00+01:00"
+      }
+    }
+  } ]
+}

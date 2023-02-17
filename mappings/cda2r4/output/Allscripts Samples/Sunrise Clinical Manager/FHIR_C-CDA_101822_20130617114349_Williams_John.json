@@ -1,0 +1,1643 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "2c2cd1e6-fa23-4607-830f-62b21a0d5c04",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.1",
+        "value": "0"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "SUMMARIZATION OF EPISODE NOTE"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "date": "2013-06-17T11:43:21-04:00",
+      "author": [ {
+        "reference": "Practitioner/04a72503-acdd-4184-9361-4f5a88011f04",
+        "display": "Aaron Admit"
+      }, {
+        "reference": "Device/88e4c34d-127f-4099-ba34-e9696a2b5db0"
+      } ],
+      "title": "Visit Summary",
+      "confidentiality": "N",
+      "custodian": {
+        "reference": "Organization/3842f3ee-bafe-4426-b135-72ed38c547d8",
+        "display": "1 West-121-A S2V"
+      },
+      "event": [ {
+        "period": {
+          "start": "2012-10-02T23:54:00+02:00",
+          "end": "0001-01-01T00:00:00+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/10b901a8-91bb-4f7d-bf46-ab332dfdf6f5",
+          "display": "John O'Leary"
+        }, {
+          "reference": "Practitioner/3b57ba61-e8c3-49a4-8f78-249fe8b47116",
+          "display": "Nancy Nightingale"
+        }, {
+          "reference": "Practitioner/04a72503-acdd-4184-9361-4f5a88011f04",
+          "display": "Aaron Admit"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Assessments",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "51848-0",
+            "display": "Assessments"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <ul>              <li>                <span>Assessment excluded/not available</span>              </li>            </ul>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "ClinicalImpression/2d9b52d2-5ecb-44a3-9bd0-6bbccebed9f4",
+          "display": "Assessments"
+        } ]
+      }, {
+        "title": "Allergies and Adverse Reactions",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Name</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>penicillin G benzathine</span>                    </span>                  </td>                  <td>                    <span>                      <span>                        <span>Onset<span>:</span></span>                        <span>2-Oct-2012</span>                      </span>                    </span>                  </td>                  <td>                    <span>                      <span>                        <span>Reaction: </span>                        <span>Hives</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>Status: </span>                      <span>Active</span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>codeine</span>                    </span>                  </td>                  <td>                    <span>                      <span>                        <span>Onset<span>:</span></span>                        <span>2-Oct-2012</span>                      </span>                    </span>                  </td>                  <td>                    <span>                      <span>                        <span>Reaction: </span>                        <span>Nausea</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>Status: </span>                      <span>Active</span>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/d209da50-68f4-4810-b088-13d4f08c1bda",
+          "display": "penicillin G benzathine"
+        }, {
+          "reference": "AllergyIntolerance/330aee21-c0c2-48c2-9b3c-70c12cbcf695",
+          "display": "codeine"
+        } ]
+      }, {
+        "title": "Plan of Care",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of Care"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <ul>              <caption>Instructions</caption>              <li>                <span>                  <span>counseling provided during visit</span>                </span>              </li>            </ul>            <ul>              <caption>Planned Acts</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Oxygen Therapy</span>                          </span>                        </span>                      </td>                      <td>                        <span>                          <span>On </span>                          <span>2-Oct-2012</span>                        </span>                        <span>                          <br/>                        </span>                        <span>                          <span>:00 AM</span>                        </span>                      </td>                      <td>                        <span>                          <span>Request</span>                        </span>                      </td>                    </tr>                    <tr>                      <td>                        <span>                          <span>                            <span>Stress Management</span>                          </span>                        </span>                      </td>                      <td/>                      <td>                        <span>                          <span>Intent</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Observations</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>ECG</span>                          </span>                        </span>                      </td>                      <td>                        <span>                          <span>On </span>                          <span>2-Oct-2012</span>                        </span>                        <span>                          <br/>                        </span>                        <span>                          <span>:00 AM</span>                        </span>                      </td>                      <td>                        <span>                          <span>Request</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Medications</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>aspirin Tablet...</span>                        </span>                        <span>                          <br/>                        </span>                        <span>                          <span>                            <span>Give 81 milliGRAM(s) Oral 1 time per day with a meal</span>                          </span>                        </span>                        <span>                          <br/>                        </span>                        <span>                          <span/>                        </span>                      </td>                      <td>                        <span>                          <span>                            <span>:</span>                          </span>                          <span>23-May-2013</span>                        </span>                      </td>                      <td>                        <ul>                          <li>                            <table>                              <tbody>                                <tr>                                  <td>                                    <span> Started </span>2-Oct-2012</td>                                  <td>                                    <span> Ordered </span>30-Oct-2012</td>                                </tr>                              </tbody>                            </table>                          </li>                        </ul>                        <span>                          <span/>                          <span>Other</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/f2cdfc5a-9621-412f-a54d-53f3e161ce9a"
+        } ]
+      }, {
+        "title": "Immunization",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "Immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Name</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>influenza, NOS</span>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td>                    <span>                      <span>Administered on<span>:</span></span>                      <span>2-Oct-2012</span>                    </span>                  </td>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/4c60c82b-3b69-4b6b-8ca7-9ffcc1b5aab9",
+          "display": "influenza, NOS"
+        } ]
+      }, {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem List"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Name</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>Anginal pain</span>                    </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td>                    <span>                      <span>Onset<span>:</span></span>                      <span>2-Oct-2012</span>                    </span>                  </td>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Type II diabetes mellitus</span>                    </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td>                    <span>                      <span>Onset<span>:</span></span>                      <span>9-Jan-2009</span>                    </span>                  </td>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Hypercholesterolemia</span>                    </span>                    <span>                      <span/>                    </span>                    <span>                      <br/>                    </span>                  </td>                  <td>                    <span>                      <span>Onset<span>:</span></span>                      <span>8-Aug-2008</span>                    </span>                  </td>                  <td>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>Status: </span>                        <span>Active</span>                      </span>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/b582ffca-ddd3-4fd1-ac6f-228411e3f57b",
+          "display": "Anginal pain"
+        }, {
+          "reference": "Condition/f8f2add2-1eb8-49b1-841e-814a596b42f1",
+          "display": "Type II diabetes mellitus"
+        }, {
+          "reference": "Condition/ff27a7d4-d2b7-4ca7-b526-32898163e8f0",
+          "display": "Hypercholesterolemia"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <ul>              <caption>Smoking Status</caption>              <li>                <span>Never smoker</span>              </li>            </ul>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/50137817-c51a-4f52-af97-bdb7a2c97c68",
+          "display": "Assertion"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of medication use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Name</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>insulin aspart 100 units/mL subcutaneous solution</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>15 units subcutaneous 3 times a day (before meals)</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Quantity: </span>                                <span>                                  <span>1</span>                                </span>                              </td>                              <td>                                <span> Refills: </span>                                <span>                                  <span>2</span>                                </span>                              </td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>                        </span>                      </span>                    </span>                  </td>                  <td/>                  <td>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Started </span>9-Jan-2009</td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <span/>                      <span>Active</span>                    </span>                    <span>                      <span> Comments: </span>                      <span>Do not drink alcoholic beverages when taking this medication.Keep in refrigerator.  Do not freeze.Obtain medical advice before taking any non-prescription drugs as some may affect the action of this medication.</span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Lantus 100 units/mL subcutaneous solution</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>40 units subcutaneous once (at bedtime)</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Quantity: </span>                                <span>                                  <span>1</span>                                </span>                              </td>                              <td>                                <span> Refills: </span>                                <span>                                  <span>0</span>                                </span>                              </td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>                        </span>                      </span>                    </span>                  </td>                  <td/>                  <td>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Started </span>9-Jan-2009</td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <span/>                      <span>Active</span>                    </span>                    <span>                      <span> Comments: </span>                      <span>Do not drink alcoholic beverages when taking this medication.It is very important that you take or use this exactly as directed.  Do not skip doses or discontinue unless directed by your doctor.Keep in refrigerator.  Do not freeze.</span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>atorvastatin 40 mg oral tablet</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>1 tab(s) orally once a day</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Quantity: </span>                                <span>                                  <span>30</span>                                </span>                              </td>                              <td>                                <span> Refills: </span>                                <span>                                  <span>0</span>                                </span>                              </td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>                        </span>                      </span>                    </span>                  </td>                  <td/>                  <td>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Started </span>8-Aug-2008</td>                              <td>                                <span> Ended </span>6-Oct-2008</td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <span/>                      <span>Active</span>                    </span>                    <span>                      <span> Comments: </span>                      <span>Avoid grapefruit and grapefruit juice while taking this medication.Do not take this drug if you are pregnant.It is very important that you take or use this exactly as directed.  Do not skip doses or discontinue unless directed by your doctor.Obtain medical advice before taking any non-prescription drugs as some may affect the action of this medication.Take with food or milk.</span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td>                    <span>                      <span>Ascriptin Maximum Strength 75 mg-500 mg-75 mg-75 mg oral tablet</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>1 tab(s) orally every 6 hours</span>                      </span>                    </span>                    <span>                      <br/>                    </span>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Quantity: </span>                                <span>                                  <span>120</span>                                </span>                              </td>                              <td>                                <span> Refills: </span>                                <span>                                  <span>0</span>                                </span>                              </td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <br/>                    </span>                    <span>                      <span>                        <span>                        </span>                      </span>                    </span>                  </td>                  <td/>                  <td>                    <ul>                      <li>                        <table>                          <tbody>                            <tr>                              <td>                                <span> Started </span>23-May-2013</td>                              <td>                                <span> Ended </span>22-June-2013</td>                            </tr>                          </tbody>                        </table>                      </li>                    </ul>                    <span>                      <span/>                      <span>Active</span>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Functional Status",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5",
+            "display": "Functional Status"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <ul>              <caption>Functional Status Health Issues</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>Dependence on walking stick</span>                        </span>                        <span>                          <span/>                        </span>                        <span>                          <br/>                        </span>                      </td>                      <td>                        <span>                          <span>Onset<span>:</span></span>                          <span>2-Oct-2012</span>                        </span>                      </td>                      <td>                        <span>                          <span>                            <span>Status: </span>                            <span>Complete</span>                          </span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Cognitive Status Health Issues</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>Memory Impairment</span>                        </span>                        <span>                          <span/>                        </span>                        <span>                          <br/>                        </span>                      </td>                      <td>                        <span>                          <span>Onset<span>:</span></span>                          <span>2-Oct-2012</span>                        </span>                      </td>                      <td>                        <span>                          <span>                            <span>Status: </span>                            <span>Complete</span>                          </span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>          </div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests and/or laboratory data"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Date</th>                  <th>Description</th>                  <th>Value</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>                      <span>Resulted on:</span>                    </span>                    <span>                      <br/>                    </span>                    <span>23-May-2013 :29 AM</span>                  </td>                  <td>                    <span>Troponin T, Serum</span>                  </td>                  <td>                    <span>0.01  ng/mL</span>                  </td>                  <td>                    <span>Range: ng/mL</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td/>                  <td/>                  <td/>                </tr>              </tbody>              <tbody>                <tr>                  <td>                    <span>                      <br/>                    </span>                    <span>:26 AM</span>                  </td>                  <td colspan=\"2\">                    <span>Basic Metabolic Panel</span>                  </td>                  <td/>                  <td/>                </tr>                <tr>                  <td/>                  <td>                    <span>Potassium, Serum</span>                  </td>                  <td>                    <span>3.5  mMol/L</span>                  </td>                  <td>                    <span>Range: mMol/L</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td>                    <span>Sodium, Serum</span>                  </td>                  <td>                    <span>138  mMol/L</span>                  </td>                  <td>                    <span>Range: mMol/L</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td>                    <span>Glucose, Serum</span>                  </td>                  <td>                    <span>195  mg/dL</span>                  </td>                  <td>                    <span>Range: mg/dL</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td>                    <span>CO2, Whole Blood</span>                  </td>                  <td>                    <span>26  mMol/L</span>                  </td>                  <td>                    <span>Range: mMol/L</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td>                    <span>Chloride, Whole Blood</span>                  </td>                  <td>                    <span>100  mMol/L</span>                  </td>                  <td>                    <span>Range: mMol/L</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td>                    <span>Calcium, Total Serum</span>                  </td>                  <td>                    <span>1.0  mg/dL</span>                  </td>                  <td>                    <span>Range: mg/dL</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td>                    <span>Blood Urea Nitrogen, Serum</span>                  </td>                  <td>                    <span>15  mg/dL</span>                  </td>                  <td>                    <span>Range: mg/dL</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>              </tbody>              <tbody>                <tr>                  <td>                    <span>                      <br/>                    </span>                    <span>:27 AM</span>                  </td>                  <td>                    <span>Troponin T, Serum</span>                  </td>                  <td>                    <span>0.01  ng/mL</span>                  </td>                  <td>                    <span>Range: ng/mL</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td/>                  <td/>                  <td/>                </tr>              </tbody>              <tbody>                <tr>                  <td>                    <span>                      <br/>                    </span>                    <span>12:25 AM</span>                  </td>                  <td>                    <span>Creatine, Whole Blood</span>                  </td>                  <td>                    <span>1  mg/dL</span>                  </td>                  <td>                    <span>Range: mg/dL</span>                    <span>                      <br/>                    </span>                    <span>                      <span>                      </span>                    </span>                    <span>                      <br/>                    </span>                  </td>                </tr>                <tr>                  <td/>                  <td/>                  <td/>                  <td/>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/3ea1b985-b35d-4638-aaea-a8012cc52f9f",
+          "display": "Troponin T, Serum"
+        }, {
+          "reference": "DiagnosticReport/8592864b-c002-48d8-a75e-f38216551eaf",
+          "display": "Basic Metabolic Panel"
+        }, {
+          "reference": "DiagnosticReport/31c99dbc-71e6-4761-9c36-61ceb877e1d9",
+          "display": "Troponin T, Serum"
+        }, {
+          "reference": "DiagnosticReport/0403eb3f-56d2-446b-99ea-9c5d25d15841",
+          "display": "Creatine, Whole Blood"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "Encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <tbody>                <tr>                  <td>                    <span>                      <span>Inpatient</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span>Encounter Diagnosis: </span>                      <span>Anginal pain</span>                      <span>, </span>                      <span>Type II diabetes mellitus</span>                      <span>, </span>                      <span>Hypercholesterolemia</span>                    </span>                    <span>                      <span>                      </span>                      <span>                      </span>                      <span>                      </span>                      <span>                        <span>Active</span>                      </span>                      <span>                        <span>Active</span>                      </span>                      <span>                        <span>Active</span>                      </span>                    </span>                    <span>                      <span>1 West-121-A S2V</span>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <br/>                    </span>                    <span>                      <span> Admit</span>, Aaron </span>                  </td>                  <td>                    <span>                      <span>2-Oct-2012</span>                      <span> to </span>                      <span>1-Jan-0001</span>                    </span>                  </td>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/13aef9b2-037b-436b-9151-dfafc8f3be5d",
+          "display": "Inpatient"
+        } ]
+      }, {
+        "title": "Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "History of Procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <table>              <thead>                <tr>                  <th>Procedure</th>                  <th>Dates</th>                  <th>Details</th>                </tr>              </thead>              <tbody>                <tr>                  <td>                    <span>Procedure excluded/not available</span>                  </td>                  <td/>                  <td/>                </tr>              </tbody>            </table>          </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Procedure/bfb80d87-7238-4bd0-ba60-9a0efba8523a"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "3e6a758c-1bbe-4882-beec-947bdd138e3f",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Black or African American"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610",
+        "value": "101822"
+      } ],
+      "name": [ {
+        "use": "usual",
+        "family": "Williams",
+        "given": [ "John" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1947-04-07",
+      "address": [ {
+        "use": "home",
+        "line": [ "56 reef sting" ],
+        "city": "BEAVERTON",
+        "postalCode": "97005",
+        "country": "US"
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/3842f3ee-bafe-4426-b135-72ed38c547d8",
+        "display": "1 West-121-A S2V"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "3842f3ee-bafe-4426-b135-72ed38c547d8",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610",
+        "value": "100610"
+      } ],
+      "name": "1 West-121-A S2V",
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)777-0"
+      } ],
+      "address": [ {
+        "line": [ "1230 West Boulevard", "Building 1" ],
+        "city": "Harrisburg",
+        "postalCode": "17102",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "04a72503-acdd-4184-9361-4f5a88011f04",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "1108434006"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610",
+        "value": "118301190"
+      } ],
+      "name": [ {
+        "family": "Admit",
+        "given": [ "Aaron" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-1006",
+        "use": "work"
+      }, {
+        "system": "email",
+        "value": "Aaron.Admit@direct.medalliesdirect.com"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1006 Healthcare Drive" ],
+        "city": "Portland",
+        "postalCode": "97005-0001",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Device",
+      "id": "88e4c34d-127f-4099-ba34-e9696a2b5db0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.3.3",
+        "value": "100610"
+      } ],
+      "manufacturer": "Sunrise Clinical Manager ",
+      "type": {
+        "coding": [ {
+          "display": "Sunrise Clinical Manager "
+        } ]
+      },
+      "version": [ {
+        "value": "Sunrise Clinical Manager ; Transform 4.1.1.17"
+      } ],
+      "owner": {
+        "reference": "Organization/3842f3ee-bafe-4426-b135-72ed38c547d8"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "10b901a8-91bb-4f7d-bf46-ab332dfdf6f5",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "1417980269"
+      } ],
+      "name": [ {
+        "family": "O'Leary",
+        "given": [ "John" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(770)459-4905",
+        "use": "work"
+      }, {
+        "system": "email",
+        "value": "jroleary29@gmail.com"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "123 Main St" ],
+        "city": "Temple",
+        "postalCode": "30179-0000",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3b57ba61-e8c3-49a4-8f78-249fe8b47116",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "1276903451"
+      } ],
+      "name": [ {
+        "family": "Nightingale",
+        "given": [ "Nancy" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(610)678-2345",
+        "use": "work"
+      }, {
+        "system": "email",
+        "value": "Nancy.Nightingale@direct.medalliesdirect.com"
+      } ],
+      "address": [ {
+        "use": "work",
+        "line": [ "1004 Healthcare Dr" ],
+        "city": "Portland",
+        "postalCode": "97005-0000",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "ClinicalImpression",
+      "id": "2d9b52d2-5ecb-44a3-9bd0-6bbccebed9f4",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "51848-0",
+          "display": "Assessments"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "d209da50-68f4-4810-b088-13d4f08c1bda",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.10",
+        "value": "41700060"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7982",
+          "display": "penicillin G benzathine"
+        } ],
+        "text": "penicillin G benzathine"
+      },
+      "patient": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2012-10-02",
+      "recordedDate": "2012-10-02",
+      "recorder": {
+        "reference": "Practitioner/421be7f5-7020-49ae-be8b-48406c085cb9"
+      },
+      "reaction": [ {
+        "manifestation": [ {
+          "text": "Hives"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "421be7f5-7020-49ae-be8b-48406c085cb9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "330aee21-c0c2-48c2-9b3c-70c12cbcf695",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.10",
+        "value": "41800060"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "2670",
+          "display": "codeine"
+        } ],
+        "text": "codeine"
+      },
+      "patient": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2012-10-02",
+      "recordedDate": "2012-10-02",
+      "recorder": {
+        "reference": "Practitioner/5a55c45d-f70a-4f01-aee4-e1f4ae7f6cca"
+      },
+      "reaction": [ {
+        "manifestation": [ {
+          "text": "Nausea"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5a55c45d-f70a-4f01-aee4-e1f4ae7f6cca"
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "f2cdfc5a-9621-412f-a54d-53f3e161ce9a",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">            <ul>              <caption>Instructions</caption>              <li>                <span>                  <span>counseling provided during visit</span>                </span>              </li>            </ul>            <ul>              <caption>Planned Acts</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Oxygen Therapy</span>                          </span>                        </span>                      </td>                      <td>                        <span>                          <span>On </span>                          <span>2-Oct-2012</span>                        </span>                        <span>                          <br/>                        </span>                        <span>                          <span>:00 AM</span>                        </span>                      </td>                      <td>                        <span>                          <span>Request</span>                        </span>                      </td>                    </tr>                    <tr>                      <td>                        <span>                          <span>                            <span>Stress Management</span>                          </span>                        </span>                      </td>                      <td/>                      <td>                        <span>                          <span>Intent</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Observations</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>ECG</span>                          </span>                        </span>                      </td>                      <td>                        <span>                          <span>On </span>                          <span>2-Oct-2012</span>                        </span>                        <span>                          <br/>                        </span>                        <span>                          <span>:00 AM</span>                        </span>                      </td>                      <td>                        <span>                          <span>Request</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Medications</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>aspirin Tablet...</span>                        </span>                        <span>                          <br/>                        </span>                        <span>                          <span>                            <span>Give 81 milliGRAM(s) Oral 1 time per day with a meal</span>                          </span>                        </span>                        <span>                          <br/>                        </span>                        <span>                          <span/>                        </span>                      </td>                      <td>                        <span>                          <span>                            <span>:</span>                          </span>                          <span>23-May-2013</span>                        </span>                      </td>                      <td>                        <ul>                          <li>                            <table>                              <tbody>                                <tr>                                  <td>                                    <span> Started </span>2-Oct-2012</td>                                  <td>                                    <span> Ordered </span>30-Oct-2012</td>                                </tr>                              </tbody>                            </table>                          </li>                        </ul>                        <span>                          <span/>                          <span>Other</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>          </div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "Plan of Care",
+      "description": "<div>            <ul>              <caption>Instructions</caption>              <li>                <span>                  <span>counseling provided during visit</span>                </span>              </li>            </ul>            <ul>              <caption>Planned Acts</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>Oxygen Therapy</span>                          </span>                        </span>                      </td>                      <td>                        <span>                          <span>On </span>                          <span>2-Oct-2012</span>                        </span>                        <span>                          <br></br>                        </span>                        <span>                          <span>:00 AM</span>                        </span>                      </td>                      <td>                        <span>                          <span>Request</span>                        </span>                      </td>                    </tr>                    <tr>                      <td>                        <span>                          <span>                            <span>Stress Management</span>                          </span>                        </span>                      </td>                      <td></td>                      <td>                        <span>                          <span>Intent</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Observations</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>                            <span>ECG</span>                          </span>                        </span>                      </td>                      <td>                        <span>                          <span>On </span>                          <span>2-Oct-2012</span>                        </span>                        <span>                          <br></br>                        </span>                        <span>                          <span>:00 AM</span>                        </span>                      </td>                      <td>                        <span>                          <span>Request</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>            <ul>              <caption>Planned Medications</caption>              <li>                <table>                  <thead>                    <tr>                      <th>Name</th>                      <th>Dates</th>                      <th>Details</th>                    </tr>                  </thead>                  <tbody>                    <tr>                      <td>                        <span>                          <span>aspirin Tablet...</span>                        </span>                        <span>                          <br></br>                        </span>                        <span>                          <span>                            <span>Give 81 milliGRAM(s) Oral 1 time per day with a meal</span>                          </span>                        </span>                        <span>                          <br></br>                        </span>                        <span>                          <span></span>                        </span>                      </td>                      <td>                        <span>                          <span>                            <span>:</span>                          </span>                          <span>23-May-2013</span>                        </span>                      </td>                      <td>                        <ul>                          <li>                            <table>                              <tbody>                                <tr>                                  <td>                                    <span> Started </span>2-Oct-2012</td>                                  <td>                                    <span> Ordered </span>30-Oct-2012</td>                                </tr>                              </tbody>                            </table>                          </li>                        </ul>                        <span>                          <span></span>                          <span>Other</span>                        </span>                      </td>                    </tr>                  </tbody>                </table>              </li>            </ul>          </div>",
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "activity": [ {
+        "reference": {
+          "reference": "ServiceRequest/61b5a9e2-b29a-4fb7-a0eb-e75ff15600de",
+          "display": "Stress Management"
+        }
+      }, {
+        "reference": {
+          "reference": "ServiceRequest/c4444101-9a63-4d50-a498-35029b629fe5",
+          "display": "Oxygen Therapy"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "id": "61b5a9e2-b29a-4fb7-a0eb-e75ff15600de",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Stress Management</div>"
+      },
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.13.1",
+        "value": "INT"
+      } ],
+      "status": "active",
+      "intent": "plan",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "410418004",
+          "display": "Stress Management"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "id": "c4444101-9a63-4d50-a498-35029b629fe5",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Oxygen Therapy</div>"
+      },
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.13.1",
+        "value": "14262400680"
+      } ],
+      "status": "active",
+      "intent": "plan",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "71786000",
+          "display": "Oxygen Therapy"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "4c60c82b-3b69-4b6b-8ca7-9ffcc1b5aab9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.4",
+        "value": "11230"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "88",
+          "display": "influenza, NOS"
+        } ],
+        "text": "influenza, NOS"
+      },
+      "patient": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "occurrenceDateTime": "2012-10-02",
+      "primarySource": false
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "b582ffca-ddd3-4fd1-ac6f-228411e3f57b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "845400500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "194828000",
+          "display": "Acute angina"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "413.9",
+          "display": "Acute angina"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I20.9",
+          "display": "Acute angina"
+        } ],
+        "text": "Anginal pain"
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2012-10-02",
+      "recordedDate": "2013-05-23T00:08:17+02:00",
+      "asserter": {
+        "reference": "Practitioner/14cc6611-93cc-4c0b-a26f-21b851c4f915"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "14cc6611-93cc-4c0b-a26f-21b851c4f915"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "f8f2add2-1eb8-49b1-841e-814a596b42f1",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "845500500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Type 2 diabetes mellitus"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "250.00",
+          "display": "Type 2 diabetes mellitus"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "E11.9",
+          "display": "Type 2 diabetes mellitus"
+        } ],
+        "text": "Type II diabetes mellitus"
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2009-01-09",
+      "recordedDate": "2013-05-23T00:10:02+02:00",
+      "asserter": {
+        "reference": "Practitioner/2e619f49-7fab-4346-8390-5480aab045fd"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "2e619f49-7fab-4346-8390-5480aab045fd"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ff27a7d4-d2b7-4ca7-b526-32898163e8f0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+        "value": "845600500"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "13644009",
+          "display": "Hypercholesterolemia"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.103",
+          "code": "272.0",
+          "display": "Hypercholesterolemia"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "E78.0",
+          "display": "Hypercholesterolemia"
+        } ],
+        "text": "Hypercholesterolemia"
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "onsetDateTime": "2008-08-08",
+      "recordedDate": "2013-05-23T00:11:09+02:00",
+      "asserter": {
+        "reference": "Practitioner/c12cad6c-f605-4a2c-b112-420174247079"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c12cad6c-f605-4a2c-b112-420174247079"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "50137817-c51a-4f52-af97-bdb7a2c97c68",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION",
+          "display": "Assertion"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "3ea1b985-b35d-4638-aaea-a8012cc52f9f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "14262800680"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin T, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:29:03+02:00"
+      },
+      "issued": "2013-05-23T00:29:03.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/7486e323-0feb-46d6-9392-2a7ff9c9f013"
+      } ],
+      "result": [ {
+        "reference": "Observation/f6761f9f-42be-4d46-823a-0629893d50d6",
+        "display": "Troponin T, Serum"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "7486e323-0feb-46d6-9392-2a7ff9c9f013"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f6761f9f-42be-4d46-823a-0629893d50d6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337900070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin T, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:29:03+02:00"
+      },
+      "valueQuantity": {
+        "value": 0.01,
+        "unit": "ng/mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/mL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "ng/mL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "8592864b-c002-48d8-a75e-f38216551eaf",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "14262600680"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "51990-0",
+          "display": "Basic Metabolic Panel"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:26:28+02:00"
+      },
+      "issued": "2013-05-23T00:26:28.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/1b52d68a-bc79-4538-8e04-f78de9484516"
+      } ],
+      "result": [ {
+        "reference": "Observation/ef846410-e1dd-4253-bbd3-3127d85a7b55",
+        "display": "Chloride, Whole Blood"
+      }, {
+        "reference": "Observation/0ddc2246-a05a-429c-aa7b-2da354fd9543",
+        "display": "Calcium, Total Serum"
+      }, {
+        "reference": "Observation/6817093e-aa82-4557-ac13-17b716a6dcf8",
+        "display": "Potassium, Serum"
+      }, {
+        "reference": "Observation/c3a0ab6d-9dbd-4324-b8cd-5a8a763cc2a6",
+        "display": "Sodium, Serum"
+      }, {
+        "reference": "Observation/a4641782-e434-4bfc-a50d-d38d1eb4bfba",
+        "display": "Blood Urea Nitrogen, Serum"
+      }, {
+        "reference": "Observation/fd4452ac-28e5-4433-a36d-85aba2618799",
+        "display": "CO2, Whole Blood"
+      }, {
+        "reference": "Observation/1ea2bdf3-aa67-44c0-aaa2-d8779fb038e6",
+        "display": "Glucose, Serum"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "1b52d68a-bc79-4538-8e04-f78de9484516"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ef846410-e1dd-4253-bbd3-3127d85a7b55",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337500070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2069-3",
+          "display": "Chloride, Whole Blood"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:26:28+02:00"
+      },
+      "valueQuantity": {
+        "value": 100,
+        "unit": "mMol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mMol/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "mMol/L"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0ddc2246-a05a-429c-aa7b-2da354fd9543",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337600070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "17861-6",
+          "display": "Calcium, Total Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:26:28+02:00"
+      },
+      "valueQuantity": {
+        "value": 1.0,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6817093e-aa82-4557-ac13-17b716a6dcf8",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337100070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "22760-3",
+          "display": "Potassium, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:26:28+02:00"
+      },
+      "valueQuantity": {
+        "value": 3.5,
+        "unit": "mMol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mMol/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "mMol/L"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c3a0ab6d-9dbd-4324-b8cd-5a8a763cc2a6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337200070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2951-2",
+          "display": "Sodium, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:26:28+02:00"
+      },
+      "valueQuantity": {
+        "value": 138,
+        "unit": "mMol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mMol/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "mMol/L"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a4641782-e434-4bfc-a50d-d38d1eb4bfba",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337700070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3094-0",
+          "display": "Blood Urea Nitrogen, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:26:28+02:00"
+      },
+      "valueQuantity": {
+        "value": 15,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fd4452ac-28e5-4433-a36d-85aba2618799",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337400070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "20565-8",
+          "display": "CO2, Whole Blood"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:26:28+02:00"
+      },
+      "valueQuantity": {
+        "value": 26,
+        "unit": "mMol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mMol/L"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "mMol/L"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1ea2bdf3-aa67-44c0-aaa2-d8779fb038e6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337300070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2345-7",
+          "display": "Glucose, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:26:28+02:00"
+      },
+      "valueQuantity": {
+        "value": 195,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "31c99dbc-71e6-4761-9c36-61ceb877e1d9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "14262700680"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin T, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:27:03+02:00"
+      },
+      "issued": "2013-05-23T00:27:03.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/5cedf31e-7f48-43d9-9716-8760ef8cff5c"
+      } ],
+      "result": [ {
+        "reference": "Observation/ae8d283c-542b-47e4-b738-2a1bd06a47bd",
+        "display": "Troponin T, Serum"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5cedf31e-7f48-43d9-9716-8760ef8cff5c"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ae8d283c-542b-47e4-b738-2a1bd06a47bd",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "337800070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin T, Serum"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T00:27:03+02:00"
+      },
+      "valueQuantity": {
+        "value": 0.01,
+        "unit": "ng/mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/mL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "ng/mL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "0403eb3f-56d2-446b-99ea-9c5d25d15841",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "14294100680"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "38483-4",
+          "display": "Creatine, Whole Blood"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T12:25:20+02:00"
+      },
+      "issued": "2013-05-23T12:25:20.000+02:00",
+      "performer": [ {
+        "reference": "Practitioner/7ed63841-9166-44e8-8f2b-25de810d456e"
+      } ],
+      "result": [ {
+        "reference": "Observation/fa8e67b5-4ab3-4834-87e7-cfa458ca96fb",
+        "display": "Creatine, Whole Blood"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "7ed63841-9166-44e8-8f2b-25de810d456e"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fa8e67b5-4ab3-4834-87e7-cfa458ca96fb",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.5",
+        "value": "338200070"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "38483-4",
+          "display": "Creatine, Whole Blood"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "effectivePeriod": {
+        "start": "2013-05-23T12:25:20+02:00"
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ],
+      "referenceRange": [ {
+        "text": "mg/dL"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "13aef9b2-037b-436b-9151-dfafc8f3be5d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.3.4",
+        "value": "230100270"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4"
+        } ],
+        "text": "Inpatient"
+      } ],
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2012-10-02T23:54:00+02:00",
+          "end": "0001-01-01T00:00:00+01:00"
+        },
+        "individual": {
+          "reference": "Practitioner/04a72503-acdd-4184-9361-4f5a88011f04",
+          "display": "Aaron Admit"
+        }
+      } ],
+      "period": {
+        "start": "2012-10-02T23:54:00+02:00",
+        "end": "0001-01-01T00:00:00+01:00"
+      },
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/ff27a7d4-d2b7-4ca7-b526-32898163e8f0",
+          "display": "Hypercholesterolemia"
+        }
+      }, {
+        "condition": {
+          "reference": "Condition/f8f2add2-1eb8-49b1-841e-814a596b42f1",
+          "display": "Type II diabetes mellitus"
+        }
+      }, {
+        "condition": {
+          "reference": "Condition/b582ffca-ddd3-4fd1-ac6f-228411e3f57b",
+          "display": "Anginal pain"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/1c72bf4c-803c-40cc-a876-501866ceafdc",
+          "display": "1 West-121-A S2V"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "1c72bf4c-803c-40cc-a876-501866ceafdc",
+      "name": "1 West-121-A S2V"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "bfb80d87-7238-4bd0-ba60-9a0efba8523a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.11.0.100610.4.7",
+        "value": "1898101"
+      } ],
+      "status": "in-progress",
+      "subject": {
+        "reference": "Patient/3e6a758c-1bbe-4882-beec-947bdd138e3f",
+        "display": "John Williams"
+      }
+    }
+  } ]
+}

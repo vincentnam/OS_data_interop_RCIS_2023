@@ -1,0 +1,1499 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "deb84895-516a-44a5-b06b-e22e0212ff8c",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441",
+        "value": "f572a6e851b448dfbd54236c349def25"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "Summarization of episode note"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "date": "2013-07-01T10:30:44-04:00",
+      "author": [ {
+        "reference": "Practitioner/a10ba130-3f77-4acb-9bab-404b7931e1e5",
+        "display": "Henry Seven"
+      } ],
+      "title": "MU2 Clinical Visit Summary",
+      "confidentiality": "N",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2013-07-01T10:30:45-04:00",
+        "party": {
+          "reference": "Practitioner/876b6823-9e33-40dc-b4d2-ab56907cc76b",
+          "display": "Henry Seven"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/e358bf46-eb53-45fc-b543-02af047b3c01",
+        "display": "Get Well Clinic"
+      },
+      "event": [ {
+        "detail": [ {
+          "reference": "Practitioner/33b1128f-892f-453f-8c9b-794e79f4788b"
+        }, {
+          "reference": "Practitioner/876b6823-9e33-40dc-b4d2-ab56907cc76b",
+          "display": "Henry Seven"
+        }, {
+          "reference": "Practitioner/0339d17a-3629-4ee7-89f7-c6e0b41c831f",
+          "display": "Holly Garner"
+        }, {
+          "reference": "Practitioner/876b6823-9e33-40dc-b4d2-ab56907cc76b",
+          "display": "Henry Seven"
+        }, {
+          "reference": "Practitioner/876b6823-9e33-40dc-b4d2-ab56907cc76b",
+          "display": "Henry Seven"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of medication use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th colspan=\"5\">Active</th>                                </tr>                                <tr>                                    <th>Name</th>                                    <th>Start Date</th>                                    <th>Estimated Completion Date</th>                                    <th>SIG</th>                                    <th>Comments</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>clarithromycin Oral Tablet 500 mg</td>                                    <td/>                                    <td/>                                    <td>take 1 tablet (500 mg) by oral route every 12 hours for 14                                        days</td>                                    <td/>                                </tr>                                <tr>                                    <td>metoprolol tartrate Oral Tablet 25 mg</td>                                    <td/>                                    <td/>                                    <td>take 2 tablets (50 mg) by oral route once daily for 30                                        days</td>                                    <td/>                                </tr>                                <tr>                                    <td>Proventil HFA Inhalation HFA Aerosol Inhaler 90                                        mcg/actuation</td>                                    <td>8/6/2012</td>                                    <td/>                                    <td>inhale 2 puffs once</td>                                    <td/>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "MedicationStatement/917bad35-664b-403d-9fba-446cfffe82d3",
+          "display": "metoprolol tartrate Oral Tablet 25 mg"
+        }, {
+          "reference": "MedicationStatement/2c01a549-95c3-462e-9311-dab722486e94",
+          "display": "clarithromycin Oral Tablet 500 mg"
+        } ]
+      }, {
+        "title": "Problem List",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem list"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Description</th>                                    <th>Status</th>                                    <th>Onset</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>Asthma</td>                                    <td>Active</td>                                    <td/>                                </tr>                                <tr>                                    <td>Hypoxemia</td>                                    <td>Active</td>                                    <td/>                                </tr>                                <tr>                                    <td>Community Acquired Pneumonia</td>                                    <td>Active</td>                                    <td/>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/6e354e4d-da82-4a7b-9549-1812390378dd"
+        }, {
+          "reference": "Condition/a269d373-7095-4e4d-9e53-e4bc79e9d6bd"
+        }, {
+          "reference": "Condition/1a0afab7-d942-425c-990c-b5a59cc1d6ac"
+        } ]
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social history"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Name</th>                                    <th>Status</th>                                    <th>Comments</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>Tobacco</td>                                    <td>Current</td>                                    <td/>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/1ef0a352-4c6b-4e72-a397-7605c7eb490e"
+        } ]
+      }, {
+        "title": "Results Summary",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests and/or laboratory data"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Data and Description</th>                                    <th>Results</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>8/6/2012 2:01 PM</td>                                    <td>                                        <ul>                                            <li>Hct Fr Bld Auto 45.0 %</li>                                        </ul>                                    </td>                                </tr>                                <tr>                                    <td>8/6/2012 2:01 PM</td>                                    <td>                                        <ul>                                            <li>Hgb Bld-mCnc 14.20 g/dL</li>                                            <li>Platelet # Bld Auto 220.0 x10E3/uL</li>                                            <li>WBC # Bld Auto 7.60 x10E3/uL</li>                                        </ul>                                    </td>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/fcde45db-d468-43d8-b108-92507933f6fb"
+        }, {
+          "reference": "DiagnosticReport/a668c430-c31d-4334-a2ee-5a1fa45ff2c8"
+        }, {
+          "reference": "DiagnosticReport/8b70a531-2a49-4108-bd25-4d8de162b1ba"
+        }, {
+          "reference": "DiagnosticReport/e193331b-3816-4a14-8101-d6920b8f93b5"
+        } ]
+      }, {
+        "title": "Plan of Treatment",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Treatment Plan"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Planned Activity</th>                                    <th>Comments</th>                                    <th>Planned Date</th>                                    <th>Planned Time</th>                                    <th>Plan/Goal</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>pulmonology consult</td>                                    <td/>                                    <td>8/13/2012</td>                                    <td>4:00 PM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Smoking Cessation Plan</td>                                    <td/>                                    <td>8/6/2012</td>                                    <td>2:02 PM</td>                                    <td>Resources and instructions provided during visit</td>                                </tr>                                <tr>                                    <td>Smoking Cessation: Goal</td>                                    <td/>                                    <td>8/6/2012</td>                                    <td>2:02 PM</td>                                    <td>Quit smoking</td>                                </tr>                                <tr>                                    <td>(BCA) - Biopsy any source</td>                                    <td/>                                    <td>8/27/2012</td>                                    <td>1:00 PM</td>                                    <td/>                                </tr>                                <tr>                                    <td>(BCA) - Biopsy any source</td>                                    <td>Dr Henry Seven 1002 Healthcare Dr Portland Oregan                                        555-555-1122 2 pm</td>                                    <td>8/11/2012</td>                                    <td>12:00 PM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Chest X-Ray, PA and Lateral Views</td>                                    <td/>                                    <td>8/6/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                                <tr>                                    <td>X ray of sternoclavicular joints, 3 views</td>                                    <td/>                                    <td>8/13/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Hemoglobin</td>                                    <td/>                                    <td>8/13/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Colonoscopy, flexible, proximal to splenic flexure;                                        diagnostic, with or without collection of specimen(s) by                                        brushing or washing, with or without colon decompression                                        (separate procedure)</td>                                    <td/>                                    <td>9/22/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Sputum, obtaining specimen, aerosol induced technique                                        (separate procedure)</td>                                    <td/>                                    <td>8/6/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/63bc4581-bd2d-486f-ba8f-d01009902bf6"
+        } ]
+      }, {
+        "title": "History of Procedures",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "History of procedures"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Date Ordered</th>                                    <th>Description</th>                                    <th>Order Status</th>                                    <th>Result Status</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>8/6/2012 12:00 AM</td>                                    <td>Chest X-Ray, PA and Lateral Views</td>                                    <td>Ordered</td>                                    <td/>                                </tr>                                <tr>                                    <td>8/13/2012 12:00 AM</td>                                    <td>X                                        ray of sternoclavicular joints, 3 views</td>                                    <td>Ordered</td>                                    <td/>                                </tr>                                <tr>                                    <td>8/13/2012 12:00 AM</td>                                    <td>Hemoglobin</td>                                    <td>Ordered</td>                                    <td/>                                </tr>                                <tr>                                    <td>9/22/2012 12:00 AM</td>                                    <td>Colonoscopy, flexible, proximal to splenic flexure;                                        diagnostic, with or without collection of specimen(s) by                                        brushing or washing, with or without colon decompression                                        (separate procedure)</td>                                    <td>Ordered</td>                                    <td/>                                </tr>                                <tr>                                    <td>8/6/2012 12:00 AM</td>                                    <td>Sputum, obtaining specimen, aerosol induced technique                                        (separate procedure)</td>                                    <td>Pending</td>                                    <td/>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/e5084b2b-a88b-42c7-9279-0b2d998cc5bd",
+          "display": "Chest X-Ray, PA and Lateral Views"
+        }, {
+          "reference": "Observation/c28cbc31-7191-4f06-923d-9c83dda06cc4",
+          "display": "Hemoglobin"
+        }, {
+          "reference": "Observation/78475e6a-10c5-433f-9417-813137557d6b",
+          "display": "Colonoscopy, flexible, proximal to splenic flexure;\n                                        diagnostic, with or without collection of specimen(s) by\n                                        brushing or washing, with or without colon decompression\n                                        (separate procedure)"
+        }, {
+          "reference": "Observation/335dbfd9-2220-4495-8e19-c813533fe91b",
+          "display": "Sputum, obtaining specimen, aerosol induced technique\n                                        (separate procedure)"
+        }, {
+          "reference": "Observation/e26dd580-bf0e-4d32-9f5b-7ab0540ada33",
+          "display": "X\n                                        ray of sternoclavicular joints, 3 views"
+        } ]
+      }, {
+        "title": "Vital Signs",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8716-3",
+            "display": "Vital signs"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Date</th>                                    <th>Time</th>                                    <th>BP-Sys(mm[Hg]</th>                                    <th>BP-Dia(mm[Hg])</th>                                    <th>HR(bpm)</th>                                    <th>RR(rpm)</th>                                    <th>Temp</th>                                    <th>WT</th>                                    <th>HT</th>                                    <th>BMI</th>                                    <th>BSA</th>                                    <th>BMI Percentile</th>                                    <th>O2 Sat(%)</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>8/6/2012</td>                                    <td>1:59:00 PM</td>                                    <td>135 mmHg</td>                                    <td>92 mmHg</td>                                    <td/>                                    <td/>                                    <td/>                                    <td>194.007 lbs</td>                                    <td>69.685 in</td>                                    <td>28.089 kg/m²</td>                                    <td>2.0801 m²</td>                                    <td/>                                    <td/>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/eb89c433-a5d9-4593-856d-fee98fe2caa7",
+          "display": "Body Height (Measured)"
+        }, {
+          "reference": "Observation/8bbbc4f7-cd83-4e59-b249-1037d3eebfe6",
+          "display": "Body Mass Index"
+        }, {
+          "reference": "Observation/b9aa6be2-ca2a-4804-93dc-5fb39bd53cb5",
+          "display": "Body Weight (Measured)"
+        }, {
+          "reference": "Observation/14c9ffb6-53f2-446a-8afd-e139030c9e98",
+          "display": "BP Systolic"
+        }, {
+          "reference": "Observation/aacea1f8-135b-4ccc-84dd-b20868c67f5a",
+          "display": "BP Diastolic"
+        } ]
+      }, {
+        "title": "Allergies and Adverse Reactions",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Name</th>                                    <th>Reaction</th>                                    <th>Notes</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>aspirin</td>                                    <td/>                                    <td/>                                </tr>                                <tr>                                    <td>codeine sulfate</td>                                    <td/>                                    <td/>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/38f1a99b-bc49-471f-95c0-5c6b55ef1bdb",
+          "display": "aspirin"
+        }, {
+          "reference": "AllergyIntolerance/b28e668f-3058-4526-b976-9e86c8ddc312",
+          "display": "codeine sulfate"
+        } ]
+      }, {
+        "title": "History Of Immunizations",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Name</th>                                    <th>Date Admin</th>                                    <th>Mfg Name</th>                                    <th>Mfg Code</th>                                    <th>Trade Name</th>                                    <th>Lot#</th>                                    <th>Route</th>                                    <th>Inj</th>                                    <th>Vis Given</th>                                    <th>Vis Pub</th>                                    <th>CVX</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>pneumococcal</td>                                    <td>8/6/2012</td>                                    <td>Not Entered</td>                                    <td>NE</td>                                    <td>Not Entered</td>                                    <td/>                                    <td>Not Entered</td>                                    <td>Not Entered</td>                                    <td>8/6/2012</td>                                    <td>1/1/0001</td>                                    <td>33</td>                                </tr>                            </tbody>                        </table>                    </div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/f94e6d71-d474-43c1-9481-9320e0bf7630",
+          "display": "pneumococcal"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "d53195f5-42f3-4255-bde3-bb80ff167cda",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51",
+        "value": "26933"
+      } ],
+      "name": [ {
+        "family": "Jones",
+        "given": [ "Isabella" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "816-276-6909",
+        "use": "home"
+      } ],
+      "gender": "female",
+      "birthDate": "1947-05-01",
+      "address": [ {
+        "line": [ "1357 Amber Drive" ],
+        "city": "Aloha",
+        "state": "OR",
+        "postalCode": "97006",
+        "country": "UNK"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "Never Married"
+        } ]
+      },
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        }
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/e358bf46-eb53-45fc-b543-02af047b3c01",
+        "display": "Get Well Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "e358bf46-eb53-45fc-b543-02af047b3c01",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50",
+        "value": "300011"
+      } ],
+      "name": "Get Well Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1004",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1004 Healthcare Dr. practice" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a10ba130-3f77-4acb-9bab-404b7931e1e5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "b94b4236f097400fbfc7088a4ffee7bc"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1004",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1004 Healthcare Dr. practice" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "3e71a1d7-3acf-471b-ba97-040c492d2df2",
+      "practitioner": {
+        "reference": "Practitioner/a10ba130-3f77-4acb-9bab-404b7931e1e5",
+        "display": "Henry Seven"
+      },
+      "organization": {
+        "reference": "Organization/e358bf46-eb53-45fc-b543-02af047b3c01",
+        "display": "Get Well Clinic"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "876b6823-9e33-40dc-b4d2-ab56907cc76b",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "2.16.840.1.113883.4.6"
+      } ],
+      "name": [ {
+        "family": "Seven",
+        "given": [ "Henry" ]
+      } ],
+      "address": [ {
+        "line": [ "1002 Healthcare Dr" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "33b1128f-892f-453f-8c9b-794e79f4788b",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "UNK"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0339d17a-3629-4ee7-89f7-c6e0b41c831f",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "4646565"
+      } ],
+      "name": [ {
+        "family": "Garner",
+        "given": [ "Holly" ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "917bad35-664b-403d-9fba-446cfffe82d3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.58",
+        "value": "2061"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/8f368e3e-27bd-4c16-9ccc-68fd9997f218",
+        "display": "metoprolol tartrate Oral Tablet 25 mg"
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "dosage": [ {
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 2,
+            "unit": "tablet",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "8f368e3e-27bd-4c16-9ccc-68fd9997f218",
+      "code": {
+        "coding": [ {
+          "code": "453953",
+          "display": "metoprolol tartrate Oral Tablet 25 mg"
+        }, {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "866924",
+          "display": "Metoprolol Tartrate 25 MG Oral Tablet"
+        } ],
+        "text": "metoprolol tartrate Oral Tablet 25 mg"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationStatement",
+      "id": "2c01a549-95c3-462e-9311-dab722486e94",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.58",
+        "value": "2060"
+      } ],
+      "status": "completed",
+      "medicationReference": {
+        "reference": "Medication/cc2c47b5-f93d-43ac-b0f8-d5204a5f5548",
+        "display": "clarithromycin Oral Tablet 500 mg"
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "dosage": [ {
+        "doseAndRate": [ {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "tablet",
+            "system": "http://unitsofmeasure.org/ucum.html"
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Medication",
+      "id": "cc2c47b5-f93d-43ac-b0f8-d5204a5f5548",
+      "code": {
+        "coding": [ {
+          "code": "177323",
+          "display": "clarithromycin Oral Tablet 500 mg"
+        }, {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197517",
+          "display": "Clarithromycin 500 MG Oral Tablet"
+        } ],
+        "text": "clarithromycin Oral Tablet 500 mg"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "6e354e4d-da82-4a7b-9549-1812390378dd",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.61",
+        "value": "1429"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "a269d373-7095-4e4d-9e53-e4bc79e9d6bd",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.61",
+        "value": "1427"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "1a0afab7-d942-425c-990c-b5a59cc1d6ac",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.61",
+        "value": "1428"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1ef0a352-4c6b-4e72-a397-7605c7eb490e",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.68",
+        "value": "1331"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "1900-01-01T00:00:00+01:00"
+      },
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "fcde45db-d468-43d8-b108-92507933f6fb",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
+        "value": "2937"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T14:01:05+02:00"
+      },
+      "issued": "2012-08-06T14:01:05.000+02:00",
+      "result": [ {
+        "reference": "Observation/e85f8a5d-094e-48c4-a5d3-9cdc943730cb",
+        "display": "Hgb Bld-mCnc"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e85f8a5d-094e-48c4-a5d3-9cdc943730cb",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
+        "value": "2937"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hgb Bld-mCnc"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T14:01:05+02:00"
+      },
+      "valueQuantity": {
+        "value": 14.20,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "a668c430-c31d-4334-a2ee-5a1fa45ff2c8",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
+        "value": "2936"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T14:01:05+02:00"
+      },
+      "issued": "2012-08-06T14:01:05.000+02:00",
+      "result": [ {
+        "reference": "Observation/16293211-c782-4dee-b020-5548bac96f49",
+        "display": "Hct Fr Bld Auto"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "16293211-c782-4dee-b020-5548bac96f49",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
+        "value": "2936"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hct Fr Bld Auto"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T14:01:05+02:00"
+      },
+      "valueQuantity": {
+        "value": 45.0,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "8b70a531-2a49-4108-bd25-4d8de162b1ba",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
+        "value": "2939"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T14:01:05+02:00"
+      },
+      "issued": "2012-08-06T14:01:05.000+02:00",
+      "result": [ {
+        "reference": "Observation/fbc8687c-e3e4-4f4d-9789-0d899f5b9a2d",
+        "display": "WBC # Bld Auto"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fbc8687c-e3e4-4f4d-9789-0d899f5b9a2d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
+        "value": "2939"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "WBC # Bld Auto"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T14:01:05+02:00"
+      },
+      "valueQuantity": {
+        "value": 7.60,
+        "unit": "x10E3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "x10E3/uL"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "e193331b-3816-4a14-8101-d6920b8f93b5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
+        "value": "2938"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T14:01:05+02:00"
+      },
+      "issued": "2012-08-06T14:01:05.000+02:00",
+      "result": [ {
+        "reference": "Observation/afa96917-5785-4399-8045-08de81af825d",
+        "display": "Platelet # Bld Auto"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "afa96917-5785-4399-8045-08de81af825d",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
+        "value": "2938"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelet # Bld Auto"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T14:01:05+02:00"
+      },
+      "valueQuantity": {
+        "value": 220.0,
+        "unit": "x10E3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "x10E3/uL"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "63bc4581-bd2d-486f-ba8f-d01009902bf6",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Planned Activity</th>                                    <th>Comments</th>                                    <th>Planned Date</th>                                    <th>Planned Time</th>                                    <th>Plan/Goal</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>pulmonology consult</td>                                    <td/>                                    <td>8/13/2012</td>                                    <td>4:00 PM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Smoking Cessation Plan</td>                                    <td/>                                    <td>8/6/2012</td>                                    <td>2:02 PM</td>                                    <td>Resources and instructions provided during visit</td>                                </tr>                                <tr>                                    <td>Smoking Cessation: Goal</td>                                    <td/>                                    <td>8/6/2012</td>                                    <td>2:02 PM</td>                                    <td>Quit smoking</td>                                </tr>                                <tr>                                    <td>(BCA) - Biopsy any source</td>                                    <td/>                                    <td>8/27/2012</td>                                    <td>1:00 PM</td>                                    <td/>                                </tr>                                <tr>                                    <td>(BCA) - Biopsy any source</td>                                    <td>Dr Henry Seven 1002 Healthcare Dr Portland Oregan                                        555-555-1122 2 pm</td>                                    <td>8/11/2012</td>                                    <td>12:00 PM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Chest X-Ray, PA and Lateral Views</td>                                    <td/>                                    <td>8/6/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                                <tr>                                    <td>X ray of sternoclavicular joints, 3 views</td>                                    <td/>                                    <td>8/13/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Hemoglobin</td>                                    <td/>                                    <td>8/13/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Colonoscopy, flexible, proximal to splenic flexure;                                        diagnostic, with or without collection of specimen(s) by                                        brushing or washing, with or without colon decompression                                        (separate procedure)</td>                                    <td/>                                    <td>9/22/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                                <tr>                                    <td>Sputum, obtaining specimen, aerosol induced technique                                        (separate procedure)</td>                                    <td/>                                    <td>8/6/2012</td>                                    <td>12:00 AM</td>                                    <td/>                                </tr>                            </tbody>                        </table>                    </div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "Plan of Treatment",
+      "description": "<div>                        <table border=\"1\">                            <thead>                                <tr>                                    <th>Planned Activity</th>                                    <th>Comments</th>                                    <th>Planned Date</th>                                    <th>Planned Time</th>                                    <th>Plan/Goal</th>                                </tr>                            </thead>                            <tbody>                                <tr>                                    <td>pulmonology consult</td>                                    <td></td>                                    <td>8/13/2012</td>                                    <td>4:00 PM</td>                                    <td></td>                                </tr>                                <tr>                                    <td>Smoking Cessation Plan</td>                                    <td></td>                                    <td>8/6/2012</td>                                    <td>2:02 PM</td>                                    <td>Resources and instructions provided during visit</td>                                </tr>                                <tr>                                    <td>Smoking Cessation: Goal</td>                                    <td></td>                                    <td>8/6/2012</td>                                    <td>2:02 PM</td>                                    <td>Quit smoking</td>                                </tr>                                <tr>                                    <td>(BCA) - Biopsy any source</td>                                    <td></td>                                    <td>8/27/2012</td>                                    <td>1:00 PM</td>                                    <td></td>                                </tr>                                <tr>                                    <td>(BCA) - Biopsy any source</td>                                    <td>Dr Henry Seven 1002 Healthcare Dr Portland Oregan                                        555-555-1122 2 pm</td>                                    <td>8/11/2012</td>                                    <td>12:00 PM</td>                                    <td></td>                                </tr>                                <tr>                                    <td>Chest X-Ray, PA and Lateral Views</td>                                    <td></td>                                    <td>8/6/2012</td>                                    <td>12:00 AM</td>                                    <td></td>                                </tr>                                <tr>                                    <td>X ray of sternoclavicular joints, 3 views</td>                                    <td></td>                                    <td>8/13/2012</td>                                    <td>12:00 AM</td>                                    <td></td>                                </tr>                                <tr>                                    <td>Hemoglobin</td>                                    <td></td>                                    <td>8/13/2012</td>                                    <td>12:00 AM</td>                                    <td></td>                                </tr>                                <tr>                                    <td>Colonoscopy, flexible, proximal to splenic flexure;                                        diagnostic, with or without collection of specimen(s) by                                        brushing or washing, with or without colon decompression                                        (separate procedure)</td>                                    <td></td>                                    <td>9/22/2012</td>                                    <td>12:00 AM</td>                                    <td></td>                                </tr>                                <tr>                                    <td>Sputum, obtaining specimen, aerosol induced technique                                        (separate procedure)</td>                                    <td></td>                                    <td>8/6/2012</td>                                    <td>12:00 AM</td>                                    <td></td>                                </tr>                            </tbody>                        </table>                    </div>",
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5084b2b-a88b-42c7-9279-0b2d998cc5bd",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
+        "value": "61407"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "71020",
+          "display": "RADIOLOGIC EXAM CHEST 2 VIEWS FRONTAL&LATERAL"
+        } ],
+        "text": "Chest X-Ray, PA and Lateral Views"
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T00:00:00+02:00"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c28cbc31-7191-4f06-923d-9c83dda06cc4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
+        "value": "61409"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "85018",
+          "display": "BLOOD COUNT HEMOGLOBIN"
+        } ],
+        "text": "Hemoglobin"
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-13T00:00:00+02:00"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "78475e6a-10c5-433f-9417-813137557d6b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
+        "value": "61410"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "45378",
+          "display": "COLONOSCOPY FLX DX W/WO COLLJ SPECIMENS"
+        } ],
+        "text": "Colonoscopy, flexible, proximal to splenic flexure;\n                                        diagnostic, with or without collection of specimen(s) by\n                                        brushing or washing, with or without colon decompression\n                                        (separate procedure)"
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-09-22T00:00:00+02:00"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "335dbfd9-2220-4495-8e19-c813533fe91b",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
+        "value": "61411"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "89220",
+          "display": "SPUTUM OBTAINING SPEC AEROSOL INDUCED TX SPX"
+        } ],
+        "text": "Sputum, obtaining specimen, aerosol induced technique\n                                        (separate procedure)"
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T00:00:00+02:00"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e26dd580-bf0e-4d32-9f5b-7ab0540ada33",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
+        "value": "61408"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "71130",
+          "display": "RADEX STERNOCLAVICULAR JT/JTS MINIMUM 3 VIEWS"
+        } ],
+        "text": "X\n                                        ray of sternoclavicular joints, 3 views"
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-13T00:00:00+02:00"
+      },
+      "dataAbsentReason": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/data-absent-reason",
+          "code": "error",
+          "display": "Error"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "eb89c433-a5d9-4593-856d-fee98fe2caa7",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
+        "value": "2934"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height (Measured)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T13:59:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 69.685,
+        "unit": "[in_us]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[in_us]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8bbbc4f7-cd83-4e59-b249-1037d3eebfe6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
+        "value": "2932"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "41909-3",
+          "display": "Body Mass Index"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T13:59:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 28.089,
+        "unit": "kg/m²",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m²"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b9aa6be2-ca2a-4804-93dc-5fb39bd53cb5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
+        "value": "2935"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "3141-9",
+          "display": "Body Weight (Measured)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T13:59:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 194.007,
+        "unit": "[lb_av]",
+        "system": "http://unitsofmeasure.org",
+        "code": "[lb_av]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "14c9ffb6-53f2-446a-8afd-e139030c9e98",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
+        "value": "2931"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP Systolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T13:59:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 135,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aacea1f8-135b-4ccc-84dd-b20868c67f5a",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
+        "value": "2930"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP Diastolic"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "effectivePeriod": {
+        "start": "2012-08-06T13:59:00+02:00"
+      },
+      "valueQuantity": {
+        "value": 92,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "38f1a99b-bc49-471f-95c0-5c6b55ef1bdb",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.57",
+        "value": "1317"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "environment" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1001473",
+          "display": "Ecpirin"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.64",
+          "code": "1076",
+          "display": "aspirin"
+        } ],
+        "text": "aspirin"
+      },
+      "patient": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "b28e668f-3058-4526-b976-9e86c8ddc312",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.57",
+        "value": "1318"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "environment" ],
+      "code": {
+        "text": "codeine sulfate"
+      },
+      "patient": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "f94e6d71-d474-43c1-9481-9320e0bf7630",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441.1.50.300011.51.26933.60",
+        "value": "1238"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "33",
+          "display": "pneumococcal polysaccharide PPV23"
+        } ],
+        "text": "pneumococcal"
+      },
+      "patient": {
+        "reference": "Patient/d53195f5-42f3-4255-bde3-bb80ff167cda",
+        "display": "Isabella Jones"
+      },
+      "occurrenceDateTime": "2012-08-06T00:00:00+02:00",
+      "primarySource": true,
+      "performer": [ {
+        "function": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/v2/0443",
+            "code": "AP",
+            "display": "Administering Provider"
+          } ]
+        },
+        "actor": {
+          "reference": "Practitioner/171781ed-ccc9-4e34-ad08-bc719c9f90f6",
+          "display": "History K Family"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "171781ed-ccc9-4e34-ad08-bc719c9f90f6",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441",
+        "value": "282b576f3c0c4717b125211f8423f0bc"
+      } ],
+      "name": [ {
+        "family": "Family",
+        "given": [ "History", "K" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1046"
+      } ],
+      "address": [ {
+        "line": [ "1044 Healthcare Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "24ed43ce-fa82-4e85-a651-be9a708dbd36",
+      "practitioner": {
+        "reference": "Practitioner/171781ed-ccc9-4e34-ad08-bc719c9f90f6",
+        "display": "History K Family"
+      },
+      "organization": {
+        "reference": "Organization/93bbf588-e55c-4b42-b284-b07ed7900660"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "93bbf588-e55c-4b42-b284-b07ed7900660",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.3.441",
+        "value": "985b2c81925f4cec814d731712fea4e2"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-555-1046",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1044 Healthcare\n                                                Drive" ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "United States"
+      } ]
+    }
+  } ]
+}

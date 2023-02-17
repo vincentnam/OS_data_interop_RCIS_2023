@@ -1,0 +1,1428 @@
+{
+  "resourceType": "Bundle",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Composition",
+      "id": "bab0681e-03e9-49d7-9017-c4e090e6a2d1",
+      "identifier": {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.1",
+        "value": "66670992"
+      },
+      "status": "preliminary",
+      "type": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "34133-9",
+          "display": "SUMMARIZATION OF EPISODE NOTE"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+          "code": "LP173421-7",
+          "display": "Note"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "date": "2011-07-14T09:00:51-04:00",
+      "author": [ {
+        "reference": "Practitioner/ca673613-303e-4606-9cce-224fcdba6502",
+        "display": "Dr Bruce Healthy"
+      }, {
+        "reference": "Device/0e8eb67b-f80a-4496-baa9-e85931400df5"
+      } ],
+      "title": "Continuity of Care Document",
+      "confidentiality": "V",
+      "attester": [ {
+        "mode": "legal",
+        "time": "2011-07-14T09:00:51-04:00",
+        "party": {
+          "reference": "Practitioner/ca673613-303e-4606-9cce-224fcdba6502",
+          "display": "Dr Bruce Healthy"
+        }
+      }, {
+        "mode": "professional",
+        "time": "2011-07-14T09:00:51-04:00",
+        "party": {
+          "reference": "Practitioner/ca673613-303e-4606-9cce-224fcdba6502",
+          "display": "Dr Bruce Healthy"
+        }
+      } ],
+      "custodian": {
+        "reference": "Organization/1cff25c3-5187-4f21-96e0-350e77868cf1",
+        "display": "Community General Hospital"
+      },
+      "event": [ {
+        "period": {
+          "start": "2013-01-24T09:00:51+01:00",
+          "end": "2013-01-30T10:00:51+01:00"
+        },
+        "detail": [ {
+          "reference": "Practitioner/ca673613-303e-4606-9cce-224fcdba6502",
+          "display": "Dr Bruce Healthy"
+        } ]
+      } ],
+      "section": [ {
+        "title": "Problems",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem List"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Essential Hypertension</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>10-Jan-2010</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr><tr><td><span><span>Gout</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>30-Jan-2013</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr><tr><td><span><span>Type II Diabetes</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>10-Mar-2011</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Condition/a0739825-a24b-4030-9c29-b20faffc00c3",
+          "display": "Type II Diabetes"
+        }, {
+          "reference": "Condition/3c6c47e6-fa2b-4ec1-9bfc-feb5c1ff4287",
+          "display": "Essential Hypertension"
+        }, {
+          "reference": "Condition/160f78fa-99a6-4ebc-bde8-77231ee53564",
+          "display": "Gout"
+        } ]
+      }, {
+        "title": "Results",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests and/or laboratory data"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Date</th><th>Description</th><th>Value</th><th>Details</th></tr></thead><tbody><tr><td><span>Resulted on:</span><span><br/></span><span>30-Jan-2013 09:33</span></td><td colspan=\"2\"><span>CBC</span></td><td/><td/></tr><tr><td/><td><span>HGB</span></td><td><span>14.5  g/dl</span></td><td/></tr><tr><td/><td><span>HCT</span></td><td><span>50  %</span></td><td/></tr><tr><td/><td><span>WBC</span></td><td><span>5.2  10^3/ul</span></td><td/></tr><tr><td/><td><span>PLT</span></td><td><span>388  10^3/ul</span></td><td/></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "DiagnosticReport/0bdddfe8-c14e-4395-9d00-2b03df6841b2",
+          "display": "CBC"
+        } ]
+      }, {
+        "title": "Allergies and Adverse Reactions",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies, adverse reactions, alerts"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Penicillin G benzathine</span></span></td><td><span><span><span>Onset<span>:</span></span><span>10-Jan-1998</span></span></span></td><td><span><span><span>Reaction: </span><span>Hives</span></span></span><span><br/></span><span><span>Status: </span><span>Active</span></span></td></tr><tr><td><span><span>Codeine</span></span></td><td><span><span><span>Onset<span>:</span></span><span>10-Jan-2001</span></span></span></td><td><span><span><span>Reaction: </span><span>Anaphylaxis</span></span></span><span><br/></span><span><span>Status: </span><span>Active</span></span></td></tr><tr><td><span><span>Aspirin</span></span></td><td><span><span><span>Onset<span>:</span></span><span>10-Jan-2011</span></span></span></td><td><span><span><span>Reaction: </span><span>Swelling</span></span></span><span><br/></span><span><span>Status: </span><span>Active</span></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "AllergyIntolerance/836e2ff8-3b74-40d3-be02-ae5fa8a00b09",
+          "display": "Penicillin G benzathine"
+        }, {
+          "reference": "AllergyIntolerance/349b96d0-72a5-422d-a260-7ed311a5d4c5",
+          "display": "Codeine"
+        }, {
+          "reference": "AllergyIntolerance/70704e2e-4e4e-4ba7-833a-68bdd92fd0ae",
+          "display": "Aspirin"
+        } ]
+      }, {
+        "title": "Encounters",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "Encounters"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tbody><tr><td><span><span>Admission</span></span><span><br/></span><span><span>Encounter Diagnosis: </span><span>Hypertension</span></span><span><span><span>Active</span></span></span><span><span>Community General Hospital</span></span><span><br/></span><span><br/></span><span><span> Healthy</span>, Bruce Dr </span></td><td><span><span>24-Jan-2013</span><span> to </span><span>30-Jan-2013</span></span></td></tr><tr><td><span><span>Admission</span></span><span><br/></span><span><span>Encounter Diagnosis: </span><span>Pneumonia</span></span><span><span><span>Active</span></span></span><span><span>Community General Hospital</span></span><span><br/></span><span><br/></span><span><span> Healthy</span>, Bruce Dr </span></td><td><span><span>1-Nov-2011</span><span> to </span><span>14-Nov-2011</span></span></td></tr><tr><td><span><span>Admission</span></span><span><br/></span><span><span>Encounter Diagnosis: </span><span>Cholelithiasis without obstruction</span></span><span><span><span>Active</span></span></span><span><span>Community General Hospital</span></span><span><br/></span><span><br/></span><span><span> Healthy</span>, Bruce Dr </span></td><td><span><span>2-Oct-2010</span><span> to </span><span>9-Oct-2010</span></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Encounter/3c9e2174-e08b-46a3-8097-bd223b0c87a4",
+          "display": "Admission"
+        }, {
+          "reference": "Encounter/1a552765-8c39-4524-b035-d11058db75b0",
+          "display": "Admission"
+        }, {
+          "reference": "Encounter/dc07ac6c-b739-4834-b5ec-1fa3a151f6f0",
+          "display": "Admission"
+        } ]
+      }, {
+        "title": "Medications",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of medication use"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Lisinopril 10 MG Oral Tablet</span></span><span><br/></span><span><span><span>TAKE 1 TABLET DAILY AS DIRECTED.</span></span></span><span><br/></span><span><span><span>take once daily as directed</span></span></span></td><td><span><br/></span><span><span> Healthy</span>, Bruce Dr </span></td><td><ul><li><table><tbody><tr><td><span> Started </span>10-Jan-2010</td></tr></tbody></table></li></ul><span><span/><span>Active</span></span><span><span>label in English and Spanish</span></span><span><br/></span><span><span> Indication : </span><span>Hypertension</span></span><span><br/></span></td></tr><tr><td><span><span>Allopurinol 200 MG  Oral Tablet</span></span><span><br/></span><span><span><span>TAKE 1 TABLET once daily As Directed</span></span></span><span><br/></span><span><span/></span></td><td/><td><ul><li><table><tbody><tr><td><span> Started </span>30-Jan-2013</td></tr></tbody></table></li></ul><span><span/><span>Active</span></span></td></tr><tr><td><span><span>Clarithromycin 250 MG Oral Tablet</span></span><span><br/></span><span><span><span>TAKE 1 TABLET TWICE DAILY AS DIRECTED.</span></span></span><span><br/></span><span><span><span>Take twice daily for 7 days</span></span></span></td><td/><td><ul><li><table><tbody><tr><td><span> Started </span>30-Jan-2013</td><td><span> Ended </span>6-Feb-2013</td></tr></tbody></table></li></ul><span><span/><span>Active</span></span></td></tr><tr><td><span><span>Metformin 850 MG Oral Tablet</span></span><span><br/></span><span><span><span>TAKE 1 TABLET 2 times daily As Directed</span></span></span><span><br/></span><span><span/></span></td><td/><td><ul><li><table><tbody><tr><td><span> Started </span>13-Apr-2011</td></tr></tbody></table></li></ul><span><span/><span>Active</span></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot"
+      }, {
+        "title": "Social History",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social History"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><caption>Smoking Status</caption><li><span>Current every day smoker</span><span> Started 1984</span></li></ul></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Observation/95cb3f81-555d-44d8-8373-6207dbfa11d3",
+          "display": "Assertion"
+        } ]
+      }, {
+        "title": "Immunization",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "Immunizations"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Tetanus-diphtheria adult</span></span><span><br/></span></td><td><span><span>Administered on<span>:</span></span><span>30-Jan-2013</span></span></td><td><span><span> Site: </span><span><span>Left Arm</span></span></span><span><br/></span></td></tr></tbody></table></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "Immunization/f505f3e3-b6fd-43eb-8175-2871c66485c5",
+          "display": "Tetanus-diphtheria adult"
+        } ]
+      }, {
+        "title": "Plan of Care",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of Care"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><caption>Planned Observations</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Goal: Weight Loss</span></span></span></td><td><span><span>On </span><span>1-Nov-2011</span></span><span><br/></span><span><span/></span></td><td><span><span>Goal</span></span></td></tr><tr><td><span><span><span>Goal: Smoking Cessation</span></span></span></td><td><span><span>On </span><span>1-Nov-2011</span></span><span><br/></span><span><span/></span></td><td><span><span>Goal</span></span></td></tr></tbody></table></li></ul><ul><caption>Planned Encounters</caption><li><table><tbody><tr><td><span><span>Clinical Follow Up</span></span><span><br/></span></td><td><span><span>On </span><span>5-May-2013</span></span><span><br/></span><span><span>00:00</span></span></td></tr></tbody></table></li></ul><ul><caption>Planned Procedures</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Chest X-Ray, PA and Lateral Views</span></span></span><span><span>By: </span><span><span> Healthy</span>, Bruce Dr </span></span></td><td><span>On </span><span>30-Jan-2013</span></td><td><span><span>Request</span></span><span>Site: </span><span>Lower Respiratory Tract Structure</span></td></tr><tr><td><span><span><span>Abdominal Ultrasound</span></span></span><span><span>By: </span><span><span> Healthy</span>, Bruce Dr </span></span></td><td><span>On </span><span>30-Jan-2013</span></td><td><span><span>Request</span></span><span>Site: </span><span>Abdominal Structure</span></td></tr></tbody></table></li></ul></div>"
+        },
+        "mode": "snapshot",
+        "entry": [ {
+          "reference": "CarePlan/00c77ba7-4969-4f86-a7ec-42019a331cc6"
+        } ]
+      }, {
+        "title": "Functional Status",
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "47420-5",
+            "display": "Functional Status"
+          } ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><caption>Functional Status Health Issues</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Dependence on Walking Stick</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>30-Jan-2013</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr></tbody></table></li></ul><ul><caption>Cognitive Status Health Issues</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span>Memory Impairment</span></span><span><span/></span><span><br/></span></td><td><span><span>Onset<span>:</span></span><span>30-Jan-2013</span></span></td><td><span><span><span>Status: </span><span>Active</span></span></span></td></tr></tbody></table></li></ul></div>"
+        },
+        "mode": "snapshot"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "text",
+          "valueString": "White"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }, {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3",
+        "value": "110107073916280"
+      } ],
+      "name": [ {
+        "family": "Smith",
+        "given": [ "James" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(919)854-3333",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1965-09-01",
+      "address": [ {
+        "use": "home",
+        "line": [ "1234 Six Forks" ],
+        "city": "Cary",
+        "state": "NC",
+        "postalCode": "27513",
+        "country": "US"
+      } ],
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "eng"
+          } ]
+        },
+        "preferred": true
+      } ],
+      "managingOrganization": {
+        "reference": "Organization/1cff25c3-5187-4f21-96e0-350e77868cf1",
+        "display": "Community General Hospital"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Organization",
+      "id": "1cff25c3-5187-4f21-96e0-350e77868cf1",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3",
+        "value": "3"
+      } ],
+      "name": "Community General Hospital",
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-1009"
+      } ],
+      "address": [ {
+        "line": [ "Community General Hospital", "1009 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ca673613-303e-4606-9cce-224fcdba6502",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.6",
+        "value": "1111111111"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3",
+        "value": "91138"
+      } ],
+      "name": [ {
+        "family": "Healthy",
+        "given": [ "Bruce" ],
+        "prefix": [ "Dr" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-1009"
+      } ],
+      "address": [ {
+        "line": [ "Community General Hospital", "1009 Healthcare Dr." ],
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97005",
+        "country": "US"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Device",
+      "id": "0e8eb67b-f80a-4496-baa9-e85931400df5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.3.3",
+        "value": "3"
+      } ],
+      "manufacturer": "Sunrise Clinical Systems 11.200.4210.17305",
+      "type": {
+        "coding": [ {
+          "display": "Sunrise Clinical Systems 11.200.4210.17305"
+        } ]
+      },
+      "version": [ {
+        "value": "Sunrise Clinical Systems 11.200.4210.17305; Transform 4.1.1.18"
+      } ],
+      "owner": {
+        "reference": "Organization/1cff25c3-5187-4f21-96e0-350e77868cf1"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "a0739825-a24b-4030-9c29-b20faffc00c3",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "636842200007"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "660100900011"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Type II DIabetes"
+        } ],
+        "text": "Type II Diabetes"
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "2011-03-10T00:00:00-05:00",
+      "recordedDate": "2013-01-30T00:00:00-05:00",
+      "asserter": {
+        "reference": "Practitioner/dcf46a32-9cc1-4e07-aecd-f081c910e483"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "dcf46a32-9cc1-4e07-aecd-f081c910e483"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "3c6c47e6-fa2b-4ec1-9bfc-feb5c1ff4287",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "615028800003"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "659935200001"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "363746003",
+          "display": "Hypertension"
+        } ],
+        "text": "Essential Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "2010-01-10",
+      "recordedDate": "2013-01-30T00:00:00-05:00",
+      "asserter": {
+        "reference": "Practitioner/291c033d-31d7-46ca-a202-4629f7ddf7ee"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "291c033d-31d7-46ca-a202-4629f7ddf7ee"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "160f78fa-99a6-4ebc-bde8-77231ee53564",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "636842200009"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "659935200025"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "refuted",
+          "display": "Refuted"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "48440001",
+          "display": "Gout"
+        } ],
+        "text": "Gout"
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "2013-01-30",
+      "recordedDate": "2013-01-30T00:00:00-05:00",
+      "asserter": {
+        "reference": "Practitioner/6da636c3-64f8-4ddb-9d96-a6a67485056f"
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "6da636c3-64f8-4ddb-9d96-a6a67485056f"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "0bdddfe8-c14e-4395-9d00-2b03df6841b2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "659988700005"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "85025",
+          "display": "CBC"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-30"
+      },
+      "issued": "2013-01-30T00:00:00.000+01:00",
+      "performer": [ {
+        "reference": "Practitioner/c64cef3c-65f2-4333-ab1c-8b09a2233816"
+      } ],
+      "result": [ {
+        "reference": "Observation/45077e57-3ac9-402b-a65a-04d7d5f4830f",
+        "display": "HGB"
+      }, {
+        "reference": "Observation/f9974c55-f11c-4467-b5d9-7a1e172f7dc2",
+        "display": "WBC"
+      }, {
+        "reference": "Observation/c0fb767c-8650-45f9-9b77-8bd0cea1c4e2",
+        "display": "PLT"
+      }, {
+        "reference": "Observation/61d1d5bb-f0b9-481f-afef-276e2333202c",
+        "display": "HCT"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c64cef3c-65f2-4333-ab1c-8b09a2233816"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "45077e57-3ac9-402b-a65a-04d7d5f4830f",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "659988700003"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "659988900003"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "30313-1",
+          "display": "HGB"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-30"
+      },
+      "valueQuantity": {
+        "value": 14.5,
+        "unit": "g/dl",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dl"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f9974c55-f11c-4467-b5d9-7a1e172f7dc2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "6599887000032"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "6599889000032"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "33765-9",
+          "display": "WBC"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-30"
+      },
+      "valueQuantity": {
+        "value": 5.2,
+        "unit": "10^3/ul",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^3/ul"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c0fb767c-8650-45f9-9b77-8bd0cea1c4e2",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "6599887000033"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "6599889000033"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "26515-7",
+          "display": "PLT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-30"
+      },
+      "valueQuantity": {
+        "value": 388,
+        "unit": "10^3/ul",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^3/ul"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "61d1d5bb-f0b9-481f-afef-276e2333202c",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "6599887000031"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.5",
+        "value": "6599889000031"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "20570-8",
+          "display": "HCT"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "effectivePeriod": {
+        "start": "2013-01-30"
+      },
+      "valueQuantity": {
+        "value": 50,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "836e2ff8-3b74-40d3-be02-ae5fa8a00b09",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.10",
+        "value": "613618700107"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.10",
+        "value": "613618700109"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7982",
+          "display": "Penicillin G benzathine"
+        } ],
+        "text": "Penicillin G benzathine"
+      },
+      "patient": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "1998-01-10",
+      "recordedDate": "1998-01-10",
+      "recorder": {
+        "reference": "Practitioner/fedcfec5-07c3-4a95-808d-fc71180299f4"
+      },
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "247472004",
+            "display": "Hives"
+          } ],
+          "text": "Hives"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "fedcfec5-07c3-4a95-808d-fc71180299f4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "349b96d0-72a5-422d-a260-7ed311a5d4c5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.10",
+        "value": "624373800001"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.10",
+        "value": "637073500005"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "text": "Codeine"
+      },
+      "patient": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "2001-01-10T00:00:00+01:00",
+      "recordedDate": "2001-01-10T00:00:00+01:00",
+      "recorder": {
+        "reference": "Practitioner/a335ce01-34d6-4f6c-be1e-32b38fafe5b9"
+      },
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "241937000",
+            "display": "Drug Induced Anaphylaxis"
+          } ],
+          "text": "Anaphylaxis"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a335ce01-34d6-4f6c-be1e-32b38fafe5b9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AllergyIntolerance",
+      "id": "70704e2e-4e4e-4ba7-833a-68bdd92fd0ae",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.10",
+        "value": "6136187001071"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.10",
+        "value": "6136187001091"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "type": "allergy",
+      "category": [ "medication" ],
+      "code": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1191",
+          "display": "Aspirin"
+        } ],
+        "text": "Aspirin"
+      },
+      "patient": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "2011-01-10",
+      "recordedDate": "2011-01-10",
+      "recorder": {
+        "reference": "Practitioner/94586228-e4e6-4235-8525-3b1aed74747d"
+      },
+      "reaction": [ {
+        "manifestation": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "65124004",
+            "display": "Swelling"
+          } ],
+          "text": "Swelling"
+        } ]
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "94586228-e4e6-4235-8525-3b1aed74747d"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "3c9e2174-e08b-46a3-8097-bd223b0c87a4",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.3.4",
+        "value": "52838152"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99231",
+          "display": "UNK"
+        } ],
+        "text": "Admission"
+      } ],
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2010-10-02T09:00:51+02:00",
+          "end": "2010-10-09T10:00:51+02:00"
+        },
+        "individual": {
+          "reference": "Practitioner/ca673613-303e-4606-9cce-224fcdba6502",
+          "display": "Dr Bruce Healthy"
+        }
+      } ],
+      "period": {
+        "start": "2010-10-02T09:00:51+02:00",
+        "end": "2010-10-09T10:00:51+02:00"
+      },
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/09d0299c-1149-42ef-9ea4-d40ff2fb2d30",
+          "display": "Cholelithiasis without obstruction"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/3198ffd2-b031-4076-817d-7e21262afe13",
+          "display": "Community General Hospital"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "09d0299c-1149-42ef-9ea4-d40ff2fb2d30",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "554122"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "70342003",
+          "display": "Cholelithiasis without obstruction"
+        } ],
+        "text": "Cholelithiasis without obstruction"
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "2010-10-02T10:00:51+02:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "3198ffd2-b031-4076-817d-7e21262afe13",
+      "name": "Community General Hospital"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "1a552765-8c39-4524-b035-d11058db75b0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.3.4",
+        "value": "5283815"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99231",
+          "display": "UNK"
+        } ],
+        "text": "Admission"
+      } ],
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2013-01-24T09:00:51+01:00",
+          "end": "2013-01-30T10:00:51+01:00"
+        },
+        "individual": {
+          "reference": "Practitioner/ca673613-303e-4606-9cce-224fcdba6502",
+          "display": "Dr Bruce Healthy"
+        }
+      } ],
+      "period": {
+        "start": "2013-01-24T09:00:51+01:00",
+        "end": "2013-01-30T10:00:51+01:00"
+      },
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/eed06487-796a-4f1b-a4c8-7b65e8aa1230",
+          "display": "Hypertension"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/691d2483-d3fd-4b74-b1df-8691e7697a34",
+          "display": "Community General Hospital"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "eed06487-796a-4f1b-a4c8-7b65e8aa1230",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "55412"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "363746003",
+          "display": "Hypertension"
+        } ],
+        "text": "Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "2013-01-30T10:00:51+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "691d2483-d3fd-4b74-b1df-8691e7697a34",
+      "name": "Community General Hospital"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "dc07ac6c-b739-4834-b5ec-1fa3a151f6f0",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.3.4",
+        "value": "52838151"
+      } ],
+      "status": "finished",
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99231",
+          "display": "UNK"
+        } ],
+        "text": "Admission"
+      } ],
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "PART",
+            "display": "Participation"
+          } ]
+        } ],
+        "period": {
+          "start": "2011-11-01T09:00:51+01:00",
+          "end": "2011-11-14T10:00:51+01:00"
+        },
+        "individual": {
+          "reference": "Practitioner/ca673613-303e-4606-9cce-224fcdba6502",
+          "display": "Dr Bruce Healthy"
+        }
+      } ],
+      "period": {
+        "start": "2011-11-01T09:00:51+01:00",
+        "end": "2011-11-14T10:00:51+01:00"
+      },
+      "diagnosis": [ {
+        "condition": {
+          "reference": "Condition/03b78e95-d450-4dd6-be75-d60bb5a96d08",
+          "display": "Pneumonia"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "Location/a1a42212-6daf-4d84-b8f0-34c8f0e87962",
+          "display": "Community General Hospital"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "03b78e95-d450-4dd6-be75-d60bb5a96d08",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+        "value": "5541"
+      } ],
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "233604007",
+          "display": "Pneumonia"
+        } ],
+        "text": "Pneumonia"
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "onsetDateTime": "2011-11-01T10:00:51+01:00"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "a1a42212-6daf-4d84-b8f0-34c8f0e87962",
+      "name": "Community General Hospital"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "95cb3f81-555d-44d8-8373-6207dbfa11d3",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.5.4",
+          "code": "ASSERTION",
+          "display": "Assertion"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "effectivePeriod": {
+        "start": "1984"
+      },
+      "issued": "2010-10-02T10:30:00-04:00",
+      "performer": [ {
+        "reference": "Practitioner/8c59073e-0e32-451f-a982-7bb5287e64d6"
+      } ],
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ]
+      }
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "8c59073e-0e32-451f-a982-7bb5287e64d6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Immunization",
+      "id": "f505f3e3-b6fd-43eb-8175-2871c66485c5",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.4",
+        "value": "637382500009"
+      }, {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.4",
+        "value": "637382500011"
+      } ],
+      "status": "completed",
+      "vaccineCode": {
+        "coding": [ {
+          "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+          "code": "09",
+          "display": "Td (adult), adsorbed"
+        } ],
+        "text": "Tetanus-diphtheria adult"
+      },
+      "patient": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      },
+      "occurrenceDateTime": "2013-01-30",
+      "primarySource": true,
+      "site": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "368208006",
+          "display": "Left Arm"
+        } ]
+      },
+      "route": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/nci",
+          "code": "C28161",
+          "display": "INTRAMUSCULAR"
+        } ]
+      },
+      "performer": [ {
+        "function": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/v2/0443",
+            "code": "AP",
+            "display": "Administering Provider"
+          } ]
+        },
+        "actor": {
+          "reference": "Practitioner/0a9ec7d0-97f1-4105-9e8a-4376ea950ae9",
+          "display": "Nancy Nurse RN"
+        }
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0a9ec7d0-97f1-4105-9e8a-4376ea950ae9",
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3",
+        "value": "3333"
+      } ],
+      "name": [ {
+        "family": "Nurse",
+        "given": [ "Nancy" ],
+        "suffix": [ "RN" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "+1-(555)555-4242"
+      } ]
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "00c77ba7-4969-4f86-a7ec-42019a331cc6",
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><caption>Planned Observations</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Goal: Weight Loss</span></span></span></td><td><span><span>On </span><span>1-Nov-2011</span></span><span><br/></span><span><span/></span></td><td><span><span>Goal</span></span></td></tr><tr><td><span><span><span>Goal: Smoking Cessation</span></span></span></td><td><span><span>On </span><span>1-Nov-2011</span></span><span><br/></span><span><span/></span></td><td><span><span>Goal</span></span></td></tr></tbody></table></li></ul><ul><caption>Planned Encounters</caption><li><table><tbody><tr><td><span><span>Clinical Follow Up</span></span><span><br/></span></td><td><span><span>On </span><span>5-May-2013</span></span><span><br/></span><span><span>00:00</span></span></td></tr></tbody></table></li></ul><ul><caption>Planned Procedures</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Chest X-Ray, PA and Lateral Views</span></span></span><span><span>By: </span><span><span> Healthy</span>, Bruce Dr </span></span></td><td><span>On </span><span>30-Jan-2013</span></td><td><span><span>Request</span></span><span>Site: </span><span>Lower Respiratory Tract Structure</span></td></tr><tr><td><span><span><span>Abdominal Ultrasound</span></span></span><span><span>By: </span><span><span> Healthy</span>, Bruce Dr </span></span></td><td><span>On </span><span>30-Jan-2013</span></td><td><span><span>Request</span></span><span>Site: </span><span>Abdominal Structure</span></td></tr></tbody></table></li></ul></div>"
+      },
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "title": "Plan of Care",
+      "description": "<div><ul><caption>Planned Observations</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Goal: Weight Loss</span></span></span></td><td><span><span>On </span><span>1-Nov-2011</span></span><span><br></br></span><span><span></span></span></td><td><span><span>Goal</span></span></td></tr><tr><td><span><span><span>Goal: Smoking Cessation</span></span></span></td><td><span><span>On </span><span>1-Nov-2011</span></span><span><br></br></span><span><span></span></span></td><td><span><span>Goal</span></span></td></tr></tbody></table></li></ul><ul><caption>Planned Encounters</caption><li><table><tbody><tr><td><span><span>Clinical Follow Up</span></span><span><br></br></span></td><td><span><span>On </span><span>5-May-2013</span></span><span><br></br></span><span><span>00:00</span></span></td></tr></tbody></table></li></ul><ul><caption>Planned Procedures</caption><li><table><thead><tr><th>Name</th><th>Dates</th><th>Details</th></tr></thead><tbody><tr><td><span><span><span>Chest X-Ray, PA and Lateral Views</span></span></span><span><span>By: </span><span><span> Healthy</span>, Bruce Dr </span></span></td><td><span>On </span><span>30-Jan-2013</span></td><td><span><span>Request</span></span><span>Site: </span><span>Lower Respiratory Tract Structure</span></td></tr><tr><td><span><span><span>Abdominal Ultrasound</span></span></span><span><span>By: </span><span><span> Healthy</span>, Bruce Dr </span></span></td><td><span>On </span><span>30-Jan-2013</span></td><td><span><span>Request</span></span><span>Site: </span><span>Abdominal Structure</span></td></tr></tbody></table></li></ul></div>",
+      "subject": {
+        "reference": "Patient/52e8adb5-29ff-4c55-b6ac-c17306fd053c",
+        "display": "James Smith"
+      }
+    }
+  } ]
+}
