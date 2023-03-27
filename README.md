@@ -5,10 +5,10 @@ This repository contains code, data and results of experimentations..
 
 Step to reproduce :
 
-[matching.py][./matching.py] create results in "results" folder (as a dict (from pickle library) dump). (run the main)
-[results/results_analysis.ipynb][./results/results_analysis.ipynb] is used to refactor files and add ground truth associated for each match done. (run each cell)
-[formatted_results/formatted_results_analysis.ipynb][./formatted_results/formatted_results_analysis.ipynb] contains all the function to analysis results, get descriptive analysis on it.
-[statistical_analysis.R][./statistical_analysis.R] is a R file (see https://www.r-project.org/) to get statistical analysis and correlation on results.
+[matching.py](./matching.py) create results in "results" folder (as a dict (from pickle library) dump). (run the main)
+[results/results_analysis.ipynb](./results/results_analysis.ipynb) is used to refactor files and add ground truth associated for each match done. (run each cell)
+[formatted_results/formatted_results_analysis.ipynb](./formatted_results/formatted_results_analysis.ipynb) contains all the function to analysis results, get descriptive analysis on it.
+[statistical_analysis.R](./statistical_analysis.R) is a R file (see https://www.r-project.org/) to get statistical analysis and correlation on results.
 You'll find descriptive CSV in "formatted_results/describe_csv" for each method and couple of schema.
 
 Each couple is called by the first model in couple. ("multi_ODATIS" will described word mover distance on word embedding method for ODATIS / AERIS couple.)
